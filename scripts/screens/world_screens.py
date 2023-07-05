@@ -9,6 +9,7 @@ from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 from ..utility import get_text_box_theme, update_sprite, scale
 
+from scripts.otherclansinfo import otherClansList, buttons_needed
 
 class OutsideClanScreen(Screens):
 
@@ -162,34 +163,6 @@ class OutsideClanScreen(Screens):
                                                          manager=MANAGER)  # Text will be filled in later
 
         # SEL sel START
-
-        # Determine other clans' names
-        with open('saves/currentclan.txt', 'r') as f:
-            currentclan = f.read()
-        currentclan = 'saves/' + str(currentclan) + 'clan.json'
-
-        with open(currentclan, 'r') as f:
-            clanContent = f.readlines()
-            for line in clanContent:
-                if line.startswith('    "other_clans_names":'):
-                    clanContentLine = []
-                    clanContentLine.append(line)
-        otherClanNames = str(clanContentLine).replace('"other_clans_names": "', '').replace('"', '').replace(' ', '')\
-            .replace("[", "").replace("'", "")
-        otherClansList = otherClanNames.split(",")
-        otherClansList = otherClansList[:-1]
-
-        # Determine how many clans there are, and how many buttons to make
-        if len(otherClansList) == 3:
-            buttons_needed = 3
-        elif len(otherClansList) == 4:
-            buttons_needed = 4
-        else:
-            buttons_needed = 5
-        otherClansList.append('blank')
-        otherClansList.append('blank')
-        otherClansList.append('blank')
-        otherClansList.append('blank')
 
         self.other_clan_1_button = UIImageButton(scale(pygame.Rect((230, 200), (68, 68))), "",
                                               object_id="#unknown_residence_button"
