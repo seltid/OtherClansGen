@@ -455,6 +455,28 @@ def create_outside_cat(Cat, status, backstory, alive=True, thought=None):
 
     return name
 
+def create_other_clan_cat(Cat, status, backstory, alive=True, thought=None):
+    status = 'Clancat'
+
+    name = choice(names.names_dict["normal_prefixes"])
+    suffix = choice(names.names_dict["normal_suffixes"])
+
+    new_cat = Cat(prefix=name,
+                  suffix=suffix,
+                  status=status,
+                  gender=choice(['female', 'male']),
+                  backstory=backstory)
+
+    new_cat.otherclan = True
+
+    thought = "Wonders about those c_n cats they just met"
+    new_cat.thought = thought
+
+    game.clan.add_cat(new_cat)
+    game.clan.add_to_oc(new_cat)
+    name = str(name + suffix)
+
+    return name
 
 # ---------------------------------------------------------------------------- #
 #                             Cat Relationships                                #

@@ -634,6 +634,10 @@ class Clan():
             # The outside-value must be set to True before the cat can go to cotc
             Cat.outside_cats.update({cat.ID: cat})
 
+    def add_to_oc(self, cat):
+        if cat.ID in Cat.all_cats and cat.otherclan and cat.ID not in Cat.otherclan_cats:
+            Cat.otherclan_cats.update({cat.ID: cat})
+
     def remove_cat(self, ID):  # ID is cat.ID
         """
         This function is for completely removing the cat from the game,

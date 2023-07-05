@@ -103,6 +103,7 @@ class Cat():
 
     all_cats: Dict[str, Cat] = {}  # ID: object
     outside_cats: Dict[str, Cat] = {}  # cats outside the clan
+    otherclan_cats: Dict[str, Cat] = {} # SEL sel START
     id_iter = itertools.count()
 
     all_cats_list: List[Cat] = []
@@ -143,6 +144,7 @@ class Cat():
             self.dead_for = 0
             self.dead = True
             self.outside = False
+            self.otherclan = False
             self.exiled = False
             self.inheritance = None # This should never be used, but just for safty
             if "df" in kwargs:
@@ -194,6 +196,7 @@ class Cat():
         self.dead = False
         self.exiled = False
         self.outside = False
+        self.otherclan = False
         self.dead_for = 0  # moons
         self.thought = ''
         self.genderalign = None
@@ -455,6 +458,7 @@ class Cat():
         status."""
         self.exiled = True
         self.outside = True
+        self.otherclan = False
         self.status = 'exiled'
         if self.personality.trait == 'vengeful':
             self.thought = "Swears their revenge for being exiled"
@@ -594,6 +598,7 @@ class Cat():
         """ Makes a Clan cat an "outside" cat. Handles removing them from special positions, and removing
         mentors and apprentices. """
         self.outside = True
+        self.otherclan = False
         
         if self.status in ['leader', 'warrior']:
             self.status_change("warrior")
@@ -611,6 +616,7 @@ class Cat():
         """ Makes a "outside cat" a Clan cat. Returns a list of any additional cats that
             are coming with them. """
         self.outside = False
+        self.otherclan = False
 
         game.clan.add_to_clan(self)
 
@@ -1228,7 +1234,9 @@ class Cat():
 
         # this figures out where the cat is
         where_kitty = None
-        if not self.dead and not self.outside:
+        if self.otherclan:
+            where_kitty = "otherclan"
+        elif not self.dead and not self.outside:
             where_kitty = "inside"
         elif self.dead and not self.df and not self.outside:
             where_kitty = 'starclan'

@@ -170,7 +170,9 @@ class Thoughts():
         
         if random_cat and 'random_outside_status' in thought:
             outside_status = None
-            if random_cat and random_cat.outside and random_cat.status not in ["kittypet", "loner", "rogue", "former Clancat", "exiled"]:
+            if random_cat and random_cat.otherclan:
+                outside_status = "otherclan"
+            elif random_cat and not random_cat.otherclan and random_cat.outside and random_cat.status not in ["kittypet", "loner", "rogue", "former Clancat", "exiled"]:
                 outside_status = "lost"
             elif random_cat and random_cat.outside:
                 outside_status = "outside"
@@ -179,7 +181,9 @@ class Thoughts():
             if outside_status not in thought['random_outside_status']:
                 return False
         else:
-            if random_cat and random_cat.outside and random_cat.status not in ["kittypet", "loner", "rogue", "former Clancat", "exiled"]:
+            if random_cat and random_cat.otherclan:
+                outside_status = "otherclan"
+            elif random_cat and not random_cat.otherclan and random_cat.outside and random_cat.status not in ["kittypet", "loner", "rogue", "former Clancat", "exiled"]:
                 outside_status = "lost"
             elif random_cat and random_cat.outside:
                 outside_status = "outside"

@@ -1208,7 +1208,7 @@ class ListScreen(Screens):
     def get_living_cats(self):
         self.living_cats = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and not the_cat.outside:
+            if not the_cat.dead and not the_cat.otherclan and not the_cat.outside:
                 self.living_cats.append(the_cat)
 
     def screen_switches(self):
@@ -1270,27 +1270,27 @@ class ListScreen(Screens):
         self.other_clan_1_button = UIImageButton(scale(pygame.Rect((230, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
-                                                 tool_tip_text='show ' + str(otherClansList[0]) + 'Clan cats')
+                                                 tool_tip_text='show known ' + str(otherClansList[0]) + 'Clan cats')
 
         self.other_clan_2_button = UIImageButton(scale(pygame.Rect((298, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
-                                                 tool_tip_text='show ' + str(otherClansList[1]) + 'Clan cats')
+                                                 tool_tip_text='show known ' + str(otherClansList[1]) + 'Clan cats')
 
         self.other_clan_3_button = UIImageButton(scale(pygame.Rect((366, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
-                                                 tool_tip_text='show ' + str(otherClansList[2]) + 'Clan cats')
+                                                 tool_tip_text='show known ' + str(otherClansList[2]) + 'Clan cats')
 
         self.other_clan_4_button = UIImageButton(scale(pygame.Rect((434, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
-                                                 tool_tip_text='show ' + str(otherClansList[3]) + 'Clan cats')
+                                                 tool_tip_text='show known ' + str(otherClansList[3]) + 'Clan cats')
 
         self.other_clan_5_button = UIImageButton(scale(pygame.Rect((502, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
-                                                 tool_tip_text='show ' + str(otherClansList[4]) + 'Clan cats')
+                                                 tool_tip_text='show known ' + str(otherClansList[4]) + 'Clan cats')
 
         # Hide unnecessary buttons
         if buttons_needed == 3:
@@ -2467,7 +2467,7 @@ class OtherClan1Screen(Screens):
     def get_living_cats(self):
         self.living_cats = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead:
+            if not the_cat.dead and the_cat.otherclan:
                 self.living_cats.append(the_cat)
 
     def screen_switches(self):
@@ -2528,28 +2528,28 @@ class OtherClan1Screen(Screens):
         self.other_clan_1_button = UIImageButton(scale(pygame.Rect((230, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
-                                                 tool_tip_text='show ' + str(otherClansList[0]) + 'Clan cats')
+                                                 tool_tip_text='show known ' + str(otherClansList[0]) + 'Clan cats')
 
         self.other_clan_1_button.disable()
         self.other_clan_2_button = UIImageButton(scale(pygame.Rect((298, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
-                                                 tool_tip_text='show ' + str(otherClansList[1]) + 'Clan cats')
+                                                 tool_tip_text='show known ' + str(otherClansList[1]) + 'Clan cats')
 
         self.other_clan_3_button = UIImageButton(scale(pygame.Rect((366, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
-                                                 tool_tip_text='show ' + str(otherClansList[2]) + 'Clan cats')
+                                                 tool_tip_text='show known ' + str(otherClansList[2]) + 'Clan cats')
 
         self.other_clan_4_button = UIImageButton(scale(pygame.Rect((434, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
-                                                 tool_tip_text='show ' + str(otherClansList[3]) + 'Clan cats')
+                                                 tool_tip_text='show known ' + str(otherClansList[3]) + 'Clan cats')
 
         self.other_clan_5_button = UIImageButton(scale(pygame.Rect((502, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
-                                                 tool_tip_text='show ' + str(otherClansList[4]) + 'Clan cats')
+                                                 tool_tip_text='show known ' + str(otherClansList[4]) + 'Clan cats')
 
 
         # Hide unnecessary buttons

@@ -24,7 +24,7 @@ class Game():
     # relation_scroll_ct = 0
 
     mediated = []  # Keep track of which couples have been mediated this moon.
-    just_died = [] #keeps track of which cats died this moon via die()
+    just_died = []  # keeps track of which cats died this moon via die()
 
     cur_events_list = []
     ceremony_events_list = []
@@ -244,22 +244,8 @@ class Game():
                 os.fsync(write_file.fileno())
 
     def read_clans(self):
-        '''with open(get_save_dir() + '/clanlist.txt', 'r') as read_file:
-            clan_list = read_file.read()
-            if_clans = len(clan_list)
-        if if_clans > 0:
-            clan_list = clan_list.split('\n')
-            clan_list = [i.strip() for i in clan_list if i]  # Remove empty and whitespace
-            return clan_list
-        else:
-            return None'''
-        # All of the above is old code
-        # Now, we want clanlist.txt to contain ONLY the name of the Clan that is currently loaded
-        # We will get the list of clans from the saves folder
-        # each Clan has its own folder, and the name of the folder is the name of the clan
-        # so we can just get a list of all the folders in the saves folder
-
         # First, we need to make sure the saves folder exists
+        # Has to do with saves, not clans within a save
         if not os.path.exists(get_save_dir()):
             os.makedirs(get_save_dir())
             print('Created saves folder')
@@ -299,17 +285,6 @@ class Game():
         return clan_list
 
     def save_clanlist(self, loaded_clan=None):
-        '''clans = []
-        if loaded_clan:
-            clans.append(f"{loaded_clan}\n")
-
-        for clan_name in self.switches['clan_list']:
-            if clan_name and clan_name != loaded_clan:
-                clans.append(f"{clan_name}\n")
-
-        if clans:
-            with open(get_save_dir() + '/clanlist.txt', 'w') as f:
-                f.writelines(clans)'''
         if loaded_clan:
             if os.path.exists(get_save_dir() + '/clanlist.txt'):
                 os.remove(get_save_dir() + '/clanlist.txt')  # we don't need clanlist.txt anymore
