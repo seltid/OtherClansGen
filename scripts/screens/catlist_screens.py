@@ -1090,6 +1090,7 @@ class ListScreen(Screens):
 
     def __init__(self, name=None):
         super().__init__(name)
+        self.other_clan_1_button = None
         self.filter_age = None
         self.filter_id = None
         self.filter_rank = None
@@ -1267,7 +1268,7 @@ class ListScreen(Screens):
         otherClansList.append('blank')
 
         self.other_clan_1_button = UIImageButton(scale(pygame.Rect((230, 200), (68, 68))), "",
-                                                 object_id="#other_clans_1_button"
+                                                 object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
                                                  tool_tip_text='show ' + str(otherClansList[0]) + 'Clan cats')
 
@@ -2466,7 +2467,7 @@ class OtherClan1Screen(Screens):
     def get_living_cats(self):
         self.living_cats = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and the_cat.otherclan:
+            if not the_cat.dead:
                 self.living_cats.append(the_cat)
 
     def screen_switches(self):

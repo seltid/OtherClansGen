@@ -25,6 +25,7 @@ class OutsideClanScreen(Screens):
     def __init__(self, name=None):
         super().__init__(name)
         self.filter_age = None
+        self.other_clan_1_button = None
         self.filter_id = None
         self.filter_rank = None
         self.filter_exp = None
@@ -48,6 +49,9 @@ class OutsideClanScreen(Screens):
                 self.change_screen("list screen")
             if event.ui_element == self.to_dead_button:
                 self.change_screen("starclan screen")
+            if event.ui_element == self.other_clan_1_button:
+                self.change_screen("other clan 1 screen")
+
             elif event.ui_element in self.display_cats:
                 game.switches["cat"] = event.ui_element.return_cat_id()
                 self.change_screen('profile screen')
@@ -157,6 +161,69 @@ class OutsideClanScreen(Screens):
                                                          object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                          manager=MANAGER)  # Text will be filled in later
 
+        # SEL sel START
+
+        # Determine other clans' names
+        with open('saves/currentclan.txt', 'r') as f:
+            currentclan = f.read()
+        currentclan = 'saves/' + str(currentclan) + 'clan.json'
+
+        with open(currentclan, 'r') as f:
+            clanContent = f.readlines()
+            for line in clanContent:
+                if line.startswith('    "other_clans_names":'):
+                    clanContentLine = []
+                    clanContentLine.append(line)
+        otherClanNames = str(clanContentLine).replace('"other_clans_names": "', '').replace('"', '').replace(' ', '')\
+            .replace("[", "").replace("'", "")
+        otherClansList = otherClanNames.split(",")
+        otherClansList = otherClansList[:-1]
+
+        # Determine how many clans there are, and how many buttons to make
+        if len(otherClansList) == 3:
+            buttons_needed = 3
+        elif len(otherClansList) == 4:
+            buttons_needed = 4
+        else:
+            buttons_needed = 5
+        otherClansList.append('blank')
+        otherClansList.append('blank')
+        otherClansList.append('blank')
+        otherClansList.append('blank')
+
+        self.other_clan_1_button = UIImageButton(scale(pygame.Rect((230, 200), (68, 68))), "",
+                                              object_id="#unknown_residence_button"
+                                              , manager=MANAGER, tool_tip_text='show ' +  str(otherClansList[0])  + 'Clan cats')
+
+        self.other_clan_2_button = UIImageButton(scale(pygame.Rect((298, 200), (68, 68))), "",
+                                          object_id="#unknown_residence_button"
+                                          , manager=MANAGER,
+                                          tool_tip_text='show ' + str(otherClansList[1]) + 'Clan cats')
+
+        self.other_clan_3_button = UIImageButton(scale(pygame.Rect((366, 200), (68, 68))), "",
+                                          object_id="#unknown_residence_button"
+                                          , manager=MANAGER,
+                                          tool_tip_text='show ' + str(otherClansList[2]) + 'Clan cats')
+
+        self.other_clan_4_button = UIImageButton(scale(pygame.Rect((434, 200), (68, 68))), "",
+                                          object_id="#unknown_residence_button"
+                                          , manager=MANAGER,
+                                          tool_tip_text='show ' + str(otherClansList[3]) + 'Clan cats')
+
+        self.other_clan_5_button = UIImageButton(scale(pygame.Rect((502, 200), (68, 68))), "",
+                                          object_id="#unknown_residence_button"
+                                          , manager=MANAGER,
+                                          tool_tip_text='show ' + str(otherClansList[4]) + 'Clan cats')
+
+        # Hide unnecessary buttons
+        if buttons_needed == 3:
+            self.other_clan_4_button.hide()
+            self.other_clan_5_button.hide()
+        elif buttons_needed == 4:
+            self.other_clan_5_button.hide()
+
+        # SEL sel END
+
         self.set_disabled_menu_buttons(["catlist_screen"])
         self.update_heading_text('Outside The Clan')
         self.show_menu_buttons()
@@ -225,6 +292,12 @@ class OutsideClanScreen(Screens):
         self.filter_age.kill()
         self.filter_id.kill()
         self.filter_exp.kill()
+        # SEL sel START
+        self.other_clan_1_button.kill()
+        self.other_clan_2_button.kill()
+        self.other_clan_3_button.kill()
+        self.other_clan_4_button.kill()
+        self.other_clan_5_button.kill()
 
         # Remove currently displayed cats and cat names.
         for cat in self.display_cats:
