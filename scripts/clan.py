@@ -1768,6 +1768,8 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     current_season = Clan.current_season
     all_clans = []
 
+    starting_members = 10
+
     def __init__(self,
                  name='',
                  relations=0,
@@ -1792,24 +1794,6 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
         self.temperament = temperament or choice(temperament_list)
         if self.temperament not in temperament_list:
             self.temperament = choice(temperament_list)
-
-        for x in range(starting_members):
-            create_other_clan_cat(Cat,
-                               new_name=False,
-                               loner=False,
-                               kittypet=False,
-                               kit=False,
-                               litter=False,
-                               other_clan=True,
-                           otherclan1=True,
-                               backstory=None,
-                               status=None,
-                               age=choice(range(1, 160)),
-                               gender=choice(("male", "female")),
-                               thought="Is feeling uncertain about that new clan that just formed",
-                               alive=True,
-                               outside=False
-                               )
 
         self.leader = leader
         if self.leader:
@@ -1847,7 +1831,7 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
 
         self._reputation = 50
 
-        self.starting_members = 10
+        self.starting_members = starting_members
 
         self.war = {
             "at_war": False,
@@ -1857,6 +1841,7 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
 
     def __repr__(self):
         return f"{self.name}Clan"
+
 
     def create_clan(self):
         """

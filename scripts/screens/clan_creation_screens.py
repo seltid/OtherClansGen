@@ -4,8 +4,8 @@ import pygame_gui
 
 from .base_screens import Screens
 
-from scripts.utility import get_text_box_theme, scale
-from scripts.clan import Clan
+from scripts.utility import get_text_box_theme, scale, create_other_clan_cat
+from scripts.clan import Clan, OtherClan1
 from scripts.cat.cats import create_example_cats, Cat
 from scripts.cat.names import names
 from re import sub
@@ -126,6 +126,7 @@ class MakeClanScreen(Screens):
                 self.handle_choose_background_event(event)
             elif self.sub_screen == 'saved screen':
                 self.handle_saved_clan_event(event)
+                self.create_ocs(event)
         
         elif event.type == pygame.KEYDOWN and game.settings['keybinds']:
             if self.sub_screen == 'game mode':
@@ -438,6 +439,24 @@ class MakeClanScreen(Screens):
     def handle_saved_clan_event(self, event):
         if event.ui_element == self.elements["continue"]:
             self.change_screen('camp screen')
+
+    def create_ocs(self, event):
+        for cat in range(OtherClan1.starting_members):
+            create_other_clan_cat(Cat,
+                                   new_name=False,
+                                   loner=False,
+                                   kittypet=False,
+                                   kit=False,
+                                   litter=False,
+                                   other_clan=True,
+                               otherclan1=True,
+                                   backstory=None,
+                                   status=None,
+                                   age=choice(range(1, 160)),
+                                   gender=choice(("male", "female")),
+                                   thought="Is feeling uncertain about that new clan that just formed",
+                                   alive=True,
+                                   outside=False)
 
     def exit_screen(self):
         self.main_menu.kill()
