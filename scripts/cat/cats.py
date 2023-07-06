@@ -439,6 +439,7 @@ class Cat():
         if game.clan.game_mode != 'classic' and not (self.outside or self.exiled):
             self.grief(body)
 
+
         if not self.outside:
             Cat.dead_cats.append(self)
             if game.clan.instructor.df is False:
@@ -449,8 +450,28 @@ class Cat():
                 self.thought = "Is startled to find themselves wading in the muck of a shadowed forest"
                 game.clan.add_to_darkforest(self)
         else:
-            self.thought = "Is fascinated by the new ghostly world they've stumbled into"
-            game.clan.add_to_unknown(self)
+            # Die (add to dead cats)
+            Cat.dead_cats.append(self)
+            self.outside = False
+            # Let's send them to a residence based on their personality (eventually change to actions)
+            # Assess/decode personality
+            personalitystring = str(self.personality).split(":")
+            personalitystring = str(personalitystring[-1]).split(",")
+            for facet in personalitystring:
+                for char in ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+                             "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " ", ","]:
+                    facet.replace(char, "")
+            lawfulness = personalitystring[0]
+            sociability = personalitystring[1]
+            aggression = personalitystring[2]
+            stability = personalitystring[3]
+            low = [0, 1, 2]
+            if lawfulness in [low] and aggression in [14, 15, 16] and sociability in [low] and stability in [low]:
+                self.thought = "Knows they've earned a place among the darkness"
+                game.clan.add_to_darkforest(self)
+            else:
+                self.thought = "Has left their Clan behind to watch over them from the stars"
+                game.clan.add_to_starclan(self)
 
         return text
 
@@ -1235,7 +1256,7 @@ class Cat():
 
         # this figures out where the cat is
         where_kitty = None
-        if self.otherclan1:
+        if not self.dead and self.otherclan1:
             where_kitty = "otherclan1"
         elif not self.dead and not self.outside:
             where_kitty = "inside"
@@ -1245,7 +1266,7 @@ class Cat():
             where_kitty = 'hell'
         elif self.dead and self.outside:
             where_kitty = 'UR'
-        elif not self.dead and self.outside:
+        elif not self.dead and self.outside and not self.otherclan1:
             where_kitty = 'outside'
         # get other cat
         i = 0

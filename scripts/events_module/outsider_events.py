@@ -4,6 +4,7 @@ from scripts.cat.cats import Cat
 from scripts.events_module.generate_events import GenerateEvents
 from scripts.game_structure.game_essentials import game
 from scripts.event_class import Single_Event
+from scripts.screens.catlist_screens import otherClanNames, otherClansList
 
 
 # ---------------------------------------------------------------------------- #
@@ -29,6 +30,8 @@ class OutsiderEvents:
                 elif cat.status in ['kittypet', 'loner', 'rogue', 'former Clancat']:
                     text = f'Rumors reach your Clan that the {cat.status} ' \
                            f'{cat.name} has died recently.'
+                elif cat.otherclan1:
+                    text = f'A patrol informs you that the {cat.status} {cat.name} from {otherClansList[0]}Clan died this past moon.'
                 else:
                     cat.outside = False
                     text = f"Will they reach StarClan, even so far away? {cat.name} isn't sure, " \
