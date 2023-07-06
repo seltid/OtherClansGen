@@ -111,6 +111,7 @@ class Cat():
     grief_strings = {}
 
     def __init__(self,
+                 otherclan=False,
                  prefix=None,
                  gender=None,
                  status="newborn",

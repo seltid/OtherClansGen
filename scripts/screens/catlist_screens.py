@@ -19,6 +19,7 @@ from ..conditions import get_amount_cat_for_one_medic, medical_cats_condition_fu
 from scripts.game_structure.windows import SaveError
 
 from scripts.otherclansinfo import otherClansList, buttons_needed
+from scripts.clan import Clan
 
 class ClanScreen(Screens):
     max_sprites_displayed = 400  # we don't want 100,000 sprites rendering at once. 400 is enough.
@@ -2446,6 +2447,12 @@ class OtherClan1Screen(Screens):
                 self.living_cats.append(the_cat)
 
     def screen_switches(self):
+
+        self.testbox = pygame_gui.elements.UITextBox(
+            str(Clan.all_clans),
+            scale(pygame.Rect((500, 500), (750, 780))),
+            object_id=get_text_box_theme("#text_box_22_horizcenter"))
+
         # Determine the living, non-exiled cats.
         self.get_living_cats()
 
@@ -2627,6 +2634,8 @@ class OtherClan1Screen(Screens):
         self.other_clan_3_button.kill()
         self.other_clan_4_button.kill()
         self.other_clan_5_button.kill()
+
+        self.testbox.kill()
 
         # Remove currently displayed cats and cat names.
         for cat in self.display_cats:
