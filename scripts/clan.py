@@ -1778,7 +1778,7 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
                  deputy=None,
                  medicine_cat=None,
                  biome='Forest',
-                 starting_members=10,
+                 starting_members=starting_members,
                  OCID=None):
 
         self.history = History()

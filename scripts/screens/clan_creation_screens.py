@@ -456,7 +456,7 @@ class MakeClanScreen(Screens):
                                    gender=choice(("male", "female")),
                                    thought="Is feeling uncertain about that new clan that just formed",
                                    alive=True,
-                                   outside=False)
+                                   outside=True)
 
     def exit_screen(self):
         self.main_menu.kill()

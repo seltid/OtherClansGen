@@ -502,14 +502,7 @@ class ProfileScreen(Screens):
                                                                      line_spacing=0.95, manager=MANAGER)
 
         self.profile_elements["debug_box"] = pygame_gui.elements.UITextBox(
-            ('game.clan.clan_cats\n' +
-            str(game.clan.clan_cats) + '\n' +
-             'game.Cat.all_cats_list\n' +
-             str(Cat.all_cats_list) + '\n' +
-             'game.Cat.all_cats\n' +
-             str(Cat.all_cats) + '\n'
-
-             ),
+            ('Otherclan?: ' + str(self.the_cat.otherclan1)),
             scale(pygame.Rect((150, 200), (350, 300))), object_id=get_text_box_theme("#text_box_22_horizcenter"))
 
         # Set the cat backgrounds.
@@ -813,7 +806,9 @@ class ProfileScreen(Screens):
         output = ""
 
         # STATUS
-        if the_cat.outside and not the_cat.exiled and the_cat.status not in ['kittypet', 'loner', 'rogue',
+        if the_cat.outside and the_cat.otherclan1:
+            output += the_cat.status
+        elif the_cat.outside and not the_cat.otherclan1 and not the_cat.exiled and the_cat.status not in ['kittypet', 'loner', 'rogue',
                                                                              'former Clancat']:
             output += "<font color='#FF0000'>lost</font>"
         elif the_cat.exiled:
