@@ -18,7 +18,7 @@ from .cat_screens import ProfileScreen
 from ..conditions import get_amount_cat_for_one_medic, medical_cats_condition_fulfilled
 from scripts.game_structure.windows import SaveError
 
-from scripts.clan import Clan, OtherClan
+from scripts.clan import Clan, OtherClan1
 
 # Code to determine other Clans' names to display
 # Determine other clans' names
@@ -1241,7 +1241,7 @@ class ListScreen(Screens):
     def get_living_cats(self):
         self.living_cats = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and not the_cat.otherclan and not the_cat.outside:
+            if not the_cat.dead and not the_cat.otherclan1 and not the_cat.outside:
                 self.living_cats.append(the_cat)
 
     def screen_switches(self):
@@ -2474,7 +2474,7 @@ class OtherClan1Screen(Screens):
     def get_living_cats(self):
         self.living_cats = []
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and the_cat.otherclan:
+            if not the_cat.dead and the_cat.otherclan1:
                 self.living_cats.append(the_cat)
 
     def screen_switches(self):

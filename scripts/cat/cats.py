@@ -103,7 +103,7 @@ class Cat():
 
     all_cats: Dict[str, Cat] = {}  # ID: object
     outside_cats: Dict[str, Cat] = {}  # cats outside the clan
-    otherclan_cats: Dict[str, Cat] = {} # SEL sel START
+    otherclan1_cats: Dict[str, Cat] = {} # SEL sel START
     id_iter = itertools.count()
 
     all_cats_list: List[Cat] = []
@@ -111,7 +111,7 @@ class Cat():
     grief_strings = {}
 
     def __init__(self,
-                 otherclan=False,
+                 otherclan1=False,
                  prefix=None,
                  gender=None,
                  status="newborn",
@@ -145,7 +145,7 @@ class Cat():
             self.dead_for = 0
             self.dead = True
             self.outside = False
-            self.otherclan = False
+            self.otherclan1 = False
             self.exiled = False
             self.inheritance = None # This should never be used, but just for safty
             if "df" in kwargs:
@@ -197,7 +197,7 @@ class Cat():
         self.dead = False
         self.exiled = False
         self.outside = False
-        self.otherclan = False
+        self.otherclan1 = False
         self.dead_for = 0  # moons
         self.thought = ''
         self.genderalign = None
@@ -459,7 +459,7 @@ class Cat():
         status."""
         self.exiled = True
         self.outside = True
-        self.otherclan = False
+        self.otherclan1 = False
         self.status = 'exiled'
         if self.personality.trait == 'vengeful':
             self.thought = "Swears their revenge for being exiled"
@@ -599,7 +599,7 @@ class Cat():
         """ Makes a Clan cat an "outside" cat. Handles removing them from special positions, and removing
         mentors and apprentices. """
         self.outside = True
-        self.otherclan = False
+        self.otherclan1 = False
         
         if self.status in ['leader', 'warrior']:
             self.status_change("warrior")
@@ -617,7 +617,7 @@ class Cat():
         """ Makes a "outside cat" a Clan cat. Returns a list of any additional cats that
             are coming with them. """
         self.outside = False
-        self.otherclan = False
+        self.otherclan1 = False
 
         game.clan.add_to_clan(self)
 
@@ -1235,8 +1235,8 @@ class Cat():
 
         # this figures out where the cat is
         where_kitty = None
-        if self.otherclan:
-            where_kitty = "otherclan"
+        if self.otherclan1:
+            where_kitty = "otherclan1"
         elif not self.dead and not self.outside:
             where_kitty = "inside"
         elif self.dead and not self.df and not self.outside:
@@ -2840,7 +2840,7 @@ class Cat():
                 "former_apprentices": [appr for appr in self.former_apprentices],
                 "df": self.df,
                 "outside": self.outside,
-                "otherclan": self.otherclan,
+                "otherclan1": self.otherclan1,
                 "faded_offspring": self.faded_offspring,
                 "opacity": self.pelt.opacity,
                 "prevent_fading": self.prevent_fading,

@@ -536,8 +536,19 @@ class Clan():
 
         # Generate other clans
         number_other_clans = randint(3, 5)
-        for _ in range(number_other_clans):
-            self.all_clans.append(OtherClan())   # Chooses how many otherclans to gen, then runs OtherClan() for each
+        self.all_clans.append(OtherClan1())
+        # Generate OC2
+        # Generate OC3
+
+        if number_other_clans == 4:
+            # Generate OC4
+            pass
+
+        elif number_other_clans == 5:
+            # Generate OC4
+            # Generate OC5
+            pass
+
         self.save_clan()
         game.save_clanlist(self.name)
         game.switches['clan_list'] = game.read_clans()
@@ -635,8 +646,8 @@ class Clan():
             Cat.outside_cats.update({cat.ID: cat})
 
     def add_to_oc(self, cat):
-        if cat.ID in Cat.all_cats and cat.otherclan and cat.ID not in Cat.otherclan_cats:
-            Cat.otherclan_cats.update({cat.ID: cat})
+        if cat.ID in Cat.all_cats and cat.otherclan1 and cat.ID not in Cat.otherclan1_cats:
+            Cat.otherclan1_cats.update({cat.ID: cat})
 
     def remove_cat(self, ID):  # ID is cat.ID
         """
@@ -836,13 +847,11 @@ class Clan():
         other_clans = []
         if game.switches['clan_list'] == '':
             number_other_clans = randint(3, 5)
-            for _ in range(number_other_clans):
-                self.all_clans.append(OtherClan())
+            self.all_clans.append(OtherClan1())
             return
         if game.switches['clan_list'][0].strip() == '':
             number_other_clans = randint(3, 5)
-            for _ in range(number_other_clans):
-                self.all_clans.append(OtherClan())
+            self.all_clans.append(OtherClan1())
             return
         game.switches[
             'error_message'] = "There was an error loading the clan.txt"
@@ -959,13 +968,12 @@ class Clan():
             for other_clan in other_clans:
                 other_clan_info = other_clan.split(';')
                 self.all_clans.append(
-                    OtherClan(other_clan_info[0], int(other_clan_info[1]),
+                    OtherClan1(other_clan_info[0], int(other_clan_info[1]),
                               other_clan_info[2]))
 
         else:
             number_other_clans = randint(3, 5)
-            for _ in range(number_other_clans):
-                self.all_clans.append(OtherClan())
+            self.all_clans.append(OtherClan1())
 
         for cat in members:
             if cat in Cat.all_cats:
@@ -983,13 +991,11 @@ class Clan():
         other_clans = []
         if game.switches['clan_list'] == '':
             number_other_clans = randint(3, 5)
-            for _ in range(number_other_clans):
-                self.all_clans.append(OtherClan())
+            self.all_clans.append(OtherClan1())
             return
         if game.switches['clan_list'][0].strip() == '':
             number_other_clans = randint(3, 5)
-            for _ in range(number_other_clans):
-                self.all_clans.append(OtherClan())
+            self.all_clans.append(OtherClan1())
             return
 
         game.switches[
@@ -1053,7 +1059,7 @@ class Clan():
                 clan_data["other_clans_names"].split(","),
                 clan_data["other_clans_relations"].split(","),
                 clan_data["other_clan_temperament"].split(",")):
-            game.clan.all_clans.append(OtherClan(name, int(relation), temper))
+            game.clan.all_clans.append(OtherClan1(name, int(relation), temper))
 
         for cat in clan_data["clan_cats"].split(","):
             if cat in Cat.all_cats:
@@ -1379,7 +1385,7 @@ class Clan():
             
 
 
-class OtherClan():  # Actually creates/generates other clans. Only runs upon creation of them
+class OtherClan1():  # Actually creates/generates other clans. Only runs upon creation of them
 
     BIOME_TYPES = ["Forest", "Plains", "Mountainous", "Beach"]
 
@@ -1795,7 +1801,7 @@ class OtherClan():  # Actually creates/generates other clans. Only runs upon cre
                                kit=False,
                                litter=False,
                                other_clan=True,
-                           otherclan=True,
+                           otherclan1=True,
                                backstory=None,
                                status=None,
                                age=choice(range(1, 160)),
@@ -1825,7 +1831,7 @@ class OtherClan():  # Actually creates/generates other clans. Only runs upon cre
             self.clan_cats.append(self.medicine_cat.ID)
             self.med_cat_list.append(self.medicine_cat.ID)
             if medicine_cat.status != 'OC medicine cat':
-                Cat.otherclan_cats[medicine_cat.ID].status_change('OC medicine cat')
+                Cat.otherclan1_cats[medicine_cat.ID].status_change('OC medicine cat')
         self.med_cat_number = len(
             self.med_cat_list
         )  # Must do this after the medicine cat is added to the list.
@@ -1860,35 +1866,35 @@ class OtherClan():  # Actually creates/generates other clans. Only runs upon cre
         """
         self.all_clans = []
 
-        key_copy = tuple(Cat.otherclan_cats.keys())
+        key_copy = tuple(Cat.otherclan1_cats.keys())
         for i in key_copy:  # Going through all currently existing cats
             # cat_class is a Cat-object
             not_found = True
             for x in range(self.starting_members):
-                if Cat.otherclan_cats[i] == x:
-                    self.add_cat(Cat.otherclan_cats[i])
+                if Cat.otherclan1_cats[i] == x:
+                    self.add_cat(Cat.otherclan1_cats[i])
                     not_found = False
-            if Cat.otherclan_cats[i] != self.leader and Cat.otherclan_cats[i] != \
-                    self.medicine_cat and Cat.otherclan_cats[i] != \
-                    self.deputy and Cat.otherclan_cats[i] != \
+            if Cat.otherclan1_cats[i] != self.leader and Cat.otherclan1_cats[i] != \
+                    self.medicine_cat and Cat.otherclan1_cats[i] != \
+                    self.deputy and Cat.otherclan1_cats[i] != \
                     self.instructor \
                     and not_found:
-                Cat.otherclan_cats[i].example = True
-                self.remove_cat(Cat.otherclan_cats[i].ID)
+                Cat.otherclan1_cats[i].example = True
+                self.remove_cat(Cat.otherclan1_cats[i].ID)
 
         # give thoughts,actions and relationships to cats
-        for cat_id in Cat.otherclan_cats:
-            Cat.otherclan_cats.get(cat_id).init_all_relationships()
-            Cat.otherclan_cats.get(cat_id).backstory = 'clan_founder'
-            if Cat.otherclan_cats.get(cat_id).status == 'apprentice':
-                Cat.otherclan_cats.get(cat_id).status_change('apprentice')
-            Cat.otherclan_cats.get(cat_id).thoughts()
+        for cat_id in Cat.otherclan1_cats:
+            Cat.otherclan1_cats.get(cat_id).init_all_relationships()
+            Cat.otherclan1_cats.get(cat_id).backstory = 'clan_founder'
+            if Cat.otherclan1_cats.get(cat_id).status == 'apprentice':
+                Cat.otherclan1_cats.get(cat_id).status_change('apprentice')
+            Cat.otherclan1_cats.get(cat_id).thoughts()
 
         game.save_cats()
 
     def add_cat(self, cat):  # cat is a 'Cat' object
         """ Adds cat into the list of clan cats"""
-        if cat.ID in Cat.otherclan_cats and cat.ID not in self.clan_cats:
+        if cat.ID in Cat.otherclan1_cats and cat.ID not in self.clan_cats:
             self.clan_cats.append(cat.ID)
 
     def remove_cat(self, ID):  # ID is cat.ID
@@ -1897,11 +1903,11 @@ class OtherClan():  # Actually creates/generates other clans. Only runs upon cre
         it's not meant for a cat that's simply dead
         """
 
-        if Cat.otherclan_cats[ID] in Cat.all_cats_list:
-            Cat.all_cats_list.remove(Cat.otherclan_cats[ID])
+        if Cat.otherclan1_cats[ID] in Cat.all_cats_list:
+            Cat.all_cats_list.remove(Cat.otherclan1_cats[ID])
 
-        if ID in Cat.otherclan_cats:
-            Cat.otherclan_cats.pop(ID)
+        if ID in Cat.otherclan1_cats:
+            Cat.otherclan1_cats.pop(ID)
 
         if ID in self.clan_cats:
             self.clan_cats.remove(ID)

@@ -142,7 +142,7 @@ def json_load():
             new_cat.patrol_with_mentor = cat["patrol_with_mentor"] if "patrol_with_mentor" in cat else 0
             new_cat.no_kits = cat["no_kits"]
             new_cat.exiled = cat["exiled"]
-            new_cat.otherclan = cat["otherclan"]
+            new_cat.otherclan1 = cat["otherclan1"]
 
             if "skill_dict" in cat:
                 new_cat.skills = CatSkills(cat["skill_dict"])
@@ -169,7 +169,7 @@ def json_load():
             new_cat.former_apprentices = cat["former_apprentices"]
             new_cat.df = cat["df"] if "df" in cat else False
             new_cat.outside = cat["outside"] if "outside" in cat else False
-            new_cat.otherclan = cat["otherclan"] if "otherclan" in cat else False
+            new_cat.otherclan1 = cat["otherclan1"] if "otherclan1" in cat else False
             new_cat.faded_offspring = cat["faded_offspring"] if "faded_offspring" in cat else []
             new_cat.prevent_fading = cat["prevent_fading"] if "prevent_fading" in cat else False
             new_cat.favourite = cat["favourite"] if "favourite" in cat else False

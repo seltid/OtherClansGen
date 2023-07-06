@@ -218,7 +218,7 @@ def create_new_cat(Cat,
                    kit=False,
                    litter=False,
                    other_clan=None,
-                   otherclan=None,
+                   otherclan1=None,
                    backstory=None,
                    status=None,
                    age=None,
@@ -464,7 +464,7 @@ def create_other_clan_cat(Cat,
                    kit=False,
                    litter=False,
                    other_clan=True,
-                   otherclan=True,
+                   otherclan1=True,
                    backstory=None,
                    status=None,
                    age=None,
@@ -622,8 +622,8 @@ def create_other_clan_cat(Cat,
             new_cat.outside = True
         if not alive:
             new_cat.dead = True
-        if otherclan:
-            new_cat.otherclan = True
+        if otherclan1:
+            new_cat.otherclan1 = True
 
         # newbie thought
         new_cat.thought = thought
