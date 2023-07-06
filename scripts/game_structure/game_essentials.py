@@ -401,6 +401,40 @@ class Game():
 
         self.safe_save(f"{get_save_dir()}/{clanname}/clan_cats.json", clan_cats)
 
+        # Save OC cats into oc_cats.json
+
+        OCdirectory = get_save_dir() + '/' + clanname + "/oc_cats"
+        if not os.path.exists(OCdirectory):
+            os.makedirs(OCdirectory)
+
+        # Delete all existing relationship files
+        if not os.path.exists(OCdirectory + '/relationships'):
+            os.makedirs(OCdirectory + '/relationships')
+        for f in os.listdir(OCdirectory + '/relationships'):
+            os.remove(os.path.join(OCdirectory + '/relationships', f))
+
+        self.save_faded_cats(clanname)  # Fades cat and saves them, if needed
+
+        oc_cats = []
+        for inter_cat in self.cat_class.all_cats.values():
+            cat_data = inter_cat.get_save_dict()
+            oc_cats.append(cat_data)
+
+            # Don't save conditions for classic condition. This 
+            # should allow closing and reloading to clear conditions on
+            # classic, just in case a condition is accidently applied. 
+            if game.game_mode != "classic":
+                inter_cat.save_condition()
+
+            if inter_cat.history:
+                inter_cat.save_history(OCdirectory + '/history')
+                # after saving, dump the history info
+                inter_cat.history = None
+            if not inter_cat.dead:
+                inter_cat.save_relationship_of_cat(OCdirectory + '/relationships')
+
+        self.safe_save(f"{get_save_dir()}/{clanname}/oc_cats.json", oc_cats)
+
     def save_faded_cats(self, clanname):
         """Deals with fades cats, if needed, adding them as faded """
         if game.cat_to_fade:
@@ -459,7 +493,7 @@ class Game():
                 
                     write_file.flush()
                     os.fsync(write_file.fileno())
-        
+
     def save_events(self):
         """
         Save current events list to events.json

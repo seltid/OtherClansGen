@@ -18,8 +18,39 @@ from .cat_screens import ProfileScreen
 from ..conditions import get_amount_cat_for_one_medic, medical_cats_condition_fulfilled
 from scripts.game_structure.windows import SaveError
 
-from scripts.otherclansinfo import otherClansList, buttons_needed
-from scripts.clan import Clan
+from scripts.clan import Clan, OtherClan
+
+# Code to determine other Clans' names to display
+# Determine other clans' names
+with open('saves/currentclan.txt', 'r') as f:
+    currentclan = f.read()
+currentclan = 'saves/' + str(currentclan) + 'clan.json'
+
+with open(currentclan, 'r') as f:
+    clanContent = f.readlines()
+    for line in clanContent:
+        if line.startswith('    "other_clans_names":'):
+            clanContentLine = []
+            clanContentLine.append(line)
+otherClanNames = str(clanContentLine).replace('"other_clans_names": "', '').replace('"', '').replace(' ', '') \
+    .replace("[", "").replace("'", "")
+otherClansList = otherClanNames.split(",")
+otherClansList = otherClansList[:-1]
+
+# Determine how many clans there are, and how many buttons to make
+if len(otherClansList) == 3:
+    buttons_needed = 3
+elif len(otherClansList) == 4:
+    buttons_needed = 4
+else:
+    buttons_needed = 5
+otherClansList.append('blank')
+otherClansList.append('blank')
+otherClansList.append('blank')
+otherClansList.append('blank')
+
+
+
 
 class ClanScreen(Screens):
     max_sprites_displayed = 400  # we don't want 100,000 sprites rendering at once. 400 is enough.
@@ -2448,10 +2479,6 @@ class OtherClan1Screen(Screens):
 
     def screen_switches(self):
 
-        self.testbox = pygame_gui.elements.UITextBox(
-            str(Clan.all_clans),
-            scale(pygame.Rect((500, 500), (750, 780))),
-            object_id=get_text_box_theme("#text_box_22_horizcenter"))
 
         # Determine the living, non-exiled cats.
         self.get_living_cats()
@@ -2476,36 +2503,6 @@ class OtherClan1Screen(Screens):
         self.filter_not_fav = UIImageButton(scale(pygame.Rect((366, 275), (56, 56))), "",
                                             object_id="#not_fav_cat", manager=MANAGER,
                                             tool_tip_text='show favourite cat indicators')
-
-        # SEL sel START
-
-        # Determine other clans' names
-        with open('saves/currentclan.txt', 'r') as f:
-            currentclan = f.read()
-        currentclan = 'saves/' + str(currentclan) + 'clan.json'
-
-        with open(currentclan, 'r') as f:
-            clanContent = f.readlines()
-            for line in clanContent:
-                if line.startswith('    "other_clans_names":'):
-                    clanContentLine = []
-                    clanContentLine.append(line)
-        otherClanNames = str(clanContentLine).replace('"other_clans_names": "', '').replace('"', '').replace(' ', '') \
-            .replace("[", "").replace("'", "")
-        otherClansList = otherClanNames.split(",")
-        otherClansList = otherClansList[:-1]
-
-        # Determine how many clans there are, and how many buttons to make
-        if len(otherClansList) == 3:
-            buttons_needed = 3
-        elif len(otherClansList) == 4:
-            buttons_needed = 4
-        else:
-            buttons_needed = 5
-        otherClansList.append('blank')
-        otherClansList.append('blank')
-        otherClansList.append('blank')
-        otherClansList.append('blank')
 
         self.other_clan_1_button = UIImageButton(scale(pygame.Rect((230, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
@@ -2533,6 +2530,9 @@ class OtherClan1Screen(Screens):
                                                  , manager=MANAGER,
                                                  tool_tip_text='show known ' + str(otherClansList[4]) + 'Clan cats')
 
+        self.testbox = pygame_gui.elements.UITextBox(
+            ('Showing known members of ' + str(otherClansList[0]) + 'Clan'),
+            scale(pygame.Rect((375, 190), (850, 200))), object_id=get_text_box_theme("#text_box_22_horizcenter"))
 
         # Hide unnecessary buttons
         if buttons_needed == 3:
@@ -2634,8 +2634,8 @@ class OtherClan1Screen(Screens):
         self.other_clan_3_button.kill()
         self.other_clan_4_button.kill()
         self.other_clan_5_button.kill()
-
         self.testbox.kill()
+
 
         # Remove currently displayed cats and cat names.
         for cat in self.display_cats:

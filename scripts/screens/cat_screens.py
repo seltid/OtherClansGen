@@ -149,6 +149,7 @@ class ProfileScreen(Screens):
         self.prevent_fading_text = None
         self.checkboxes = {}
         self.profile_elements = {}
+        self.debugbox = None
 
     def handle_event(self, event):
 
@@ -406,6 +407,7 @@ class ProfileScreen(Screens):
         if game.last_screen_forProfile == 'med den screen':
             self.toggle_conditions_tab()
 
+
     def clear_profile(self):
         """Clears all profile objects. """
         for ele in self.profile_elements:
@@ -498,6 +500,17 @@ class ProfileScreen(Screens):
                                                                      object_id=get_text_box_theme(
                                                                          "#text_box_22_horizleft"),
                                                                      line_spacing=0.95, manager=MANAGER)
+
+        self.profile_elements["debug_box"] = pygame_gui.elements.UITextBox(
+            ('game.clan.clan_cats\n' +
+            str(game.clan.clan_cats) + '\n' +
+             'game.Cat.all_cats_list\n' +
+             str(Cat.all_cats_list) + '\n' +
+             'game.Cat.all_cats\n' +
+             str(Cat.all_cats) + '\n'
+
+             ),
+            scale(pygame.Rect((150, 200), (350, 300))), object_id=get_text_box_theme("#text_box_22_horizcenter"))
 
         # Set the cat backgrounds.
         if game.settings['backgrounds']:
@@ -2861,8 +2874,8 @@ class SpriteInspectScreen(Screens):
                                                                  object_id=get_text_box_theme(
                                                                               "#text_box_34_horizcenter"), 
                                                                  starting_height=2)
-        
-        
+
+
         if game.settings['backgrounds']:
             self.platform_shown = True
         else:
@@ -3077,7 +3090,8 @@ class SpriteInspectScreen(Screens):
             self.cat_elements["platform"].disable()
         else:
             self.cat_elements["platform"].hide()
-    
+
+
     def exit_screen(self):
         self.back_button.kill()
         self.back_button = None

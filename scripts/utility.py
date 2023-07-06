@@ -30,6 +30,7 @@ from scripts.cat.sprites import sprites, Sprites, spriteSize
 from scripts.game_structure.game_essentials import game, screen_x, screen_y
 
 
+
 # ---------------------------------------------------------------------------- #
 #                              Counting Cats                                   #
 # ---------------------------------------------------------------------------- #
@@ -217,6 +218,7 @@ def create_new_cat(Cat,
                    kit=False,
                    litter=False,
                    other_clan=None,
+                   otherclan=None,
                    backstory=None,
                    status=None,
                    age=None,
@@ -455,28 +457,191 @@ def create_outside_cat(Cat, status, backstory, alive=True, thought=None):
 
     return name
 
-def create_other_clan_cat(Cat, status, backstory, alive=True, thought=None):
-    status = 'Clancat'
+def create_other_clan_cat(Cat,
+                   new_name=False,
+                   loner=False,
+                   kittypet=False,
+                   kit=False,
+                   litter=False,
+                   other_clan=True,
+                   otherclan=True,
+                   backstory=None,
+                   status=None,
+                   age=None,
+                   gender=None,
+                   thought='Is looking around the camp with wonder',
+                   alive=True,
+                   outside=False
+	):
 
-    name = choice(names.names_dict["normal_prefixes"])
-    suffix = choice(names.names_dict["normal_suffixes"])
+    accessory = None
+    if isinstance(backstory, list):
+        backstory = choice(backstory)
 
-    new_cat = Cat(prefix=name,
-                  suffix=suffix,
-                  status=status,
-                  gender=choice(['female', 'male']),
-                  backstory=backstory)
+    if backstory in (
+            BACKSTORIES["backstory_categories"]["former_clancat_backstories"] or BACKSTORIES["backstory_categories"]["otherclan_categories"]):
+        other_clan = True
 
-    new_cat.otherclan = True
+    created_cats = []
 
-    thought = "Wonders about those c_n cats they just met"
-    new_cat.thought = thought
+    if not litter:
+        number_of_cats = 1
+    else:
+        number_of_cats = choices([2, 3, 4, 5], [5, 4, 1, 1], k=1)
+        number_of_cats = number_of_cats[0]
+    # setting age
+    if not age and age != 0:
+        if litter or kit:
+            age = randint(0, 5)
+        elif status == 'apprentice':
+            age = randint(6, 11)
+        elif status == 'warrior':
+            age = randint(23, 120)
+        elif status == 'medicine cat':
+            age = randint(23, 140)
+        else:
+            age = randint(6, 120)
+    else:
+        age = age
+    # setting status
+    if not status:
+        if age == 0:
+            status = "newborn"
+        elif age < 6:
+            status = "kitten"
+        elif 6 <= age <= 11:
+            status = "apprentice"
+        elif age >= 12:
+            status = "warrior"
 
-    game.clan.add_cat(new_cat)
-    game.clan.add_to_oc(new_cat)
-    name = str(name + suffix)
+    # cat creation and naming time
+    for index in range(number_of_cats):
+        # setting gender
+        if not gender:
+            _gender = choice(['female', 'male'])
+        else:
+            _gender = gender
 
-    return name
+        # other Clan cats, apps, and kittens (kittens and apps get indoctrinated lmao no old names for them)
+        if other_clan or kit or litter or age < 12:
+            new_cat = Cat(moons=age,
+                          status=status,
+                          gender=_gender,
+                          backstory=backstory)
+        else:
+            # grab starting names and accs for loners/kittypets
+            if kittypet:
+                name = choice(names.names_dict["loner_names"])
+                if choice([1, 2]) == 1:
+                    accessory = choice(Pelt.collars)
+            elif loner and choice([1, 2]) == 1:  # try to give name from full loner name list
+                name = choice(names.names_dict["loner_names"])
+            else:
+                name = choice(
+                    names.names_dict["normal_prefixes"])  # otherwise give name from prefix list (more nature-y names)
+
+            # now we make the cats
+            if new_name:  # these cats get new names
+                if choice([1, 2]) == 1:  # adding suffix to OG name
+                    spaces = name.count(" ")
+                    if spaces > 0:
+                        # make a list of the words within the name, then add the OG name back in the list
+                        words = name.split(" ")
+                        words.append(name)
+                        new_prefix = choice(words)  # pick new prefix from that list
+                        name = new_prefix
+                    new_cat = Cat(moons=age,
+                                  prefix=name,
+                                  status=status,
+                                  gender=_gender,
+                                  backstory=backstory)
+                else:  # completely new name
+                    new_cat = Cat(moons=age,
+                                  status=status,
+                                  gender=_gender,
+                                  backstory=backstory)
+            # these cats keep their old names
+            else:
+                new_cat = Cat(moons=age,
+                              prefix=name,
+                              suffix="",
+                              status=status,
+                              gender=_gender,
+                              backstory=backstory)
+
+        # give em a collar if they got one
+        if accessory:
+            new_cat.pelt.accessory = accessory
+
+        # give apprentice aged cat a mentor
+        if new_cat.age == 'adolescent':
+            new_cat.update_mentor()
+
+        # Remove disabling scars, if they generated.
+        not_allowed = ['NOPAW', 'NOTAIL', 'HALFTAIL', 'NOEAR', 'BOTHBLIND', 'RIGHTBLIND',
+                       'LEFTBLIND', 'BRIGHTHEART', 'NOLEFTEAR', 'NORIGHTEAR', 'MANLEG']
+        for scar in new_cat.pelt.scars:
+            if scar in not_allowed:
+                new_cat.pelt.scars.remove(scar)
+
+        # chance to give the new cat a permanent condition, higher chance for found kits and litters
+        if game.clan.game_mode != 'classic':
+            if kit or litter:
+                chance = int(game.config["cat_generation"]["base_permanent_condition"] / 11.25)
+            else:
+                chance = game.config["cat_generation"]["base_permanent_condition"] + 10
+            if not int(random() * chance):
+                possible_conditions = []
+                for condition in PERMANENT:
+                    if (kit or litter) and PERMANENT[condition]['congenital'] not in ['always', 'sometimes']:
+                        continue
+                    # next part ensures that a kit won't get a condition that takes too long to reveal
+                    age = new_cat.moons
+                    leeway = 5 - (PERMANENT[condition]['moons_until'] + 1)
+                    if age > leeway:
+                        continue
+                    possible_conditions.append(condition)
+
+                if possible_conditions:
+                    chosen_condition = choice(possible_conditions)
+                    born_with = False
+                    if PERMANENT[chosen_condition]['congenital'] in ['always', 'sometimes']:
+                        born_with = True
+
+                    new_cat.get_permanent_condition(chosen_condition, born_with)
+                    if new_cat.permanent_condition[chosen_condition]["moons_until"] == 0:
+                        new_cat.permanent_condition[chosen_condition]["moons_until"] = -2
+
+                    # assign scars
+                    if chosen_condition in ['lost a leg', 'born without a leg']:
+                        new_cat.pelt.scars.append('NOPAW')
+                    elif chosen_condition in ['lost their tail', 'born without a tail']:
+                        new_cat.pelt.scars.append("NOTAIL")
+
+        if outside:
+            new_cat.outside = True
+        if not alive:
+            new_cat.dead = True
+        if otherclan:
+            new_cat.otherclan = True
+
+        # newbie thought
+        new_cat.thought = thought
+
+        # and they exist now
+        created_cats.append(new_cat)
+        game.clan.add_to_oc(new_cat)
+        game.clan.add_cat(new_cat)
+        history = History()
+        history.add_beginning(new_cat)
+
+        # create relationships
+        new_cat.create_relationships_new_cat()
+        # Note - we always update inheritance after the cats are generated, to
+        # allow us to add parents.
+        #new_cat.create_inheritance_new_cat()
+
+    return created_cats
 
 # ---------------------------------------------------------------------------- #
 #                             Cat Relationships                                #

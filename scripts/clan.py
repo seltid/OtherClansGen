@@ -9,7 +9,7 @@ TODO: Docs
 # pylint: enable=line-too-long
 
 import random
-from random import choice, randint
+from random import choice, randint, sample
 import os
 
 import pygame
@@ -23,7 +23,7 @@ import statistics
 
 from scripts.game_structure.game_essentials import game
 from scripts.housekeeping.version import get_version_info, SAVE_VERSION_NUMBER
-from scripts.utility import update_sprite, get_current_season, quit  # pylint: disable=redefined-builtin
+from scripts.utility import update_sprite, get_current_season, quit, create_other_clan_cat, create_new_cat  # pylint: disable=redefined-builtin
 from scripts.cat.cats import Cat, cat_class
 from scripts.cat.names import names
 from scripts.clan_resources.freshkill import Freshkill_Pile, Nutrition
@@ -1384,7 +1384,6 @@ class OtherClan():  # Actually creates/generates other clans. Only runs upon cre
     BIOME_TYPES = ["Forest", "Plains", "Mountainous", "Beach"]
 
     CAT_TYPES = [
-        "newborn",
         "kitten",
         "apprentice",
         "warrior",
@@ -1393,7 +1392,6 @@ class OtherClan():  # Actually creates/generates other clans. Only runs upon cre
         "leader",
         "elder",
         "mediator",
-        "general",
     ]
 
     leader_lives = 0
@@ -1772,7 +1770,7 @@ class OtherClan():  # Actually creates/generates other clans. Only runs upon cre
                  deputy=None,
                  medicine_cat=None,
                  biome='Forest',
-                 starting_members='',
+                 starting_members=10,
                  OCID=None):
 
         self.history = History()
@@ -1789,7 +1787,23 @@ class OtherClan():  # Actually creates/generates other clans. Only runs upon cre
         if self.temperament not in temperament_list:
             self.temperament = choice(temperament_list)
 
-        # Create Otherclan cats here?
+        for x in range(starting_members):
+            create_other_clan_cat(Cat,
+                               new_name=False,
+                               loner=False,
+                               kittypet=False,
+                               kit=False,
+                               litter=False,
+                               other_clan=True,
+                           otherclan=True,
+                               backstory=None,
+                               status=None,
+                               age=choice(range(1, 160)),
+                               gender=choice(("male", "female")),
+                               thought="Is feeling uncertain about that new clan that just formed",
+                               alive=True,
+                               outside=False
+                               )
 
         self.leader = leader
         if self.leader:
@@ -1811,7 +1825,7 @@ class OtherClan():  # Actually creates/generates other clans. Only runs upon cre
             self.clan_cats.append(self.medicine_cat.ID)
             self.med_cat_list.append(self.medicine_cat.ID)
             if medicine_cat.status != 'OC medicine cat':
-                Cat.all_cats[medicine_cat.ID].status_change('OC medicine cat')
+                Cat.otherclan_cats[medicine_cat.ID].status_change('OC medicine cat')
         self.med_cat_number = len(
             self.med_cat_list
         )  # Must do this after the medicine cat is added to the list.
@@ -1846,35 +1860,35 @@ class OtherClan():  # Actually creates/generates other clans. Only runs upon cre
         """
         self.all_clans = []
 
-        key_copy = tuple(Cat.all_cats.keys())
+        key_copy = tuple(Cat.otherclan_cats.keys())
         for i in key_copy:  # Going through all currently existing cats
             # cat_class is a Cat-object
             not_found = True
             for x in range(self.starting_members):
-                if Cat.all_cats[i] == x:
-                    self.add_cat(Cat.all_cats[i])
+                if Cat.otherclan_cats[i] == x:
+                    self.add_cat(Cat.otherclan_cats[i])
                     not_found = False
-            if Cat.all_cats[i] != self.leader and Cat.all_cats[i] != \
-                    self.medicine_cat and Cat.all_cats[i] != \
-                    self.deputy and Cat.all_cats[i] != \
+            if Cat.otherclan_cats[i] != self.leader and Cat.otherclan_cats[i] != \
+                    self.medicine_cat and Cat.otherclan_cats[i] != \
+                    self.deputy and Cat.otherclan_cats[i] != \
                     self.instructor \
                     and not_found:
-                Cat.all_cats[i].example = True
-                self.remove_cat(Cat.all_cats[i].ID)
+                Cat.otherclan_cats[i].example = True
+                self.remove_cat(Cat.otherclan_cats[i].ID)
 
         # give thoughts,actions and relationships to cats
-        for cat_id in Cat.all_cats:
-            Cat.all_cats.get(cat_id).init_all_relationships()
-            Cat.all_cats.get(cat_id).backstory = 'clan_founder'
-            if Cat.all_cats.get(cat_id).status == 'apprentice':
-                Cat.all_cats.get(cat_id).status_change('apprentice')
-            Cat.all_cats.get(cat_id).thoughts()
+        for cat_id in Cat.otherclan_cats:
+            Cat.otherclan_cats.get(cat_id).init_all_relationships()
+            Cat.otherclan_cats.get(cat_id).backstory = 'clan_founder'
+            if Cat.otherclan_cats.get(cat_id).status == 'apprentice':
+                Cat.otherclan_cats.get(cat_id).status_change('apprentice')
+            Cat.otherclan_cats.get(cat_id).thoughts()
 
         game.save_cats()
 
     def add_cat(self, cat):  # cat is a 'Cat' object
         """ Adds cat into the list of clan cats"""
-        if cat.ID in Cat.all_cats and cat.ID not in self.clan_cats:
+        if cat.ID in Cat.otherclan_cats and cat.ID not in self.clan_cats:
             self.clan_cats.append(cat.ID)
 
     def remove_cat(self, ID):  # ID is cat.ID
@@ -1883,11 +1897,11 @@ class OtherClan():  # Actually creates/generates other clans. Only runs upon cre
         it's not meant for a cat that's simply dead
         """
 
-        if Cat.all_cats[ID] in Cat.all_cats_list:
-            Cat.all_cats_list.remove(Cat.all_cats[ID])
+        if Cat.otherclan_cats[ID] in Cat.all_cats_list:
+            Cat.all_cats_list.remove(Cat.otherclan_cats[ID])
 
-        if ID in Cat.all_cats:
-            Cat.all_cats.pop(ID)
+        if ID in Cat.otherclan_cats:
+            Cat.otherclan_cats.pop(ID)
 
         if ID in self.clan_cats:
             self.clan_cats.remove(ID)
