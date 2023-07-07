@@ -623,7 +623,7 @@ class Events:
                 # The outside-value must be set to True before the cat can go to cotc
                 Cat.outside_cats.update({cat.ID: cat})
                 
-            if cat.outside and cat.status not in [
+            if cat.outside and not cat.otherclan1 and cat.status not in [
                 'kittypet', 'loner', 'rogue', 'former Clancat'
             ] and not cat.exiled and not cat.dead:
                 eligable_cats.append(cat)
