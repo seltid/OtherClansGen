@@ -3,6 +3,7 @@ from random import choice, randint, sample, random, choices, getrandbits, randra
 from typing import Dict, List, Any
 import os.path
 import itertools
+from re import sub
 
 from .history import History
 from .skills import CatSkills
@@ -456,17 +457,15 @@ class Cat():
             # Let's send them to a residence based on their personality (eventually change to actions)
             # Assess/decode personality
             personalitystring = str(self.personality).split(":")
-            personalitystring = str(personalitystring[-1]).split(",")
-            for facet in personalitystring:
-                for char in ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
-                             "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " ", ","]:
-                    facet.replace(char, "")
-            lawfulness = personalitystring[0]
-            sociability = personalitystring[1]
-            aggression = personalitystring[2]
-            stability = personalitystring[3]
-            low = [0, 1, 2]
-            if lawfulness in [low] and aggression in [14, 15, 16] and sociability in [low] and stability in [low]:
+            personalitystring = str(personalitystring[1]).split(",")
+            lawfulness = sub("[^0-9]", "", personalitystring[0])
+            aggression = sub("[^0-9]", "", personalitystring[1])
+            sociability = sub("[^0-9]", "", personalitystring[2])
+            stability = sub("[^0-9]", "", personalitystring[3])
+            low = (0, 1, 2)
+            high = (14, 15, 16)
+            if int(lawfulness) in low and int(aggression) in high and int(sociability) in low and int(stability) in low:
+                self.df = True
                 self.thought = "Knows they've earned a place among the darkness"
                 game.clan.add_to_darkforest(self)
             else:
