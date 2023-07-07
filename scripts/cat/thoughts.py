@@ -265,6 +265,7 @@ class Thoughts():
         base_path = f"resources/dicts/thoughts/"
         life_dir = None
         status = main_cat.status
+        otherclan1 = main_cat.otherclan1
         loaded_thoughts = []
 
         if status == "medicine cat apprentice":
@@ -281,13 +282,15 @@ class Thoughts():
         else:
             life_dir = "dead"
 
-        if not main_cat.dead and main_cat.outside:
+        if not main_cat.dead and main_cat.outside and not main_cat.otherclan1:
             spec_dir = "/alive_outside"
+        elif not main_cat.dead and main_cat.outside and main_cat.otherclan1:
+            spec_dir = "/alive_oc"
         elif main_cat.dead and not main_cat.outside and not main_cat.df:
             spec_dir = "/starclan"
         elif main_cat.dead and not main_cat.outside and main_cat.df:
             spec_dir = "/darkforest"
-        elif main_cat.dead and main_cat.outside:
+        elif main_cat.dead and main_cat.outside and not main_cat.otherclan1:
             spec_dir = "/unknownresidence"
         else:
             spec_dir = ""

@@ -1201,6 +1201,7 @@ class Patrol():
         thought = 'Is looking around the camp with wonder'
         alive = True
         outside = False
+        otherclan1 = False
 
         # figure out what type of cat they are and set default backstories.json - this can be overwritten if need be
         loner = False

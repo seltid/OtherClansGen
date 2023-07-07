@@ -10,6 +10,9 @@ from random import choice, choices, randint, random, sample
 import re
 import pygame
 
+import scripts.otherclansinfo
+all_sg_clans = scripts.otherclansinfo.all_sg_clans
+
 from scripts.cat.history import History
 from scripts.cat.names import names
 from scripts.cat.pelts import Pelt
@@ -28,8 +31,6 @@ from sys import exit as sys_exit
 from scripts.cat.sprites import sprites, Sprites, spriteSize
 
 from scripts.game_structure.game_essentials import game, screen_x, screen_y
-
-
 
 # ---------------------------------------------------------------------------- #
 #                              Counting Cats                                   #
@@ -1137,17 +1138,33 @@ def event_text_adjust(Cat,
         cat_dict["n_c_pre"] = (str(new_cat.name.prefix), None)
         cat_dict["n_c"] = (str(new_cat.name), choice(new_cat.pronouns))
 
-    if other_clan_name:
-        text = text.replace("o_c", other_clan_name)
-    if clan:
-        clan_name = str(clan.name)
+    if clan: # If a relevant clan is defined in the thought/event,
+        if other_cat and other_cat.otherclan1 is True:
+            clan_name = str(all_sg_clans[0]).removesuffix("Clan")
+        elif cat and cat.otherclan1 is True:
+            clan_name = str(all_sg_clans[0]).removesuffix("Clan")
+        else:
+            clan_name = str(clan.name)
     else:
-        if game.clan is None:
+        if cat and cat.otherclan1 is True:
+            clan_name = str(all_sg_clans[0]).removesuffix("Clan")
+        elif game.clan is None:
             clan_name = game.switches["clan_list"][0]
         else:
             clan_name = str(game.clan.name)
 
     text = text.replace("c_n", clan_name + "Clan")
+
+    if other_clan_name or "o_c" in text:
+        if other_clan_name:
+            text = text.replace("o_c", other_clan_name + "Clan")
+        elif str(clan_name) != str(all_sg_clans[0]):
+            text = text.replace("o_c", choice(all_sg_clans[:-1]) + "Clan")
+        elif str(clan_name) == str(all_sg_clans[0]):
+            text = text.replace("o_c", choice(all_sg_clans[1:]) + "Clan")
+        else:
+            pass
+
 
     if murder_reveal:
         victim = Cat.fetch_cat(cat.history.murder["victim"])

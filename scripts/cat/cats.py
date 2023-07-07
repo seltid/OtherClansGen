@@ -1298,6 +1298,15 @@ class Cat():
                 if i > 100:
                     other_cat = None
                     break
+        elif where_kitty == 'otherclan1':
+            while other_cat == self.ID and len(all_cats) > 1 \
+                    or (other_cat not in self.relationships):
+                '''or (self.status in ['kittypet', 'loner'] and not all_cats.get(other_cat).outside):'''
+                other_cat = choice(list(all_cats.keys()))
+                i += 1
+                if i > 100:
+                    other_cat = None
+                    break
 
         other_cat = all_cats.get(other_cat)
 

@@ -414,6 +414,7 @@ class Clan():
     age = 0
     current_season = 'Newleaf'
     all_clans = []
+    player_and_other_clans = []
 
     def __init__(self,
                  name="",
@@ -1343,7 +1344,7 @@ class Clan():
         all_cats = [i for i in Cat.all_cats_list if 
                     i.status not in ["leader", "deputy"] and
                     not i.dead and 
-                    not i.outside]
+                    not i.outside and not i.otherclan1]
         leader = Cat.fetch_cat(self.leader) if isinstance(Cat.fetch_cat(self.leader), Cat) else None 
         deputy = Cat.fetch_cat(self.deputy) if isinstance(Cat.fetch_cat(self.deputy), Cat) else None
         

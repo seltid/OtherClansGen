@@ -26,6 +26,7 @@ from scripts.game_structure.game_essentials import game, screen_x, screen_y, MAN
 from scripts.cat.names import names, Name
 from scripts.clan_resources.freshkill import FRESHKILL_ACTIVE
 
+import scripts.otherclansinfo
 
 # ---------------------------------------------------------------------------- #
 #             change how accessory info displays on cat profiles               #
@@ -501,6 +502,7 @@ class ProfileScreen(Screens):
                                                                          "#text_box_22_horizleft"),
                                                                      line_spacing=0.95, manager=MANAGER)
 
+
         self.profile_elements["debug_box"] = pygame_gui.elements.UITextBox(
             ('Otherclan?: ' + str(self.the_cat.otherclan1) + '\n' ),
             scale(pygame.Rect((150, 200), (350, 300))), object_id=get_text_box_theme("#text_box_22_horizcenter"))
@@ -591,6 +593,8 @@ class ProfileScreen(Screens):
                 object_id="#leader_ceremony_button",
                 tool_tip_text="Leader Ceremony", manager=MANAGER
             )
+            if self.the_cat.dead or self.the_cat.outside:
+                self.profile_elements["leader_ceremony"].disable()
         elif self.the_cat.status in ["mediator", "mediator apprentice"]:
             self.profile_elements["mediation"] = UIImageButton(scale(pygame.Rect(
                 (766, 220), (68, 68))),
