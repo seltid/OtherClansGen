@@ -286,11 +286,11 @@ class Thoughts():
             spec_dir = "/alive_outside"
         elif not main_cat.dead and main_cat.outside and main_cat.otherclan1:
             spec_dir = "/alive_oc"
-        elif main_cat.dead and not main_cat.outside and not main_cat.df:
+        elif main_cat.dead and not main_cat.df:
             spec_dir = "/starclan"
-        elif main_cat.dead and not main_cat.outside and main_cat.df:
+        elif main_cat.dead and main_cat.df:
             spec_dir = "/darkforest"
-        elif main_cat.dead and main_cat.outside and not main_cat.otherclan1:
+        elif main_cat.dead and main_cat.outside:
             spec_dir = "/unknownresidence"
         else:
             spec_dir = ""

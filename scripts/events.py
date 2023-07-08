@@ -303,8 +303,8 @@ class Events:
                 game.cur_events_list.append(
                     Single_Event(
                         f"{cat.name} had chosen to use their skills and experience to help "
-                        f"solve the Clan's disagreements. A meeting is called, and they "
-                        f"become the Clan's newest mediator. ", "ceremony",
+                        f"solve their Clan's disagreements. A meeting is called, and they "
+                        f"become their Clan's newest mediator. ", "ceremony",
                         cat.ID))
                 cat.status_change("mediator")
 

@@ -18,15 +18,14 @@ from .cat_screens import ProfileScreen
 from ..conditions import get_amount_cat_for_one_medic, medical_cats_condition_fulfilled
 from scripts.game_structure.windows import SaveError
 
-from scripts.clan import Clan, OtherClan1
 
 # Code to determine other Clans' names to display
 # Determine other clans' names
 with open('saves/currentclan.txt', 'r') as f:
     currentclan = f.read()
-currentclan = 'saves/' + str(currentclan) + 'clan.json'
+currentclan2 = 'saves/' + str(currentclan) + 'clan.json'
 
-with open(currentclan, 'r') as f:
+with open(currentclan2, 'r') as f:
     clanContent = f.readlines()
     for line in clanContent:
         if line.startswith('    "other_clans_names":'):
@@ -35,12 +34,17 @@ with open(currentclan, 'r') as f:
 otherClanNames = str(clanContentLine).replace('"other_clans_names": "', '').replace('"', '').replace(' ', '') \
     .replace("[", "").replace("'", "")
 otherClansList = otherClanNames.split(",")
-otherClansList = otherClansList[:-1]
+otherClansListOriginal = otherClansList[:-1]
+otherClansList = otherClansListOriginal
 
 # Determine how many clans there are, and how many buttons to make
-if len(otherClansList) == 3:
+if len(otherClansListOriginal) == 1:
+    buttons_needed = 1
+elif len(otherClansListOriginal) == 2:
+    buttons_needed = 2
+elif len(otherClansListOriginal) == 3:
     buttons_needed = 3
-elif len(otherClansList) == 4:
+elif len(otherClansListOriginal) == 4:
     buttons_needed = 4
 else:
     buttons_needed = 5
@@ -1300,11 +1304,22 @@ class ListScreen(Screens):
                                                  tool_tip_text='show known ' + str(otherClansList[4]) + 'Clan cats')
 
         # Hide unnecessary buttons
-        if buttons_needed == 3:
+        if buttons_needed == 1:
+            self.other_clan_2_button.hide()
+            self.other_clan_3_button.hide()
+            self.other_clan_4_button.hide()
+            self.other_clan_5_button.hide()
+        elif buttons_needed == 2:
+            self.other_clan_3_button.hide()
+            self.other_clan_4_button.hide()
+            self.other_clan_5_button.hide()
+        elif buttons_needed == 3:
             self.other_clan_4_button.hide()
             self.other_clan_5_button.hide()
         elif buttons_needed == 4:
             self.other_clan_5_button.hide()
+        else:
+            pass
 
         # SEL sel END
 
@@ -2535,11 +2550,22 @@ class OtherClan1Screen(Screens):
             scale(pygame.Rect((375, 190), (850, 200))), object_id=get_text_box_theme("#text_box_22_horizcenter"))
 
         # Hide unnecessary buttons
-        if buttons_needed == 3:
+        if buttons_needed == 1:
+            self.other_clan_2_button.hide()
+            self.other_clan_3_button.hide()
+            self.other_clan_4_button.hide()
+            self.other_clan_5_button.hide()
+        elif buttons_needed == 2:
+            self.other_clan_3_button.hide()
+            self.other_clan_4_button.hide()
+            self.other_clan_5_button.hide()
+        elif buttons_needed == 3:
             self.other_clan_4_button.hide()
             self.other_clan_5_button.hide()
         elif buttons_needed == 4:
             self.other_clan_5_button.hide()
+        else:
+            pass
 
         # SEL sel END
 

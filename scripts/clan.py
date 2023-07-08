@@ -1408,20 +1408,7 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     starclan_cats = []
     darkforest_cats = []
     unknown_cats = []
-    seasons = [
-        'Newleaf',
-        'Newleaf',
-        'Newleaf',
-        'Greenleaf',
-        'Greenleaf',
-        'Greenleaf',
-        'Leaf-fall',
-        'Leaf-fall',
-        'Leaf-fall',
-        'Leaf-bare',
-        'Leaf-bare',
-        'Leaf-bare',
-    ]
+    seasons = [Clan.seasons]
 
     age = Clan.age
     current_season = Clan.current_season

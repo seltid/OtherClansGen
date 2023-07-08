@@ -472,7 +472,7 @@ def create_other_clan_cat(Cat,
                    gender=None,
                    thought='Is looking around the camp with wonder',
                    alive=True,
-                   outside=False
+                   outside=True
 	):
 
     accessory = None
@@ -1157,7 +1157,7 @@ def event_text_adjust(Cat,
 
     if other_clan_name or "o_c" in text:
         if other_clan_name:
-            text = text.replace("o_c", other_clan_name + "Clan")
+            text = text.replace("o_c", other_clan_name)
         elif str(clan_name) != str(all_sg_clans[0]):
             text = text.replace("o_c", choice(all_sg_clans[:-1]) + "Clan")
         elif str(clan_name) == str(all_sg_clans[0]):

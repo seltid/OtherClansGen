@@ -441,7 +441,8 @@ class MakeClanScreen(Screens):
             self.change_screen('camp screen')
 
     def create_ocs(self, event):
-        for cat in range(OtherClan1.starting_members):
+        # Create OC cats
+        for member in range(OtherClan1.starting_members):
             create_other_clan_cat(Cat,
                                    new_name=False,
                                    loner=False,
@@ -457,6 +458,9 @@ class MakeClanScreen(Screens):
                                    thought="Is feeling uncertain about that new clan that just formed",
                                    alive=True,
                                    outside=True)
+
+
+
 
     def exit_screen(self):
         self.main_menu.kill()
