@@ -138,6 +138,8 @@ class Events:
         for cat in Cat.all_cats.copy().values():
             if not cat.outside or cat.dead:
                 self.one_moon_cat(cat)
+            elif cat.otherclan1:
+                self.one_moon_oc1_cat(cat)
             else:
                 self.one_moon_outside_cat(cat)
 
@@ -225,6 +227,25 @@ class Events:
                                  [i.ID for i in shaken_cats]))
             Cat.dead_cats.clear()
 
+        if Cat.oc_dead_cats:
+            oc_ghost_names = []
+            oc_shaken_cats = []
+            extra_event = None
+            for ghost in Cat.oc_dead_cats:
+                oc_ghost_names.append(str(ghost.name))
+            insert = adjust_list_text(oc_ghost_names)
+
+            if len(oc_ghost_names) > 1:
+                event = f"At the Gathering, {game.clan.name}Clan was formally informed of the deaths of {insert}."
+            else:
+                event = None  # This will cause Incorrectly formatted event: None <class 'scripts.event_class.Single_Event'> but it can be ignored
+
+            game.cur_events_list.append(
+                Single_Event(event, ["birth_death"],
+                             [i.ID for i in Cat.oc_dead_cats]))
+
+            Cat.oc_dead_cats.clear()
+
         self.herb_destruction()
         self.herb_gather()
 
@@ -294,7 +315,7 @@ class Events:
                 game.cur_events_list.append(
                     Single_Event(text, "other_clans", cat.ID))
 
-        if game.settings['become_mediator']:
+        if game.settings['become_mediator']:  # SEL even though I took off and not cat.outside, it still won't update 
             # Note: These chances are large since it triggers every moon.
             # Checking every moon has the effect giving older cats more chances to become a mediator
             _ = game.config["roles"]["become_mediator_chances"]
@@ -747,6 +768,55 @@ class Events:
         
         if not cat.dead:
             self.outsider_events.killing_outsiders(cat)
+
+    def one_moon_oc1_cat(self, cat):
+        # Get information before passing time
+        cat.previous_moons = cat.moons
+        cat.life = cat.dead
+        cat.old_status = cat.status
+
+        promotions = {
+            "newborn" : "kitten",
+            "apprentice" : "warrior",
+            "medicine cat apprentice" : "medicine cat",
+            "mediator apprentice" : "mediator",
+            "warrior" : "elder"
+        }
+
+        interval_wiggle = [9,10,11,12,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131]
+        cat.interval = random.choice(interval_wiggle)
+        ages = (1, 5, cat.interval, 13, 131)
+
+        # Update statuses
+        if cat.status == "kitten" and cat.moons >= 5:
+            cat.status = random.choice(["mediator apprentice", "medicine cat apprentice", "apprentice"])
+        elif cat.status in promotions.keys() and cat.moons in ages:
+            cat.status = promotions[cat.status]
+        elif cat.moons > 131 and cat.status != "elder":
+            cat.status = "elder"
+
+        # Pass time (generic)
+        cat.one_moon()
+        cat.manage_outside_trait()
+        cat.skills.progress_skill(cat)  # Might want to change this so they get skills differently
+        # self.pregnancy_events.handle_having_kits(cat, clan=game.clan)   [Do I want to have them get pregnant? Not rn]
+
+
+        # Roll to see if they died
+        if not cat.dead:
+            self.outsider_events.killing_outsiders(cat)
+
+        # Figure out all that happened
+        cat.life_change = cat.life != cat.dead
+
+        # Print what it did for each cat
+        update_text = f"MOON {game.clan.age} \n " \
+                      f"{cat.name}: \n " \
+                      f"DIED?: {cat.life_change} \n " \
+                      f"Age: {cat.previous_moons} moons -> {cat.moons} moons. \n " \
+                      f"Old Status: {cat.old_status} // New Status: {cat.status} \n"
+        print(update_text)
+
     
     def one_moon_cat(self, cat):
         """

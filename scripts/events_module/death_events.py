@@ -51,6 +51,12 @@ class Death_Events():
             death_cause = (random.choice(final_events))
         except IndexError:
             print('WARNING: no death events found for', cat.name)
+            print(str(cat))
+            print(str(other_cat))
+            print(str(war))
+            print(str(enemy_clan))
+            print(str(alive_kits))
+            print(str(murder))
             return
         death_text = event_text_adjust(Cat, death_cause.event_text, cat, other_cat, other_clan_name)
         additional_event_text = ""

@@ -30,6 +30,7 @@ from scripts.cat_relations.inheritance import Inheritance
 
 class Cat():
     dead_cats = []
+    oc_dead_cats = []
     used_screen = screen
     
     ages = [
@@ -452,7 +453,7 @@ class Cat():
                 game.clan.add_to_darkforest(self)
         else:
             # Die (add to dead cats)
-            Cat.dead_cats.append(self)
+            Cat.oc_dead_cats.append(self)
             self.outside = False
             # Let's send them to a residence based on their personality (eventually change to actions)
             # Assess/decode personality
@@ -1239,6 +1240,12 @@ class Cat():
 
         if self.status in ['apprentice', 'mediator apprentice', 'medicine cat apprentice']:
             self.update_mentor()
+
+
+
+
+
+
 
     def thoughts(self):
         """ Generates a thought for the cat, which displays on their profile. """
