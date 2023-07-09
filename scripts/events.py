@@ -37,6 +37,7 @@ from scripts.events_module.relationship.pregnancy_events import Pregnancy_Events
 from scripts.game_structure.windows import SaveError
 from scripts.housekeeping.datadir import get_save_dir
 
+
 class Events:
     """
     TODO: DOCS
@@ -776,21 +777,36 @@ class Events:
         cat.old_status = cat.status
 
         promotions = {
-            "newborn" : "kitten",
             "apprentice" : "warrior",
             "medicine cat apprentice" : "medicine cat",
             "mediator apprentice" : "mediator",
+        }
+
+        age_up = {
+            "newborn" : "kitten",
             "warrior" : "elder"
         }
 
         interval_wiggle = [9,10,11,12,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131]
         cat.interval = random.choice(interval_wiggle)
-        ages = (1, 5, cat.interval, 13, 131)
+        coming_of_age = (1, 5, cat.interval, 13, 131)
 
         # Update statuses
         if cat.status == "kitten" and cat.moons >= 5:
             cat.status = random.choice(["mediator apprentice", "medicine cat apprentice", "apprentice"])
-        elif cat.status in promotions.keys() and cat.moons in ages:
+            cat.name.suffix("paw")
+            cat.name.specsuffix_hidden = False
+        elif cat.status in ["mediator apprentice", "medicine cat apprentice", "apprentice"] and cat.name.suffix != "paw":
+            cat.name.suffix = "paw"
+        elif cat.status in promotions.keys() and cat.moons in coming_of_age:
+            cat.name.specsuffix_hidden = True
+            resource_dir = "resources/dicts/names/"
+            with open(f"{resource_dir}names.json", encoding="ascii") as f:
+                name_json = ujson.loads(f.read())
+            possible_suffixes = name_json["normal_suffixes"]
+            cat.name.suffix = str(random.choice(possible_suffixes))
+            cat.status = promotions[cat.status]
+        elif cat.status in age_up.keys() and cat.moons in coming_of_age:
             cat.status = promotions[cat.status]
         elif cat.moons > 131 and cat.status != "elder":
             cat.status = "elder"
