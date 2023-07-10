@@ -814,7 +814,6 @@ class Clan():
             self.save_freshkill_pile(game.clan)
 
         game.safe_save(f"{get_save_dir()}/{self.name}clan.json", clan_data)
-        game.safe_save(f"{get_save_dir()}/{self.name}/OC1.json", OtherClan1.clan_data)
 
         if os.path.exists(get_save_dir() + f'/{self.name}clan.txt'):
             os.remove(get_save_dir() + f'/{self.name}clan.txt')
@@ -1577,8 +1576,6 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
             self.unknown_cats.remove(ID)
         if ID in self.darkforest_cats:
             self.darkforest_cats.remove(ID)
-
-    clan_data = ''
 
 
 class StarClan():

@@ -135,14 +135,6 @@ class Game():
         'show_history_moons': False,
         'fps': 30
     }
-    oc1_switches = {
-        'clan_name': '',
-        'leader': None,
-        'new leader': False,
-        'deputy': None,
-        'medicine cat': None,
-        'members': [],
-    }
     all_screens = {}
     cur_events = {}
     map_info = {}
