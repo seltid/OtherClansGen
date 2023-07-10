@@ -1490,14 +1490,12 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
         return f"{self.name}Clan"
 
 
-    def create_clan(self):
+    def create_oc1_clan(self):
         """
         This function is only called once a new clan is
         created in the 'clan created' screen, not every time
         the program starts
         """
-        self.all_clans = []
-
         key_copy = tuple(Cat.otherclan1_cats.keys())
         for i in key_copy:  # Going through all currently existing cats
             # cat_class is a Cat-object
@@ -1517,10 +1515,8 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
         # give thoughts,actions and relationships to cats
         for cat_id in Cat.otherclan1_cats:
             Cat.otherclan1_cats.get(cat_id).init_all_relationships()
-            Cat.otherclan1_cats.get(cat_id).backstory = 'clan_founder'
             if Cat.otherclan1_cats.get(cat_id).status == 'apprentice':
                 Cat.otherclan1_cats.get(cat_id).status_change('apprentice')
-            Cat.otherclan1_cats.get(cat_id).thoughts()
 
         game.save_cats()
 
