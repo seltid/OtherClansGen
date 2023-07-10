@@ -1415,7 +1415,7 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     current_season = Clan.current_season
     all_clans = []
 
-    starting_members = len(Cat.all_cats)
+    starting_members = 10
 
     def __init__(self,
                  name='',
@@ -1437,7 +1437,10 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
             'bloodthirsty', 'amiable', 'gracious'
         ]
 
-        self.name = name or choice(names.names_dict["normal_prefixes"])
+        if name is None:
+            self.name = choice(names.names_dict["normal_prefixes"])
+        else:
+            self.name = name
 
         self.relations = relations or randint(8, 12)
         self.temperament = temperament or choice(temperament_list)
@@ -1525,7 +1528,6 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
         created in the 'clan created' screen, not every time
         the program starts
         """
-        self.all_clans = []
         key_copy = tuple(Cat.otherclan1_cats.keys())
         for i in key_copy:  # Going through all currently existing cats
             # cat_class is a Cat-object
@@ -1545,10 +1547,8 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
         # give thoughts,actions and relationships to cats
         for cat_id in Cat.otherclan1_cats:
             Cat.otherclan1_cats.get(cat_id).init_all_relationships()
-            Cat.otherclan1_cats.get(cat_id).backstory = 'clan_founder'
             if Cat.otherclan1_cats.get(cat_id).status == 'apprentice':
                 Cat.otherclan1_cats.get(cat_id).status_change('apprentice')
-            Cat.otherclan1_cats.get(cat_id).thoughts()
 
         game.save_cats()
 
