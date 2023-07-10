@@ -178,10 +178,8 @@ class MiscEvents():
         ''' Handles reveals for murders where the murderer reveals themself '''
         if cat.personality.lawfulness > 8:
             murderer_guilty = random.choice([True, False])
-        else:
-            murderer_guilty = None
         chance_of_reveal = 120
-        if murderer_guilty not in None:
+        if murderer_guilty:
             chance_of_reveal = chance_of_reveal - 100
 
         if random.randint(1, chance_of_reveal) == 1:

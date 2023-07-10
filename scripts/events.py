@@ -140,7 +140,7 @@ class Events:
             if not cat.outside or cat.dead:
                 self.one_moon_cat(cat)
             elif cat.otherclan1:
-                self.one_moon_oc_cat(cat)
+                self.one_moon_oc1_cat(cat)
             else:
                 self.one_moon_outside_cat(cat)
 
@@ -770,33 +770,46 @@ class Events:
         if not cat.dead:
             self.outsider_events.killing_outsiders(cat)
 
-    def one_moon_oc_cat(self, cat):
+    def one_moon_oc1_cat(self, cat):
         # Get information before passing time
         cat.previous_moons = cat.moons
         cat.life = cat.dead
         cat.old_status = cat.status
-        cat.old_exp = cat.experience
 
-        app_promotions = {
-            "apprentice": "warrior",
-            "medicine cat apprentice": "medicine cat",
-            "mediator apprentice": "mediator",
+        promotions = {
+            "apprentice" : "warrior",
+            "medicine cat apprentice" : "medicine cat",
+            "mediator apprentice" : "mediator",
         }
 
-        # Give some EXP, and cap it at 321
-        exp_gainers = str(app_promotions.keys()) + str(app_promotions.values()) + "deputy" + "leader"
-        if cat.status in exp_gainers:  # Makes sure the cat is eligible
-            cat.experience += random.randint(3, 13)
-        if cat.experience >= 1 and cat.experience <= 50:
-            cat.experience_level = "trainee"
-        elif cat.experience >= 51 and cat.experience <= 110:
-            cat.experience_level = "prepared"
-        elif cat.experience >= 110 and cat.experience <= 170:
-            cat.experience_level = "competent"
-        if cat.experience > 321:
-            cat.experience = 321
+        age_up = {
+            "newborn" : "kitten",
+            "warrior" : "elder"
+        }
 
-        self.perform_oc_ceremonies(cat)
+        interval_wiggle = [9,10,11,12,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131]
+        cat.interval = random.choice(interval_wiggle)
+        coming_of_age = (1, 5, cat.interval, 13, 131)
+
+        # Update statuses
+        if cat.status == "kitten" and cat.moons >= 5:
+            cat.status = random.choice(["mediator apprentice", "medicine cat apprentice", "apprentice"])
+            cat.name.suffix("paw")
+            cat.name.specsuffix_hidden = False
+        elif cat.status in ["mediator apprentice", "medicine cat apprentice", "apprentice"] and cat.name.suffix != "paw":
+            cat.name.suffix = "paw"
+        elif cat.status in promotions.keys() and cat.moons in coming_of_age:
+            cat.name.specsuffix_hidden = True
+            resource_dir = "resources/dicts/names/"
+            with open(f"{resource_dir}names.json", encoding="ascii") as f:
+                name_json = ujson.loads(f.read())
+            possible_suffixes = name_json["normal_suffixes"]
+            cat.name.suffix = str(random.choice(possible_suffixes))
+            cat.status = promotions[cat.status]
+        elif cat.status in age_up.keys() and cat.moons in coming_of_age:
+            cat.status = promotions[cat.status]
+        elif cat.moons > 131 and cat.status != "elder":
+            cat.status = "elder"
 
         # Pass time (generic)
         cat.one_moon()
@@ -817,66 +830,8 @@ class Events:
                       f"{cat.name}: \n " \
                       f"DIED?: {cat.life_change} \n " \
                       f"Age: {cat.previous_moons} moons -> {cat.moons} moons. \n " \
-                      f"Old Status: {cat.old_status} // New Status: {cat.status} \n" \
-                      f"EXP: {cat.old_exp} -> {cat.experience} \n"
+                      f"Old Status: {cat.old_status} // New Status: {cat.status} \n"
         print(update_text)
-
-
-    def perform_oc_ceremonies(self, cat):
-        app_types = ["apprentice", "medicine cat apprentice", "mediator apprentice"]
-
-        # Make kittens into apprentices
-        if cat.status == "kitten" and cat.moons >= 5:
-            # Figure out which type of app they would want to become
-            cat.status = random.choice(app_types)
-            self.ceremony(cat, cat.status)
-
-
-        # Graduate apprentices
-        if cat.status in [app_types]:
-            if game.settings["12_moon_graduation"]:
-                _ready = cat.moons >= 12
-            else:
-                _ready = (cat.experience_level not in ["untrained", "trainee"] and
-                          cat.moons >= game.config["graduation"]["min_graduating_age"]) \
-                         or cat.moons >= game.config["graduation"]["max_apprentice_age"][cat.status]
-            if _ready:
-                if game.settings["12_moon_graduation"]:
-                    preparedness = "prepared"
-                else:
-                    if cat.moons == game.config["graduation"]["min_graduating_age"]:
-                        preparedness = "early"
-                    elif cat.experience_level in ["untrained", "trainee"]:
-                        preparedness = "unprepared"
-                    else:
-                        preparedness = "prepared"
-
-                if cat.status == 'apprentice':
-                    self.ceremony(cat, 'warrior', preparedness)
-                    self.ceremony_accessory = True
-                    self.gain_accessories(cat)
-
-                # promote to med cat
-                elif cat.status == 'medicine cat apprentice':
-                    self.ceremony(cat, 'medicine cat', preparedness)
-                    self.ceremony_accessory = True
-                    self.gain_accessories(cat)
-
-                elif cat.status == 'mediator apprentice':
-                    self.ceremony(cat, 'mediator', preparedness)
-                    self.ceremony_accessory = True
-                    self.gain_accessories(cat)
-
-        # Deal with elders
-        if cat.status == "warrior" and len(cat.apprentice) < 1 and cat.moons > 114:
-            # There is some variation in the age.
-            if cat.moons > 140 or not int(random.random() * (-0.7 * cat.moons + 100)):
-                cat.status = "elder"
-
-    def oc_ceremony(self, cat):
-        pass
-
-
 
     
     def one_moon_cat(self, cat):
@@ -1563,10 +1518,9 @@ class Events:
         # remove duplicates
         involved_cats = list(set(involved_cats))
 
-        if not cat.outside:
-            game.cur_events_list.append(
-                Single_Event(f'{ceremony_text}', "ceremony", involved_cats))
-            # game.ceremony_events_list.append(f'{cat.name}{ceremony_text}')
+        game.cur_events_list.append(
+            Single_Event(f'{ceremony_text}', "ceremony", involved_cats))
+        # game.ceremony_events_list.append(f'{cat.name}{ceremony_text}')
 
     def gain_accessories(self, cat):
         """

@@ -472,6 +472,7 @@ class Cat():
             else:
                 self.thought = "Has left their Clan behind to watch over them from the stars"
                 game.clan.add_to_starclan(self)
+
         return text
 
     def exile(self):

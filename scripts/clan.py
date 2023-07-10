@@ -1415,6 +1415,8 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     current_season = Clan.current_season
     all_clans = []
 
+    starting_members = len(Cat.all_cats)
+
     def __init__(self,
                  name='',
                  relations=0, # OtherClans start neutral to playerclan
@@ -1424,7 +1426,7 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
                  medicine_cat=None,
                  biome='Forest',
                  reputation=None,
-                 starting_members=10,
+                 starting_members=starting_members,
                  OCID=1):
 
 
@@ -1486,7 +1488,6 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
             "duration": 0,
         }
 
-        self.starting_members = starting_members
         self.name = name
         self.leader = leader
         if self.leader:
@@ -1514,7 +1515,6 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
 
         self._reputation = 50
 
-    starting_members = 10
 
     def __repr__(self):
         return f"{self.name}Clan"

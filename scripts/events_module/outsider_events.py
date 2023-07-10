@@ -30,11 +30,7 @@ class OutsiderEvents:
                 elif cat.status in ['kittypet', 'loner', 'rogue', 'former Clancat']:
                     text = f'Rumors reach your Clan that the {cat.status} ' \
                            f'{cat.name} has died recently.'
-                elif cat.otherclan1 and cat.status == "leader" and cat.dead is True:
-                    text= f"When {game.clan.name} arrives at the Gathering, they are shocked to find out that {otherClansList[0]}Clan's leader {cat.name} has died."
-                elif cat.otherclan1 and cat.status == "leader" and (cat.dead is False or cat.dead is None):
-                    text= None  # Leaders are secretive about lives, and this information wouldn't be public knowledge, so no event
-                elif cat.otherclan1 and cat.status != "leader":
+                elif cat.otherclan1:
                     text = f'A patrol informs you that the {cat.status} {cat.name} from {otherClansList[0]}Clan died this past moon.'
                 else:
                     cat.outside = False
