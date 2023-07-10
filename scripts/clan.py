@@ -814,6 +814,7 @@ class Clan():
             self.save_freshkill_pile(game.clan)
 
         game.safe_save(f"{get_save_dir()}/{self.name}clan.json", clan_data)
+        game.safe_save(f"{get_save_dir()}/{self.name}/OC1.json", OtherClan1.clan_data)
 
         if os.path.exists(get_save_dir() + f'/{self.name}clan.txt'):
             os.remove(get_save_dir() + f'/{self.name}clan.txt')
@@ -1414,8 +1415,6 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     current_season = Clan.current_season
     all_clans = []
 
-    starting_members = 10
-
     def __init__(self,
                  name='',
                  relations=0, # OtherClans start neutral to playerclan
@@ -1424,7 +1423,8 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
                  deputy=None,
                  medicine_cat=None,
                  biome='Forest',
-                 starting_members=starting_members,
+                 reputation=None,
+                 starting_members=10,
                  OCID=1):
 
 
@@ -1486,9 +1486,38 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
             "duration": 0,
         }
 
+        self.starting_members = starting_members
+        self.name = name
+        self.leader = leader
+        if self.leader:
+            self.leader.status_change('leader')
+            self.clan_cats.append(self.leader.ID)
+        self.leader_lives = 9
+        self.leader_predecessors = 0
+        self.deputy = deputy
+        if deputy is not None:
+            self.deputy.status_change('deputy')
+            self.clan_cats.append(self.deputy.ID)
+        self.deputy_predecessors = 0
+        self.medicine_cat = medicine_cat
+        self.med_cat_list = []
+        self.med_cat_predecessors = 0
+        if medicine_cat is not None:
+            self.clan_cats.append(self.medicine_cat.ID)
+            self.med_cat_list.append(self.medicine_cat.ID)
+            if medicine_cat.status != 'medicine cat':
+                Cat.all_cats[medicine_cat.ID].status_change('medicine cat')
+        self.med_cat_number = len(
+            self.med_cat_list
+        )  # Must do this after the medicine cat is added to the list.
+        self.biome = biome
+
+        self._reputation = 50
+
+    starting_members = 10
+
     def __repr__(self):
         return f"{self.name}Clan"
-
 
     def create_oc1_clan(self):
         """
@@ -1545,6 +1574,8 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
             self.unknown_cats.remove(ID)
         if ID in self.darkforest_cats:
             self.darkforest_cats.remove(ID)
+
+    clan_data = ''
 
 
 class StarClan():
