@@ -799,7 +799,8 @@ class Events:
         elif cat.status in age_up.keys() and cat.moons in coming_of_age:
             cat.status = age_up[cat.status]
         elif cat.moons > 131 and cat.status != "elder":
-            cat.status = "elder"
+            self.oc_ceremony(cat, "elder")
+            self.history.add_retirement(cat)
 
         # Pass time (generic)
         cat.one_moon()

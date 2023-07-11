@@ -1110,6 +1110,12 @@ class ProfileScreen(Screens):
             if body_history:
                 life_history.append(" ".join(body_history))
 
+
+            elder_history = self.get_elder_text()
+            if elder_history:
+                life_history.append(elder_history)
+
+
             murder = self.get_murder_text()
             if murder:
                 life_history.append(murder)
@@ -1310,6 +1316,21 @@ class ProfileScreen(Screens):
         apprenticeship_history = influence_history + " " + graduation_history
         apprenticeship_history = process_text(apprenticeship_history, cat_dict)
         return apprenticeship_history
+
+    def get_elder_text(self):
+        elder_time = History.get_retirement(self.the_cat)
+        if game.switches['show_history_moons']:
+            moons = True
+        else:
+            moons = False
+        if self.the_cat.status == 'elder':
+           elder_output = str(self.the_cat.name) + " retired to the elders' den."
+        else:
+            elder_output = None
+
+        # SEL come back: Add in the moon they retired
+
+        return elder_output
 
 
     def get_mentorship_text(self):

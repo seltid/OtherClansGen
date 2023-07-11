@@ -1936,6 +1936,8 @@ class Cat():
             return False
         elif not potential_mentor.outside and the_app.outside:
             return False
+        elif not potential_mentor.otherclan1 and the_app.otherclan1:
+            return False
 
         # Match jobs
         if self.status == 'medicine cat apprentice' and potential_mentor.status != 'medicine cat':
@@ -1954,7 +1956,8 @@ class Cat():
             return False
         elif self.outside and not self.otherclan1:
             return False
-        return True
+        else:
+            return True
 
     def __remove_mentor(self):
         """Should only be called by update_mentor, also sets fields on mentor."""

@@ -15,6 +15,7 @@ class History:
                  mentor_influence=None,
                  app_ceremony=None,
                  lead_ceremony=None,
+                 elder_ceremony=None,
                  possible_history=None,
                  died_by=None,
                  scar_events=None,
@@ -24,6 +25,7 @@ class History:
         self.mentor_influence = mentor_influence if mentor_influence else {"trait": {}, "skill": {}}
         self.app_ceremony = app_ceremony if app_ceremony else {}
         self.lead_ceremony = lead_ceremony if lead_ceremony else None
+        self.elder_ceremony = elder_ceremony if elder_ceremony else []
         self.possible_history = possible_history if possible_history else {}
         self.died_by = died_by if died_by else []
         self.scar_events = scar_events if scar_events else []
@@ -139,6 +141,7 @@ class History:
             "mentor_influence": cat.history.mentor_influence,
             "app_ceremony": cat.history.app_ceremony,
             "lead_ceremony": cat.history.lead_ceremony,
+            "elder_ceremony": cat.history.elder_ceremony,
             "possible_history": cat.history.possible_history,
             "died_by": cat.history.died_by,
             "scar_events": cat.history.scar_events,
@@ -625,6 +628,29 @@ class History:
         History.check_load(cat)
 
         return cat.history.murder
+
+
+
+
+
+    @staticmethod
+    def get_retirement(cat):
+        History.check_load(cat)
+        return cat.history.elder_ceremony
+
+
+    @staticmethod
+    def add_retirement(cat, honor_text='', elder_text='', moon='', age=''):
+        if not game.clan:
+            return
+        History.check_load(cat)
+
+        cat.history.elder_ceremony.append({
+            "honor": "honor",
+            "text": "text",
+            "moon": game.clan.age,
+            "age": cat.age_moons
+        })
 
 
 
