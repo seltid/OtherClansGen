@@ -9,7 +9,7 @@ TODO: Docs
 # pylint: enable=line-too-long
 
 import random
-from random import choice, randint, sample
+from random import choice, randint
 import os
 
 import pygame
@@ -23,7 +23,7 @@ import statistics
 
 from scripts.game_structure.game_essentials import game
 from scripts.housekeeping.version import get_version_info, SAVE_VERSION_NUMBER
-from scripts.utility import update_sprite, get_current_season, quit, create_other_clan_cat, create_new_cat  # pylint: disable=redefined-builtin
+from scripts.utility import get_current_season, quit, create_other_clan_cat, create_new_cat  # pylint: disable=redefined-builtin
 from scripts.cat.cats import Cat, cat_class
 from scripts.cat.names import names
 from scripts.clan_resources.freshkill import Freshkill_Pile, Nutrition
@@ -818,6 +818,27 @@ class Clan():
         if os.path.exists(get_save_dir() + f'/{self.name}clan.txt'):
             os.remove(get_save_dir() + f'/{self.name}clan.txt')
 
+        self.save_oc1()
+
+    def save_oc1(self):
+        # Save OC data. For now just make a test file
+        oc1_clan_data = {
+            "clanname" : str(Clan.all_clans[0]),
+            "clanage" : OtherClan1.age,
+            "biome" : OtherClan1.biome,
+        }
+
+        for cat in Cat.otherclan1_cats:
+            pass
+
+        game.safe_save(f"{get_save_dir()}/{self.name}/OC1.json", oc1_clan_data)
+
+    def load_oc1(self):
+
+
+        return False
+
+
     def save_clan_settings(self):
         with open(get_save_dir() + f'/{self.name}/clan_settings.json', 'w',
                   encoding='utf-8') as write_file:
@@ -829,6 +850,7 @@ class Clan():
         """
 
         version_info = None
+        oc1_info = None
         if os.path.exists(get_save_dir() + '/' + game.switches['clan_list'][0] +
                           'clan.json'):
             version_info = self.load_clan_json()
@@ -859,6 +881,40 @@ class Clan():
 
 
         return version_info
+
+        with open(get_save_dir() + '/' + game.switches['clan_list'][0] + '/OC1.json',
+                  'r',
+                  encoding='utf-8') as read_file:  # pylint: disable=redefined-outer-name
+            oc1_clan_data = ujson.loads(read_file.read())
+
+        if oc1_clan_data["leader"]:
+            oc1_leader = Cat.all_cats[oc1_clan_data["leader"]]
+            oc1_leader_lives = oc1_clan_data["leader_lives"]
+        else:
+            oc1_leader = None
+            oc1_leader_lives = 0
+
+        if oc1_clan_data["deputy"]:
+            oc1_deputy = Cat.all_cats[oc1_clan_data["deputy"]]
+        else:
+            oc1_deputy = None
+
+        if oc1_clan_data["med_cat"]:
+            oc1_med_cat = Cat.all_cats[oc1_clan_data["med_cat"]]
+        else:
+            oc1_med_cat = None
+
+        if oc1_clan_data["age"]:
+            OtherClan1.age = oc1_clan_data["clanage"]
+
+        if oc1_clan_data["biome"]:
+            OtherClan1.biome = oc1_clan_data["biome"]
+
+        game.oc1_clan = Clan(oc1_clan_data["clanname"],
+                         oc1_leader,
+                         oc1_deputy,
+                         oc1_med_cat,
+                         biome=oc1_clan_data["biome"])
 
     def load_clan_txt(self):
         """
@@ -1427,11 +1483,21 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     unknown_cats = []
     seasons = [Clan.seasons]
 
-    age = Clan.age
-    current_season = Clan.current_season
-    all_clans = []
-
     starting_members = 10
+
+    leader = ''
+    deputy = ''
+    medicine_cat = ''
+
+    try:
+        biome
+    except NameError:
+        biome = choice(BIOME_TYPES)
+
+    try:
+        age
+    except NameError:
+        age = randint(1000,2000)
 
     def __init__(self,
                  name='',
@@ -1441,10 +1507,10 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
                  deputy=None,
                  medicine_cat=None,
                  biome='Forest',
+                 age='',
                  reputation=None,
                  starting_members=starting_members,
                  OCID=1):
-
 
         self.history = History()
 
@@ -1460,31 +1526,16 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
         if self.temperament not in temperament_list:
             self.temperament = choice(temperament_list)
 
-        self.leader = leader
-        if self.leader:
-            self.leader.status_change('leader')
-            self.clan_cats.append(self.leader.ID)
-        self.leader_lives = 9
-        self.leader_predecessors = 0
-        self.deputy = deputy
-        if deputy is not None:
-            self.deputy.status_change('deputy')
-            self.clan_cats.append(self.deputy.ID)
-        self.deputy_predecessors = 0
-        self.medicine_cat = medicine_cat
-        self.med_cat_list = []
-        self.med_cat_predecessors = 0
-        if medicine_cat is not None:
-            self.clan_cats.append(self.medicine_cat.ID)
-            self.med_cat_list.append(self.medicine_cat.ID)
-            if medicine_cat.status != 'medicine cat':
-                Cat.all_cats[medicine_cat.ID].status_change('medicine cat')
-        self.med_cat_number = len(
-            self.med_cat_list
-        )  # Must do this after the medicine cat is added to the list.
-        self.biome = biome
-
+        self.age = age or randint(20,1000)
+        self.biome = biome or choice(self.__class__.BIOME_TYPES)
         self._reputation = 50
+
+        self.leader = leader
+
+        self.__class__.leader = leader
+
+
+
 
 
     def __repr__(self):
@@ -1545,6 +1596,15 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
         if ID in self.darkforest_cats:
             self.darkforest_cats.remove(ID)
 
+    def make_leader(self, new_leader):
+        self.new_leader = new_leader
+        possible_oc1_leaders = []
+        for cat in Cat.all_cats_list:
+            if cat.outside and cat.otherclan1 and cat.status in ["warrior", "deputy"]:
+                possible_oc1_leaders.append(cat.ID)
+        chosen = random.choice(possible_oc1_leaders)
+        return Cat.fetch_cat(chosen)
+
 
 class StarClan():
     """
@@ -1583,6 +1643,9 @@ class StarClan():
 
 clan_class = Clan()
 clan_class.remove_cat(cat_class.ID)
+
+oc1_class = OtherClan1()
+
 
 HERBS = None
 with open("resources/dicts/herbs.json", 'r', encoding='utf-8') as read_file:

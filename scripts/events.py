@@ -84,7 +84,8 @@ class Events:
         Patrol.used_patrols.clear()
         game.patrolled.clear()
         game.just_died.clear()
-        
+
+
 
         if any(
                 str(cat.status) in {
