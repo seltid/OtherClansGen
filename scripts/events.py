@@ -793,19 +793,9 @@ class Events:
 
         # Update statuses
         if cat.status == "kitten" and cat.moons >= 5:
-            cat.specsuffix_hidden = True
-            cat.status = random.choice(["mediator apprentice", "medicine cat apprentice", "apprentice"])
-            cat.name.suffix = "paw"
-        elif cat.status in ["mediator apprentice", "medicine cat apprentice", "apprentice"] and cat.name.suffix != "paw":
-            cat.name.suffix = "paw"
+            self.oc_ceremony(cat, random.choice(["mediator apprentice", "medicine cat apprentice", "apprentice"]))
         elif cat.status in promotions.keys() and cat.moons in coming_of_age:
-            cat.name.specsuffix_hidden = True
-            resource_dir = "resources/dicts/names/"
-            with open(f"{resource_dir}names.json", encoding="ascii") as f:
-                name_json = ujson.loads(f.read())
-            possible_suffixes = name_json["normal_suffixes"]
-            cat.name.suffix = str(random.choice(possible_suffixes))
-            cat.status = promotions[cat.status]
+            self.oc_ceremony(cat, promotions[cat.status])
         elif cat.status in age_up.keys() and cat.moons in coming_of_age:
             cat.status = age_up[cat.status]
         elif cat.moons > 131 and cat.status != "elder":
@@ -832,6 +822,194 @@ class Events:
                       f"Age: {cat.previous_moons} moons -> {cat.moons} moons. \n " \
                       f"Old Status: {cat.old_status} // New Status: {cat.status} \n"
         print(update_text)
+
+    def oc_ceremony(self, cat, promoted_to, preparedness="prepared"):
+        _ment = Cat.fetch_cat(
+            cat.mentor) if cat.mentor else None  # Grab current mentor, if they have one, before it's removed.
+        old_name = str(cat.name)
+        cat.status_change(promoted_to)
+        cat.rank_change_traits_skill(_ment)
+
+        involved_cats = [cat.ID]
+
+        # Time to gather ceremonies. First, lets gather all the ceremony ID's.
+        possible_ceremonies = set()
+        dead_mentor = None
+        mentor = None
+        previous_alive_mentor = None
+        dead_parents = []
+        living_parents = []
+        mentor_type = {
+            "medicine cat": ["medicine cat"],
+            "warrior": ["warrior", "deputy", "leader", "elder"],
+            "mediator": ["mediator"]
+        }
+
+        try:
+            # Get all the ceremonies for the role ----------------------------------------
+            possible_ceremonies.update(self.ceremony_id_by_tag[promoted_to])
+
+            # Get ones for prepared status ----------------------------------------------
+            if promoted_to in ["warrior", "medicine cat", "mediator"]:
+                possible_ceremonies = possible_ceremonies.intersection(
+                    self.ceremony_id_by_tag[preparedness])
+
+            # Gather ones for mentor. -----------------------------------------------------
+            tags = []
+
+            # CURRENT MENTOR TAG CHECK
+            if cat.mentor:
+                if Cat.fetch_cat(cat.mentor).status == "leader":
+                    tags.append("yes_leader_mentor")
+                else:
+                    tags.append("yes_mentor")
+                mentor = Cat.fetch_cat(cat.mentor)
+            else:
+                tags.append("no_mentor")
+
+            for c in reversed(cat.former_mentor):
+                if Cat.fetch_cat(c) and Cat.fetch_cat(c).dead:
+                    tags.append("dead_mentor")
+                    dead_mentor = Cat.fetch_cat(c)
+                    break
+
+            # Unlike dead mentors, living mentors must be VALID
+            # they must have the correct status for the role the cat
+            # is being promoted too.
+            valid_living_former_mentors = []
+            for c in cat.former_mentor:
+                if not (Cat.fetch_cat(c).dead or Cat.fetch_cat(c).outside):
+                    if promoted_to in mentor_type:
+                        if Cat.fetch_cat(c).status in mentor_type[promoted_to]:
+                            valid_living_former_mentors.append(c)
+                    else:
+                        valid_living_former_mentors.append(c)
+
+            # ALL FORMER MENTOR TAG CHECKS
+            if valid_living_former_mentors:
+                #  Living Former mentors. Grab the latest living valid mentor.
+                previous_alive_mentor = Cat.fetch_cat(
+                    valid_living_former_mentors[-1])
+                if previous_alive_mentor.status == "leader":
+                    tags.append("alive_leader_mentor")
+                else:
+                    tags.append("alive_mentor")
+            else:
+                # This tag means the cat has no living, valid mentors.
+                tags.append("no_valid_previous_mentor")
+
+            # Now we add the mentor stuff:
+            temp = possible_ceremonies.intersection(
+                self.ceremony_id_by_tag["general_mentor"])
+
+            for t in tags:
+                temp.update(
+                    possible_ceremonies.intersection(
+                        self.ceremony_id_by_tag[t]))
+
+            possible_ceremonies = temp
+
+            # Gather for parents ---------------------------------------------------------
+            for p in [cat.parent1, cat.parent2]:
+                if Cat.fetch_cat(p):
+                    if Cat.fetch_cat(p).dead:
+                        dead_parents.append(Cat.fetch_cat(p))
+                    # For the purposes of ceremonies, living parents
+                    # who are also the leader are not counted.
+                    elif not Cat.fetch_cat(p).dead and not Cat.fetch_cat(p).outside and \
+                            Cat.fetch_cat(p).status != "leader":
+                        living_parents.append(Cat.fetch_cat(p))
+
+            tags = []
+            if len(dead_parents) >= 1 and "orphaned" not in cat.backstory:
+                tags.append("dead1_parents")
+            if len(dead_parents) >= 2 and "orphaned" not in cat.backstory:
+                tags.append("dead1_parents")
+                tags.append("dead2_parents")
+
+            if len(living_parents) >= 1:
+                tags.append("alive1_parents")
+            if len(living_parents) >= 2:
+                tags.append("alive2_parents")
+
+            temp = possible_ceremonies.intersection(
+                self.ceremony_id_by_tag["general_parents"])
+
+            for t in tags:
+                temp.update(
+                    possible_ceremonies.intersection(
+                        self.ceremony_id_by_tag[t]))
+
+            possible_ceremonies = temp
+
+            # Gather for leader ---------------------------------------------------------
+
+            tags = []
+            if game.clan.leader and not game.clan.leader.dead and not game.clan.leader.outside:
+                tags.append("yes_leader")
+            else:
+                tags.append("no_leader")
+
+            temp = possible_ceremonies.intersection(
+                self.ceremony_id_by_tag["general_leader"])
+
+            for t in tags:
+                temp.update(
+                    possible_ceremonies.intersection(
+                        self.ceremony_id_by_tag[t]))
+
+            possible_ceremonies = temp
+
+            # Gather for backstories.json ----------------------------------------------------
+            tags = []
+            if cat.backstory == ['abandoned1', 'abandoned2', 'abandoned3']:
+                tags.append("abandoned")
+            elif cat.backstory == "clanborn":
+                tags.append("clanborn")
+
+            temp = possible_ceremonies.intersection(
+                self.ceremony_id_by_tag["general_backstory"])
+
+            for t in tags:
+                temp.update(
+                    possible_ceremonies.intersection(
+                        self.ceremony_id_by_tag[t]))
+
+            possible_ceremonies = temp
+            # Gather for traits --------------------------------------------------------------
+
+            temp = possible_ceremonies.intersection(
+                self.ceremony_id_by_tag["all_traits"])
+
+            if cat.personality.trait in self.ceremony_id_by_tag:
+                temp.update(
+                    possible_ceremonies.intersection(
+                        self.ceremony_id_by_tag[cat.personality.trait]))
+
+            possible_ceremonies = temp
+        except Exception as ex:
+            traceback.print_exception(type(ex), ex, ex.__traceback__)
+            print("Issue gathering ceremony text.", str(cat.name), promoted_to)
+
+        # getting the random honor if it's needed
+        random_honor = None
+        if promoted_to in ['warrior', 'mediator', 'medicine cat']:
+            resource_dir = "resources/dicts/events/ceremonies/"
+            with open(f"{resource_dir}ceremony_traits.json",
+                      encoding="ascii") as read_file:
+                TRAITS = ujson.loads(read_file.read())
+            try:
+                random_honor = random.choice(TRAITS[cat.personality.trait])
+            except KeyError:
+                random_honor = "hard work"
+
+        if cat.status in ["warrior", "medicine cat", "mediator"]:
+            self.history.add_app_ceremony(cat, random_honor)
+
+
+        # remove duplicates
+        involved_cats = list(set(involved_cats))
+
 
     
     def one_moon_cat(self, cat):
