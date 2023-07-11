@@ -18,7 +18,7 @@ currentclan2 = 'saves/' + str(currentclan) + 'clan.json'
 with open(currentclan2, 'r') as f:
     clanContent = f.readlines()
     for line in clanContent:
-        if line.startswith('    "other_clans_names":'):
+        if "other_clans_names" in line:
             clanContentLine = []
             clanContentLine.append(line)
 otherClanNames = str(clanContentLine).replace('"other_clans_names": "', '').replace('"', '').replace(' ', '') \

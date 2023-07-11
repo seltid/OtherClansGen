@@ -841,6 +841,23 @@ class Clan():
 
         self.load_clan_settings()
 
+        # If the other clans somehow don't have a name, give them one
+        for line in version_info:
+            if "other_clans_names" in line and '"",' in line:
+                new_name = choice(names.names_dict["normal_prefixes"])
+                line = line.replace('""', f"{new_name}")
+                with open(f'{get_save_dir()}/{self.name}clan.json', "w") as f:
+                    x = f.write(version_info)
+                if new_name not in game.clan.all_clans:
+                    game.clan.all_clans.append(new_name)
+
+                # for comma in range(other_clans_no):
+                # other_clans_no = line.count(",")  # The amount of commas in this line will be equal to the number of OCs
+
+
+
+
+
         return version_info
 
     def load_clan_txt(self):
@@ -1436,61 +1453,13 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
             'bloodthirsty', 'amiable', 'gracious'
         ]
 
-        if name is None:
-            self.name = choice(names.names_dict["normal_prefixes"])
-        else:
-            self.name = name
+        self.name = name or choice(names.names_dict["normal_prefixes"])
 
         self.relations = relations or randint(8, 12)
         self.temperament = temperament or choice(temperament_list)
         if self.temperament not in temperament_list:
             self.temperament = choice(temperament_list)
 
-        self.leader = leader
-        if self.leader:
-            self.leader.status_change('OC leader')
-            self.clan_cats.append(self.leader.ID)
-        self.leader_lives = 9
-        self.leader_predecessors = 0
-
-        self.deputy = deputy
-        if deputy is not None:
-            self.deputy.status_change('OC deputy')
-            self.clan_cats.append(self.deputy.ID)
-        self.deputy_predecessors = 0
-
-        self.medicine_cat = medicine_cat
-        self.med_cat_list = []
-        self.med_cat_predecessors = 0
-        if medicine_cat is not None:
-            self.clan_cats.append(self.medicine_cat.ID)
-            self.med_cat_list.append(self.medicine_cat.ID)
-            if medicine_cat.status != 'OC medicine cat':
-                Cat.otherclan1_cats[medicine_cat.ID].status_change('OC medicine cat')
-        self.med_cat_number = len(
-            self.med_cat_list
-        )  # Must do this after the medicine cat is added to the list.
-        self.herbs = {}
-
-        self.age = 0
-        self.current_season = 'Newleaf'
-        self.instructor = None
-        # This is the first cat in starclan, to "guide" the other dead cats there.
-        self.biome = biome
-        self.pregnancy_data = {}
-        self.inheritance = {}
-
-        self._reputation = 50
-
-        self.starting_members = starting_members
-
-        self.war = {
-            "at_war": False,
-            "enemy": None,
-            "duration": 0,
-        }
-
-        self.name = name
         self.leader = leader
         if self.leader:
             self.leader.status_change('leader')
@@ -1537,8 +1506,7 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
                     not_found = False
             if Cat.otherclan1_cats[i] != self.leader and Cat.otherclan1_cats[i] != \
                     self.medicine_cat and Cat.otherclan1_cats[i] != \
-                    self.deputy and Cat.otherclan1_cats[i] != \
-                    self.instructor \
+                    self.deputy and Cat.otherclan1_cats[i] \
                     and not_found:
                 Cat.otherclan1_cats[i].example = True
                 self.remove_cat(Cat.otherclan1_cats[i].ID)

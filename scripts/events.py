@@ -793,9 +793,9 @@ class Events:
 
         # Update statuses
         if cat.status == "kitten" and cat.moons >= 5:
+            cat.specsuffix_hidden = True
             cat.status = random.choice(["mediator apprentice", "medicine cat apprentice", "apprentice"])
-            cat.name.suffix("paw")
-            cat.name.specsuffix_hidden = False
+            cat.name.suffix = "paw"
         elif cat.status in ["mediator apprentice", "medicine cat apprentice", "apprentice"] and cat.name.suffix != "paw":
             cat.name.suffix = "paw"
         elif cat.status in promotions.keys() and cat.moons in coming_of_age:
@@ -807,7 +807,7 @@ class Events:
             cat.name.suffix = str(random.choice(possible_suffixes))
             cat.status = promotions[cat.status]
         elif cat.status in age_up.keys() and cat.moons in coming_of_age:
-            cat.status = promotions[cat.status]
+            cat.status = age_up[cat.status]
         elif cat.moons > 131 and cat.status != "elder":
             cat.status = "elder"
 

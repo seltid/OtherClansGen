@@ -1926,10 +1926,17 @@ class Cat():
     #                                    mentor                                    #
     # ---------------------------------------------------------------------------- #
 
-    def is_valid_mentor(self, potential_mentor: Cat):
+    def is_valid_mentor(self, potential_mentor: Cat, the_app: Cat):
         # Dead or outside cats can't be mentors
-        if potential_mentor.dead or potential_mentor.outside:
+        if potential_mentor.dead:
             return False
+        elif potential_mentor.otherclan1 and the_app.otherclan1:
+            return True
+        elif potential_mentor.outside and not the_app.outside:
+            return False
+        elif not potential_mentor.outside and the_app.outside:
+            return False
+
         # Match jobs
         if self.status == 'medicine cat apprentice' and potential_mentor.status != 'medicine cat':
             return False
@@ -1944,8 +1951,12 @@ class Cat():
         if 'apprentice' not in self.status:
             return False
         # Dead cats don't need mentors
-        if self.dead or self.outside or self.exiled:
+        if self.dead or self.exiled:
             return False
+        elif self.outside and not self.otherclan1:
+            return False
+        elif self.otherclan1:
+            return True
         return True
 
     def __remove_mentor(self):
@@ -1981,9 +1992,15 @@ class Cat():
             print("Everything is terrible!! (new_mentor {new_mentor} is a Cat D:)")
             return
         # Check if cat can have a mentor
-        illegible_for_mentor = self.dead or self.outside or self.exiled or self.status not in ["apprentice",
+        illegible_for_mentor = self.dead or self.exiled or self.status not in ["apprentice",
                                                                                                "mediator apprentice",
                                                                                                "medicine cat apprentice"]
+
+        if self.outside and not self.otherclan1:
+            illegible_for_mentor = True
+        elif self.outside and self.otherclan1:
+            illegible_for_mentor = False
+
         if illegible_for_mentor:
             self.__remove_mentor()
             return
@@ -1995,7 +2012,8 @@ class Cat():
         # Check if current mentor is valid
         if self.mentor:
             mentor_cat = Cat.fetch_cat(self.mentor)  # This will return None if there is no current mentor
-            if mentor_cat and not self.is_valid_mentor(mentor_cat):
+            app_cat = Cat.fetch_cat(self.ID)
+            if mentor_cat and not self.is_valid_mentor(mentor_cat, app_cat):
                 self.__remove_mentor()
 
         # Need to pick a random mentor if not specified
@@ -2003,7 +2021,7 @@ class Cat():
             potential_mentors = []
             priority_mentors = []
             for cat in self.all_cats.values():
-                if self.is_valid_mentor(cat):
+                if self.is_valid_mentor(cat, self):
                     potential_mentors.append(cat)
                     if not cat.apprentice and not cat.not_working(): 
                         priority_mentors.append(cat)
