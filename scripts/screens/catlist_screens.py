@@ -17,7 +17,7 @@ from scripts.game_structure.game_essentials import game, screen, screen_x, scree
 from .cat_screens import ProfileScreen
 from ..conditions import get_amount_cat_for_one_medic, medical_cats_condition_fulfilled
 from scripts.game_structure.windows import SaveError
-
+from scripts.clan import OtherClan1, Clan
 
 # Code to determine other Clans' names to display
 # Determine other clans' names
@@ -1281,7 +1281,7 @@ class ListScreen(Screens):
         self.other_clan_1_button = UIImageButton(scale(pygame.Rect((230, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
-                                                 tool_tip_text='show known ' + str(otherClansList[0]) + 'Clan cats')
+                                                 tool_tip_text='show known ' + str(Clan.all_clans[0]) + ' cats')
 
         self.other_clan_2_button = UIImageButton(scale(pygame.Rect((298, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
@@ -2522,7 +2522,7 @@ class OtherClan1Screen(Screens):
         self.other_clan_1_button = UIImageButton(scale(pygame.Rect((230, 200), (68, 68))), "",
                                                  object_id="#unknown_residence_button"
                                                  , manager=MANAGER,
-                                                 tool_tip_text='show known ' + str(otherClansList[0]) + 'Clan cats')
+                                                 tool_tip_text='show known ' + str(Clan.all_clans[0]) + ' cats')
 
         self.other_clan_1_button.disable()
         self.other_clan_2_button = UIImageButton(scale(pygame.Rect((298, 200), (68, 68))), "",
@@ -2546,7 +2546,7 @@ class OtherClan1Screen(Screens):
                                                  tool_tip_text='show known ' + str(otherClansList[4]) + 'Clan cats')
 
         self.testbox = pygame_gui.elements.UITextBox(
-            ('Showing known members of ' + str(otherClansList[0]) + 'Clan'),
+            ('Showing known members of ' + str(Clan.all_clans[0])),
             scale(pygame.Rect((375, 190), (850, 200))), object_id=get_text_box_theme("#text_box_22_horizcenter"))
 
         # Hide unnecessary buttons
@@ -2584,7 +2584,7 @@ class OtherClan1Screen(Screens):
                                                          , manager=MANAGER)  # Text will be filled in later
 
         self.set_disabled_menu_buttons(["catlist_screen"])
-        self.update_heading_text(f'{otherClansList[0]}Clan')
+        self.update_heading_text(f'{Clan.all_clans[0]}')
         self.show_menu_buttons()
         self.update_search_cats("")  # This will list all the cats, and create the button objects.
 

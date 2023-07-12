@@ -501,7 +501,7 @@ def create_other_clan_cat(Cat,
         elif status == 'medicine cat':
             age = randint(23, 140)
         else:
-            age = randint(6, 120)
+            age = randint(1, 120)
     else:
         age = age
     # setting status

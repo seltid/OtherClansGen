@@ -1,5 +1,5 @@
 import pygame
-from random import choice, randrange
+from random import choice, randrange, randint, sample
 import pygame_gui
 
 from .base_screens import Screens
@@ -442,7 +442,23 @@ class MakeClanScreen(Screens):
 
     def create_ocs(self, event):
         # Create OC cats
+        status_vs_age = {
+            "kitten": randint(1,5),
+
+            "apprentice": randint(6, 13),
+            "medicine cat apprentice": randint(6, 13),
+            "mediator apprentice": randint(6, 13),
+
+            "warrior": randint(12, 130),
+            "medicine cat": randint(12, 130),
+            "mediator": randint(12, 130),
+
+            "elder": randint(110, 155)
+
+        }
         for member in range(OtherClan1.starting_members):
+            chosen_status, chosen_age = choice(list(status_vs_age.items()))
+
             create_other_clan_cat(Cat,
                                    new_name=False,
                                    loner=False,
@@ -452,8 +468,8 @@ class MakeClanScreen(Screens):
                                    other_clan=True,
                                otherclan1=True,
                                    backstory=None,
-                                   status=None,
-                                   age=choice(range(1, 160)),
+                                   status=chosen_status,
+                                   age=chosen_age,
                                    gender=choice(("male", "female")),
                                    thought="Is feeling uncertain about that new clan that just formed",
                                    alive=True,

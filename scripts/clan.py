@@ -537,7 +537,7 @@ class Clan():
 
         # Generate other clans
         number_other_clans = randint(3, 5)
-        self.all_clans.append(OtherClan1())
+        self.all_clans.append(OtherClan1(age=str(randint(4000,5000)),biome=choice(OtherClan1.BIOME_TYPES)))
         # Generate OC2
         # Generate OC3
 
@@ -826,6 +826,9 @@ class Clan():
             "clanname" : str(Clan.all_clans[0]),
             "clanage" : OtherClan1.age,
             "biome" : OtherClan1.biome,
+            "leader": 'placeholder',
+            "deputy": 'placeholder',
+            "med_cat": 'placeholder',
         }
 
         for cat in Cat.otherclan1_cats:
@@ -880,41 +883,43 @@ class Clan():
 
 
 
-        return version_info
 
         with open(get_save_dir() + '/' + game.switches['clan_list'][0] + '/OC1.json',
                   'r',
                   encoding='utf-8') as read_file:  # pylint: disable=redefined-outer-name
             oc1_clan_data = ujson.loads(read_file.read())
 
-        if oc1_clan_data["leader"]:
+        if oc1_clan_data["leader"] != 'placeholder':
             oc1_leader = Cat.all_cats[oc1_clan_data["leader"]]
             oc1_leader_lives = oc1_clan_data["leader_lives"]
         else:
             oc1_leader = None
             oc1_leader_lives = 0
 
-        if oc1_clan_data["deputy"]:
+        if oc1_clan_data["deputy"] != 'placeholder':
             oc1_deputy = Cat.all_cats[oc1_clan_data["deputy"]]
         else:
             oc1_deputy = None
 
-        if oc1_clan_data["med_cat"]:
+        if oc1_clan_data["med_cat"] != 'placeholder':
             oc1_med_cat = Cat.all_cats[oc1_clan_data["med_cat"]]
         else:
             oc1_med_cat = None
 
-        if oc1_clan_data["age"]:
+        if oc1_clan_data["clanage"]:
             OtherClan1.age = oc1_clan_data["clanage"]
 
         if oc1_clan_data["biome"]:
             OtherClan1.biome = oc1_clan_data["biome"]
 
-        game.oc1_clan = Clan(oc1_clan_data["clanname"],
-                         oc1_leader,
-                         oc1_deputy,
-                         oc1_med_cat,
-                         biome=oc1_clan_data["biome"])
+        game.oc1_clan = OtherClan1(oc1_clan_data["clanname"], relations=randint(25,75), temperament=choice('stoic'),
+                         leader=oc1_leader,
+                         deputy=oc1_deputy,
+                         medicine_cat=oc1_med_cat,
+                         biome=oc1_clan_data["biome"], age=oc1_clan_data["clanage"],)
+
+
+        return version_info
 
     def load_clan_txt(self):
         """
@@ -1489,15 +1494,9 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     deputy = ''
     medicine_cat = ''
 
-    try:
-        biome
-    except NameError:
-        biome = choice(BIOME_TYPES)
+    biome = choice(BIOME_TYPES)
 
-    try:
-        age
-    except NameError:
-        age = randint(1000,2000)
+    age = randint(1000, 2000)
 
     def __init__(self,
                  name='',
