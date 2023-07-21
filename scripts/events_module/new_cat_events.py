@@ -5,7 +5,7 @@ import random
 
 from scripts.cat.cats import Cat, INJURIES, BACKSTORIES
 from scripts.events_module.generate_events import GenerateEvents
-from scripts.utility import event_text_adjust, change_clan_relations, change_relationship_values, create_new_cat
+from scripts.utility import event_text_adjust, change_clan_relations, change_relationship_values, create_new_cat, create_oc_existing_cat, create_other_clan_cat
 from scripts.game_structure.game_essentials import game
 from scripts.event_class import Single_Event
 
@@ -38,7 +38,7 @@ class NewCatEvents:
             other_clan_name = f'{other_clan.name}Clan'
 
         
-        #Determine
+        # Determine
         if self.has_outside_cat():
             if random.randint(1, 3) == 1:
                 outside_cat = self.select_outside_cat()

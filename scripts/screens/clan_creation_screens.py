@@ -475,6 +475,13 @@ class MakeClanScreen(Screens):
                                    alive=True,
                                    outside=True)
 
+            # This gives any apprentices that didn't have a mentor one.
+            # That could happen if the app was generated before a valid mentor was
+            for new_cat in Cat.otherclan1_cats.values():
+                needs_mentor = ('apprentice', 'medicine cat apprentice', 'mediator apprentice')
+                if new_cat.status in needs_mentor and not new_cat.mentor:
+                    new_cat.update_mentor()
+
 
 
 

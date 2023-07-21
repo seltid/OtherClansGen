@@ -1488,7 +1488,7 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     unknown_cats = []
     seasons = [Clan.seasons]
 
-    starting_members = 10
+    starting_members = randint(7,10)  # This does not include
 
     leader = ''
     deputy = ''

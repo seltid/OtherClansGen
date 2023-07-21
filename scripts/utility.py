@@ -574,6 +574,13 @@ def create_other_clan_cat(Cat,
         if accessory:
             new_cat.pelt.accessory = accessory
 
+        if outside:
+            new_cat.outside = True
+        if not alive:
+            new_cat.dead = True
+        if otherclan1:
+            new_cat.otherclan1 = True
+
         # give apprentice aged cat a mentor
         if new_cat.age == 'adolescent':
             new_cat.update_mentor()
@@ -619,12 +626,7 @@ def create_other_clan_cat(Cat,
                     elif chosen_condition in ['lost their tail', 'born without a tail']:
                         new_cat.pelt.scars.append("NOTAIL")
 
-        if outside:
-            new_cat.outside = True
-        if not alive:
-            new_cat.dead = True
-        if otherclan1:
-            new_cat.otherclan1 = True
+
 
         # newbie thought
         new_cat.thought = thought
@@ -643,6 +645,12 @@ def create_other_clan_cat(Cat,
         #new_cat.create_inheritance_new_cat()
 
     return created_cats
+
+def create_oc_existing_cat(Cat, new_name=False, loner=False, kittypet=False, kit=False, litter=False,
+                           other_clan=None, otherclan1=None):
+    pass
+
+
 
 # ---------------------------------------------------------------------------- #
 #                             Cat Relationships                                #

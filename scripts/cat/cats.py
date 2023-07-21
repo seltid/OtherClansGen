@@ -1932,11 +1932,11 @@ class Cat():
             return False
         elif potential_mentor.dead:
             return False
-        elif potential_mentor.outside and not the_app.outside:
+        elif potential_mentor.outside and not the_app.outside:  # If mentor outside and app inside
             return False
-        elif not potential_mentor.outside and the_app.outside:
+        elif the_app.outside and not potential_mentor.outside:  # If mentor inside and app outside
             return False
-        elif not potential_mentor.otherclan1 and the_app.otherclan1:
+        elif the_app.otherclan1 and not potential_mentor.otherclan1: # If mentor not oc and app oc
             return False
 
         # Match jobs
@@ -2001,7 +2001,6 @@ class Cat():
         elif self.outside and self.otherclan1:
             illegible_for_mentor = False
 
-
         if illegible_for_mentor:
             self.__remove_mentor()
             return
@@ -2024,8 +2023,22 @@ class Cat():
             for cat in self.all_cats.values():
                 if self.is_valid_mentor(cat, self):
                     potential_mentors.append(cat)
-                    if not cat.apprentice and not cat.not_working(): 
+                    if not cat.apprentice and not cat.not_working():  # If the cat doesn't have an app and they ARE working
                         priority_mentors.append(cat)
+
+            # Remove ineligible OC/PC mismatches
+            for entry in potential_mentors:
+                if entry.otherclan1 != self.otherclan1:
+                    potential_mentors.remove(entry)
+                if entry.outside != self.outside:
+                    potential_mentors.remove(entry)
+
+            for entry in priority_mentors:
+                if entry.otherclan1 != self.otherclan1:
+                    potential_mentors.remove(entry)
+                if entry.outside != self.outside:
+                    potential_mentors.remove(entry)
+
             # First try for a cat who currently has no apprentices and is working
             if priority_mentors:  # length of list > 0
                 new_mentor = choice(priority_mentors)
