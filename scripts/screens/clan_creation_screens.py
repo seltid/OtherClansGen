@@ -14,6 +14,9 @@ from scripts.game_structure.image_button import UIImageButton, UISpriteButton
 from scripts.game_structure.game_essentials import game, MANAGER
 from scripts.patrol import Patrol
 
+from scripts.housekeeping.datadir import get_save_dir
+
+
 
 class MakeClanScreen(Screens):
     # UI images
@@ -475,12 +478,17 @@ class MakeClanScreen(Screens):
                                    alive=True,
                                    outside=True)
 
-            # This gives any apprentices that didn't have a mentor one.
-            # That could happen if the app was generated before a valid mentor was
-            for new_cat in Cat.otherclan1_cats.values():
-                needs_mentor = ('apprentice', 'medicine cat apprentice', 'mediator apprentice')
-                if new_cat.status in needs_mentor and not new_cat.mentor:
-                    new_cat.update_mentor()
+        # This gives any apprentices that didn't have a mentor one.
+        # That could happen if the app was generated before a valid mentor was
+        for new_cat in Cat.otherclan1_cats.values():
+            needs_mentor = ('apprentice', 'medicine cat apprentice', 'mediator apprentice')
+            if new_cat.status in needs_mentor and not new_cat.mentor:
+                new_cat.update_mentor()
+
+        # Create OC1.json for the first time
+        game.safe_save(f"{get_save_dir()}/{self.name}/OC1.json", "blah")
+
+
 
 
 
