@@ -534,10 +534,12 @@ class Clan():
 
         game.save_cats()
 
-
         # Generate other clans
+        game.otherclan1 = OtherClan1()
+
+        # Add new clans to all clans
         number_other_clans = randint(3, 5)
-        self.all_clans.append(OtherClan1(age=str(randint(4000,5000)),biome=choice(OtherClan1.BIOME_TYPES)))
+        self.all_clans.append(game.otherclan1)
         # Generate OC2
         # Generate OC3
 
@@ -818,6 +820,8 @@ class Clan():
         if os.path.exists(get_save_dir() + f'/{self.name}clan.txt'):
             os.remove(get_save_dir() + f'/{self.name}clan.txt')
 
+        OtherClan1.save_oc1(game.otherclan1)
+
     def save_clan_settings(self):
         with open(get_save_dir() + f'/{self.name}/clan_settings.json', 'w',
                   encoding='utf-8') as write_file:
@@ -865,19 +869,19 @@ class Clan():
                   encoding='utf-8') as read_file:  # pylint: disable=redefined-outer-name
             oc1_clan_data = ujson.loads(read_file.read())
 
-        if oc1_clan_data["leader"] != 'placeholder':
+        if oc1_clan_data["leader"]:
             oc1_leader = Cat.all_cats[oc1_clan_data["leader"]]
             oc1_leader_lives = oc1_clan_data["leader_lives"]
         else:
             oc1_leader = None
             oc1_leader_lives = 0
 
-        if oc1_clan_data["deputy"] != 'placeholder':
+        if oc1_clan_data["deputy"]:
             oc1_deputy = Cat.all_cats[oc1_clan_data["deputy"]]
         else:
             oc1_deputy = None
 
-        if oc1_clan_data["med_cat"] != 'placeholder':
+        if oc1_clan_data["med_cat"]:
             oc1_med_cat = Cat.all_cats[oc1_clan_data["med_cat"]]
         else:
             oc1_med_cat = None
@@ -888,7 +892,7 @@ class Clan():
         if oc1_clan_data["biome"]:
             OtherClan1.biome = oc1_clan_data["biome"]
 
-        game.oc1_clan = OtherClan1(oc1_clan_data["clanname"], relations=randint(25,75), temperament=choice('stoic'),
+        game.otherclan1 = OtherClan1(oc1_clan_data["clanname"], relations=randint(25,75), temperament=choice('stoic'),
                          leader=oc1_leader,
                          deputy=oc1_deputy,
                          medicine_cat=oc1_med_cat,
@@ -1581,9 +1585,9 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     def save_oc1(self):
         # Save OC data. For now just make a test file
         oc1_clan_data = {
-            "clanname" : str(Clan.all_clans[0]),
-            "clanage" : OtherClan1.age,
-            "biome" : OtherClan1.biome,
+            "clanname": str(Clan.all_clans[0]),
+            "clanage": OtherClan1.age,
+            "biome": OtherClan1.biome,
             "leader": 'placeholder',
             "deputy": 'placeholder',
             "med_cat": 'placeholder',

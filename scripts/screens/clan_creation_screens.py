@@ -127,10 +127,10 @@ class MakeClanScreen(Screens):
             elif self.sub_screen == 'choose members':
                 self.handle_choose_members_event(event)
             elif self.sub_screen == 'choose camp':
-                self.create_ocs(event)
                 self.handle_choose_background_event(event)
             elif self.sub_screen == 'saved screen':
                 self.handle_saved_clan_event(event)
+                self.create_ocs(event)
 
         
         elif event.type == pygame.KEYDOWN and game.settings['keybinds']:
@@ -514,10 +514,13 @@ class MakeClanScreen(Screens):
         oc1_save = open(f"{get_save_dir()}/{game.clan.name}/OC1.json", "a+")
 
         OC1_content = {
-            "clanname": None,
+            "clanname": str(Clan.all_clans[0]),
             "clanage": None,
             "biome": None,
-            "clan_cats": OC1_cats
+            "clan_cats": OC1_cats,
+            "leader": None,
+            "deputy": None,
+            "med_cat": None,
         }
 
         # Write into it
