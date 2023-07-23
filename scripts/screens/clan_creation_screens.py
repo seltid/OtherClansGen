@@ -13,6 +13,7 @@ from scripts.game_structure import image_cache
 from scripts.game_structure.image_button import UIImageButton, UISpriteButton
 from scripts.game_structure.game_essentials import game, MANAGER
 from scripts.patrol import Patrol
+import ujson
 
 from scripts.housekeeping.datadir import get_save_dir
 
@@ -126,10 +127,11 @@ class MakeClanScreen(Screens):
             elif self.sub_screen == 'choose members':
                 self.handle_choose_members_event(event)
             elif self.sub_screen == 'choose camp':
+                self.create_ocs(event)
                 self.handle_choose_background_event(event)
             elif self.sub_screen == 'saved screen':
                 self.handle_saved_clan_event(event)
-                self.create_ocs(event)
+
         
         elif event.type == pygame.KEYDOWN and game.settings['keybinds']:
             if self.sub_screen == 'game mode':
@@ -478,20 +480,50 @@ class MakeClanScreen(Screens):
                                    alive=True,
                                    outside=True)
 
+        # Create the leader
+        create_other_clan_cat(Cat,
+                              new_name=False,
+                              loner=False,
+                              kittypet=False,
+                              kit=False,
+                              litter=False,
+                              other_clan=True,
+                              otherclan1=True,
+                              backstory=None,
+                              status="leader",
+                              age=randint(35,100),
+                              gender=choice(("male", "female")),
+                              thought="Is feeling uncertain about that new clan that just formed",
+                              alive=True,
+                              outside=True)
+
         # This gives any apprentices that didn't have a mentor one.
         # That could happen if the app was generated before a valid mentor was
+        # It also makes a list of all the IDs of the cats that were created
+        genned_IDs = []
         for new_cat in Cat.otherclan1_cats.values():
             needs_mentor = ('apprentice', 'medicine cat apprentice', 'mediator apprentice')
             if new_cat.status in needs_mentor and not new_cat.mentor:
                 new_cat.update_mentor()
+            genned_IDs.append(new_cat.ID)
+
+        # Format the list of cat IDs to be printed into OC1.json
+        OC1_cats = ",".join([str(cat_ID) for cat_ID in genned_IDs])
 
         # Create OC1.json for the first time
-        game.safe_save(f"{get_save_dir()}/{self.name}/OC1.json", "blah")
+        oc1_save = open(f"{get_save_dir()}/{game.clan.name}/OC1.json", "a+")
 
+        OC1_content = {
+            "clanname": None,
+            "clanage": None,
+            "biome": None,
+            "clan_cats": OC1_cats
+        }
 
-
-
-
+        # Write into it
+        with open(f"{get_save_dir()}/{game.clan.name}/OC1.json", "w") as f:
+            file_content = ujson.dumps(OC1_content, indent=4)
+            f.write(file_content)
 
     def exit_screen(self):
         self.main_menu.kill()
@@ -1217,7 +1249,6 @@ class MakeClanScreen(Screens):
                                                                       manager=MANAGER)
 
     def save_clan(self):
-        
         game.mediated.clear()
         game.patrolled.clear()
         game.cat_to_fade.clear()

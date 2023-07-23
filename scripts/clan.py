@@ -818,30 +818,6 @@ class Clan():
         if os.path.exists(get_save_dir() + f'/{self.name}clan.txt'):
             os.remove(get_save_dir() + f'/{self.name}clan.txt')
 
-        self.save_oc1()
-
-    def save_oc1(self):
-        # Save OC data. For now just make a test file
-        oc1_clan_data = {
-            "clanname" : str(Clan.all_clans[0]),
-            "clanage" : OtherClan1.age,
-            "biome" : OtherClan1.biome,
-            "leader": 'placeholder',
-            "deputy": 'placeholder',
-            "med_cat": 'placeholder',
-        }
-
-        for cat in Cat.otherclan1_cats:
-            pass
-
-        game.safe_save(f"{get_save_dir()}/{self.name}/OC1.json", oc1_clan_data)
-
-    def load_oc1(self):
-
-
-        return False
-
-
     def save_clan_settings(self):
         with open(get_save_dir() + f'/{self.name}/clan_settings.json', 'w',
                   encoding='utf-8') as write_file:
@@ -1534,9 +1510,6 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
         self.__class__.leader = leader
 
 
-
-
-
     def __repr__(self):
         return f"{self.name}Clan"
 
@@ -1603,6 +1576,23 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
                 possible_oc1_leaders.append(cat.ID)
         chosen = random.choice(possible_oc1_leaders)
         return Cat.fetch_cat(chosen)
+
+    # Loading and saving information
+    def save_oc1(self):
+        # Save OC data. For now just make a test file
+        oc1_clan_data = {
+            "clanname" : str(Clan.all_clans[0]),
+            "clanage" : OtherClan1.age,
+            "biome" : OtherClan1.biome,
+            "leader": 'placeholder',
+            "deputy": 'placeholder',
+            "med_cat": 'placeholder',
+        }
+
+        for cat in Cat.otherclan1_cats:
+            pass
+
+        game.safe_save(f"{get_save_dir()}/{self.name}/OC1.json", oc1_clan_data)
 
 
 class StarClan():
