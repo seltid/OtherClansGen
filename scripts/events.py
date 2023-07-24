@@ -98,6 +98,7 @@ class Events:
 
         # age up the clan, set current season
         game.clan.age += 1
+        game.otherclan1.age += 1
         get_current_season()
         # print(game.clan.current_season)
         self.pregnancy_events.handle_pregnancy_age(game.clan)

@@ -164,7 +164,7 @@ class Game():
 
     # CLAN
     clan = None
-    clan1 = None
+    otherclan1 = None
     clan2 = None
     clan3 = None
     clan4 = None

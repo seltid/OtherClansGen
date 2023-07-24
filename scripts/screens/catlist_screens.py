@@ -38,16 +38,7 @@ otherClansListOriginal = otherClansList[:-1]
 otherClansList = otherClansListOriginal
 
 # Determine how many clans there are, and how many buttons to make
-if len(otherClansListOriginal) == 1:
-    buttons_needed = 1
-elif len(otherClansListOriginal) == 2:
-    buttons_needed = 2
-elif len(otherClansListOriginal) == 3:
-    buttons_needed = 3
-elif len(otherClansListOriginal) == 4:
-    buttons_needed = 4
-else:
-    buttons_needed = 5
+buttons_needed = len(otherClansListOriginal)
 otherClansList.append('blank')
 otherClansList.append('blank')
 otherClansList.append('blank')

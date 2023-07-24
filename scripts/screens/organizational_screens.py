@@ -1043,8 +1043,10 @@ class StatsScreen(Screens):
                 elif cat.status == 'medicine cat':
                     medcat_num += 1
             elif (cat.status in ['kittypet', 'loner', 'rogue', 'former Clancat']
-                  or cat.outside) and not cat.dead:
+                  or cat.outside) and not cat.dead and not cat.otherclan1:
                 other_num += 1
+            elif cat.otherclan1:
+                pass
             else:
                 starclan_num += 1
 

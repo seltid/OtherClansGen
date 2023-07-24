@@ -820,6 +820,7 @@ class Clan():
         if os.path.exists(get_save_dir() + f'/{self.name}clan.txt'):
             os.remove(get_save_dir() + f'/{self.name}clan.txt')
 
+        OtherClan1.save_oc1_clan()
 
     def save_clan_settings(self):
         with open(get_save_dir() + f'/{self.name}/clan_settings.json', 'w',
@@ -858,18 +859,18 @@ class Clan():
                 # for comma in range(other_clans_no):
                 # other_clans_no = line.count(",")  # The amount of commas in this line will be equal to the number of OCs
 
-
-
-
-
-
         with open(get_save_dir() + '/' + game.switches['clan_list'][0] + '/OC1.json',
                   'r',
                   encoding='utf-8') as read_file:  # pylint: disable=redefined-outer-name
             oc1_clan_data = ujson.loads(read_file.read())
 
+        if oc1_clan_data["clanname"]:
+            oc1_name = oc1_clan_data["clanname"]
+        else:
+            oc1_name = choice(names.names_dict["normal_prefixes"])
+
         if oc1_clan_data["leader"]:
-            oc1_leader = 999
+            oc1_leader = oc1_clan_data["leader"]
             oc1_leader_lives = oc1_clan_data["leader_lives"]
         else:
             oc1_leader = None
@@ -885,14 +886,14 @@ class Clan():
         else:
             oc1_med_cat = None
 
-        if oc1_clan_data["clanage"]:
-            OtherClan1.age = oc1_clan_data["clanage"]
-
         if oc1_clan_data["biome"]:
-            OtherClan1.biome = oc1_clan_data["biome"]
+            oc1_biome = oc1_clan_data["biome"]
+        else:
+            oc1_biome = choice(Clan.BIOME_TYPES)
 
-        game.otherclan1 = OtherClan1()
+        game.otherclan1 = OtherClan1(oc1_name, oc1_leader, oc1_deputy, oc1_med_cat, oc1_biome)
 
+        game.otherclan1.leader_lives = oc1_leader_lives
 
         return version_info
 
@@ -1443,19 +1444,6 @@ class Clan():
 
 class OtherClan1():  # Actually creates/generates other clans. Only runs upon creation of them
 
-    BIOME_TYPES = ["Forest", "Plains", "Mountainous", "Beach"]
-
-    CAT_TYPES = [
-        "kitten",
-        "apprentice",
-        "warrior",
-        "medicine",
-        "deputy",
-        "leader",
-        "elder",
-        "mediator",
-    ]
-
     leader_lives = 0
     clan_cats = []
     starclan_cats = []
@@ -1463,72 +1451,30 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     unknown_cats = []
     seasons = [Clan.seasons]
 
-    starting_members = randint(7,10)  # This does not include
-
-    deputy = ''
-    medicine_cat = ''
+    num_starting_members = randint(7,10)  # This does not include
 
     def __init__(self,
-                 name='',
-                 relations=0, # OtherClans start neutral to playerclan
-                 temperament='',
+                 name=None,
                  leader=None,
                  deputy=None,
                  medicine_cat=None,
-                 biome=choice(("Forest", "Plains", "Mountainous", "Beach")),
-                 age=randint(6000,7000),
-                 reputation=None,
-                 starting_members=starting_members,
-                 OCID=1):
+                 biome='Forest',
+                 relations=0,
+                 temperament=None):
 
-        # Figure out certain roles
-        for cat in Cat.all_cats.values():
-            if cat.status == "leader" and not cat.dead:
-                oc1_leader = cat.ID
-                leader_found = True
-            if cat.status == "deputy" and not cat.dead:
-                oc1_deputy = cat.ID
-                deputy_found = True
-
-        try:
-            if leader_found == True:
-                pass
-        except:
-            oc1_leader = None
-
-        try:
-            if deputy_found == True:
-                pass
-        except:
-            oc1_deputy = None
-
-        self.leader = oc1_leader
-        self.history = History()
-
-        temperament_list = [
-            'cunning', 'wary', 'logical', 'proud', 'stoic', 'mellow',
-            'bloodthirsty', 'amiable', 'gracious'
-        ]
+        temperament_list = ['cunning', 'wary', 'logical', 'proud', 'stoic', 'mellow', 'bloodthirsty', 'amiable',
+                            'gracious']
 
         self.name = name or choice(names.names_dict["normal_prefixes"])
-
         self.relations = relations or randint(8, 12)
         self.temperament = temperament or choice(temperament_list)
-        if self.temperament not in temperament_list:
-            self.temperament = choice(temperament_list)
-
-        self.age = age or randint(20,1000)
-        self.biome = biome or choice(Clan.BIOME_TYPES)
-        self._reputation = 50
-
-
+        self.leader = leader
 
 
     def __repr__(self):
         return f"{self.name}Clan"
 
     def add_cat(self, cat):  # cat is a 'Cat' object
-        """ Adds cat into the list of clan cats"""
         if cat.ID in Cat.otherclan1_cats and cat.ID not in self.clan_cats:
             self.clan_cats.append(cat.ID)
 
@@ -1553,32 +1499,27 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
         if ID in self.darkforest_cats:
             self.darkforest_cats.remove(ID)
 
-    def make_leader(self, new_leader):
-        self.new_leader = new_leader
-        possible_oc1_leaders = []
-        for cat in Cat.all_cats_list:
-            if cat.outside and cat.otherclan1 and cat.status in ["warrior", "deputy"]:
-                possible_oc1_leaders.append(cat.ID)
-        chosen = random.choice(possible_oc1_leaders)
-        return Cat.fetch_cat(chosen)
-
-    # Loading and saving information
-    def save_oc1(self):
-        # Save OC data. For now just make a test file
+    @staticmethod
+    def save_oc1_clan():
         oc1_clan_data = {
-            "clanname": None,
+            "clanname": game.otherclan1.name,
             "clanage": None,
             "biome": None,
-            "clan_cats": None,
-            "leader": None,
+            "clan_cats": game.otherclan1.clan_cats,
+            "leader": game.otherclan1.leader,
+            "leader_lives": None,
+            "leader_predecessors": None,
             "deputy": None,
             "med_cat": None,
         }
 
-        for cat in Cat.otherclan1_cats:
-            pass
-
-        game.safe_save(f"{get_save_dir()}/{game.clan.name}/OC1.json", oc1_clan_data)
+    def appoint_new_leader(self):
+        possible_oc1_leaders = []
+        for cat in Cat.all_cats_list:
+            if cat.outside and cat.otherclan1 and cat.status in ["warrior", "deputy"] and not cat.dead:
+                possible_oc1_leaders.append(cat.ID)
+        chosen = random.choice(possible_oc1_leaders)
+        return Cat.fetch_cat(chosen)
 
 
 class StarClan():

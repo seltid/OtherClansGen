@@ -593,12 +593,18 @@ class KillCat(UIWindow):
 
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.done_button:
-                if self.the_cat.status == 'leader':
+                if self.the_cat.status == 'leader' and not self.the_cat.otherclan1:
                     death_message = sub(r"[^A-Za-z0-9<->/()*'&#, ]+", "", self.death_entry_box.get_text())
                     if self.take_all:
                         game.clan.leader_lives -= 10
                     else:
                         game.clan.leader_lives -= 1
+                if self.the_cat.status == 'leader' and self.the_cat.otherclan1:
+                    death_message = sub(r"[^A-Za-z0-9<->/()*'&#, ]+", "", self.death_entry_box.get_text())
+                    if self.take_all:
+                        game.otherclan1.leader_lives -= 10
+                    else:
+                        game.otherclan1.leader_lives -= 1
                 else:
                     death_message = sub(r"[^A-Za-z0-9<->/.()*'&#!?,| ]+", "", self.death_entry_box.get_text())
 

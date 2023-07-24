@@ -26,6 +26,8 @@ from scripts.game_structure.game_essentials import game, screen_x, screen_y, MAN
 from scripts.cat.names import names, Name
 from scripts.clan_resources.freshkill import FRESHKILL_ACTIVE
 
+from scripts.clan import Clan, OtherClan1
+
 
 # For debug box
 from scripts.clan import OtherClan1, Clan
@@ -507,7 +509,7 @@ class ProfileScreen(Screens):
 
         self.profile_elements["debug_box"] = pygame_gui.elements.UITextBox(
             ('Otherclan?: ' + str(self.the_cat.otherclan1) + '\n' +
-             'game.clan.all_clans: ' + str(OtherClan1.leader)),
+             'OtherClan1.leader: ' + str(game.otherclan1.leader)),
             scale(pygame.Rect((150, 200), (350, 300))), object_id=get_text_box_theme("#text_box_22_horizcenter"))
 
         # Set the cat backgrounds.
@@ -828,10 +830,12 @@ class ProfileScreen(Screens):
 
         # LEADER LIVES:
         # Optional - Only shows up for leaders
-        if not the_cat.dead and 'leader' in the_cat.status:
+        if not the_cat.dead and 'leader' in the_cat.status and not the_cat.otherclan1:
             output += 'remaining lives: ' + str(game.clan.leader_lives)
             # NEWLINE ----------
             output += "\n"
+        elif not the_cat.dead and 'leader' in the_cat.status and the_cat.otherclan1:
+            output += 'remaining lives: ' + str(game.otherclan1.leader_lives) + "\n"
 
         # MENTOR
         # Only shows up if the cat has a mentor.

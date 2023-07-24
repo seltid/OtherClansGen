@@ -461,7 +461,7 @@ class MakeClanScreen(Screens):
             "elder": randint(110, 155)
 
         }
-        for member in range(OtherClan1.starting_members):
+        for member in range(OtherClan1.num_starting_members):
             chosen_status, chosen_age = choice(list(status_vs_age.items()))
 
             create_other_clan_cat(Cat,
@@ -507,18 +507,18 @@ class MakeClanScreen(Screens):
                 new_cat.update_mentor()
             genned_IDs.append(new_cat.ID)
 
-        oc1_leader = genned_IDs[-1]
+        game.otherclan1.leader = genned_IDs[-1]
 
         # Format the list of cat IDs to be printed into OC1.json
-        OC1_cats = ",".join([str(cat_ID) for cat_ID in genned_IDs])
+        game.otherclan1.clan_cats = ",".join([str(cat_ID) for cat_ID in genned_IDs])
 
         OC1_content = {
             "clanname": None,
             "clanage": None,
             "biome": None,
-            "clan_cats": OC1_cats,
-            "leader": oc1_leader,
-            "leader_lives": None,
+            "clan_cats": game.otherclan1.clan_cats,
+            "leader": game.otherclan1.leader,
+            "leader_lives": randint(1,9),
             "leader_predecessors": None,
             "deputy": None,
             "med_cat": None,
@@ -530,7 +530,11 @@ class MakeClanScreen(Screens):
             f.write(file_content)
 
         # Make sure the code knows too
-        game.otherclan1 = OtherClan1()
+        game.otherclan1 = OtherClan1(None,
+                                     game.otherclan1.leader,
+                                     None,
+                                     None,
+                                     None)
 
     def exit_screen(self):
         self.main_menu.kill()

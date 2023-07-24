@@ -411,7 +411,7 @@ class Cat():
         
         # Deal with leader death
         text = ""
-        if self.status == 'leader':
+        if self.status == 'leader' and not self.otherclan1:
             if game.clan.leader_lives > 0:
                 self.thought = 'Was startled to find themselves in Silverpelt for a moment... did they lose a life?'
                 return ""
@@ -424,6 +424,16 @@ class Cat():
                     text = 'They\'ve lost their last life and have travelled to StarClan.'
                 else:
                     text = 'They\'ve has lost their last life and have travelled to the Dark Forest.'
+        elif self.status == 'leader' and self.otherclan1:
+            if game.otherclan1.leader_lives > 0:
+                self.thought = 'Was startled to see the cats of Silverpelt for a moment... did they lose a life?'
+                return ""
+            elif game.otherclan1.leader_lives <= 0:
+                self.dead = True
+                game.just_died.append(self.ID)
+                game.otherclan1.leader_lives = 0
+                self.thought = 'Is surprised to find themselves walking amongst the starry cats of Silverpelt'
+                text = 'They now watch over their Clan from Silverpelt.'
         else:
             self.dead = True
             game.just_died.append(self.ID)
