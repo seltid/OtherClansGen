@@ -132,7 +132,7 @@ class MakeClanScreen(Screens):
                 self.handle_saved_clan_event(event)
                 self.create_ocs(event)
 
-        
+
         elif event.type == pygame.KEYDOWN and game.settings['keybinds']:
             if self.sub_screen == 'game mode':
                 self.handle_game_mode_key(event)
@@ -507,18 +507,19 @@ class MakeClanScreen(Screens):
                 new_cat.update_mentor()
             genned_IDs.append(new_cat.ID)
 
+        oc1_leader = genned_IDs[-1]
+
         # Format the list of cat IDs to be printed into OC1.json
         OC1_cats = ",".join([str(cat_ID) for cat_ID in genned_IDs])
 
-        # Create OC1.json for the first time
-        oc1_save = open(f"{get_save_dir()}/{game.clan.name}/OC1.json", "a+")
-
         OC1_content = {
-            "clanname": str(Clan.all_clans[0]),
+            "clanname": None,
             "clanage": None,
             "biome": None,
             "clan_cats": OC1_cats,
-            "leader": None,
+            "leader": oc1_leader,
+            "leader_lives": None,
+            "leader_predecessors": None,
             "deputy": None,
             "med_cat": None,
         }
@@ -527,6 +528,9 @@ class MakeClanScreen(Screens):
         with open(f"{get_save_dir()}/{game.clan.name}/OC1.json", "w") as f:
             file_content = ujson.dumps(OC1_content, indent=4)
             f.write(file_content)
+
+        # Make sure the code knows too
+        game.otherclan1 = OtherClan1()
 
     def exit_screen(self):
         self.main_menu.kill()

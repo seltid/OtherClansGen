@@ -820,7 +820,6 @@ class Clan():
         if os.path.exists(get_save_dir() + f'/{self.name}clan.txt'):
             os.remove(get_save_dir() + f'/{self.name}clan.txt')
 
-        OtherClan1.save_oc1(game.otherclan1)
 
     def save_clan_settings(self):
         with open(get_save_dir() + f'/{self.name}/clan_settings.json', 'w',
@@ -870,7 +869,7 @@ class Clan():
             oc1_clan_data = ujson.loads(read_file.read())
 
         if oc1_clan_data["leader"]:
-            oc1_leader = Cat.all_cats[oc1_clan_data["leader"]]
+            oc1_leader = 999
             oc1_leader_lives = oc1_clan_data["leader_lives"]
         else:
             oc1_leader = None
@@ -892,11 +891,7 @@ class Clan():
         if oc1_clan_data["biome"]:
             OtherClan1.biome = oc1_clan_data["biome"]
 
-        game.otherclan1 = OtherClan1(oc1_clan_data["clanname"], relations=randint(25,75), temperament=choice('stoic'),
-                         leader=oc1_leader,
-                         deputy=oc1_deputy,
-                         medicine_cat=oc1_med_cat,
-                         biome=oc1_clan_data["biome"], age=oc1_clan_data["clanage"],)
+        game.otherclan1 = OtherClan1()
 
 
         return version_info
@@ -1470,13 +1465,8 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
 
     starting_members = randint(7,10)  # This does not include
 
-    leader = ''
     deputy = ''
     medicine_cat = ''
-
-    biome = choice(BIOME_TYPES)
-
-    age = randint(1000, 2000)
 
     def __init__(self,
                  name='',
@@ -1485,12 +1475,34 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
                  leader=None,
                  deputy=None,
                  medicine_cat=None,
-                 biome='Forest',
-                 age='',
+                 biome=choice(("Forest", "Plains", "Mountainous", "Beach")),
+                 age=randint(6000,7000),
                  reputation=None,
                  starting_members=starting_members,
                  OCID=1):
 
+        # Figure out certain roles
+        for cat in Cat.all_cats.values():
+            if cat.status == "leader" and not cat.dead:
+                oc1_leader = cat.ID
+                leader_found = True
+            if cat.status == "deputy" and not cat.dead:
+                oc1_deputy = cat.ID
+                deputy_found = True
+
+        try:
+            if leader_found == True:
+                pass
+        except:
+            oc1_leader = None
+
+        try:
+            if deputy_found == True:
+                pass
+        except:
+            oc1_deputy = None
+
+        self.leader = oc1_leader
         self.history = History()
 
         temperament_list = [
@@ -1506,45 +1518,14 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
             self.temperament = choice(temperament_list)
 
         self.age = age or randint(20,1000)
-        self.biome = biome or choice(self.__class__.BIOME_TYPES)
+        self.biome = biome or choice(Clan.BIOME_TYPES)
         self._reputation = 50
 
-        self.leader = leader
 
-        self.__class__.leader = leader
 
 
     def __repr__(self):
         return f"{self.name}Clan"
-
-    def create_oc1_clan(self):
-        """
-        This function is only called once a new clan is
-        created in the 'clan created' screen, not every time
-        the program starts
-        """
-        key_copy = tuple(Cat.otherclan1_cats.keys())
-        for i in key_copy:  # Going through all currently existing cats
-            # cat_class is a Cat-object
-            not_found = True
-            for x in range(self.starting_members):
-                if Cat.otherclan1_cats[i] == x:
-                    self.add_cat(Cat.otherclan1_cats[i])
-                    not_found = False
-            if Cat.otherclan1_cats[i] != self.leader and Cat.otherclan1_cats[i] != \
-                    self.medicine_cat and Cat.otherclan1_cats[i] != \
-                    self.deputy and Cat.otherclan1_cats[i] \
-                    and not_found:
-                Cat.otherclan1_cats[i].example = True
-                self.remove_cat(Cat.otherclan1_cats[i].ID)
-
-        # give thoughts,actions and relationships to cats
-        for cat_id in Cat.otherclan1_cats:
-            Cat.otherclan1_cats.get(cat_id).init_all_relationships()
-            if Cat.otherclan1_cats.get(cat_id).status == 'apprentice':
-                Cat.otherclan1_cats.get(cat_id).status_change('apprentice')
-
-        game.save_cats()
 
     def add_cat(self, cat):  # cat is a 'Cat' object
         """ Adds cat into the list of clan cats"""
@@ -1585,18 +1566,19 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     def save_oc1(self):
         # Save OC data. For now just make a test file
         oc1_clan_data = {
-            "clanname": str(Clan.all_clans[0]),
-            "clanage": OtherClan1.age,
-            "biome": OtherClan1.biome,
-            "leader": 'placeholder',
-            "deputy": 'placeholder',
-            "med_cat": 'placeholder',
+            "clanname": None,
+            "clanage": None,
+            "biome": None,
+            "clan_cats": None,
+            "leader": None,
+            "deputy": None,
+            "med_cat": None,
         }
 
         for cat in Cat.otherclan1_cats:
             pass
 
-        game.safe_save(f"{get_save_dir()}/{self.name}/OC1.json", oc1_clan_data)
+        game.safe_save(f"{get_save_dir()}/{game.clan.name}/OC1.json", oc1_clan_data)
 
 
 class StarClan():
