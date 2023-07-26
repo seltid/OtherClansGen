@@ -497,30 +497,48 @@ class MakeClanScreen(Screens):
                               alive=True,
                               outside=True)
 
+        # Create the deputy
+        create_other_clan_cat(Cat,
+                              new_name=False,
+                              loner=False,
+                              kittypet=False,
+                              kit=False,
+                              litter=False,
+                              other_clan=True,
+                              otherclan1=True,
+                              backstory=None,
+                              status="deputy",
+                              age=randint(35, 110),
+                              gender=choice(("male", "female")),
+                              thought="Is feeling uncertain about that new clan that just formed",
+                              alive=True,
+                              outside=True)
+
         # This gives any apprentices that didn't have a mentor one.
         # That could happen if the app was generated before a valid mentor was
         # It also makes a list of all the IDs of the cats that were created
-        genned_IDs = []
+        genned_cats = []
         for new_cat in Cat.otherclan1_cats.values():
             needs_mentor = ('apprentice', 'medicine cat apprentice', 'mediator apprentice')
             if new_cat.status in needs_mentor and not new_cat.mentor:
                 new_cat.update_mentor()
-            genned_IDs.append(new_cat.ID)
+            genned_cats.append(new_cat)
 
-        game.otherclan1.leader = genned_IDs[-1]
+        game.otherclan1.leader = genned_cats[-2]
+        game.otherclan1.deputy = genned_cats[-1]
 
         # Format the list of cat IDs to be printed into OC1.json
-        game.otherclan1.clan_cats = ",".join([str(cat_ID) for cat_ID in genned_IDs])
+        game.otherclan1.clan_cats = ",".join([str(cat_ID) for cat_ID in genned_cats])
 
         OC1_content = {
-            "clanname": None,
-            "clanage": None,
-            "biome": None,
+            "clanname": str(game.clan.all_clans[0]),
+            "clanage": randint(600,700),
+            "biome": choice(("Forest", "Plains", "Mountainous", "Beach")),
             "clan_cats": game.otherclan1.clan_cats,
-            "leader": game.otherclan1.leader,
+            "leader": game.otherclan1.leader.ID,
             "leader_lives": randint(1,9),
             "leader_predecessors": None,
-            "deputy": None,
+            "deputy": game.otherclan1.deputy.ID,
             "med_cat": None,
         }
 
@@ -532,9 +550,13 @@ class MakeClanScreen(Screens):
         # Make sure the code knows too
         game.otherclan1 = OtherClan1(None,
                                      game.otherclan1.leader,
-                                     None,
+                                     game.otherclan1.deputy,
                                      None,
                                      None)
+
+        # Establish some other stuff
+        game.otherclan1.leader_lives = OC1_content["leader_lives"]
+        game.otherclan1.age = OC1_content["clanage"]
 
     def exit_screen(self):
         self.main_menu.kill()
