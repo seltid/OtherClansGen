@@ -731,7 +731,6 @@ class Cat():
         # If we have it sorted by rank, we also need to re-sort
         if game.sort_type == "rank" and resort:
             Cat.sort_cats()
-
     
     def rank_change_traits_skill(self, mentor):
         """Updates trait and skill upon ceremony"""  
@@ -761,7 +760,6 @@ class Cat():
             return
         
         self.personality.set_kit(self.is_baby()) #Update kit trait stuff
-        
 
     def describe_cat(self, short=False):
         """ Generates a string describing the cat's appearance and gender. Mainly used for generating
@@ -907,7 +905,6 @@ class Cat():
             )
 
             print(f"WARNING: saving history of cat #{self.ID} didn't work")
-            
 
     def generate_lead_ceremony(self):
         """
@@ -1250,12 +1247,6 @@ class Cat():
 
         if self.status in ['apprentice', 'mediator apprentice', 'medicine cat apprentice']:
             self.update_mentor()
-
-
-
-
-
-
 
     def thoughts(self):
         """ Generates a thought for the cat, which displays on their profile. """
@@ -1807,12 +1798,11 @@ class Cat():
                 not_working = True
                 break
         return not_working
-
     
     def retire_cat(self):
         """This is only for cats that retire due to health condition"""
         
-        #There are some special tasks we need to do for apprentice
+        # There are some special tasks we need to do for apprentice
         # Note that although you can unretire cats, they will be a full warrior/med_cat/mediator
         if self.moons > 6 and self.status in ["apprentice", "medicine cat apprentice", "mediator apprentice"]:
             _ment = Cat.fetch_cat(self.mentor) if self.mentor else None
@@ -2060,6 +2050,7 @@ class Cat():
     # ---------------------------------------------------------------------------- #
     #                                 relationships                                #
     # ---------------------------------------------------------------------------- #
+
     def is_potential_mate(self,
                           other_cat: Cat,
                           for_love_interest: bool = False,
@@ -2926,14 +2917,6 @@ class Cat():
             }
 
 
-        
-# ---------------------------------------------------------------------------- #
-#                               END OF CAT CLASS                               #
-# ---------------------------------------------------------------------------- #
-
-# ---------------------------------------------------------------------------- #
-#                               PERSONALITY CLASS                              #
-# ---------------------------------------------------------------------------- #
 
 class Personality():
     """Hold personality information for a cat, and functions to deal with it """

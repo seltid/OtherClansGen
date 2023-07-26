@@ -870,7 +870,7 @@ class Clan():
             oc1_name = choice(names.names_dict["normal_prefixes"])
 
         if oc1_clan_data["leader"]:
-            oc1_leader = oc1_clan_data["leader"]
+            oc1_leader = Cat.all_cats[oc1_clan_data["leader"]]
             oc1_leader_lives = oc1_clan_data["leader_lives"]
         else:
             oc1_leader = None
@@ -1444,12 +1444,15 @@ class Clan():
 
 class OtherClan1():  # Actually creates/generates other clans. Only runs upon creation of them
 
+    # These things are changing, this just sets up that they exist
     leader_lives = 0
     clan_cats = []
     starclan_cats = []
     darkforest_cats = []
     unknown_cats = []
     seasons = [Clan.seasons]
+    age = 0
+    biome = 'biome'
 
     num_starting_members = randint(7,10)  # This does not include
 
@@ -1468,7 +1471,14 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
         self.name = name or choice(names.names_dict["normal_prefixes"])
         self.relations = relations or randint(8, 12)
         self.temperament = temperament or choice(temperament_list)
+
         self.leader = leader
+        self.leader_lives = 9
+        self.leader_predecessors = 0
+
+        self.deputy = deputy
+        self.deputy_predecessors = 0
+
 
 
     def __repr__(self):
@@ -1503,11 +1513,11 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     def save_oc1_clan():
         oc1_clan_data = {
             "clanname": game.otherclan1.name,
-            "clanage": None,
-            "biome": None,
+            "clanage": game.otherclan1.age,
+            "biome": game.otherclan1.biome,
             "clan_cats": game.otherclan1.clan_cats,
             "leader": game.otherclan1.leader,
-            "leader_lives": None,
+            "leader_lives": game.otherclan1.leader_lives,
             "leader_predecessors": None,
             "deputy": None,
             "med_cat": None,
@@ -1520,6 +1530,14 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
                 possible_oc1_leaders.append(cat.ID)
         chosen = random.choice(possible_oc1_leaders)
         return Cat.fetch_cat(chosen)
+
+    def new_leader(self, leader):
+        if leader:
+            self.leader = leader
+            Cat.all_cats[leader.ID].status_change('leader')
+            self.leader_predecessors += 1
+            self.leader_lives = 9
+        game.switches['new_leader'] = None
 
 
 class StarClan():

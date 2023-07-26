@@ -509,7 +509,8 @@ class ProfileScreen(Screens):
 
         self.profile_elements["debug_box"] = pygame_gui.elements.UITextBox(
             ('Otherclan?: ' + str(self.the_cat.otherclan1) + '\n' +
-             'OtherClan1.leader: ' + str(game.otherclan1.leader)),
+             'OtherClan1.leader: ' + str(game.otherclan1.leader) + '\n' +
+             'PC.leader' + str(game.clan.leader)),
             scale(pygame.Rect((150, 200), (350, 300))), object_id=get_text_box_theme("#text_box_22_horizcenter"))
 
         # Set the cat backgrounds.
@@ -834,6 +835,7 @@ class ProfileScreen(Screens):
             output += 'remaining lives: ' + str(game.clan.leader_lives)
             # NEWLINE ----------
             output += "\n"
+        # For now we can show the leader lives for OC1, but in the future we don't want to bc it wouldn't be known
         elif not the_cat.dead and 'leader' in the_cat.status and the_cat.otherclan1:
             output += 'remaining lives: ' + str(game.otherclan1.leader_lives) + "\n"
 
