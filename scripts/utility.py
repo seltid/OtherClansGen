@@ -10,9 +10,6 @@ from random import choice, choices, randint, random, sample
 import re
 import pygame
 
-import scripts.otherclansinfo
-all_sg_clans = scripts.otherclansinfo.all_sg_clans
-
 from scripts.cat.history import History
 from scripts.cat.names import names
 from scripts.cat.pelts import Pelt
@@ -1148,14 +1145,14 @@ def event_text_adjust(Cat,
 
     if clan: # If a relevant clan is defined in the thought/event,
         if other_cat and other_cat.otherclan1 is True:
-            clan_name = str(all_sg_clans[0]).removesuffix("Clan")
+            clan_name = "e"
         elif cat and cat.otherclan1 is True:
-            clan_name = str(all_sg_clans[0]).removesuffix("Clan")
+            clan_name = "e"
         else:
             clan_name = str(clan.name)
     else:
         if cat and cat.otherclan1 is True:
-            clan_name = str(all_sg_clans[0]).removesuffix("Clan")
+            clan_name = "e"
         elif game.clan is None:
             clan_name = game.switches["clan_list"][0]
         else:
@@ -1166,10 +1163,10 @@ def event_text_adjust(Cat,
     if other_clan_name or "o_c" in text:
         if other_clan_name:
             text = text.replace("o_c", other_clan_name)
-        elif str(clan_name) != str(all_sg_clans[0]):
-            text = text.replace("o_c", choice(all_sg_clans[:-1]) + "Clan")
-        elif str(clan_name) == str(all_sg_clans[0]):
-            text = text.replace("o_c", choice(all_sg_clans[1:]) + "Clan")
+        elif str(clan_name) != "e":
+            text = text.replace("o_c", "something" + "Clan")
+        elif str(clan_name) == "e":
+            text = text.replace("o_c", "something" + "Clan")
         else:
             pass
 

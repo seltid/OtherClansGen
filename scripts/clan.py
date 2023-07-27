@@ -653,6 +653,7 @@ class Clan():
     def add_to_oc(self, cat):
         if cat.ID in Cat.all_cats and cat.otherclan1 and cat.ID not in Cat.otherclan1_cats:
             Cat.otherclan1_cats.update({cat.ID: cat})
+            OtherClan1.clan_cats.append(cat.ID)
 
     def remove_cat(self, ID):  # ID is cat.ID
         """
@@ -820,7 +821,8 @@ class Clan():
         if os.path.exists(get_save_dir() + f'/{self.name}clan.txt'):
             os.remove(get_save_dir() + f'/{self.name}clan.txt')
 
-        OtherClan1.save_oc1_clan()
+        if os.path.exists(f"{get_save_dir()}/{game.clan.name}/OC1.json"):
+            OtherClan1.save_oc1_clan()
 
     def save_clan_settings(self):
         with open(get_save_dir() + f'/{self.name}/clan_settings.json', 'w',
@@ -891,9 +893,21 @@ class Clan():
         else:
             oc1_biome = choice(Clan.BIOME_TYPES)
 
+        if oc1_clan_data["clanage"]:
+            oc1_age = oc1_clan_data["clanage"]
+
+        if oc1_clan_data["clan_cats"]:
+            oc1_clan_cats = oc1_clan_data["clan_cats"]
+
         game.otherclan1 = OtherClan1(oc1_name, oc1_leader, oc1_deputy, oc1_med_cat, oc1_biome)
 
         game.otherclan1.leader_lives = oc1_leader_lives
+        game.otherclan1.age = oc1_age
+        for catID in oc1_clan_cats:
+            if catID not in Cat.otherclan1_cats:
+                Cat.otherclan1_cats.update({catID: Cat.all_cats[catID]})
+            if catID not in OtherClan1.clan_cats:
+                OtherClan1.clan_cats.append(catID)
 
         return version_info
 
@@ -1452,7 +1466,7 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     unknown_cats = []
     seasons = [Clan.seasons]
     age = 0
-    biome = 'biome'
+    biome = None
 
     num_starting_members = randint(7,10)  # This does not include
 
@@ -1461,7 +1475,7 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
                  leader=None,
                  deputy=None,
                  medicine_cat=None,
-                 biome='Forest',
+                 biome=None,
                  relations=0,
                  temperament=None):
 
@@ -1512,16 +1526,18 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
     @staticmethod
     def save_oc1_clan():
         oc1_clan_data = {
-            "clanname": game.otherclan1.name,
+            "clanname": str(game.clan.all_clans[0]),
             "clanage": game.otherclan1.age,
             "biome": game.otherclan1.biome,
             "clan_cats": game.otherclan1.clan_cats,
-            "leader": game.otherclan1.leader,
+            "leader": game.otherclan1.leader.ID,
             "leader_lives": game.otherclan1.leader_lives,
             "leader_predecessors": None,
-            "deputy": None,
+            "deputy": game.otherclan1.deputy.ID,
             "med_cat": None,
         }
+
+        game.safe_save(f"{get_save_dir()}/{game.clan.name}/OC1.json", oc1_clan_data)
 
     def appoint_new_leader(self):
         possible_oc1_leaders = []

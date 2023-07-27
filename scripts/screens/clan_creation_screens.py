@@ -528,7 +528,7 @@ class MakeClanScreen(Screens):
         game.otherclan1.deputy = genned_cats[-1]
 
         # Format the list of cat IDs to be printed into OC1.json
-        game.otherclan1.clan_cats = ",".join([str(cat_ID) for cat_ID in genned_cats])
+        game.otherclan1.clan_cats = ",".join([str(cat.ID) for cat in genned_cats])
 
         OC1_content = {
             "clanname": str(game.clan.all_clans[0]),
@@ -552,7 +552,7 @@ class MakeClanScreen(Screens):
                                      game.otherclan1.leader,
                                      game.otherclan1.deputy,
                                      None,
-                                     None)
+                                     choice(Clan.BIOME_TYPES))
 
         # Establish some other stuff
         game.otherclan1.leader_lives = OC1_content["leader_lives"]
