@@ -1,6 +1,7 @@
 import pygame
 from random import choice, randrange, randint, sample
 import pygame_gui
+from typing import Dict, List, Any
 
 from .base_screens import Screens
 
@@ -518,6 +519,7 @@ class MakeClanScreen(Screens):
         # That could happen if the app was generated before a valid mentor was
         # It also makes a list of all the IDs of the cats that were created
         genned_cats = []
+        otherclan1_cats: Dict[str, Cat]
         for new_cat in Cat.otherclan1_cats.values():
             needs_mentor = ('apprentice', 'medicine cat apprentice', 'mediator apprentice')
             if new_cat.status in needs_mentor and not new_cat.mentor:
@@ -528,6 +530,7 @@ class MakeClanScreen(Screens):
         game.otherclan1.deputy = genned_cats[-1]
 
         # Format the list of cat IDs to be printed into OC1.json
+        game.otherclan1.clan_cats = []
         game.otherclan1.clan_cats = ",".join([str(cat.ID) for cat in genned_cats])
 
         OC1_content = {

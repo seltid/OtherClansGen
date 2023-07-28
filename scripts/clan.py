@@ -904,6 +904,7 @@ class Clan():
         game.otherclan1.leader_lives = oc1_leader_lives
         game.otherclan1.age = oc1_age
         for catID in oc1_clan_cats:
+            the_cat = Cat.fetch_cat(catID)
             if catID not in Cat.otherclan1_cats:
                 Cat.otherclan1_cats.update({catID: Cat.all_cats[catID]})
             if catID not in OtherClan1.clan_cats:
@@ -1525,6 +1526,28 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
 
     @staticmethod
     def save_oc1_clan():
+
+        # Make sure all the listed oc clan cats are correct
+        mistake_IDs = []
+        for cat in game.otherclan1.clan_cats:
+            try:
+                the_cat_obj = Cat.all_cats[cat]
+            except KeyError:
+                mistake_IDs.append(cat)
+            try:
+                if not the_cat_obj.otherclan1:
+                    game.otherclan1.clan_cats.remove(cat)
+            except KeyError:
+                mistake_IDs.append(cat)
+            except UnboundLocalError:
+                pass
+        if mistake_IDs:
+            for entry in mistake_IDs:
+                if entry in game.otherclan1.clan_cats:
+                    game.otherclan1.clan_cats.remove(entry)
+
+
+
         oc1_clan_data = {
             "clanname": str(game.clan.all_clans[0]),
             "clanage": game.otherclan1.age,
