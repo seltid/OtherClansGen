@@ -681,7 +681,10 @@ class Cat():
 
         # If they have any apprentices, make sure they are still valid:
         if old_status == "medicine cat":
-            game.clan.remove_med_cat(self)
+            if self.otherclan1:
+                pass
+            else:
+                game.clan.remove_med_cat(self)
 
         # updates mentors
         if self.status == 'apprentice':

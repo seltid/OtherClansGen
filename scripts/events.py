@@ -2244,25 +2244,62 @@ class Events:
             "apprentice" : "warrior",
             "medicine cat apprentice" : "medicine cat",
             "mediator apprentice" : "mediator",
+            "warrior": "elder",
+            "medicine cat": "elder",
+            "mediator": "elder",
         }
 
-        age_up = {
-            "newborn" : "kitten",
-            "warrior" : "elder"
+        wiggle_room = {
+            "apprentice": (9, 12),
+            "medicine cat apprentice": (10, 16),
+            "mediator apprentice": (10, 14),
+            "warrior": (109, 130),
+            "medicine cat": (150, 178),
+            "mediator": (110, 153)
         }
 
-        interval_wiggle = [9,10,11,12,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131]
-        cat.interval = random.choice(interval_wiggle)
-        coming_of_age = (1, 5, cat.interval, 13, 131)
+        mandatory_retirement = {
+            "newborn": 0,
+            "kitten": 5,
+
+            "apprentice": 13,
+            "medicine cat apprentice": 17,
+            "mediator apprentice": 15,
+
+            "warrior": 131,
+            "medicine cat": 179,
+            "mediator": 154,
+
+            # Deputies, leaders, and elders do not have a max age limit
+        }
 
         # Update statuses
         if cat.status == "kitten" and cat.moons >= 5:
             self.oc_ceremony(cat, random.choice(["mediator apprentice", "medicine cat apprentice", "apprentice"]))
-        elif cat.status in promotions.keys() and cat.moons in coming_of_age:
+
+        # Status changes with wiggle room (app graduation, retirement)
+        elif cat.status in wiggle_room and cat.moons in range(wiggle_room[cat.status][0], wiggle_room[cat.status][1]):
+            if cat.status in ["mediator apprentice", "medicine cat apprentice", "apprentice"]:
+                if cat.experience_level in ["untrained", "trainee"]:
+                    pass
+                elif cat.experience_level in ["competent", "proficient", "expert", "master"]:
+                    self.oc_ceremony(cat, promotions[cat.status])
+                else:
+                    answer = random.choice(("Yes", "No"))
+                    if answer:
+                        self.oc_ceremony(cat, promotions[cat.status])
+                    pass
+            else:
+                result = random.randint(1,15)
+                if result == 1:
+                    self.oc_ceremony(cat, promotions[cat.status])
+
+
+        # Mandatory retirement
+        elif cat.status in mandatory_retirement.keys() and cat.moons >= mandatory_retirement[cat.status]:
             self.oc_ceremony(cat, promotions[cat.status])
-        elif cat.status in age_up.keys() and cat.moons in coming_of_age:
-            cat.status = age_up[cat.status]
-        elif cat.moons > 131 and cat.status != "elder":
+
+        elif cat.moons > 131 and cat.status != "leader" and cat.status != "elder":
             self.oc_ceremony(cat, "elder")
             self.history.add_retirement(cat)
 
@@ -2271,7 +2308,6 @@ class Events:
         cat.manage_outside_trait()
         cat.skills.progress_skill(cat)  # Might want to change this so they get skills differently
         # self.pregnancy_events.handle_having_kits(cat, clan=game.clan)   [Do I want to have them get pregnant? Not rn]
-
 
         # Roll to see if they died
         if not cat.dead:

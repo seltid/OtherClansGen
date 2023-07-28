@@ -31,7 +31,7 @@ class OutsiderEvents:
                     text = f'Rumors reach your Clan that the {cat.status} ' \
                            f'{cat.name} has died recently.'
                 elif cat.otherclan1 and cat.ID not in game.otherclan1.leader.ID:
-                    text = f'A patrol informs you that the {cat.status} {cat.name} from {game.clan.all_clans[0]}Clan died this past moon.'
+                    text = f'A patrol informs you that the {cat.status} {cat.name} from {game.clan.all_clans[0]} died this past moon.'
                 elif cat.otherclan1 and cat.ID in game.otherclan1.leader.ID:
                     game.otherclan1.leader_lives -= 1
                     if game.otherclan1.leader_lives > 0 and not game.otherclan1.leader.dead:
