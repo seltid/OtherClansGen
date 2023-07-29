@@ -1546,6 +1546,15 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
                 if entry in game.otherclan1.clan_cats:
                     game.otherclan1.clan_cats.remove(entry)
 
+        # Temporary things
+        # Skill export for viewing
+
+        skill_dictionary = {}
+        for catID in game.otherclan1.clan_cats:
+            skill_dictionary.update({catID:Cat.fetch_cat(catID).skills.get_skill_dict()})
+
+        with open (f"{get_save_dir()}/{game.clan.name}/skills.txt", "w") as f:
+            f.write(str(skill_dictionary))
 
 
         oc1_clan_data = {

@@ -448,6 +448,8 @@ class MakeClanScreen(Screens):
 
     def create_ocs(self, event):
         # Create OC cats
+        game.otherclan1.clan_cats = []
+        Cat.otherclan1_cats = {}
         status_vs_age = {
             "kitten": randint(1,5),
 

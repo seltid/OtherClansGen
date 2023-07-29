@@ -2240,6 +2240,7 @@ class Events:
         cat.life = cat.dead
         cat.old_status = cat.status
 
+        # Guides for who becomes what and when
         promotions = {
             "apprentice" : "warrior",
             "medicine cat apprentice" : "medicine cat",
@@ -2250,9 +2251,9 @@ class Events:
         }
 
         wiggle_room = {
-            "apprentice": (9, 12),
-            "medicine cat apprentice": (10, 16),
-            "mediator apprentice": (10, 14),
+            "apprentice": (9, 13),
+            "medicine cat apprentice": (10, 17),
+            "mediator apprentice": (10, 15),
             "warrior": (109, 130),
             "medicine cat": (150, 178),
             "mediator": (110, 153)
@@ -2275,7 +2276,30 @@ class Events:
 
         # Update statuses
         if cat.status == "kitten" and cat.moons >= 5:
-            self.oc_ceremony(cat, random.choice(["mediator apprentice", "medicine cat apprentice", "apprentice"]))
+            cat_skill_dict = cat.skills.get_skill_dict()
+            cat_paths = []
+            for skill in ["primary", "secondary", "hidden"]:
+                if skill in cat_skill_dict:
+                    cat_paths.append(cat_skill_dict[skill])
+
+            # Not currently working -- come back tomorrow
+            medicine_paths = ["HEALER","STAR","OMEN","DREAMING","CLAIRVOYANT","PROPHET","GHOST"]
+            if any(path in medicine_paths for path in cat_paths):
+                chosen_career = "medicine cat apprentice"
+            elif "MEDIATOR" in cat_paths:
+                chosen_career = "mediator apprentice"
+            elif "HUNTER" in cat_paths or "FIGHTER" in cat_paths:
+                chosen_career = "apprentice"
+            else:
+                career = random.randint(1,25)
+                if career == 1:
+                    chosen_career = "mediator apprentice"
+                elif 5 >= career >= 2:
+                    chosen_career = "medicine cat apprentice"
+                else:
+                    chosen_career = "apprentice"
+
+            self.oc_ceremony(cat, chosen_career)
 
         # Status changes with wiggle room (app graduation, retirement)
         elif cat.status in wiggle_room and cat.moons in range(wiggle_room[cat.status][0], wiggle_room[cat.status][1]):
@@ -2285,15 +2309,14 @@ class Events:
                 elif cat.experience_level in ["competent", "proficient", "expert", "master"]:
                     self.oc_ceremony(cat, promotions[cat.status])
                 else:
-                    answer = random.choice(("Yes", "No"))
-                    if answer:
+                    answer = random.randint(1,20)  # 95% chance to graduate
+                    if answer != 1:
                         self.oc_ceremony(cat, promotions[cat.status])
                     pass
             else:
                 result = random.randint(1,15)
                 if result == 1:
                     self.oc_ceremony(cat, promotions[cat.status])
-
 
         # Mandatory retirement
         elif cat.status in mandatory_retirement.keys() and cat.moons >= mandatory_retirement[cat.status]:
@@ -2309,7 +2332,21 @@ class Events:
         cat.skills.progress_skill(cat)  # Might want to change this so they get skills differently
         # self.pregnancy_events.handle_having_kits(cat, clan=game.clan)   [Do I want to have them get pregnant? Not rn]
 
-        # Roll to see if they died
+        # Gain experience -----------------------
+        self.handle_apprentice_EX(cat)
+
+
+
+
+
+        # Cap EXP at 321 (master)
+        if cat.experience > 321:
+            cat.experience = 321
+
+
+
+
+        # Roll to see if they died --------------
         if not cat.dead:
             self.outsider_events.killing_outsiders(cat)
 
