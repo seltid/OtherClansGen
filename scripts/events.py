@@ -2274,21 +2274,23 @@ class Events:
             # Deputies, leaders, and elders do not have a max age limit
         }
 
-        # Update statuses
+        # Update statuses ----------------------------------------------------------------------------------------------
+        # Determine kitten career choice based on skills
         if cat.status == "kitten" and cat.moons >= 5:
             cat_skill_dict = cat.skills.get_skill_dict()
-            cat_paths = []
-            for skill in ["primary", "secondary", "hidden"]:
-                if skill in cat_skill_dict:
-                    cat_paths.append(cat_skill_dict[skill])
+            cat.cat_paths = []
+            for skill_category in ['primary', 'secondary', 'hidden']:
+                relevant_skill_category = cat_skill_dict[skill_category]
+                skill_only = str(relevant_skill_category).split(",")[0]
+                cat.cat_paths.append(skill_only)
 
             # Not currently working -- come back tomorrow
             medicine_paths = ["HEALER","STAR","OMEN","DREAMING","CLAIRVOYANT","PROPHET","GHOST"]
-            if any(path in medicine_paths for path in cat_paths):
+            if any(path in cat.cat_paths for path in medicine_paths):
                 chosen_career = "medicine cat apprentice"
-            elif "MEDIATOR" in cat_paths:
+            elif "MEDIATOR" in cat.cat_paths:
                 chosen_career = "mediator apprentice"
-            elif "HUNTER" in cat_paths or "FIGHTER" in cat_paths:
+            elif "HUNTER" in cat.cat_paths or "FIGHTER" in cat.cat_paths:
                 chosen_career = "apprentice"
             else:
                 career = random.randint(1,25)
@@ -2314,7 +2316,7 @@ class Events:
                         self.oc_ceremony(cat, promotions[cat.status])
                     pass
             else:
-                result = random.randint(1,15)
+                result = random.randint(1,10)
                 if result == 1:
                     self.oc_ceremony(cat, promotions[cat.status])
 
@@ -2322,7 +2324,7 @@ class Events:
         elif cat.status in mandatory_retirement.keys() and cat.moons >= mandatory_retirement[cat.status]:
             self.oc_ceremony(cat, promotions[cat.status])
 
-        elif cat.moons > 131 and cat.status != "leader" and cat.status != "elder":
+        elif cat.moons > 131 and cat.status not in ["leader", "deputy", "medicine cat", "mediator"] and cat.status != "elder":
             self.oc_ceremony(cat, "elder")
             self.history.add_retirement(cat)
 
