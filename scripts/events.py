@@ -2284,22 +2284,25 @@ class Events:
                 skill_only = str(relevant_skill_category).split(",")[0]
                 cat.cat_paths.append(skill_only)
 
-            # Not currently working -- come back tomorrow
-            medicine_paths = ["HEALER","STAR","OMEN","DREAMING","CLAIRVOYANT","PROPHET","GHOST"]
-            if any(path in cat.cat_paths for path in medicine_paths):
-                chosen_career = "medicine cat apprentice"
-            elif "MEDIATOR" in cat.cat_paths:
-                chosen_career = "mediator apprentice"
-            elif "HUNTER" in cat.cat_paths or "FIGHTER" in cat.cat_paths:
-                chosen_career = "apprentice"
-            else:
-                career = random.randint(1,25)
-                if career == 1:
-                    chosen_career = "mediator apprentice"
-                elif 5 >= career >= 2:
+            oddball_chance = random.randint(1,100)  # 1/100 chance to ignore skills and independetly choose career
+            if oddball_chance != 1:
+                medicine_paths = ["HEALER","STAR","OMEN","DREAMING","CLAIRVOYANT","PROPHET","GHOST"]
+                if any(path in cat.cat_paths for path in medicine_paths):
                     chosen_career = "medicine cat apprentice"
-                else:
+                elif "MEDIATOR" in cat.cat_paths:
+                    chosen_career = "mediator apprentice"
+                elif "HUNTER" in cat.cat_paths or "FIGHTER" in cat.cat_paths:
                     chosen_career = "apprentice"
+                else:
+                    career = random.randint(1,25)
+                    if career == 1:
+                        chosen_career = "mediator apprentice"
+                    elif 5 >= career >= 2:
+                        chosen_career = "medicine cat apprentice"
+                    else:
+                        chosen_career = "apprentice"
+            else:
+                chosen_career = random.choice(["mediator apprentice", "medicine cat apprentice", "apprentice"])
 
             self.oc_ceremony(cat, chosen_career)
 
