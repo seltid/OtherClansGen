@@ -31,7 +31,7 @@ from scripts.events_module.outsider_events import OutsiderEvents
 from scripts.event_class import Single_Event
 from scripts.game_structure.game_essentials import game
 from scripts.utility import get_alive_kits, get_med_cats, ceremony_text_adjust, \
-    get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust
+    get_current_season, adjust_list_text, ongoing_event_text_adjust, event_text_adjust, create_other_clan_cat
 from scripts.events_module.generate_events import GenerateEvents
 from scripts.events_module.relationship.pregnancy_events import Pregnancy_Events
 from scripts.game_structure.windows import SaveError
@@ -278,6 +278,7 @@ class Events:
 
         # Do the same for OC1
         self.check_and_promote_oc_leader()
+        # self.check_and_promote_oc_deputy()          Broken right now
 
         # Resort
         if game.sort_type != "id":
@@ -2242,21 +2243,25 @@ class Events:
 
         # Guides for who becomes what and when
         promotions = {
-            "apprentice" : "warrior",
-            "medicine cat apprentice" : "medicine cat",
-            "mediator apprentice" : "mediator",
+            "apprentice": "warrior",
+            "medicine cat apprentice": "medicine cat",
+            "mediator apprentice": "mediator",
+
             "warrior": "elder",
             "medicine cat": "elder",
             "mediator": "elder",
+            "deputy": "elder"
         }
 
         wiggle_room = {
             "apprentice": (9, 13),
             "medicine cat apprentice": (10, 17),
             "mediator apprentice": (10, 15),
+
             "warrior": (109, 130),
             "medicine cat": (150, 178),
-            "mediator": (110, 153)
+            "mediator": (110, 153),
+            "deputy": (120, 130)
         }
 
         mandatory_retirement = {
@@ -2271,7 +2276,9 @@ class Events:
             "medicine cat": 179,
             "mediator": 154,
 
-            # Deputies, leaders, and elders do not have a max age limit
+            "deputy": 131
+
+            # Leaders and elders do not have a max age limit
         }
 
         # Update statuses ----------------------------------------------------------------------------------------------
@@ -2327,7 +2334,7 @@ class Events:
         elif cat.status in mandatory_retirement.keys() and cat.moons >= mandatory_retirement[cat.status]:
             self.oc_ceremony(cat, promotions[cat.status])
 
-        elif cat.moons > 131 and cat.status not in ["leader", "deputy", "medicine cat", "mediator"] and cat.status != "elder":
+        elif cat.moons > 131 and cat.status not in ["leader", "medicine cat", "mediator"] and cat.status != "elder":
             self.oc_ceremony(cat, "elder")
             self.history.add_retirement(cat)
 
@@ -2340,16 +2347,9 @@ class Events:
         # Gain experience -----------------------
         self.handle_apprentice_EX(cat)
 
-
-
-
-
         # Cap EXP at 321 (master)
         if cat.experience > 321:
             cat.experience = 321
-
-
-
 
         # Roll to see if they died --------------
         if not cat.dead:
@@ -2382,6 +2382,145 @@ class Events:
                 oc_leader_dead = Cat.fetch_cat(game.otherclan1.leader).dead
             else:
                 oc_leader_dead = True
+
+    def check_and_promote_oc_deputy(self):
+        if not game.otherclan1.deputy or game.otherclan1.deputy.dead or game.otherclan1.deputy.status == "elder":
+
+            # This determines all the cats who are eligible to be deputy.
+            possible_deputies = list(
+                filter(
+                    lambda x: not x.dead and x.otherclan1 and x.status == "warrior" and (x.apprentice or x.former_apprentices),
+                    Cat.all_cats_list))
+
+            # If there are possible deputies, choose from that list.
+            if possible_deputies:
+                random_cat = random.choice(possible_deputies)
+                involved_cats = [random_cat.ID]
+
+                # Gather deputy and leader status, for determination of the text.
+                if game.otherclan1.leader:
+                    if game.otherclan1.leader.dead:
+                        leader_status = "not_here"
+                    else:
+                        leader_status = "here"
+                else:
+                    leader_status = "not_here"
+
+                if game.otherclan1.deputy:
+                    if game.otherclan1.deputy.dead:
+                        deputy_status = "not_here"
+                    else:
+                        deputy_status = "here"
+                else:
+                    deputy_status = "not_here"
+
+                if leader_status == "here" and deputy_status == "not_here":
+
+                    if random_cat.personality.trait == 'bloodthirsty':
+                        text = f"{random_cat.name} has been chosen as the new deputy. " \
+                               f"They look at the Clan leader with an odd glint in their eyes."
+                        # No additional involved cats
+                    else:
+                        if game.otherclan1.deputy:
+                            previous_deputy_mention = random.choice([
+                                f"They know that {game.otherclan1.deputy.name} would approve.",
+                                f"They hope that {game.otherclan1.deputy.name} would approve.",
+                                f"They don't know if {game.otherclan1.deputy.name} would approve, "
+                                f"but life must go on. "
+                            ])
+                            involved_cats.append(game.otherclan1.deputy.ID)
+
+                        else:
+                            previous_deputy_mention = ""
+
+                        text = f"{game.otherclan1.leader.name} chooses " \
+                               f"{random_cat.name} to take over " \
+                               f"as deputy. " + previous_deputy_mention
+
+                        involved_cats.append(game.otherclan1.leader.ID)
+                elif leader_status == "not_here" and deputy_status == "here":
+                    text = f"The Clan is without a leader, but a " \
+                           f"new deputy must still be named.  " \
+                           f"{random_cat.name} is chosen as the new deputy. " \
+                           f"The retired deputy nods their approval."
+                elif leader_status == "not_here" and deputy_status == "not_here":
+                    text = f"Without a leader or deputy, the Clan has been directionless. " \
+                           f"They all turn to {random_cat.name} with hope for the future."
+                elif leader_status == "here" and deputy_status == "here":
+                    possible_events = [
+                        f"{random_cat.name} has been chosen as the new deputy. "  # pylint: disable=line-too-long
+                        f"The Clan yowls their name in approval.",  # pylint: disable=line-too-long
+                        f"{random_cat.name} has been chosen as the new deputy. "  # pylint: disable=line-too-long
+                        f"Some of the older Clan members question the wisdom in this choice.",
+                        # pylint: disable=line-too-long
+                        f"{random_cat.name} has been chosen as the new deputy. "  # pylint: disable=line-too-long
+                        f"They hold their head up high and promise to do their best for the Clan.",
+                        # pylint: disable=line-too-long
+                        f"{game.otherclan1.leader.name} has been thinking deeply all day who they would "  # pylint: disable=line-too-long
+                        f"respect and trust enough to stand at their side, and at sunhigh makes the "  # pylint: disable=line-too-long
+                        f"announcement that {random_cat.name} will be the Clan's new deputy.",
+                        # pylint: disable=line-too-long
+                        f"{random_cat.name} has been chosen as the new deputy. They pray to "  # pylint: disable=line-too-long
+                        f"StarClan that they are the right choice for the Clan.",  # pylint: disable=line-too-long
+                        f"{random_cat.name} has been chosen as the new deputy. Although"  # pylint: disable=line-too-long
+                        f"they are nervous, they put on a brave front and look forward to serving"  # pylint: disable=line-too-long
+                        f"the clan.",
+                    ]
+                    # No additional involved cats
+                    text = random.choice(possible_events)
+                else:
+                    # This should never happen. Failsafe.
+                    text = f"{random_cat.name} becomes deputy. "
+            else:
+                # If there are no possible deputies, choose someone else, with special text.
+                all_warriors = list(
+                    filter(
+                        lambda x: not x.dead and x.otherclan1 and x.status == "warrior", Cat.all_cats_list))
+                if all_warriors:
+                    random_cat = random.choice(all_warriors)
+                    involved_cats = [random_cat.ID]
+                    text = f"No cat is truly fit to be deputy, " \
+                           f"but the position can't remain vacant. " \
+                           f"{random_cat.name} is appointed as the new deputy. "
+
+                else:
+                    # If there are no known candidates, most of the time we want to generate a new deputy.
+                    # There can be a small chance the position goes unfilled, however.
+                    appoint_chance = random.randint(1,100)
+                    if appoint_chance == 1:
+                        game.cur_events_list.append(
+                            Single_Event(
+                                f"The deputy's spot beneath {game.otherclan1.leader} is conspicuously empty. Their Clan"
+                                f" seems uneasy.",
+                                "ceremony"))
+                    else:
+                        create_other_clan_cat(Cat,
+                                              new_name=False,
+                                              loner=False,
+                                              kittypet=False,
+                                              kit=False,
+                                              litter=False,
+                                              other_clan=True,
+                                              otherclan1=True,
+                                              backstory=None,
+                                              status="deputy",
+                                              age=random.randint(35, 110),
+                                              gender=random.choice(("male", "female")),
+                                              thought="Is still getting used to this whole 'being the deputy' gig",
+                                              alive=True,
+                                              outside=True)
+
+                return
+
+            # This is the part that actually makes them the deputy
+            random_cat.status_change("deputy")
+            game.otherclan1.deputy = random_cat
+
+            game.cur_events_list.append(
+                Single_Event(text, "ceremony", involved_cats))
+
+
+
 
     def oc_ceremony(self, cat, promoted_to, preparedness="prepared"):
         _ment = Cat.fetch_cat(

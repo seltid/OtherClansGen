@@ -200,6 +200,7 @@ class Cat():
         self.exiled = False
         self.outside = False
         self.otherclan1 = False
+        self.clan = None
         self.dead_for = 0  # moons
         self.thought = ''
         self.genderalign = None
@@ -2913,6 +2914,7 @@ class Cat():
                 "df": self.df,
                 "outside": self.outside,
                 "otherclan1": self.otherclan1,
+                "clan": self.clan,
                 "faded_offspring": self.faded_offspring,
                 "opacity": self.pelt.opacity,
                 "prevent_fading": self.prevent_fading,
@@ -3160,7 +3162,7 @@ class Personality():
             #This will only trigger if they have the same personality. 
             return None
 
-# Twelve example cats
+
 def create_example_cats():
     e = sample(range(12), 3)
     not_allowed = ['NOPAW', 'NOTAIL', 'HALFTAIL', 'NOEAR', 'BOTHBLIND', 'RIGHTBLIND', 'LEFTBLIND', 'BRIGHTHEART',
@@ -3178,7 +3180,6 @@ def create_example_cats():
         for scar in game.choose_cats[a].pelt.scars:
             if scar in not_allowed:
                 game.choose_cats[a].pelt.scars.remove(scar)
-    
         #update_sprite(game.choose_cats[a])
     
 

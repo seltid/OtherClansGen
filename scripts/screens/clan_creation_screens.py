@@ -1302,6 +1302,14 @@ class MakeClanScreen(Screens):
                          self.game_mode, self.members,
                          starting_season=self.selected_season)
         game.clan.create_clan()
+
+        Cat.fetch_cat(self.leader).clan = game.clan.name
+        Cat.fetch_cat(self.deputy).clan = game.clan.name
+        Cat.fetch_cat(self.med_cat).clan = game.clan.name
+
+        for cat in self.members:
+            cat.clan = game.clan.name
+
         #game.clan.starclan_cats.clear()
         game.cur_events_list.clear()
         game.herb_events_list.clear()

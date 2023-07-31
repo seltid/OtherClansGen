@@ -37,7 +37,7 @@ class OutsiderEvents:
                     if game.otherclan1.leader_lives > 0 and not game.otherclan1.leader.dead:
                         text = f'Something in the air at the Gathering feels strange.'
                     else:
-                        text = f'The Clan is shocked to see a new leader of {game.clan.all_clans[0]}at the Gathering. {cat.name}, the previous leader, has lost their last life.'
+                        text = f'The Clan is shocked to see a new leader of {game.clan.all_clans[0]} at the Gathering. {cat.name}, the previous leader, has lost their last life.'
                         cat.die()
                 else:
                     cat.outside = False

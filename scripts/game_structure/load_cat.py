@@ -143,6 +143,7 @@ def json_load():
             new_cat.no_kits = cat["no_kits"]
             new_cat.exiled = cat["exiled"]
             new_cat.otherclan1 = cat["otherclan1"]
+            new_cat.clan = cat["clan"] if "clan" in cat else None
 
             if "skill_dict" in cat:
                 new_cat.skills = CatSkills(cat["skill_dict"])
