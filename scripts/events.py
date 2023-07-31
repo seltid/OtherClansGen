@@ -16,7 +16,6 @@ from scripts.patrol import Patrol
 import ujson
 
 from scripts.cat.cats import Cat, cat_class
-from scripts.cat.skills import CatSkills
 from scripts.clan import HERBS
 from scripts.clan_resources.freshkill import FRESHKILL_ACTIVE, FRESHKILL_EVENT_ACTIVE
 from scripts.conditions import medical_cats_condition_fulfilled, get_amount_cat_for_one_medic
@@ -35,7 +34,6 @@ from scripts.utility import get_alive_kits, get_med_cats, ceremony_text_adjust, 
 from scripts.events_module.generate_events import GenerateEvents
 from scripts.events_module.relationship.pregnancy_events import Pregnancy_Events
 from scripts.game_structure.windows import SaveError
-from scripts.housekeeping.datadir import get_save_dir
 
 
 class Events:
@@ -2293,7 +2291,7 @@ class Events:
 
             oddball_chance = random.randint(1,100)  # 1/100 chance to ignore skills and independetly choose career
             if oddball_chance != 1:
-                medicine_paths = ["HEALER","STAR","OMEN","DREAMING","CLAIRVOYANT","PROPHET","GHOST"]
+                medicine_paths = ["HEALER", "STAR", "OMEN", "DREAM", "CLAIRVOYANT", "PROPHET", "GHOST"]
                 if any(path in cat.cat_paths for path in medicine_paths):
                     chosen_career = "medicine cat apprentice"
                 elif "MEDIATOR" in cat.cat_paths:
