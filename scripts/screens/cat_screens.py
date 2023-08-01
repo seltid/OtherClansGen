@@ -501,7 +501,7 @@ class ProfileScreen(Screens):
                                                                          "#text_box_22_horizleft"),
                                                                      line_spacing=0.95, manager=MANAGER)
         self.profile_elements["cat_info_column2"] = UITextBoxTweaked(self.generate_column2(self.the_cat),
-                                                                     scale(pygame.Rect((980, 428), (500, 360))),
+                                                                     scale(pygame.Rect((980, 460), (500, 360))),
                                                                      object_id=get_text_box_theme(
                                                                          "#text_box_22_horizleft"),
                                                                      line_spacing=0.95, manager=MANAGER)
@@ -813,23 +813,16 @@ class ProfileScreen(Screens):
         """Generate the right column information"""
         output = ""
 
-        # CLAN
-        if the_cat.clan:
-            output += "<i>clan: " + str(the_cat.clan) + "Clan</i>"
-            output += "\n"
-        else:
-            output += "\n \n"
-
         # STATUS
         if the_cat.outside and the_cat.otherclan1:
-            output += the_cat.status
+            output += f"{the_cat.status} of {the_cat.clan}Clan"
         elif the_cat.outside and not the_cat.otherclan1 and not the_cat.exiled and the_cat.status not in ['kittypet', 'loner', 'rogue',
                                                                              'former Clancat']:
-            output += "<font color='#FF0000'>lost</font>"
+            output += f"<font color='#FF0000'>lost</font> from {the_cat.clan}Clan"
         elif the_cat.exiled:
-            output += "<font color='#FF0000'>exiled</font>"
+            output += f"<font color='#FF0000'>exiled</font> from {the_cat.clan}Clan"
         else:
-            output += the_cat.status
+            output += f"{the_cat.status} of {the_cat.clan}Clan"
 
         # NEWLINE ----------
         output += "\n"
