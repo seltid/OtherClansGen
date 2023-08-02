@@ -16,7 +16,7 @@ from scripts.patrol import Patrol
 import ujson
 
 from scripts.cat.cats import Cat, cat_class
-from scripts.clan import HERBS
+from scripts.clan import HERBS, OtherClan1
 from scripts.clan_resources.freshkill import FRESHKILL_ACTIVE, FRESHKILL_EVENT_ACTIVE
 from scripts.conditions import medical_cats_condition_fulfilled, get_amount_cat_for_one_medic
 from scripts.events_module.misc_events import MiscEvents
@@ -276,7 +276,7 @@ class Events:
 
         # Do the same for OC1
         self.check_and_promote_oc_leader()
-        # self.check_and_promote_oc_deputy()          Broken right now
+        self.check_and_promote_oc_deputy()
 
         # Resort
         if game.sort_type != "id":
@@ -2387,7 +2387,7 @@ class Events:
             # This determines all the cats who are eligible to be deputy.
             possible_deputies = list(
                 filter(
-                    lambda x: not x.dead and x.otherclan1 and x.status == "warrior" and (x.apprentice or x.former_apprentices),
+                    lambda x: not x.dead and x.otherclan1 and x.status == "warrior",
                     Cat.all_cats_list))
 
             # If there are possible deputies, choose from that list.
@@ -2492,7 +2492,7 @@ class Events:
                                 f" seems uneasy.",
                                 "ceremony"))
                     else:
-                        create_other_clan_cat(Cat,
+                        new_cat = create_other_clan_cat(Cat,
                                               new_name=False,
                                               loner=False,
                                               kittypet=False,
@@ -2507,12 +2507,15 @@ class Events:
                                               thought="Is still getting used to this whole 'being the deputy' gig",
                                               alive=True,
                                               outside=True)
-
-                return
+                        new_deputy = new_cat[0]
+                        new_deputy.status_change("deputy")
+                        game.otherclan1.deputy = new_deputy
+                        return
 
             # This is the part that actually makes them the deputy
             random_cat.status_change("deputy")
             game.otherclan1.deputy = random_cat
+
 
             game.cur_events_list.append(
                 Single_Event(text, "ceremony", involved_cats))
@@ -2521,6 +2524,7 @@ class Events:
 
 
     def oc_ceremony(self, cat, promoted_to, preparedness="prepared"):
+        cat.old_status = cat.status
         _ment = Cat.fetch_cat(
             cat.mentor) if cat.mentor else None  # Grab current mentor, if they have one, before it's removed.
         old_name = str(cat.name)
@@ -2541,6 +2545,10 @@ class Events:
             "warrior": ["warrior", "deputy", "leader", "elder"],
             "mediator": ["mediator"]
         }
+
+        if cat.old_status == "deputy" and game.otherclan1.deputy.ID == cat.ID and promoted_to in "elder":
+            game.otherclan1.deputy = None
+
 
         try:
             # Get all the ceremonies for the role ----------------------------------------

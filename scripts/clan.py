@@ -1556,16 +1556,24 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
         with open (f"{get_save_dir()}/{game.clan.name}/skills.txt", "w") as f:
             f.write(str(skill_dictionary))
 
+        # Double check to make sure you don't have dead leader/deputy
+        if game.otherclan1.leader:
+            if Cat.fetch_cat(game.otherclan1.leader.ID).dead:
+                game.otherclan1.leader = None
+
+        if game.otherclan1.deputy:
+            if Cat.fetch_cat(game.otherclan1.deputy.ID).dead:
+                game.otherclan1.deputy = None
 
         oc1_clan_data = {
             "clanname": str(game.clan.all_clans[0]),
             "clanage": game.otherclan1.age,
             "biome": game.otherclan1.biome,
             "clan_cats": game.otherclan1.clan_cats,
-            "leader": game.otherclan1.leader.ID,
+            "leader": game.otherclan1.leader.ID if game.otherclan1.leader else None,
             "leader_lives": game.otherclan1.leader_lives,
             "leader_predecessors": None,
-            "deputy": game.otherclan1.deputy.ID,
+            "deputy": game.otherclan1.deputy.ID if game.otherclan1.deputy else None,
             "med_cat": None,
         }
 

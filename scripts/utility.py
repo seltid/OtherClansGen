@@ -623,7 +623,7 @@ def create_other_clan_cat(Cat,
                     elif chosen_condition in ['lost their tail', 'born without a tail']:
                         new_cat.pelt.scars.append("NOTAIL")
 
-        new_cat.clan = game.otherclan1.name
+        new_cat.clan = str(game.otherclan1.name).removesuffix("Clan")
 
 
         # newbie thought

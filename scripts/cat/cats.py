@@ -435,6 +435,11 @@ class Cat():
                 game.otherclan1.leader_lives = 0
                 self.thought = 'Is surprised to find themselves walking amongst the starry cats of Silverpelt'
                 text = 'They now watch over their Clan from Silverpelt.'
+        elif self.status == 'deputy' and self.otherclan1:
+            game.otherclan1.deputy = None
+            self.dead = True
+            game.just_died.append(self.ID)
+            self.thought = 'Is surprised to find themselves walking the stars of Silverpelt'
         else:
             self.dead = True
             game.just_died.append(self.ID)
