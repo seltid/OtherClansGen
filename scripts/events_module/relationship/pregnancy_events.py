@@ -656,10 +656,11 @@ class Pregnancy_Events():
                                                 age=randint(15,120))[0]
                     blood_parent.thought = thought
                 
-                kit = Cat(parent1=blood_parent.ID ,moons=0, backstory=backstory, status='newborn')
+                kit = Cat(parent1=blood_parent.ID ,moons=0, backstory=backstory, status='newborn', clan=game.clan.name)
+                kit.clan = game.clan.name
             elif cat and other_cat:
                 # Two parents provided
-                kit = Cat(parent1=cat.ID, parent2=other_cat.ID, moons=0, status='newborn')
+                kit = Cat(parent1=cat.ID, parent2=other_cat.ID, moons=0, status='newborn', clan=game.clan.name)
                 
                 if cat.gender == 'female':
                     kit.thought = f"Snuggles up to the belly of {cat.name}"
@@ -667,10 +668,13 @@ class Pregnancy_Events():
                     kit.thought = f"Snuggles up to the belly of {cat.name}"
                 else:
                     kit.thought = f"Snuggles up to the belly of {other_cat.name}"
+
+                kit.clan = game.clan.name
             else:
                 # A one blood parent litter is the only option left. 
-                kit = Cat(parent1=cat.ID, moons=0, backstory=backstory, status='newborn')
+                kit = Cat(parent1=cat.ID, moons=0, backstory=backstory, status='newborn', clan=game.clan.name)
                 kit.thought = f"Snuggles up to the belly of {cat.name}"
+                kit.clan = game.clan.name
                 
             kit.adoptive_parents = all_adoptive_parents  # Add the adoptive parents. 
             all_kitten.append(kit)

@@ -90,7 +90,7 @@ class GenerateEvents:
                     tags=event["tags"],
                     event_text=event_text,
                     history_text=event["history_text"] if "history_text" in event else {},
-                    cat_trait= event["cat_trait"] if "cat_trait" in event else [],
+                    cat_trait=event["cat_trait"] if "cat_trait" in event else [],
                     cat_skill=event["cat_skill"] if "cat_skill" in event else [],
                     other_cat_trait=event["other_cat_trait"] if "other_cat_trait" in event else [],
                     other_cat_skill=event["other_cat_skill"] if "other_cat_skill" in event else [],

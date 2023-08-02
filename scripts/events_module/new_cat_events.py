@@ -60,6 +60,7 @@ class NewCatEvents:
                 for the_cat in outside_cat.all_cats.values():
                     if the_cat.dead or the_cat.outside or the_cat.ID == outside_cat.ID:
                         continue
+                    the_cat.clan = game.clan.name
                     the_cat.create_one_relationship(outside_cat)
                     outside_cat.create_one_relationship(the_cat)
 
@@ -262,4 +263,5 @@ class NewCatEvents:
         else:
             cat.status = "warrior"
         cat.outside = False
+        cat.clan = game.clan.name
         return cat
