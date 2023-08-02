@@ -44,7 +44,11 @@ class NewCatEvents:
                 outside_cat = self.select_outside_cat()
                 backstory = outside_cat.status
                 outside_cat = self.update_cat_properties(outside_cat)
-                event_text = f"A {backstory} named {outside_cat.name} waits on the border, asking to join the Clan."
+                event_text = f"A {backstory} named {outside_cat.name} DSAGSDFG1 waits on the border, asking to join the Clan."
+
+                backstory2 = str(backstory) + "_backstories"
+                outside_cat.backstory = random.choice(BACKSTORIES["backstory_categories"][backstory2])
+
                 name_change = random.choice([1, 2])
                 if name_change == 1 or backstory == 'former Clancat':
                     event_text = event_text + f" They decide to keep their name."
@@ -144,6 +148,7 @@ class NewCatEvents:
                     for mate_id in cat.mate:
                         if mate_id not in new_cat.adoptive_parents:
                             new_cat.adoptive_parents.extend(cat.mate)
+
             
             # All parents have been added now, we now create the inheritance. 
             new_cat.create_inheritance_new_cat()
@@ -177,6 +182,10 @@ class NewCatEvents:
                     jealousy=clan_cat_to_new["jealousy"],
                     trust=clan_cat_to_new["trust"]
                 )
+
+            new_cat.clan = game.clan.name
+
+            new_cat.backstory = random.choice(new_cat_event.backstory)
 
         if "adoption" in new_cat_event.tags:
             if new_cat_event.litter:

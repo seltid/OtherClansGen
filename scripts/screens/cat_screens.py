@@ -910,7 +910,7 @@ class ProfileScreen(Screens):
                         bs_text = BACKSTORIES["backstory_display"][category]
                         break
             else:
-                bs_text = 'Clanborn'
+                bs_text = 'this is an error, report to Sel'
         output += f"backstory: {bs_text}"
         # NEWLINE ----------
         output += "\n"

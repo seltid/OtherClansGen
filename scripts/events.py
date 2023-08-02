@@ -2517,10 +2517,6 @@ class Events:
             game.otherclan1.deputy = random_cat
 
 
-            game.cur_events_list.append(
-                Single_Event(text, "ceremony", involved_cats))
-
-
 
 
     def oc_ceremony(self, cat, promoted_to, preparedness="prepared"):
