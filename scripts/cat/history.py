@@ -25,7 +25,7 @@ class History:
         self.mentor_influence = mentor_influence if mentor_influence else {"trait": {}, "skill": {}}
         self.app_ceremony = app_ceremony if app_ceremony else {}
         self.lead_ceremony = lead_ceremony if lead_ceremony else None
-        self.elder_ceremony = elder_ceremony if elder_ceremony else []
+        self.elder_ceremony = elder_ceremony if elder_ceremony else {}
         self.possible_history = possible_history if possible_history else {}
         self.died_by = died_by if died_by else []
         self.scar_events = scar_events if scar_events else []
@@ -645,12 +645,12 @@ class History:
             return
         History.check_load(cat)
 
-        cat.history.elder_ceremony.append({
-            "honor": "honor",
-            "text": "text",
+        cat.history.elder_ceremony= {
+            "honor": honor_text,
+            "text": elder_text,
             "moon": game.clan.age,
-            "age": cat.age_moons
-        })
+            "age": int(cat.moons)
+        }
 
 
 

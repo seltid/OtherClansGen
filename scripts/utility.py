@@ -1146,15 +1146,13 @@ def event_text_adjust(Cat,
         cat_dict["n_c"] = (str(new_cat.name), choice(new_cat.pronouns))
 
     if clan: # If a relevant clan is defined in the thought/event,
-        if other_cat and other_cat.otherclan1 is True:
-            clan_name = "e"
-        elif cat and cat.otherclan1 is True:
-            clan_name = "e"
+        if cat.clan:
+            clan_name = str(cat.clan)
         else:
-            clan_name = str(clan.name)
+            clan_name = "Unknown"
     else:
-        if cat and cat.otherclan1 is True:
-            clan_name = "e"
+        if cat.clan:
+            clan_name = str(cat.clan)
         elif game.clan is None:
             clan_name = game.switches["clan_list"][0]
         else:

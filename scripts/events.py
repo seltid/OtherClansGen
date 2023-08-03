@@ -2707,6 +2707,9 @@ class Events:
         if cat.status in ["warrior", "medicine cat", "mediator"]:
             self.history.add_app_ceremony(cat, random_honor)
 
+        if promoted_to == "elder":
+            self.history.add_retirement(cat, "moons of service")
+
 
         # remove duplicates
         involved_cats = list(set(involved_cats))

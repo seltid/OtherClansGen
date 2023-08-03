@@ -508,8 +508,7 @@ class ProfileScreen(Screens):
 
         self.profile_elements["debug_box"] = pygame_gui.elements.UITextBox(
             ('Otherclan?: ' + str(self.the_cat.otherclan1) + '\n' +
-             'Cat ID: ' + str(self.the_cat.ID) + '\n' +
-             'game.clan.name: ' + str(game.clan.name) + '\n'),
+             'Cat ID: ' + str(self.the_cat.ID) + '\n'),
             scale(pygame.Rect((150, 200), (350, 300))), object_id=get_text_box_theme("#text_box_22_horizcenter"))
 
         # Set the cat backgrounds.
@@ -1107,22 +1106,17 @@ class ProfileScreen(Screens):
                 life_history.append(mentor_history)
 
             # now go get the scar history and add that if any exists
-            body_history = []
             scar_history = self.get_scar_text()
             if scar_history:
-                body_history.append(scar_history)
-            death_history = self.get_death_text()
-            if death_history:
-                body_history.append(death_history)
-            # join scar and death into one paragraph
-            if body_history:
-                life_history.append(" ".join(body_history))
-
+                life_history.append(scar_history)
 
             elder_history = self.get_elder_text()
             if elder_history:
                 life_history.append(elder_history)
 
+            death_history = self.get_death_text()
+            if death_history:
+                life_history.append(death_history)
 
             murder = self.get_murder_text()
             if murder:
@@ -1326,17 +1320,21 @@ class ProfileScreen(Screens):
         return apprenticeship_history
 
     def get_elder_text(self):
-        elder_time = History.get_retirement(self.the_cat)
-        if game.switches['show_history_moons']:
-            moons = True
+        elder_ceremony = History.get_retirement(self.the_cat)
+        if self.the_cat.status == 'elder':                              # If the cat is an elder
+            if History.get_retirement(self.the_cat):                    # and they have a retirement ceremony
+                elder_output = ""
+                elder_output += str(self.the_cat.name) + " retired to the elders' den"
+                try:
+                    elder_output += " on Moon " + str(elder_ceremony["moon"])
+                    elder_output += " at the age of " + str(elder_ceremony["age"]) + " moons."
+                    elder_output += " Their Clan recognized them for their " + str(elder_ceremony["honor"] + ".")
+                except TypeError:
+                    elder_output += "."
+            else:
+                elder_output = str(self.the_cat.name) + " retired to the elders' den."
         else:
-            moons = False
-        if self.the_cat.status == 'elder':
-           elder_output = str(self.the_cat.name) + " retired to the elders' den."
-        else:
-            elder_output = None
-
-        # SEL come back: Add in the moon they retired
+            elder_output = ""
 
         return elder_output
 
