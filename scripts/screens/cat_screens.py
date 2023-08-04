@@ -821,6 +821,8 @@ class ProfileScreen(Screens):
             output += f"<font color='#FF0000'>lost</font> from {the_cat.clan}Clan"
         elif the_cat.exiled:
             output += f"<font color='#FF0000'>exiled</font> from {the_cat.clan}Clan"
+        elif the_cat.status in ["kittypet", "loner", "rogue"]:
+            output += f"{the_cat.status}"
         else:
             output += f"{the_cat.status} of {the_cat.clan}Clan"
 

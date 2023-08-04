@@ -1202,6 +1202,7 @@ class Patrol():
         alive = True
         outside = False
         otherclan1 = False
+        clan = "Test"
 
         # figure out what type of cat they are and set default backstories.json - this can be overwritten if need be
         loner = False
@@ -1404,7 +1405,7 @@ class Patrol():
                                       gender=gender,
                                       thought=thought,
                                       alive=alive,
-                                      outside=outside
+                                      outside=outside, clan=game.clan.name
                                       )
         if not alive:
             self.results_text.append(f"{created_cats[0].name}'s ghost now wanders.")
@@ -1462,7 +1463,7 @@ class Patrol():
                                                gender=None,
                                                thought=kit_thought,
                                                alive=True,
-                                               outside=False
+                                               outside=False, clan="Test"
                                                ))
             # giving the mother the necessary condition
             if game.clan.game_mode != 'classic' and kit_age <= 2 and not created_cats[0].dead:

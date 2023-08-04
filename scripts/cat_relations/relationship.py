@@ -425,6 +425,129 @@ class Relationship():
 
         return filtered
 
+    # OC stuff
+
+    def start_oc_interaction(self) -> None:
+        """This function handles the simple interaction of this relationship."""
+        # such interactions are only allowed for living Clan members
+        if self.cat_from.dead or self.cat_from.exiled:
+            return
+        if self.cat_to.dead or self.cat_to.exiled:
+            return
+
+        # update relationship
+        if self.cat_to.ID in self.cat_from.mate:
+            self.mates = True
+
+        # check if opposite_relationship is here, otherwise creates it
+        if self.opposite_relationship is None:
+            self.link_relationship()
+
+        # get if the interaction is positive or negative for the relationship
+        positive = self.positive_interaction()
+        rel_type = self.get_interaction_type(positive)
+
+        # look if an increase interaction or an decrease interaction
+        in_de_crease = "increase" if positive else "decrease"
+        # if the type is jealousy or dislike, then increase and decrease has to be turned around
+        if rel_type in ["jealousy", "dislike"]:
+            in_de_crease = "decrease" if positive else "increase"
+
+        chance = game.config["relationship"]["chance_for_neutral"]
+        if chance == 1:
+            in_de_crease = "neutral"
+        elif chance > 1 and random.randint(1, chance) == 1:
+            in_de_crease = "neutral"
+
+        # choice any type of intensity
+        intensity = choice(["low", "medium", "high"])
+
+        # get other possible filters
+        season = str(game.clan.current_season).casefold()
+        biome = str(game.clan.biome).casefold()
+        game_mode = game.clan.game_mode
+
+        all_interactions = NEUTRAL_INTERACTIONS.copy()
+        if in_de_crease != "neutral":
+            all_interactions = INTERACTION_MASTER_DICT[rel_type][in_de_crease].copy()
+            possible_interactions = self.get_relevant_interactions(all_interactions, intensity, biome, season,
+                                                                   game_mode)
+        else:
+            possible_interactions = all_interactions
+
+        if len(possible_interactions) <= 0:
+            print("ERROR: No interaction with this conditions. ", rel_type, in_de_crease, intensity)
+            possible_interactions = [
+                Single_Interaction("fall_back", "Any", "Any", "medium", [
+                    "Default string, this should never appear."
+                ])
+            ]
+
+        # check if the current interaction id is already used and us another if so
+        chosen_interaction = choice(possible_interactions)
+        while chosen_interaction.id in self.used_interaction_ids \
+                and len(possible_interactions) > 2:
+            possible_interactions.remove(chosen_interaction)
+            chosen_interaction = choice(possible_interactions)
+
+        # if the chosen_interaction is still in the TRIGGERED_SINGLE_INTERACTIONS, clean the list
+        if chosen_interaction in self.used_interaction_ids:
+            self.used_interaction_ids = []
+
+        # add the chosen interaction id to the TRIGGERED_SINGLE_INTERACTIONS
+        self.chosen_interaction = chosen_interaction
+        self.used_interaction_ids.append(self.chosen_interaction.id)
+
+        self.interaction_affect_relationships(in_de_crease, intensity, rel_type)
+        # give cats injuries if the game mode is not classic
+        if self.chosen_interaction.get_injuries and game_mode != 'classic':
+            injuries = []
+            for abbreviations, injury_dict in self.chosen_interaction.get_injuries.items():
+                if "injury_names" not in injury_dict:
+                    print(f"ERROR: there are no injury names in the chosen interaction {self.chosen_interaction.id}.")
+                    continue
+
+                injured_cat = self.cat_from
+                if abbreviations != "m_c":
+                    injured_cat = self.cat_to
+
+                for inj in injury_dict["injury_names"]:
+                    injured_cat.get_injured(inj, True)
+                    injuries.append(inj)
+
+                possible_scar = self.adjust_interaction_string(
+                    injury_dict["scar_text"]) if "scar_text" in injury_dict else None
+                possible_death = self.adjust_interaction_string(
+                    injury_dict["death_text"]) if "death_text" in injury_dict else None
+                if injured_cat.status == "leader":
+                    possible_death = self.adjust_interaction_string(
+                        injury_dict["death_leader_text"]) if "death_leader_text" in injury_dict else None
+
+                if possible_scar or possible_death:
+                    for condition in injuries:
+                        self.history.add_possible_history(injured_cat, condition, scar_text=possible_scar,
+                                                          death_text=possible_death)
+
+        # get any possible interaction string out of this interaction
+        interaction_str = choice(self.chosen_interaction.interactions)
+
+        # prepare string for display
+        interaction_str = self.adjust_interaction_string(interaction_str)
+
+        effect = " (neutral effect)"
+        if in_de_crease != "neutral" and positive:
+            effect = f" ({intensity} positive effect)"
+        if in_de_crease != "neutral" and not positive:
+            effect = f" ({intensity} negative effect)"
+
+        interaction_str = interaction_str + effect
+        self.log.append(interaction_str + f" - {self.cat_from.name} was {self.cat_from.moons} moon(s) old")
+        relevant_event_tabs = ["relation", "interaction"]
+        if self.chosen_interaction.get_injuries:
+            relevant_event_tabs.append("health")
+        game.cur_events_list.append(Single_Event(
+            interaction_str, ["relation", "interaction"], [self.cat_to.ID, self.cat_from.ID]
+        ))
 
     # ---------------------------------------------------------------------------- #
     #                            complex value addition                            #

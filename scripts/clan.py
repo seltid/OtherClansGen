@@ -504,7 +504,7 @@ class Clan():
                               )
         self.instructor.dead = True
         self.instructor.dead_for = randint(20, 200)
-        self.instructor.clan = choice(["Spider", "Salt", "Jump", "Jumping", "Teal",]) # Easter egg to creator of mod, selticidae :)
+        self.instructor.clan = choice(["Spider", "Salt", "Jump", "Jumping", "Teal",])  # Easter egg for selticidae
         self.add_cat(self.instructor)
         self.add_to_starclan(self.instructor)
         self.all_clans = []
@@ -1481,8 +1481,15 @@ class OtherClan1():  # Actually creates/generates other clans. Only runs upon cr
                  relations=0,
                  temperament=None):
 
-        temperament_list = ['cunning', 'wary', 'logical', 'proud', 'stoic', 'mellow', 'bloodthirsty', 'amiable',
-                            'gracious']
+        temperament_list = ['amiable',
+                            'gracious',
+                            'mellow',
+                            'proud',
+                            'logical',
+                            'stoic',
+                            'wary',
+                            'cunning',
+                            'bloodthirsty']
 
         self.name = name or choice(names.names_dict["normal_prefixes"])
         self.relations = relations or randint(8, 12)

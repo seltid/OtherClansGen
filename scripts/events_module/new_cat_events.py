@@ -183,9 +183,9 @@ class NewCatEvents:
                     trust=clan_cat_to_new["trust"]
                 )
 
-            new_cat.clan = game.clan.name
-
             new_cat.backstory = random.choice(new_cat_event.backstory)
+
+            new_cat.clan = game.clan.name
 
         if "adoption" in new_cat_event.tags:
             if new_cat_event.litter:

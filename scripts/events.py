@@ -2346,6 +2346,8 @@ class Events:
         # Gain experience -----------------------
         self.handle_apprentice_EX(cat)
 
+        cat.oc_relationship_interaction()
+
         # Cap EXP at 321 (master)
         if cat.experience > 321:
             cat.experience = 321

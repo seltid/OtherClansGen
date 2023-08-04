@@ -224,7 +224,7 @@ def create_new_cat(Cat,
                    thought='Is looking around the camp with wonder',
                    alive=True,
                    outside=False,
-                   clan=None
+                   clan="Test"
 	):
     """
     This function creates new cats and then returns a list of those cats
@@ -834,13 +834,13 @@ def change_relationship_values(cats_to: list,
 
     use the relationship value params to indicate how much the values should change.
     
-    This is just for test prints - DON'T DELETE - you can use this to test if relationships are changing
+    This is just for test prints - DON'T DELETE - you can use this to test if relationships are changing"""
     changed = False
     if romantic_love == 0 and platonic_like == 0 and dislike == 0 and admiration == 0 and \
             comfortable == 0 and jealousy == 0 and trust == 0:
         changed = False
     else:
-        changed = True"""
+        changed = True
 
     # pick out the correct cats
     for kitty in cats_from:
