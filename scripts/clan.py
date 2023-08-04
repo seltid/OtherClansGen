@@ -504,6 +504,7 @@ class Clan():
                               )
         self.instructor.dead = True
         self.instructor.dead_for = randint(20, 200)
+        self.instructor.clan = choice(["Spider", "Salt", "Jump", "Jumping", "Teal",]) # Easter egg to creator of mod, selticidae :)
         self.add_cat(self.instructor)
         self.add_to_starclan(self.instructor)
         self.all_clans = []

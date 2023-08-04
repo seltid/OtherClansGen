@@ -86,14 +86,6 @@ target/
 profile_default/
 ipython_config.py
 
-# Saves
-saves/
-saves/clanlist.txt
-saves/settings.txt
-saves\
-saves\clanlist.txt
-saves\settings.txt
-
 # Logs
 logs/
 
@@ -160,7 +152,6 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-/saves/**
 *.png~
 .vscode/settings.json
 scripts/__pycache__/**
@@ -171,7 +162,6 @@ scripts/__pycache__/**
 .idea/
 
 
-saves/currentclan.txt
 
 tests/testSaves
 cache/

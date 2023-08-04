@@ -1,0 +1,23 @@
+{
+    "clanname": "MyrtleClan",
+    "clanage": 655,
+    "biome": null,
+    "clan_cats": [
+        "122",
+        "123",
+        "124",
+        "125",
+        "126",
+        "127",
+        "128",
+        "129",
+        "130",
+        "131",
+        "132"
+    ],
+    "leader": "131",
+    "leader_lives": 2,
+    "leader_predecessors": null,
+    "deputy": "132",
+    "med_cat": null
+}

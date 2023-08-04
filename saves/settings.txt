@@ -1,0 +1,35 @@
+mns open:False
+language:english
+game_mode:expanded
+text size:0
+fullscreen:False
+show dead relation:True
+show empty relation:False
+favourite sub tab:None
+random relation:True
+affair:False
+same sex birth:False
+single parentage:False
+romantic with former mentor:True
+first cousin mates:False
+dark mode:False
+custom cursor:False
+keybinds:False
+backgrounds:True
+moons and seasons:False
+den labels:True
+autosave:False
+disasters:False
+retirement:False
+shaders:False
+deputy:True
+12_moon_graduation:False
+fading:True
+save_faded_copy:False
+become_mediator:True
+gore:False
+discord:False
+showxp:True
+check_for_updates:True
+show_changelog:True
+random med cat:False
