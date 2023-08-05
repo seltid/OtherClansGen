@@ -9,9 +9,11 @@
         "dislike": 0,
         "admiration": 0,
         "comfortable": 0,
-        "jealousy": 0,
+        "jealousy": 11,
         "trust": 0,
-        "log": []
+        "log": [
+            "Bushnoise is complaining that Shardspeck never does anything helpful. (high negative effect) - Bushnoise was 66 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "26",
@@ -94,8 +96,11 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 32,
+        "log": [
+            "Bushnoise knows that the advice Twilightspeckle gave them will be helpful. (high positive effect) - Bushnoise was 67 moon(s) old",
+            "Bushnoise feels safe with Twilightspeckle around. (high positive effect) - Bushnoise was 69 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "26",
@@ -105,10 +110,12 @@
         "romantic_love": 0,
         "platonic_like": 0,
         "dislike": 0,
-        "admiration": 0,
+        "admiration": 21,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Bushnoise saw Currentstar show off a skill they never knew they had. (high positive effect) - Bushnoise was 68 moon(s) old"
+        ]
     }
 ]

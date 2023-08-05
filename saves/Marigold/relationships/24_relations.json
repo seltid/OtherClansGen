@@ -25,7 +25,10 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Twilightspeckle challenged Heavyrustle to spar with them. (neutral effect) - Twilightspeckle was 14 moon(s) old",
+            "Heavyrustle asks Twilightspeckle to speak up while chatting together. (neutral effect) - Twilightspeckle was 16 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "24",
@@ -35,11 +38,14 @@
         "romantic_love": 0,
         "platonic_like": 0,
         "dislike": 0,
-        "admiration": 0,
+        "admiration": 3,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 11,
+        "log": [
+            "Twilightspeckle tells Frostyglide to count on them in a difficult situation. (high positive effect) - Twilightspeckle was 13 moon(s) old",
+            "Twilightspeckle mews congratulations to Frostyglide for a job well done. (low positive effect) - Twilightspeckle was 15 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "24",
@@ -50,7 +56,7 @@
         "platonic_like": 0,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 8,
         "jealousy": 0,
         "trust": 0,
         "log": []

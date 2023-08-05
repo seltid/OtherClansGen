@@ -1235,7 +1235,7 @@ class Cat():
     def one_moon(self):
         """Handles a moon skip for an alive cat. """
 
-        if not self.outside and not self.dead:
+        if not self.outside and not self.dead and not self.clan:
             self.clan = game.clan.name
 
         old_age = self.age

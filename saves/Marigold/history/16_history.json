@@ -1,0 +1,20 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {},
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred from an injury or illness (claw-wound).",
+            "moon": 3
+        }
+    ],
+    "murder": {}
+}

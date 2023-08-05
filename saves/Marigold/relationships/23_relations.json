@@ -11,7 +11,9 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Condorlotus goes to tell a secret to Shardspeck only for Shardspeck to tell someone else's secret to them. (high negative effect) - Condorlotus was 125 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "23",
@@ -48,12 +50,15 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 13,
         "admiration": 0,
         "comfortable": 0,
-        "jealousy": 0,
+        "jealousy": 17,
         "trust": 0,
-        "log": []
+        "log": [
+            "Condorlotus covered for Downystripe on something minor. (medium positive effect) - Condorlotus was 123 moon(s) old",
+            "Condorlotus thinks the prey Downystripe is biting into on the other side of camp looks delicious. (medium negative effect) - Condorlotus was 124 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "23",
@@ -89,13 +94,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 13,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 10,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Condorlotus thinks Currentstar was nice to them today. (low positive effect) - Condorlotus was 126 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "23",

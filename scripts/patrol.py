@@ -1202,7 +1202,7 @@ class Patrol():
         alive = True
         outside = False
         otherclan1 = False
-        clan = "Test"
+        clan = game.clan.name
 
         # figure out what type of cat they are and set default backstories.json - this can be overwritten if need be
         loner = False
@@ -1463,7 +1463,7 @@ class Patrol():
                                                gender=None,
                                                thought=kit_thought,
                                                alive=True,
-                                               outside=False, clan="Test"
+                                               outside=False, clan=game.clan.name
                                                ))
             # giving the mother the necessary condition
             if game.clan.game_mode != 'classic' and kit_age <= 2 and not created_cats[0].dead:
@@ -1582,6 +1582,8 @@ class Patrol():
                 jealousy=clan_cat_to_new["jealousy"],
                 trust=clan_cat_to_new["trust"]
             )
+
+            new_cat.clan = game.clan.name
 
     def update_resources(self, biome_dir, leaf):
         resource_dir = "resources/dicts/patrols/"

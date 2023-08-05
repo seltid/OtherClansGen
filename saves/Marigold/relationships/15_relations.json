@@ -1,0 +1,16 @@
+[
+    {
+        "cat_from_id": "15",
+        "cat_to_id": "13",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 10,
+        "comfortable": 15,
+        "jealousy": 0,
+        "trust": 15,
+        "log": []
+    }
+]

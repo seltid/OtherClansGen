@@ -20,12 +20,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 15,
-        "dislike": 0,
+        "dislike": 8,
         "admiration": 19,
         "comfortable": 14,
-        "jealousy": 0,
+        "jealousy": 11,
         "trust": 3,
-        "log": []
+        "log": [
+            "Sweetpaw is complaining that Leoparddapple never does anything helpful. (high negative effect) - Sweetpaw was 10 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "9",
@@ -39,7 +41,9 @@
         "comfortable": 1,
         "jealousy": 0,
         "trust": 8,
-        "log": []
+        "log": [
+            "Sweetpaw catches Rosepaw staring at another cat. (high negative effect) - Sweetpaw was 11 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "9",
@@ -89,13 +93,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 1,
+        "platonic_like": 22,
         "dislike": 0,
         "admiration": 14,
-        "comfortable": 25,
+        "comfortable": 41,
         "jealousy": 0,
         "trust": 10,
-        "log": []
+        "log": [
+            "Sweetfoot wants to spend more time with Luckpaw! (high positive effect) - Sweetfoot was 13 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "9",
@@ -137,6 +143,120 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "9",
+        "cat_to_id": "1",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 3,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Sweetpaw mews congratulations to Juncospots for a job well done. (low positive effect) - Sweetpaw was 12 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "9",
+        "cat_to_id": "2",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "9",
+        "cat_to_id": "3",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "9",
+        "cat_to_id": "4",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 3,
+        "log": []
+    },
+    {
+        "cat_from_id": "9",
+        "cat_to_id": "6",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 5,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 5,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "9",
+        "cat_to_id": "28",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "9",
+        "cat_to_id": "29",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "9",
+        "cat_to_id": "30",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
         "log": []
     }
 ]

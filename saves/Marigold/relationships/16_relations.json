@@ -8,7 +8,7 @@
         "platonic_like": 2,
         "dislike": 0,
         "admiration": 9,
-        "comfortable": 10,
+        "comfortable": 18,
         "jealousy": 0,
         "trust": 12,
         "log": []
@@ -39,7 +39,10 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 6,
-        "log": []
+        "log": [
+            "Shadeface covered for Rosepaw on something minor. (medium positive effect) - Shadeface was 75 moon(s) old",
+            "Shadeface is checking on Rosepaw. (neutral effect) - Shadeface was 77 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "16",
@@ -63,10 +66,10 @@
         "romantic_love": 0,
         "platonic_like": 30,
         "dislike": 0,
-        "admiration": 13,
+        "admiration": 16,
         "comfortable": 15,
         "jealousy": 0,
-        "trust": 4,
+        "trust": 7,
         "log": []
     },
     {
@@ -77,7 +80,7 @@
         "romantic_love": 0,
         "platonic_like": 18,
         "dislike": 0,
-        "admiration": 11,
+        "admiration": 14,
         "comfortable": 7,
         "jealousy": 0,
         "trust": 11,
@@ -88,14 +91,16 @@
         "cat_to_id": "12",
         "mates": false,
         "family": false,
-        "romantic_love": 0,
-        "platonic_like": 27,
+        "romantic_love": 13,
+        "platonic_like": 40,
         "dislike": 0,
         "admiration": 19,
-        "comfortable": 25,
+        "comfortable": 30,
         "jealousy": 0,
         "trust": 6,
-        "log": []
+        "log": [
+            "Logstar stayed up all night thinking of ways to impress Shadeface. (positive effect)"
+        ]
     },
     {
         "cat_from_id": "16",
@@ -123,11 +128,86 @@
         "comfortable": 17,
         "jealousy": 0,
         "trust": 13,
-        "log": []
+        "log": [
+            "Shadeface surprises Bluffpaw with something nice. (medium positive effect) - Shadeface was 74 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "16",
         "cat_to_id": "17",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "16",
+        "cat_to_id": "3",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Shadeface turned to Frondkit in a time of need, only for Frondkit to abandon them. (high negative effect) - Shadeface was 76 moon(s) old",
+            "Shadeface caught Frondkit complaining about them behind their back. (high negative effect) - Shadeface was 77 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "16",
+        "cat_to_id": "1",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "16",
+        "cat_to_id": "2",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "16",
+        "cat_to_id": "4",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "16",
+        "cat_to_id": "6",
         "mates": false,
         "family": false,
         "romantic_love": 0,

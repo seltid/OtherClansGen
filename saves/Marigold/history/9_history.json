@@ -1,0 +1,18 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "valor",
+        "graduation_age": 13,
+        "moon": 4
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

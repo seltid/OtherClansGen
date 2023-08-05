@@ -5,13 +5,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 13,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 10,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Frostyglide thinks Shardspeck was nice to them today. (low positive effect) - Frostyglide was 16 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "20",
@@ -19,13 +21,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 13,
         "dislike": 0,
         "admiration": 0,
         "comfortable": 0,
-        "jealousy": 0,
+        "jealousy": 13,
         "trust": 0,
-        "log": []
+        "log": [
+            "Frostyglide wishes they could get their pelt to shine like Heavyrustle's. (low negative effect) - Frostyglide was 13 moon(s) old",
+            "Frostyglide is surprised to hear Heavyrustle express an ideal they can agree with. (high positive effect) - Frostyglide was 14 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "20",
@@ -33,13 +38,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 17,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 13,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Frostyglide chats with Downystripe while grabbing something to eat. (medium positive effect) - Frostyglide was 15 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "20",
@@ -77,10 +84,10 @@
         "romantic_love": 0,
         "platonic_like": 0,
         "dislike": 0,
-        "admiration": 0,
+        "admiration": 3,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 0,
+        "trust": 3,
         "log": []
     },
     {

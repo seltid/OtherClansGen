@@ -47,13 +47,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 16,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 21,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 16,
+        "log": [
+            "Currentstar appreciates how Downystripe always seems to ask how they're doing. (high positive effect) - Currentstar was 57 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "25",
@@ -61,13 +63,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 5,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 7,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 5,
+        "log": [
+            "Currentstar settles near Hushspore to eat their fresh-kill. (medium positive effect) - Currentstar was 56 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "25",
@@ -81,7 +85,9 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Currentstar caught Condorlotus in a lie. (medium negative effect) - Currentstar was 55 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "25",
@@ -95,7 +101,9 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Currentstar thinks Twilightspeckle has been acting strangely. (low negative effect) - Currentstar was 54 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "25",

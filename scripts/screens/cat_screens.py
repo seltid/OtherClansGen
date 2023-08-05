@@ -822,7 +822,7 @@ class ProfileScreen(Screens):
         elif the_cat.exiled:
             output += f"<font color='#FF0000'>exiled</font> from {the_cat.clan}Clan"
         elif the_cat.status in ["kittypet", "loner", "rogue"]:
-            output += f"{the_cat.status}"
+            output += f"{the_cat.status} (debug: clan = {the_cat.clan})"
         else:
             output += f"{the_cat.status} of {the_cat.clan}Clan"
 

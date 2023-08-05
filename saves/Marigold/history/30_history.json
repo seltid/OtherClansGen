@@ -1,0 +1,19 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": null,
+        "age": 0,
+        "moon": 4
+    },
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {},
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

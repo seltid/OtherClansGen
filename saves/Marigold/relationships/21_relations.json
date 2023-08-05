@@ -6,12 +6,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 12,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Downystripe had a spat with Shardspeck over a piece of prey on the fresh-kill pile. (medium negative effect) - Downystripe was 14 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "21",
@@ -33,7 +35,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 13,
         "dislike": 0,
         "admiration": 0,
         "comfortable": 0,
@@ -75,13 +77,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 9,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 12,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 9,
+        "log": [
+            "Downystripe chats with Twilightspeckle about their day. (medium positive effect) - Downystripe was 16 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "21",
@@ -90,12 +94,15 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 10,
         "admiration": 0,
         "comfortable": 0,
-        "jealousy": 0,
+        "jealousy": 13,
         "trust": 0,
-        "log": []
+        "log": [
+            "Downystripe is checking on Currentstar. (neutral effect) - Downystripe was 13 moon(s) old",
+            "Downystripe wishes they could get their pelt to shine like Currentstar's. (low negative effect) - Downystripe was 15 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "21",

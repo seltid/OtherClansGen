@@ -1,1 +1,77 @@
-{}
+{
+    "5": {
+        "max_score": 3.0,
+        "current_score": 2.5,
+        "percentage": 83.33333333333334
+    },
+    "7": {
+        "max_score": 6,
+        "current_score": 3,
+        "percentage": 50.0
+    },
+    "8": {
+        "max_score": 4.5,
+        "current_score": 0,
+        "percentage": 0.0
+    },
+    "9": {
+        "max_score": 4.5,
+        "current_score": 3.0,
+        "percentage": 66.66666666666666
+    },
+    "10": {
+        "max_score": 3.0,
+        "current_score": 0.5,
+        "percentage": 16.666666666666664
+    },
+    "11": {
+        "max_score": 4.5,
+        "current_score": 1.0,
+        "percentage": 22.22222222222222
+    },
+    "12": {
+        "max_score": 9,
+        "current_score": 1,
+        "percentage": 11.11111111111111
+    },
+    "13": {
+        "max_score": 4.5,
+        "current_score": 1.0,
+        "percentage": 22.22222222222222
+    },
+    "14": {
+        "max_score": 4.5,
+        "current_score": 0.5,
+        "percentage": 11.11111111111111
+    },
+    "16": {
+        "max_score": 9,
+        "current_score": 2,
+        "percentage": 22.22222222222222
+    },
+    "1": {
+        "max_score": 6,
+        "current_score": 3,
+        "percentage": 50.0
+    },
+    "2": {
+        "max_score": 1.0,
+        "current_score": 1.0,
+        "percentage": 100.0
+    },
+    "3": {
+        "max_score": 1.0,
+        "current_score": 1.0,
+        "percentage": 100.0
+    },
+    "4": {
+        "max_score": 1.0,
+        "current_score": 1.0,
+        "percentage": 100.0
+    },
+    "6": {
+        "max_score": 1.0,
+        "current_score": 1.0,
+        "percentage": 100.0
+    }
+}

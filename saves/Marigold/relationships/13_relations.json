@@ -5,13 +5,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 11,
+        "platonic_like": 27,
         "dislike": 0,
         "admiration": 9,
-        "comfortable": 7,
+        "comfortable": 19,
         "jealousy": 0,
         "trust": 1,
-        "log": []
+        "log": [
+            "Luckkit wants to spend more time with Furledtree! (high positive effect) - Luckkit was 5 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "13",
@@ -21,7 +23,7 @@
         "romantic_love": 0,
         "platonic_like": 29,
         "dislike": 0,
-        "admiration": 11,
+        "admiration": 3,
         "comfortable": 3,
         "jealousy": 0,
         "trust": 11,
@@ -53,7 +55,9 @@
         "comfortable": 13,
         "jealousy": 0,
         "trust": 12,
-        "log": []
+        "log": [
+            "Luckkit swaps favorite prey with Sweetpaw. (medium positive effect) - Luckkit was 4 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "13",
@@ -61,13 +65,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 4,
-        "dislike": 0,
+        "platonic_like": 0,
+        "dislike": 8,
         "admiration": 6,
         "comfortable": 3,
         "jealousy": 0,
         "trust": 7,
-        "log": []
+        "log": [
+            "Luckpaw had Lightfruit bump into them, and they didn't even apologize! (low negative effect) - Luckpaw was 6 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "13",
@@ -137,6 +143,92 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "13",
+        "cat_to_id": "1",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Luckpaw apologized to Juncospots for something or other. (low positive effect) - Luckpaw was 7 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "13",
+        "cat_to_id": "2",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "13",
+        "cat_to_id": "3",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "13",
+        "cat_to_id": "4",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "13",
+        "cat_to_id": "6",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "13",
+        "cat_to_id": "15",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
         "log": []
     }
 ]

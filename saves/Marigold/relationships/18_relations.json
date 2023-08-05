@@ -5,13 +5,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 16,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 12,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Shardspeck is having a wonderful time discussing recent Clan news with Heavyrustle. (high positive effect) - Shardspeck was 126 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "18",
@@ -34,7 +36,7 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 8,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
@@ -66,8 +68,10 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 11,
+        "log": [
+            "Shardspeck is letting Condorlotus share their troubles with them, hoping they'll feel better afterwards. (high positive effect) - Shardspeck was 123 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "18",
@@ -95,7 +99,9 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Shardspeck thinks Currentstar is very helpful! (low positive effect) - Shardspeck was 125 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "18",
@@ -109,6 +115,8 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Shardspeck covered for Bushnoise on something minor. (medium positive effect) - Shardspeck was 124 moon(s) old"
+        ]
     }
 ]

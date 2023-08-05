@@ -1,0 +1,58 @@
+[
+    {
+        "cat_from_id": "29",
+        "cat_to_id": "28",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 40,
+        "dislike": 0,
+        "admiration": 10,
+        "comfortable": 40,
+        "jealousy": 0,
+        "trust": 30,
+        "log": []
+    },
+    {
+        "cat_from_id": "29",
+        "cat_to_id": "30",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 40,
+        "dislike": 0,
+        "admiration": 10,
+        "comfortable": 40,
+        "jealousy": 0,
+        "trust": 30,
+        "log": []
+    },
+    {
+        "cat_from_id": "29",
+        "cat_to_id": "27",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 40,
+        "dislike": 0,
+        "admiration": 30,
+        "comfortable": 40,
+        "jealousy": 0,
+        "trust": 50,
+        "log": []
+    },
+    {
+        "cat_from_id": "29",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 10,
+        "comfortable": 15,
+        "jealousy": 0,
+        "trust": 15,
+        "log": []
+    }
+]

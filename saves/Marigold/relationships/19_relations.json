@@ -5,7 +5,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 8,
         "dislike": 0,
         "admiration": 0,
         "comfortable": 0,
@@ -19,13 +19,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
-        "dislike": 0,
+        "platonic_like": 21,
+        "dislike": 5,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 16,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Heavyrustle is scolding Frostyglide. (high negative effect) - Heavyrustle was 124 moon(s) old",
+            "Heavyrustle is having a wonderful time discussing recent Clan news with Frostyglide. (high positive effect) - Heavyrustle was 126 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "19",
@@ -47,13 +50,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 10,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 13,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 10,
+        "log": [
+            "Heavyrustle has been spending time with Hushspore lately. (low positive effect) - Heavyrustle was 125 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "19",
@@ -89,13 +94,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 10,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 13,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 10,
+        "log": [
+            "Heavyrustle finds a bit of fluff that smells like Currentstar and adds it to their nest. (low positive effect) - Heavyrustle was 123 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "19",

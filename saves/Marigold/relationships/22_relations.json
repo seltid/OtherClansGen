@@ -22,10 +22,12 @@
         "platonic_like": 0,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 13,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Hushspore acknowledges Heavyrustle with a twitch of their whiskers. (neutral effect) - Hushspore was 52 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "22",
@@ -92,7 +94,7 @@
         "platonic_like": 0,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 3,
         "jealousy": 0,
         "trust": 0,
         "log": []
@@ -104,11 +106,15 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 5,
         "admiration": 0,
         "comfortable": 0,
-        "jealousy": 0,
+        "jealousy": 7,
         "trust": 0,
-        "log": []
+        "log": [
+            "Hushspore sees that Bushnoise's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect) - Hushspore was 49 moon(s) old",
+            "Hushspore is jealous that Bushnoise got to go to the last Gathering. (medium negative effect) - Hushspore was 50 moon(s) old",
+            "Hushspore is sharpening their claws near Bushnoise. (neutral effect) - Hushspore was 51 moon(s) old"
+        ]
     }
 ]

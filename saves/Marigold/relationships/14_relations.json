@@ -19,9 +19,9 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 25,
+        "platonic_like": 28,
         "dislike": 0,
-        "admiration": 12,
+        "admiration": 0,
         "comfortable": 14,
         "jealousy": 0,
         "trust": 1,
@@ -89,13 +89,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 10,
-        "dislike": 0,
-        "admiration": 4,
+        "platonic_like": 5,
+        "dislike": 9,
+        "admiration": 7,
         "comfortable": 10,
-        "jealousy": 0,
+        "jealousy": 3,
         "trust": 9,
-        "log": []
+        "log": [
+            "Bluffpaw had a huge argument with Logstar. (medium negative effect) - Bluffpaw was 7 moon(s) old",
+            "Bluffpaw wishes they could get their pelt to shine like Logstar's. (low negative effect) - Bluffpaw was 8 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "14",
@@ -122,8 +125,10 @@
         "admiration": 4,
         "comfortable": 12,
         "jealousy": 0,
-        "trust": 2,
-        "log": []
+        "trust": 15,
+        "log": [
+            "Bluffpaw appreciates Shadeface telling them that they had a feather stuck to their face. (low positive effect) - Bluffpaw was 6 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "14",
@@ -137,6 +142,78 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "14",
+        "cat_to_id": "1",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "14",
+        "cat_to_id": "2",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "14",
+        "cat_to_id": "3",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 26,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 18,
+        "jealousy": 0,
+        "trust": 10,
+        "log": [
+            "Bluffpaw wants to spend more time with Frondkit! (high positive effect) - Bluffpaw was 9 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "14",
+        "cat_to_id": "4",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "14",
+        "cat_to_id": "6",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
         "log": []
     }
 ]

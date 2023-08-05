@@ -5,7 +5,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 19,
+        "platonic_like": 27,
         "dislike": 0,
         "admiration": 10,
         "comfortable": 17,
@@ -39,7 +39,10 @@
         "comfortable": 2,
         "jealousy": 0,
         "trust": 9,
-        "log": []
+        "log": [
+            "Leoparddapple swaps favorite prey with Sweetpaw. (medium positive effect) - Leoparddapple was 75 moon(s) old",
+            "Leoparddapple challenged Sweetpaw to spar with them. (neutral effect) - Leoparddapple was 75 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "7",
@@ -75,7 +78,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 13,
+        "platonic_like": 21,
         "dislike": 0,
         "admiration": 15,
         "comfortable": 19,
@@ -91,11 +94,14 @@
         "romantic_love": 0,
         "platonic_like": 19,
         "dislike": 0,
-        "admiration": 19,
+        "admiration": 3,
         "comfortable": 14,
         "jealousy": 0,
         "trust": 13,
-        "log": []
+        "log": [
+            "Leoparddapple is really surprised that Luckkit's life isn't as easy as they thought it was. (high positive effect) - Leoparddapple was 76 moon(s) old",
+            "Leoparddapple was noticeably distracted while Luckkit was trying to tell a story. (high negative effect) - Leoparddapple was 77 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "7",
@@ -103,13 +109,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 20,
+        "platonic_like": 23,
         "dislike": 0,
-        "admiration": 2,
-        "comfortable": 15,
+        "admiration": 0,
+        "comfortable": 17,
         "jealousy": 0,
         "trust": 4,
-        "log": []
+        "log": [
+            "Leoparddapple asks Bluffpaw how they're doing. (low positive effect) - Leoparddapple was 76 moon(s) old",
+            "Leoparddapple tried to bring Bluffpaw's behaviour up to them, but it turned into a fight that someone else had to break up. (medium negative effect) - Leoparddapple was 78 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "7",
@@ -128,6 +137,80 @@
     {
         "cat_from_id": "7",
         "cat_to_id": "17",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "7",
+        "cat_to_id": "1",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "7",
+        "cat_to_id": "2",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 16,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Leoparddapple had a difficult conversation with Ganderkit and they now have a deeper understanding of each other. (high positive effect) - Leoparddapple was 77 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "7",
+        "cat_to_id": "3",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "7",
+        "cat_to_id": "4",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 13,
+        "log": [
+            "Leoparddapple appreciates Lupinekit telling them that they had a feather stuck to their face. (low positive effect) - Leoparddapple was 78 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "7",
+        "cat_to_id": "6",
         "mates": false,
         "family": false,
         "romantic_love": 0,
