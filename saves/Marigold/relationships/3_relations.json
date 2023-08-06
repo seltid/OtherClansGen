@@ -5,13 +5,17 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 40,
+        "platonic_like": 50,
         "dislike": 0,
         "admiration": 30,
-        "comfortable": 40,
+        "comfortable": 53,
         "jealousy": 0,
-        "trust": 50,
-        "log": []
+        "trust": 60,
+        "log": [
+            "Frondpaw sees that Juncospots's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect) - Frondpaw was 9 moon(s) old",
+            "Frondpaw finds a bit of fluff that smells like Juncospots and adds it to their nest. (low positive effect) - Frondpaw was 11 moon(s) old",
+            "Frondpaw is stuttering while speaking to Juncospots. (neutral effect) - Frondpaw was 12 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "3",
@@ -22,9 +26,9 @@
         "platonic_like": 48,
         "dislike": 0,
         "admiration": 10,
-        "comfortable": 40,
+        "comfortable": 48,
         "jealousy": 0,
-        "trust": 30,
+        "trust": 38,
         "log": []
     },
     {
@@ -33,14 +37,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 40,
+        "platonic_like": 42,
         "dislike": 0,
         "admiration": 22,
-        "comfortable": 40,
+        "comfortable": 43,
         "jealousy": 0,
-        "trust": 30,
+        "trust": 32,
         "log": [
-            "Frondkit admires how brave Lupinekit is. (medium positive effect) - Frondkit was 3 moon(s) old"
+            "Frondkit admires how brave Lupinekit is. (medium positive effect) - Frondkit was 3 moon(s) old",
+            "Frondpaw quickly apologizes after bumping into Lupinepaw. They have a small laugh about it. (low positive effect) - Frondpaw was 8 moon(s) old"
         ]
     },
     {
@@ -68,8 +73,10 @@
         "admiration": 10,
         "comfortable": 15,
         "jealousy": 0,
-        "trust": 15,
-        "log": []
+        "trust": 0,
+        "log": [
+            "Frondpaw said they'd cover for Bluffpaw, but when it came time, they got Bluffpaw in trouble. (medium negative effect) - Frondpaw was 7 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "3",
@@ -113,7 +120,9 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Frondpaw called Rosespeck the wrong name. (medium negative effect) - Frondpaw was 10 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "3",
@@ -163,7 +172,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 8,
+        "platonic_like": 16,
         "dislike": 0,
         "admiration": 0,
         "comfortable": 0,
@@ -178,12 +187,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 13,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Frondkit had a disagreement with Luckpaw about something or other. (low negative effect) - Frondkit was 5 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "3",
@@ -193,10 +204,110 @@
         "romantic_love": 0,
         "platonic_like": 0,
         "dislike": 0,
+        "admiration": 8,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "3",
+        "cat_to_id": "15",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 13,
+        "log": [
+            "Frondpaw appreciates Mosskit telling them that they had a feather stuck to their face. (low positive effect) - Frondpaw was 6 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "3",
+        "cat_to_id": "30",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "3",
+        "cat_to_id": "28",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "3",
+        "cat_to_id": "29",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "3",
+        "cat_to_id": "31",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "3",
+        "cat_to_id": "32",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "3",
+        "cat_to_id": "33",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
         "log": []
     }
 ]

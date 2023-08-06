@@ -12,7 +12,8 @@
         "jealousy": 0,
         "trust": 0,
         "log": [
-            "Shardspeck is having a wonderful time discussing recent Clan news with Heavyrustle. (high positive effect) - Shardspeck was 126 moon(s) old"
+            "Shardspeck is having a wonderful time discussing recent Clan news with Heavyrustle. (high positive effect) - Shardspeck was 126 moon(s) old",
+            "OC3speck covered for OC4rustle on something minor. (medium positive effect) - OC3speck was 134 moon(s) old"
         ]
     },
     {
@@ -21,13 +22,18 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 38,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 29,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 21,
+        "log": [
+            "OC3speck covered for OC6glide on something minor. (medium positive effect) - OC3speck was 128 moon(s) old",
+            "OC3speck is having a wonderful time discussing recent Clan news with OC6glide. (high positive effect) - OC3speck was 129 moon(s) old",
+            "OC3speck saw OC6glide the other day and did get a chance to meow hello! (medium positive effect) - OC3speck was 131 moon(s) old",
+            "OC3speck tells OC6glide to count on them in a difficult situation. (high positive effect) - OC3speck was 133 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "18",
@@ -36,7 +42,7 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 8,
+        "dislike": 16,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
@@ -63,14 +69,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
-        "dislike": 0,
+        "platonic_like": 3,
+        "dislike": 3,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 11,
         "log": [
-            "Shardspeck is letting Condorlotus share their troubles with them, hoping they'll feel better afterwards. (high positive effect) - Shardspeck was 123 moon(s) old"
+            "Shardspeck is letting Condorlotus share their troubles with them, hoping they'll feel better afterwards. (high positive effect) - Shardspeck was 123 moon(s) old",
+            "OC3speck had a disagreement with OC5lotus about something or other. (low negative effect) - OC3speck was 127 moon(s) old",
+            "OC3speck thinks OC5lotus is very helpful! (low positive effect) - OC3speck was 130 moon(s) old"
         ]
     },
     {
@@ -95,7 +103,7 @@
         "romantic_love": 0,
         "platonic_like": 0,
         "dislike": 0,
-        "admiration": 0,
+        "admiration": 3,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
@@ -110,13 +118,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
-        "admiration": 0,
-        "comfortable": 0,
+        "dislike": 3,
+        "admiration": 3,
+        "comfortable": 3,
         "jealousy": 0,
         "trust": 0,
         "log": [
-            "Shardspeck covered for Bushnoise on something minor. (medium positive effect) - Shardspeck was 124 moon(s) old"
+            "Shardspeck covered for Bushnoise on something minor. (medium positive effect) - Shardspeck was 124 moon(s) old",
+            "OC3speck mews congratulations to OC2noise for a job well done. (low positive effect) - OC3speck was 132 moon(s) old"
         ]
     }
 ]

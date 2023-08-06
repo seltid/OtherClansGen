@@ -33,15 +33,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 15,
+        "platonic_like": 39,
         "dislike": 0,
         "admiration": 3,
-        "comfortable": 0,
+        "comfortable": 12,
         "jealousy": 0,
         "trust": 6,
         "log": [
             "Shadeface covered for Rosepaw on something minor. (medium positive effect) - Shadeface was 75 moon(s) old",
-            "Shadeface is checking on Rosepaw. (neutral effect) - Shadeface was 77 moon(s) old"
+            "Shadeface is checking on Rosepaw. (neutral effect) - Shadeface was 77 moon(s) old",
+            "Shadeface wants to spend more time with Rosepaw! (high positive effect) - Shadeface was 79 moon(s) old"
         ]
     },
     {
@@ -65,7 +66,7 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 30,
-        "dislike": 0,
+        "dislike": 3,
         "admiration": 16,
         "comfortable": 15,
         "jealousy": 0,
@@ -108,13 +109,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 18,
+        "platonic_like": 1,
         "dislike": 0,
         "admiration": 0,
         "comfortable": 11,
         "jealousy": 0,
         "trust": 6,
-        "log": []
+        "log": [
+            "Shadeface and Luckpaw have an argument about who should get a pretty feather, and end up destroying it in their fight. (medium negative effect) - Shadeface was 80 moon(s) old",
+            "Shadeface thinks Luckcry is very helpful! (low positive effect) - Shadeface was 85 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "16",
@@ -122,7 +126,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 28,
+        "platonic_like": 36,
         "dislike": 0,
         "admiration": 3,
         "comfortable": 17,
@@ -152,15 +156,17 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 16,
         "dislike": 0,
-        "admiration": 0,
-        "comfortable": 0,
+        "admiration": 8,
+        "comfortable": 12,
         "jealousy": 0,
         "trust": 0,
         "log": [
             "Shadeface turned to Frondkit in a time of need, only for Frondkit to abandon them. (high negative effect) - Shadeface was 76 moon(s) old",
-            "Shadeface caught Frondkit complaining about them behind their back. (high negative effect) - Shadeface was 77 moon(s) old"
+            "Shadeface caught Frondkit complaining about them behind their back. (high negative effect) - Shadeface was 77 moon(s) old",
+            "Shadeface mews congratulations to Frondpaw for a job well done. (low positive effect) - Shadeface was 80 moon(s) old",
+            "Shadeface wants to spend more time with Frondpaw! (high positive effect) - Shadeface was 84 moon(s) old"
         ]
     },
     {
@@ -183,17 +189,72 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 36,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 28,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 12,
+        "log": [
+            "Shadeface stands tall when Ganderpaw walks by. (neutral effect) - Shadeface was 81 moon(s) old",
+            "Shadeface wants to spend more time with Ganderpaw! (high positive effect) - Shadeface was 82 moon(s) old",
+            "Shadeface is sharing tongues with Ganderpaw. (high positive effect) - Shadeface was 83 moon(s) old",
+            "Shadeface is giving Ganderpaw a task. (neutral effect) - Shadeface was 85 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "16",
         "cat_to_id": "4",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 11,
+        "trust": 11,
+        "log": [
+            "Shadeface is complaining that Lupinekit never does anything helpful. (high negative effect) - Shadeface was 78 moon(s) old",
+            "Shadeface tells Lupinepaw to count on them in a difficult situation. (high positive effect) - Shadeface was 83 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "16",
+        "cat_to_id": "6",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 7,
+        "dislike": 8,
+        "admiration": 0,
+        "comfortable": 5,
+        "jealousy": 11,
+        "trust": 0,
+        "log": [
+            "Shadeface gave Cavekit a trinket they found while out of the camp today. (medium positive effect) - Shadeface was 79 moon(s) old",
+            "Shadeface is complaining that Cavepaw never does anything helpful. (high negative effect) - Shadeface was 84 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "16",
+        "cat_to_id": "15",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 20,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 9,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Shadeface calls to Mosspaw to catch them a fat mouse on their next hunting patrol. (medium positive effect) - Shadeface was 82 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "16",
+        "cat_to_id": "28",
         "mates": false,
         "family": false,
         "romantic_love": 0,
@@ -207,7 +268,63 @@
     },
     {
         "cat_from_id": "16",
-        "cat_to_id": "6",
+        "cat_to_id": "29",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 3,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "16",
+        "cat_to_id": "30",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "16",
+        "cat_to_id": "31",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "16",
+        "cat_to_id": "32",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "16",
+        "cat_to_id": "33",
         "mates": false,
         "family": false,
         "romantic_love": 0,

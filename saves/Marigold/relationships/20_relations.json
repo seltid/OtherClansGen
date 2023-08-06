@@ -5,14 +5,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 13,
+        "platonic_like": 26,
         "dislike": 0,
         "admiration": 0,
         "comfortable": 10,
         "jealousy": 0,
-        "trust": 0,
+        "trust": 26,
         "log": [
-            "Frostyglide thinks Shardspeck was nice to them today. (low positive effect) - Frostyglide was 16 moon(s) old"
+            "Frostyglide thinks Shardspeck was nice to them today. (low positive effect) - Frostyglide was 16 moon(s) old",
+            "OC6glide appreciates OC3speck telling them that they had a feather stuck to their face. (low positive effect) - OC6glide was 21 moon(s) old",
+            "OC6glide thinks OC3speck is very helpful! (low positive effect) - OC6glide was 24 moon(s) old"
         ]
     },
     {
@@ -26,10 +28,11 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 13,
-        "trust": 0,
+        "trust": 13,
         "log": [
             "Frostyglide wishes they could get their pelt to shine like Heavyrustle's. (low negative effect) - Frostyglide was 13 moon(s) old",
-            "Frostyglide is surprised to hear Heavyrustle express an ideal they can agree with. (high positive effect) - Frostyglide was 14 moon(s) old"
+            "Frostyglide is surprised to hear Heavyrustle express an ideal they can agree with. (high positive effect) - Frostyglide was 14 moon(s) old",
+            "OC6glide appreciates OC4rustle telling them that they had a feather stuck to their face. (low positive effect) - OC6glide was 19 moon(s) old"
         ]
     },
     {
@@ -43,9 +46,10 @@
         "admiration": 0,
         "comfortable": 13,
         "jealousy": 0,
-        "trust": 0,
+        "trust": 13,
         "log": [
-            "Frostyglide chats with Downystripe while grabbing something to eat. (medium positive effect) - Frostyglide was 15 moon(s) old"
+            "Frostyglide chats with Downystripe while grabbing something to eat. (medium positive effect) - Frostyglide was 15 moon(s) old",
+            "OC6glide doesn't notice OC7stripe twitching their whiskers at them. (neutral effect) - OC6glide was 17 moon(s) old"
         ]
     },
     {
@@ -60,7 +64,9 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "OC6glide is surprised by OC9spore being thoughtful. (low positive effect) - OC6glide was 23 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "20",
@@ -71,7 +77,7 @@
         "platonic_like": 0,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 8,
         "jealousy": 0,
         "trust": 0,
         "log": []
@@ -82,13 +88,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 3,
         "dislike": 0,
         "admiration": 3,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 3,
-        "log": []
+        "log": [
+            "OC6glide sees that OC8speckle's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect) - OC6glide was 20 moon(s) old",
+            "OC8speckle seems to be oblivious to OC6glide glaring at them from across camp. (neutral effect) - OC6glide was 22 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "20",
@@ -116,6 +125,8 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "OC6glide doesn't notice OC2noise leaving camp. (neutral effect) - OC6glide was 18 moon(s) old"
+        ]
     }
 ]

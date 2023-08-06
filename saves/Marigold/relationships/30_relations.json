@@ -10,8 +10,10 @@
         "admiration": 10,
         "comfortable": 40,
         "jealousy": 0,
-        "trust": 30,
-        "log": []
+        "trust": 37,
+        "log": [
+            "Logpaw notices how Jumblepaw is being helpful around camp. (medium positive effect) - Logpaw was 8 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "30",
@@ -25,7 +27,9 @@
         "comfortable": 40,
         "jealousy": 0,
         "trust": 30,
-        "log": []
+        "log": [
+            "Logkit realized that they were too harsh in their judgment of Silverkit. (medium positive effect) - Logkit was 2 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "30",
@@ -49,10 +53,273 @@
         "romantic_love": 0,
         "platonic_like": 15,
         "dislike": 0,
-        "admiration": 10,
+        "admiration": 0,
         "comfortable": 15,
         "jealousy": 0,
         "trust": 15,
+        "log": [
+            "Logkit heard an ugly rumor about Sweetfoot. (high negative effect) - Logkit was 1 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "5",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "7",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 8,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "8",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 8,
+        "log": [
+            "Logpaw thinks Rosespeck is very helpful! (low positive effect) - Logpaw was 7 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 16,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 12,
+        "jealousy": 0,
+        "trust": 16,
+        "log": [
+            "Logkit promises to always look out for Lightfruit. (high positive effect) - Logkit was 3 moon(s) old",
+            "Logkit wants to spend more time with Lightfruit! (high positive effect) - Logkit was 5 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "13",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 11,
+        "log": [
+            "Logkit is letting Luckpaw share their troubles with them, hoping they'll feel better afterwards. (high positive effect) - Logkit was 4 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "14",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "16",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "1",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "2",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "4",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "6",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "15",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 21,
+        "log": [
+            "Logpaw thinks they can tell Mosspaw something important. (high positive effect) - Logpaw was 6 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "3",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "31",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "32",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "30",
+        "cat_to_id": "33",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
         "log": []
     }
 ]

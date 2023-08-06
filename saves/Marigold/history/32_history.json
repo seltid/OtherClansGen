@@ -1,14 +1,15 @@
 {
-    "beginning": {},
+    "beginning": {
+        "clan_born": false,
+        "birth_season": null,
+        "age": 5,
+        "moon": 12
+    },
     "mentor_influence": {
         "trait": {},
         "skill": {}
     },
-    "app_ceremony": {
-        "honor": "enterprise",
-        "graduation_age": 15,
-        "moon": 10
-    },
+    "app_ceremony": {},
     "lead_ceremony": null,
     "elder_ceremony": {},
     "possible_history": {},

@@ -1346,7 +1346,6 @@ class Cat():
     def relationship_interaction(self):
         """Randomly choose a cat of the Clan and have a interaction with them."""
         # if the cat has no relationships, skip
-        print(f"RELATIONSHIP_INTERACTION INITIATING FOR {self.name} BEEP BOOP")
         if not self.relationships or len(self.relationships) < 1:
             return
 

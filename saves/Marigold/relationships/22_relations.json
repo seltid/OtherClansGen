@@ -41,7 +41,9 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "OC9spore apologized to OC6glide for something or other. (low positive effect) - OC9spore was 59 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "22",
@@ -54,8 +56,11 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 24,
+        "log": [
+            "OC9spore thinks about how OC7stripe is always reliable. (medium positive effect) - OC9spore was 56 moon(s) old",
+            "OC9spore is feeling lost and asks OC7stripe for advice on what to do. (medium positive effect) - OC9spore was 60 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "22",
@@ -65,11 +70,13 @@
         "romantic_love": 0,
         "platonic_like": 0,
         "dislike": 0,
-        "admiration": 0,
+        "admiration": 13,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "OC9spore mews congratulations to OC5lotus for a job well done. (low positive effect) - OC9spore was 57 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "22",
@@ -79,11 +86,15 @@
         "romantic_love": 0,
         "platonic_like": 0,
         "dislike": 0,
-        "admiration": 0,
+        "admiration": 16,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "OC9spore had a difficult conversation with OC8speckle and they now have a deeper understanding of each other. (high positive effect) - OC9spore was 54 moon(s) old",
+            "OC8speckle seems to be oblivious to OC9spore glaring at them from across camp. (neutral effect) - OC9spore was 55 moon(s) old",
+            "OC9spore goes to tell a secret to OC8speckle only for OC8speckle to tell someone else's secret to them. (high negative effect) - OC9spore was 58 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "22",
@@ -114,7 +125,8 @@
         "log": [
             "Hushspore sees that Bushnoise's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect) - Hushspore was 49 moon(s) old",
             "Hushspore is jealous that Bushnoise got to go to the last Gathering. (medium negative effect) - Hushspore was 50 moon(s) old",
-            "Hushspore is sharpening their claws near Bushnoise. (neutral effect) - Hushspore was 51 moon(s) old"
+            "Hushspore is sharpening their claws near Bushnoise. (neutral effect) - Hushspore was 51 moon(s) old",
+            "OC9spore said they'd cover for OC2noise, but when it came time, they got OC2noise in trouble. (medium negative effect) - OC9spore was 53 moon(s) old"
         ]
     }
 ]

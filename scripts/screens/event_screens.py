@@ -51,6 +51,15 @@ class EventsScreen(Screens):
         self.cat_profile_buttons = {}
         self.scroll_height = {}
 
+        # Sel's buttons
+        self.clan_filter = None
+        self.oc1_button = None
+        self.oc2_button = None
+        self.oc3_button = None
+        self.oc4_button = None
+        self.playerclan_button = None
+
+
         # Stores the involved cat button that currently has its cat profile buttons open
         self.open_involved_cat_button = None
 
@@ -183,6 +192,7 @@ class EventsScreen(Screens):
                 self.update_list_buttons(self.all_events_button)
                 self.display_events = self.all_events
                 self.update_events_display()
+                EventsScreen.clan_rel_hide(self)
             elif event.ui_element == self.ceremonies_events_button:
                 if self.event_container.vert_scroll_bar:
                     self.scroll_height[self.event_display_type] = self.event_container.vert_scroll_bar.scroll_position / self.event_container.vert_scroll_bar.scrollable_height
@@ -192,6 +202,7 @@ class EventsScreen(Screens):
                 self.update_list_buttons(self.ceremonies_events_button, self.ceremony_alert)
                 self.display_events = self.ceremony_events
                 self.update_events_display()
+                EventsScreen.clan_rel_hide(self)
             elif event.ui_element == self.birth_death_events_button:
                 if self.event_container.vert_scroll_bar:
                     self.scroll_height[self.event_display_type] = self.event_container.vert_scroll_bar.scroll_position / self.event_container.vert_scroll_bar.scrollable_height
@@ -201,6 +212,7 @@ class EventsScreen(Screens):
                 self.update_list_buttons(self.birth_death_events_button, self.birth_death_alert)
                 self.display_events = self.birth_death_events
                 self.update_events_display()
+                EventsScreen.clan_rel_hide(self)
             elif event.ui_element == self.relationship_events_button:
                 if self.event_container.vert_scroll_bar:
                     self.scroll_height[self.event_display_type] = self.event_container.vert_scroll_bar.scroll_position / self.event_container.vert_scroll_bar.scrollable_height
@@ -210,6 +222,9 @@ class EventsScreen(Screens):
                 self.update_list_buttons(self.relationship_events_button, self.relation_alert)
                 self.display_events = self.relation_events
                 self.update_events_display()
+                EventsScreen.clan_rel_show(self)
+                # Default button is playerclan
+                self.playerclan_button.disable()
             elif event.ui_element == self.health_events_button:
                 if self.event_container.vert_scroll_bar:
                     self.scroll_height[self.event_display_type] = self.event_container.vert_scroll_bar.scroll_position / self.event_container.vert_scroll_bar.scrollable_height
@@ -219,6 +234,7 @@ class EventsScreen(Screens):
                 self.update_list_buttons(self.health_events_button, self.health_alert)
                 self.display_events = self.health_events
                 self.update_events_display()
+                EventsScreen.clan_rel_hide(self)
             elif event.ui_element == self.other_clans_events_button:
                 if self.event_container.vert_scroll_bar:
                     self.scroll_height[self.event_display_type] = self.event_container.vert_scroll_bar.scroll_position / self.event_container.vert_scroll_bar.scrollable_height
@@ -228,6 +244,7 @@ class EventsScreen(Screens):
                 self.update_list_buttons(self.other_clans_events_button, self.other_clans_alert)
                 self.display_events = self.other_clans_events
                 self.update_events_display()
+                EventsScreen.clan_rel_hide(self)
             elif event.ui_element == self.misc_events_button:
                 if self.event_container.vert_scroll_bar:
                     self.scroll_height[self.event_display_type] = self.event_container.vert_scroll_bar.scroll_position / self.event_container.vert_scroll_bar.scrollable_height
@@ -237,6 +254,7 @@ class EventsScreen(Screens):
                 self.update_list_buttons(self.misc_events_button, self.misc_alert)
                 self.display_events = self.misc_events
                 self.update_events_display()
+                EventsScreen.clan_rel_hide(self)
             elif event.ui_element in self.involved_cat_buttons:
                 self.make_cat_buttons(event.ui_element)
             elif event.ui_element in self.cat_profile_buttons:
@@ -417,6 +435,25 @@ class EventsScreen(Screens):
 
                 self.update_events_display()
                 self.show_menu_buttons()
+
+        # Clan filtering
+        if event.type == pygame_gui.UI_BUTTON_START_PRESS:
+            if event.ui_element == self.oc1_button:
+                self.clan_rel_enable(self)
+                self.oc1_button.disable()
+            elif event.ui_element == self.oc2_button:
+                self.clan_rel_enable(self)
+                self.oc2_button.disable()
+            elif event.ui_element == self.oc3_button:
+                self.clan_rel_enable(self)
+                self.oc3_button.disable()
+            elif event.ui_element == self.oc4_button:
+                self.clan_rel_enable(self)
+                self.oc4_button.disable()
+            elif event.ui_element == self.playerclan_button:
+                self.clan_rel_enable(self)
+                self.playerclan_button.disable()
+            
             
 
     def screen_switches(self):
@@ -452,14 +489,6 @@ class EventsScreen(Screens):
         self.timeskip_button = UIImageButton(scale(pygame.Rect((620, 436), (360, 60))), "", object_id="#timeskip_button"
                                              , manager=MANAGER)
 
-        # commenting out for now as there seems to be a consensus that it isn't needed anymore?
-        #if game.clan.closed_borders:
-        #    self.toggle_borders_button = pygame_gui.elements.UIButton(scale(pygame.Rect((500, 210), (200, 30))),
-        #                                                              "Open Clan Borders")
-        #else:
-        #    self.toggle_borders_button = pygame_gui.elements.UIButton(scale(pygame.Rect((500, 210), (200, 30))),
-        #                                                              "Close Clan Borders")
-
         # Sets up the buttons to switch between the event types.
         self.all_events_button = UIImageButton(
             scale(pygame.Rect((120, 570), (300, 60))),
@@ -490,6 +519,32 @@ class EventsScreen(Screens):
             "",
             object_id="#misc_events_button", manager=MANAGER)
 
+        # Sel's buttons to view otherclans
+        self.clan_filter = pygame_gui.elements.UITextBox("<i>filter by:</i> ",
+                                                      scale(pygame.Rect((500, 1277), (200, 100))),
+                                                      object_id=get_text_box_theme("#text_box_30_horizleft"),
+                                                      manager=MANAGER)
+
+        self.oc1_button = UIImageButton(scale(pygame.Rect((727, 1260), (68, 68))), "",
+                                               object_id="#unknown_residence_button", manager=MANAGER,
+                                               tool_tip_text=f'{game.otherclan1.name}')
+
+        self.oc2_button = UIImageButton(scale(pygame.Rect((877, 1260), (68, 68))), "",
+                                        object_id="#unknown_residence_button", manager=MANAGER,
+                                        tool_tip_text=f'OC2')
+
+        self.oc3_button = UIImageButton(scale(pygame.Rect((1027, 1260), (68, 68))), "",
+                                        object_id="#unknown_residence_button", manager=MANAGER,
+                                        tool_tip_text=f'OC3')
+
+        self.oc4_button = UIImageButton(scale(pygame.Rect((1177, 1260), (68, 68))), "",
+                                        object_id="#unknown_residence_button", manager=MANAGER,
+                                        tool_tip_text=f'OC4')
+
+        self.playerclan_button = UIImageButton(scale(pygame.Rect((1327, 1260), (68, 68))), "",
+                                               object_id="#unknown_residence_button", manager=MANAGER,
+                                               tool_tip_text=f'{game.clan.name}Clan')
+
         if self.event_display_type == "all events":
             self.all_events_button.disable()
         elif self.event_display_type == "ceremony events":
@@ -504,6 +559,9 @@ class EventsScreen(Screens):
             self.other_clans_events_button.disable()
         elif self.event_display_type == "misc events":
             self.misc_events_button.disable()
+
+        if self.event_display_type != "relationship events":
+            EventsScreen.clan_rel_hide(self)
 
         self.misc_alert = None
         self.other_clans_alert = None
@@ -583,6 +641,25 @@ class EventsScreen(Screens):
         for ele in self.cat_profile_buttons:
             ele.kill()
         self.cat_profile_buttons = []
+
+        if self.clan_filter:
+            self.clan_filter.kill()
+            del self.clan_filter
+        if self.playerclan_button:
+            self.playerclan_button.kill()
+            del self.playerclan_button
+        if self.oc1_button:
+            self.oc1_button.kill()
+            del self.oc1_button
+        if self.oc2_button:
+            self.oc2_button.kill()
+            del self.oc2_button
+        if self.oc3_button:
+            self.oc3_button.kill()
+            del self.oc3_button
+        if self.oc4_button:
+            self.oc4_button.kill()
+            del self.oc4_button
 
         # self.hide_menu_buttons()
 
@@ -759,3 +836,39 @@ class EventsScreen(Screens):
         """ In its own function so that there is only one place the box size is set"""
         self.event_container = pygame_gui.elements.UIScrollingContainer(scale(pygame.Rect((432, 552), (1028, 700)))
                                                                         , manager=MANAGER)
+
+    @staticmethod
+    def clan_rel_hide(self):
+        self.clan_filter.hide()
+        self.oc1_button.hide()
+        self.oc2_button.hide()
+        self.oc3_button.hide()
+        self.oc4_button.hide()
+        self.playerclan_button.hide()
+
+    @staticmethod
+    def clan_rel_show(self):
+        self.clan_filter.show()
+        self.oc1_button.show()
+        self.oc2_button.show()
+        self.oc3_button.show()
+        self.oc4_button.show()
+        self.playerclan_button.show()
+        
+    @staticmethod
+    def clan_rel_enable(self):
+        self.clan_filter.enable()
+        self.oc1_button.enable()
+        self.oc2_button.enable()
+        self.oc3_button.enable()
+        self.oc4_button.enable()
+        self.playerclan_button.enable()
+
+    @staticmethod
+    def clan_rel_disable(self):
+        self.clan_filter.disable()
+        self.oc1_button.disable()
+        self.oc2_button.disable()
+        self.oc3_button.disable()
+        self.oc4_button.disable()
+        self.playerclan_button.disable()

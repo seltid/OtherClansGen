@@ -7,11 +7,13 @@
         "romantic_love": 0,
         "platonic_like": 0,
         "dislike": 0,
-        "admiration": 0,
+        "admiration": 11,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "OC1star had a difficult conversation with OC3speck and they now have a deeper understanding of each other. (high positive effect) - OC1star was 61 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "25",
@@ -19,13 +21,17 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 21,
         "dislike": 0,
-        "admiration": 0,
-        "comfortable": 0,
-        "jealousy": 0,
+        "admiration": 13,
+        "comfortable": 16,
+        "jealousy": 21,
         "trust": 0,
-        "log": []
+        "log": [
+            "OC1star saw OC4rustle being considerate. (low positive effect) - OC1star was 59 moon(s) old",
+            "OC1star is complaining that OC4rustle never does anything helpful. (high negative effect) - OC1star was 64 moon(s) old",
+            "OC1star is having a wonderful time discussing recent Clan news with OC4rustle. (high positive effect) - OC1star was 65 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "25",
@@ -47,14 +53,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 16,
+        "platonic_like": 37,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 21,
+        "comfortable": 37,
         "jealousy": 0,
         "trust": 16,
         "log": [
-            "Currentstar appreciates how Downystripe always seems to ask how they're doing. (high positive effect) - Currentstar was 57 moon(s) old"
+            "Currentstar appreciates how Downystripe always seems to ask how they're doing. (high positive effect) - Currentstar was 57 moon(s) old",
+            "OC1star is having a wonderful time discussing recent Clan news with OC7stripe. (high positive effect) - OC1star was 60 moon(s) old"
         ]
     },
     {
@@ -68,9 +75,10 @@
         "admiration": 0,
         "comfortable": 7,
         "jealousy": 0,
-        "trust": 5,
+        "trust": 0,
         "log": [
-            "Currentstar settles near Hushspore to eat their fresh-kill. (medium positive effect) - Currentstar was 56 moon(s) old"
+            "Currentstar settles near Hushspore to eat their fresh-kill. (medium positive effect) - Currentstar was 56 moon(s) old",
+            "OC1star goes to tell a secret to OC9spore only for OC9spore to tell someone else's secret to them. (high negative effect) - OC1star was 62 moon(s) old"
         ]
     },
     {
@@ -84,7 +92,7 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 0,
+        "trust": 13,
         "log": [
             "Currentstar caught Condorlotus in a lie. (medium negative effect) - Currentstar was 55 moon(s) old"
         ]
@@ -96,13 +104,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 12,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
         "log": [
-            "Currentstar thinks Twilightspeckle has been acting strangely. (low negative effect) - Currentstar was 54 moon(s) old"
+            "Currentstar thinks Twilightspeckle has been acting strangely. (low negative effect) - Currentstar was 54 moon(s) old",
+            "OC1star ignores OC8speckle. (medium negative effect) - OC1star was 63 moon(s) old"
         ]
     },
     {
@@ -117,6 +126,8 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "OC1star is giving OC2noise a task. (neutral effect) - OC1star was 58 moon(s) old"
+        ]
     }
 ]

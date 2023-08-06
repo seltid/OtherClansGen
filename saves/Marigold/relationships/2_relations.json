@@ -19,14 +19,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 52,
+        "platonic_like": 64,
         "dislike": 0,
         "admiration": 10,
-        "comfortable": 57,
+        "comfortable": 73,
         "jealousy": 0,
-        "trust": 30,
+        "trust": 42,
         "log": [
-            "Ganderkit lets Frondkit play with their favorite toy. (medium positive effect) - Ganderkit was 3 moon(s) old"
+            "Ganderkit lets Frondkit play with their favorite toy. (medium positive effect) - Ganderkit was 3 moon(s) old",
+            "Ganderpaw helps Frondpaw work through something difficult that happened to them. (high positive effect) - Ganderpaw was 10 moon(s) old"
         ]
     },
     {
@@ -78,12 +79,15 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 3,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Ganderpaw doesn't think that Furledtree has been completely honest lately. (low negative effect) - Ganderpaw was 6 moon(s) old",
+            "Ganderpaw had Furledtree bump into them, and they didn't even apologize! (low negative effect) - Ganderpaw was 12 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "2",
@@ -110,8 +114,10 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 21,
+        "log": [
+            "Ganderpaw promises to always look out for Rosepaw. (high positive effect) - Ganderpaw was 8 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "2",
@@ -120,7 +126,7 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 3,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
@@ -175,19 +181,36 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 16,
         "dislike": 0,
-        "admiration": 0,
-        "comfortable": 0,
+        "admiration": 13,
+        "comfortable": 21,
         "jealousy": 0,
-        "trust": 0,
+        "trust": 16,
         "log": [
-            "Ganderkit called Luckpaw the wrong name. (medium negative effect) - Ganderkit was 4 moon(s) old"
+            "Ganderkit called Luckpaw the wrong name. (medium negative effect) - Ganderkit was 4 moon(s) old",
+            "Ganderpaw offers to groom a hard-to-reach place for Luckpaw, who thanks them earnestly. (high positive effect) - Ganderpaw was 9 moon(s) old"
         ]
     },
     {
         "cat_from_id": "2",
         "cat_to_id": "16",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 12,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 17,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Ganderkit decorates their nest with gifts that Shadeface brought them. (medium positive effect) - Ganderkit was 5 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "2",
+        "cat_to_id": "15",
         "mates": false,
         "family": false,
         "romantic_love": 0,
@@ -198,5 +221,95 @@
         "jealousy": 0,
         "trust": 0,
         "log": []
+    },
+    {
+        "cat_from_id": "2",
+        "cat_to_id": "28",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "2",
+        "cat_to_id": "29",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Ganderpaw stands tall when Silverpaw walks by. (neutral effect) - Ganderpaw was 11 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "2",
+        "cat_to_id": "30",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 12,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 9,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Ganderpaw reminds Logkit to grab something from the fresh-kill pile if they haven't already. (medium positive effect) - Ganderpaw was 7 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "2",
+        "cat_to_id": "31",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "2",
+        "cat_to_id": "32",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "2",
+        "cat_to_id": "33",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": [
+            "Ganderpaw is welcoming Boughkit."
+        ]
     }
 ]

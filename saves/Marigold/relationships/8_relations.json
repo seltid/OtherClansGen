@@ -66,12 +66,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 19,
-        "dislike": 0,
+        "dislike": 10,
         "admiration": 2,
         "comfortable": 6,
-        "jealousy": 0,
+        "jealousy": 13,
         "trust": 10,
-        "log": []
+        "log": [
+            "Rosepaw wishes they could get their pelt to shine like Rookpaw's. (low negative effect) - Rosepaw was 12 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "8",
@@ -109,13 +111,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 2,
+        "platonic_like": 0,
         "dislike": 0,
         "admiration": 9,
         "comfortable": 11,
         "jealousy": 0,
         "trust": 14,
-        "log": []
+        "log": [
+            "Rosespeck caught Bluffraven complaining about them behind their back. (high negative effect) - Rosespeck was 16 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "8",
@@ -123,13 +127,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 13,
+        "platonic_like": 21,
         "dislike": 0,
         "admiration": 9,
         "comfortable": 14,
         "jealousy": 0,
-        "trust": 10,
-        "log": []
+        "trust": 18,
+        "log": [
+            "Rosepaw acknowledges Shadeface with a twitch of their whiskers. (neutral effect) - Rosepaw was 10 moon(s) old",
+            "Rosespeck appreciates Shadeface telling them that they had a feather stuck to their face. (low positive effect) - Rosespeck was 15 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "8",
@@ -152,13 +159,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 12,
         "admiration": 0,
         "comfortable": 0,
-        "jealousy": 0,
+        "jealousy": 16,
         "trust": 0,
         "log": [
-            "Rosepaw complains about something Cavekit did. (low negative effect) - Rosepaw was 7 moon(s) old"
+            "Rosepaw complains about something Cavekit did. (low negative effect) - Rosepaw was 7 moon(s) old",
+            "Rosepaw is complaining that Cavekit never does anything helpful. (high negative effect) - Rosepaw was 9 moon(s) old"
         ]
     },
     {
@@ -186,7 +194,7 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 0,
+        "trust": 13,
         "log": []
     },
     {
@@ -206,6 +214,114 @@
     {
         "cat_from_id": "8",
         "cat_to_id": "4",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "8",
+        "cat_to_id": "15",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 16,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 21,
+        "jealousy": 0,
+        "trust": 16,
+        "log": [
+            "Rosepaw offers to groom a hard-to-reach place for Mosskit, who thanks them earnestly. (high positive effect) - Rosepaw was 11 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "8",
+        "cat_to_id": "28",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "8",
+        "cat_to_id": "29",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 6,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Rosespeck is talking with Silverkit. (low positive effect) - Rosespeck was 13 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "8",
+        "cat_to_id": "30",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 12,
+        "log": [
+            "Rosespeck comes up with a plan to sneak out of camp with Logkit. (medium positive effect) - Rosespeck was 14 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "8",
+        "cat_to_id": "31",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": [
+            "Rosespeck sees Raggedkit arrive in the Clan and offers them to show them around."
+        ]
+    },
+    {
+        "cat_from_id": "8",
+        "cat_to_id": "32",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": [
+            "Rosespeck asks Parsleykit if they could use some help getting introduced to the other Clan members."
+        ]
+    },
+    {
+        "cat_from_id": "8",
+        "cat_to_id": "33",
         "mates": false,
         "family": false,
         "romantic_love": 0,

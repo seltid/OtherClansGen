@@ -8,7 +8,13 @@
     "lead_ceremony": null,
     "elder_ceremony": {},
     "possible_history": {},
-    "died_by": [],
+    "died_by": [
+        {
+            "involved": "12",
+            "text": "m_c was killed by a snake.",
+            "moon": 12
+        }
+    ],
     "scar_events": [],
     "murder": {}
 }

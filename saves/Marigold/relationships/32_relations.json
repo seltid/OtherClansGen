@@ -1,67 +1,35 @@
 [
     {
-        "cat_from_id": "4",
-        "cat_to_id": "1",
+        "cat_from_id": "32",
+        "cat_to_id": "31",
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 40,
+        "platonic_like": 80,
         "dislike": 0,
-        "admiration": 30,
-        "comfortable": 40,
+        "admiration": 20,
+        "comfortable": 80,
         "jealousy": 0,
-        "trust": 50,
-        "log": [
-            "Lupinepaw realized that they were too harsh in their judgment of Juncospots. (medium positive effect) - Lupinepaw was 10 moon(s) old"
-        ]
-    },
-    {
-        "cat_from_id": "4",
-        "cat_to_id": "2",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 40,
-        "dislike": 0,
-        "admiration": 10,
-        "comfortable": 40,
-        "jealousy": 0,
-        "trust": 30,
+        "trust": 60,
         "log": []
     },
     {
-        "cat_from_id": "4",
+        "cat_from_id": "32",
+        "cat_to_id": "33",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 80,
+        "dislike": 0,
+        "admiration": 20,
+        "comfortable": 80,
+        "jealousy": 0,
+        "trust": 60,
+        "log": []
+    },
+    {
+        "cat_from_id": "32",
         "cat_to_id": "3",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 45,
-        "dislike": 0,
-        "admiration": 10,
-        "comfortable": 50,
-        "jealousy": 0,
-        "trust": 35,
-        "log": [
-            "Lupinepaw helps Frondpaw pick burrs out of their fur. (medium positive effect) - Lupinepaw was 9 moon(s) old"
-        ]
-    },
-    {
-        "cat_from_id": "4",
-        "cat_to_id": "6",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 40,
-        "dislike": 0,
-        "admiration": 10,
-        "comfortable": 40,
-        "jealousy": 0,
-        "trust": 30,
-        "log": []
-    },
-    {
-        "cat_from_id": "4",
-        "cat_to_id": "14",
         "mates": false,
         "family": false,
         "romantic_love": 0,
@@ -74,38 +42,8 @@
         "log": []
     },
     {
-        "cat_from_id": "4",
+        "cat_from_id": "32",
         "cat_to_id": "5",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 16,
-        "dislike": 0,
-        "admiration": 0,
-        "comfortable": 12,
-        "jealousy": 0,
-        "trust": 0,
-        "log": [
-            "Lupinekit is having a wonderful time discussing recent Clan news with Furledtree. (high positive effect) - Lupinekit was 4 moon(s) old"
-        ]
-    },
-    {
-        "cat_from_id": "4",
-        "cat_to_id": "7",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 13,
-        "dislike": 0,
-        "admiration": 0,
-        "comfortable": 0,
-        "jealousy": 0,
-        "trust": 0,
-        "log": []
-    },
-    {
-        "cat_from_id": "4",
-        "cat_to_id": "8",
         "mates": false,
         "family": false,
         "romantic_love": 0,
@@ -118,7 +56,35 @@
         "log": []
     },
     {
-        "cat_from_id": "4",
+        "cat_from_id": "32",
+        "cat_to_id": "7",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "32",
+        "cat_to_id": "8",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 10,
+        "comfortable": 15,
+        "jealousy": 0,
+        "trust": 15,
+        "log": []
+    },
+    {
+        "cat_from_id": "32",
         "cat_to_id": "9",
         "mates": false,
         "family": false,
@@ -128,30 +94,12 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 11,
-        "log": [
-            "Lupinekit tells Sweetpaw to count on them in a difficult situation. (high positive effect) - Lupinekit was 3 moon(s) old"
-        ]
-    },
-    {
-        "cat_from_id": "4",
-        "cat_to_id": "10",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 0,
-        "dislike": 3,
-        "admiration": 0,
-        "comfortable": 0,
-        "jealousy": 0,
         "trust": 0,
-        "log": [
-            "Lupinepaw had a disagreement with Lightfruit about something or other. (low negative effect) - Lupinepaw was 6 moon(s) old"
-        ]
+        "log": []
     },
     {
-        "cat_from_id": "4",
-        "cat_to_id": "11",
+        "cat_from_id": "32",
+        "cat_to_id": "10",
         "mates": false,
         "family": false,
         "romantic_love": 0,
@@ -164,7 +112,7 @@
         "log": []
     },
     {
-        "cat_from_id": "4",
+        "cat_from_id": "32",
         "cat_to_id": "12",
         "mates": false,
         "family": false,
@@ -178,7 +126,7 @@
         "log": []
     },
     {
-        "cat_from_id": "4",
+        "cat_from_id": "32",
         "cat_to_id": "13",
         "mates": false,
         "family": false,
@@ -189,13 +137,24 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": [
-            "Lupinepaw overheard a joke from Luckpaw they didn't get. (low negative effect) - Lupinepaw was 7 moon(s) old",
-            "Lupinepaw always thought Luckcry had it all figured out, so they're surprised when Luckcry asks for help. (medium positive effect) - Lupinepaw was 12 moon(s) old"
-        ]
+        "log": []
     },
     {
-        "cat_from_id": "4",
+        "cat_from_id": "32",
+        "cat_to_id": "14",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "32",
         "cat_to_id": "16",
         "mates": false,
         "family": false,
@@ -205,28 +164,67 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 3,
+        "trust": 0,
         "log": []
     },
     {
-        "cat_from_id": "4",
-        "cat_to_id": "29",
+        "cat_from_id": "32",
+        "cat_to_id": "1",
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 13,
+        "platonic_like": 15,
         "dislike": 0,
-        "admiration": 0,
-        "comfortable": 10,
+        "admiration": 10,
+        "comfortable": 15,
         "jealousy": 0,
-        "trust": 0,
-        "log": [
-            "Lupinekit swaps favorite prey with Silverkit. (medium positive effect) - Lupinekit was 5 moon(s) old",
-            "Lupinepaw thinks Silverpaw was nice to them today. (low positive effect) - Lupinepaw was 11 moon(s) old"
-        ]
+        "trust": 15,
+        "log": []
     },
     {
-        "cat_from_id": "4",
+        "cat_from_id": "32",
+        "cat_to_id": "2",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "32",
+        "cat_to_id": "4",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "32",
+        "cat_to_id": "6",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 10,
+        "comfortable": 15,
+        "jealousy": 0,
+        "trust": 15,
+        "log": []
+    },
+    {
+        "cat_from_id": "32",
         "cat_to_id": "15",
         "mates": false,
         "family": false,
@@ -240,23 +238,35 @@
         "log": []
     },
     {
-        "cat_from_id": "4",
+        "cat_from_id": "32",
         "cat_to_id": "28",
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 9,
+        "platonic_like": 0,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 12,
+        "comfortable": 0,
         "jealousy": 0,
-        "trust": 9,
-        "log": [
-            "Lupinepaw chats with Jumblekit about their day. (medium positive effect) - Lupinepaw was 8 moon(s) old"
-        ]
+        "trust": 0,
+        "log": []
     },
     {
-        "cat_from_id": "4",
+        "cat_from_id": "32",
+        "cat_to_id": "29",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "32",
         "cat_to_id": "30",
         "mates": false,
         "family": false,
@@ -268,49 +278,5 @@
         "jealousy": 0,
         "trust": 0,
         "log": []
-    },
-    {
-        "cat_from_id": "4",
-        "cat_to_id": "31",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 0,
-        "dislike": 0,
-        "admiration": 0,
-        "comfortable": 0,
-        "jealousy": 0,
-        "trust": 0,
-        "log": []
-    },
-    {
-        "cat_from_id": "4",
-        "cat_to_id": "32",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 0,
-        "dislike": 0,
-        "admiration": 0,
-        "comfortable": 0,
-        "jealousy": 0,
-        "trust": 0,
-        "log": []
-    },
-    {
-        "cat_from_id": "4",
-        "cat_to_id": "33",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 15,
-        "dislike": 0,
-        "admiration": 5,
-        "comfortable": 10,
-        "jealousy": 0,
-        "trust": 10,
-        "log": [
-            "Lupinepaw offers Boughkit some feathers as a welcome gift, that they can use to decorate their new nest."
-        ]
     }
 ]

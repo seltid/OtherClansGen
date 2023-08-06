@@ -1,6 +1,6 @@
 [
     {
-        "text": "Furledtree has a mock battle with Cavekit. (medium positive effect)",
+        "text": "Furledtree thinks the prey Cavepaw is biting into on the other side of camp looks delicious. (medium negative effect)",
         "types": [
             "relation",
             "interaction"
@@ -11,40 +11,29 @@
         ]
     },
     {
-        "text": "Furledtree stands tall when Juncospots walks by. (neutral effect)",
+        "text": "Furledtree comes up with a plan to sneak out of camp with Jumblepaw. (medium positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "1",
+            "28",
             "5"
         ]
     },
     {
-        "text": "Furledtree never realized how much they love spending time with Logstar. (positive effect)",
+        "text": "Leoparddapple doesn't think that Mosspaw has been completely honest lately. (low negative effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "12",
-            "5"
-        ]
-    },
-    {
-        "text": "Leoparddapple tried to bring Bluffpaw's behaviour up to them, but it turned into a fight that someone else had to break up. (medium negative effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "14",
+            "15",
             "7"
         ]
     },
     {
-        "text": "Leoparddapple appreciates Lupinekit telling them that they had a feather stuck to their face. (low positive effect)",
+        "text": "Leoparddapple wants to spend more time with Lupinepaw! (high positive effect)",
         "types": [
             "relation",
             "interaction"
@@ -55,156 +44,155 @@
         ]
     },
     {
-        "text": "Rosepaw appreciates Sweetpaw telling them that they had a feather stuck to their face. (low positive effect)",
+        "text": "Rosespeck caught Bluffraven complaining about them behind their back. (high negative effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "9",
+            "14",
             "8"
         ]
     },
     {
-        "text": "Sweetpaw is given their full name of Sweetfoot and welcomed as a full medicine cat. ",
+        "text": "Rosespeck has gotten a stomachache.",
         "types": [
-            "ceremony"
+            "health"
         ],
         "cats_involved": [
+            "8"
+        ]
+    },
+    {
+        "text": "Sweetfoot wishes they could get their pelt to shine like Bluffraven's. (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "14",
             "9"
         ]
     },
     {
-        "text": "Cavekit gives Sweetfoot something to adorn their pelt as congratulations.",
+        "text": "Lightfruit thinks Leoparddapple was nice to them today. (low positive effect)",
         "types": [
-            "misc",
-            "ceremony"
+            "relation",
+            "interaction"
         ],
         "cats_involved": [
-            "9",
-            "6"
+            "7",
+            "10"
         ]
     },
     {
-        "text": "Sweetfoot wants to spend more time with Luckpaw! (high positive effect)",
+        "text": "Lightfruit thinks Luckcry is very helpful! (low positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
             "13",
-            "9"
-        ]
-    },
-    {
-        "text": "Lightfruit is glad that their stomachache is finally gone.",
-        "types": [
-            "health"
-        ],
-        "cats_involved": [
             "10"
         ]
     },
     {
-        "text": "Lightfruit asks Frondkit how they're doing. (low positive effect)",
+        "text": "Rookpaw thinks Jumblepaw isn't very considerate of others. (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "28",
+            "11"
+        ]
+    },
+    {
+        "text": "Rookpaw was bitten by a snake, and succumbed to the venom. ",
+        "types": [
+            "birth_death"
+        ],
+        "cats_involved": [
+            "11"
+        ]
+    },
+    {
+        "text": "Logstar's soreness has abated.",
+        "types": [
+            "health"
+        ],
+        "cats_involved": [
+            "12"
+        ]
+    },
+    {
+        "text": "Logstar is telling Frondpaw about a hunting technique. (medium positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
             "3",
-            "10"
+            "12"
         ]
     },
     {
-        "text": "Rookpaw saw Cavekit the other day and did get a chance to meow hello! (medium positive effect)",
+        "text": "Logstar surprises Cavepaw with something nice. (medium positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
             "6",
-            "11"
-        ]
-    },
-    {
-        "text": "Logstar stands triumphantly on a leg that, while it'll always be weaker than their others, now works only a little worse than before. It's been a long journey to heal such a badly injured limb.",
-        "types": [
-            "health"
-        ],
-        "cats_involved": [
             "12"
         ]
     },
     {
-        "text": "Logstar is talking with Frondkit. (low positive effect)",
+        "text": "Luckcry had a spat with Silverpaw over a piece of prey on the fresh-kill pile. (medium negative effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "3",
-            "12"
+            "29",
+            "13"
         ]
     },
     {
-        "text": "Logstar, Furledtree, and Leoparddapple had a nice talk, while eating. (neutral effect)",
+        "text": "Bluffraven thinks Logstar is being annoying. (high negative effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
             "12",
-            "5",
-            "7"
-        ]
-    },
-    {
-        "text": "Luckpaw apologized to Juncospots for something or other. (low positive effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "1",
-            "13"
-        ]
-    },
-    {
-        "text": "Bluffpaw wants to spend more time with Frondkit! (high positive effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "3",
             "14"
         ]
     },
     {
-        "text": "Shadeface is checking on Rosepaw. (neutral effect)",
+        "text": "Shadeface thinks Luckcry is very helpful! (low positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "8",
+            "13",
             "16"
         ]
     },
     {
-        "text": "Shadeface caught Frondkit complaining about them behind their back. (high negative effect)",
+        "text": "Shadeface is giving Ganderpaw a task. (neutral effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "3",
+            "2",
             "16"
         ]
     },
     {
-        "text": "Shardspeck is having a wonderful time discussing recent Clan news with Heavyrustle. (high positive effect)",
+        "text": "OC3speck covered for OC4rustle on something minor. (medium positive effect)",
         "types": [
             "relation",
             "interaction"
@@ -215,18 +203,18 @@
         ]
     },
     {
-        "text": "Heavyrustle is having a wonderful time discussing recent Clan news with Frostyglide. (high positive effect)",
+        "text": "OC4rustle saw OC9spore the other day and did get a chance to meow hello! (medium positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "20",
+            "22",
             "19"
         ]
     },
     {
-        "text": "Frostyglide thinks Shardspeck was nice to them today. (low positive effect)",
+        "text": "OC6glide thinks OC3speck is very helpful! (low positive effect)",
         "types": [
             "relation",
             "interaction"
@@ -237,124 +225,306 @@
         ]
     },
     {
-        "text": "Downystripe chats with Twilightspeckle about their day. (medium positive effect)",
+        "text": "OC7stripe wishes they could get their pelt to shine like OC3speck's. (low negative effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "24",
+            "18",
             "21"
         ]
     },
     {
-        "text": "Hushspore acknowledges Heavyrustle with a twitch of their whiskers. (neutral effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "19",
-            "22"
-        ]
-    },
-    {
-        "text": "Condorlotus thinks Currentstar was nice to them today. (low positive effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "25",
-            "23"
-        ]
-    },
-    {
-        "text": "Heavyrustle asks Twilightspeckle to speak up while chatting together. (neutral effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "19",
-            "24"
-        ]
-    },
-    {
-        "text": "Currentstar appreciates how Downystripe always seems to ask how they're doing. (high positive effect)",
+        "text": "OC9spore is feeling lost and asks OC7stripe for advice on what to do. (medium positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
             "21",
+            "22"
+        ]
+    },
+    {
+        "text": "OC5lotus is talking with OC3speck. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "18",
+            "23"
+        ]
+    },
+    {
+        "text": "OC8speckle asks OC5lotus how they're doing. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "23",
+            "24"
+        ]
+    },
+    {
+        "text": "OC1star is having a wonderful time discussing recent Clan news with OC4rustle. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "19",
             "25"
         ]
     },
     {
-        "text": "Bushnoise feels safe with Twilightspeckle around. (high positive effect)",
+        "text": "OC7stripe asks OC2noise to speak up while chatting together. (neutral effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "24",
+            "21",
             "26"
         ]
     },
     {
-        "text": "Juncospots is stuttering while speaking to Sweetfoot. (neutral effect)",
+        "text": "Juncospots had a difficult conversation with Cavepaw and they now have a deeper understanding of each other. (high positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "9",
+            "6",
             "1"
         ]
     },
     {
-        "text": "Ganderkit called Luckpaw the wrong name. (medium negative effect)",
+        "text": "Juncospots thinks Ganderpaw is very helpful! (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "2",
+            "1"
+        ]
+    },
+    {
+        "text": "Ganderpaw had Furledtree bump into them, and they didn't even apologize! (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "5",
+            "2"
+        ]
+    },
+    {
+        "text": "Frondpaw is stuttering while speaking to Juncospots. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "3"
+        ]
+    },
+    {
+        "text": "A rogue leaves their litter to the Clan. Frondpaw decides to adopt them as their own.",
+        "types": [
+            "misc"
+        ],
+        "cats_involved": [
+            "3",
+            "31",
+            "32",
+            "33"
+        ]
+    },
+    {
+        "text": "Logstar offers Raggedkit some tips for building a new nest.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "31",
+            "12"
+        ]
+    },
+    {
+        "text": "Rosespeck sees Raggedkit arrive in the Clan and offers them to show them around.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "31",
+            "8"
+        ]
+    },
+    {
+        "text": "Luckcry sees Raggedkit arrive in the Clan and offers them to show them around.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "31",
+            "13"
+        ]
+    },
+    {
+        "text": "Rosespeck asks Parsleykit if they could use some help getting introduced to the other Clan members.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "32",
+            "8"
+        ]
+    },
+    {
+        "text": "Juncospots offers Parsleykit some tips for building a new nest.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "32",
+            "1"
+        ]
+    },
+    {
+        "text": "Cavepaw offers Parsleykit some tips for building a new nest.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "32",
+            "6"
+        ]
+    },
+    {
+        "text": "Ganderpaw is welcoming Boughkit.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "33",
+            "2"
+        ]
+    },
+    {
+        "text": "Lupinepaw offers Boughkit some feathers as a welcome gift, that they can use to decorate their new nest.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "33",
+            "4"
+        ]
+    },
+    {
+        "text": "Lupinepaw always thought Luckcry had it all figured out, so they're surprised when Luckcry asks for help. (medium positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
             "13",
-            "2"
-        ]
-    },
-    {
-        "text": "Frondkit decorates their nest with gifts that Furledtree brought them. (medium positive effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "5",
-            "3"
-        ]
-    },
-    {
-        "text": "Lupinekit is having a wonderful time discussing recent Clan news with Furledtree. (high positive effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "5",
             "4"
         ]
     },
     {
-        "text": "Sweetfoot asks Cavekit to speak up while chatting together. (neutral effect)",
+        "text": "Cavepaw finds a bit of fluff that smells like Logstar and adds it to their nest. (low positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "9",
+            "12",
             "6"
+        ]
+    },
+    {
+        "text": "Mosspaw is complaining that Lightfruit never does anything helpful. (high negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "10",
+            "15"
+        ]
+    },
+    {
+        "text": "Jumblepaw bristles after being scolded by Lupinepaw. (high negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "4",
+            "28"
+        ]
+    },
+    {
+        "text": "Silverpaw had a difficult conversation with Shadeface and they now have a deeper understanding of each other. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "16",
+            "29"
+        ]
+    },
+    {
+        "text": "Logpaw is no longer sore.",
+        "types": [
+            "health"
+        ],
+        "cats_involved": [
+            "30"
+        ]
+    },
+    {
+        "text": "Logpaw notices how Jumblepaw is being helpful around camp. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "28",
+            "30"
+        ]
+    },
+    {
+        "text": "Logpaw has gotten a stomachache.",
+        "types": [
+            "health"
+        ],
+        "cats_involved": [
+            "30"
+        ]
+    },
+    {
+        "text": "The past moon, Rookpaw has taken their place in StarClan. MarigoldClan mourns their loss, and their Clanmates will miss the spot they took up in their lives. Moments of their life are shared in stories around the circle of mourners as those that were closest to them take them to their final resting place.",
+        "types": [
+            "birth_death"
+        ],
+        "cats_involved": [
+            "11"
         ]
     }
 ]

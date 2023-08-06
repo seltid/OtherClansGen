@@ -19,15 +19,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 21,
-        "dislike": 5,
+        "platonic_like": 42,
+        "dislike": 0,
         "admiration": 0,
-        "comfortable": 16,
+        "comfortable": 32,
         "jealousy": 0,
         "trust": 0,
         "log": [
             "Heavyrustle is scolding Frostyglide. (high negative effect) - Heavyrustle was 124 moon(s) old",
-            "Heavyrustle is having a wonderful time discussing recent Clan news with Frostyglide. (high positive effect) - Heavyrustle was 126 moon(s) old"
+            "Heavyrustle is having a wonderful time discussing recent Clan news with Frostyglide. (high positive effect) - Heavyrustle was 126 moon(s) old",
+            "OC4rustle wants to spend more time with OC6glide! (high positive effect) - OC4rustle was 131 moon(s) old"
         ]
     },
     {
@@ -50,14 +51,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 10,
+        "platonic_like": 27,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 13,
+        "comfortable": 26,
         "jealousy": 0,
-        "trust": 10,
+        "trust": 23,
         "log": [
-            "Heavyrustle has been spending time with Hushspore lately. (low positive effect) - Heavyrustle was 125 moon(s) old"
+            "Heavyrustle has been spending time with Hushspore lately. (low positive effect) - Heavyrustle was 125 moon(s) old",
+            "OC4rustle appreciates OC9spore telling them that they had a feather stuck to their face. (low positive effect) - OC4rustle was 128 moon(s) old",
+            "OC4rustle saw OC9spore the other day and did get a chance to meow hello! (medium positive effect) - OC4rustle was 134 moon(s) old"
         ]
     },
     {
@@ -67,12 +70,15 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 10,
         "admiration": 0,
         "comfortable": 0,
-        "jealousy": 0,
+        "jealousy": 13,
         "trust": 0,
-        "log": []
+        "log": [
+            "OC4rustle wishes they could get their pelt to shine like OC5lotus's. (low negative effect) - OC4rustle was 129 moon(s) old",
+            "OC4rustle caught OC5lotus in a lie. (medium negative effect) - OC4rustle was 133 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "19",
@@ -85,8 +91,10 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 21,
+        "log": [
+            "OC4rustle tells OC8speckle to count on them in a difficult situation. (high positive effect) - OC4rustle was 127 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "19",
@@ -94,14 +102,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 10,
+        "platonic_like": 23,
         "dislike": 0,
         "admiration": 0,
         "comfortable": 13,
         "jealousy": 0,
         "trust": 10,
         "log": [
-            "Heavyrustle finds a bit of fluff that smells like Currentstar and adds it to their nest. (low positive effect) - Heavyrustle was 123 moon(s) old"
+            "Heavyrustle finds a bit of fluff that smells like Currentstar and adds it to their nest. (low positive effect) - Heavyrustle was 123 moon(s) old",
+            "OC4rustle realized that they were too harsh in their judgment of OC1star. (medium positive effect) - OC4rustle was 132 moon(s) old"
         ]
     },
     {
@@ -110,12 +119,14 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 21,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 16,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "OC4rustle wants to spend more time with OC2noise! (high positive effect) - OC4rustle was 130 moon(s) old"
+        ]
     }
 ]

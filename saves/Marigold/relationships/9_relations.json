@@ -7,11 +7,13 @@
         "romantic_love": 0,
         "platonic_like": 19,
         "dislike": 0,
-        "admiration": 15,
+        "admiration": 31,
         "comfortable": 25,
         "jealousy": 0,
         "trust": 2,
-        "log": []
+        "log": [
+            "Sweetfoot saw Furledtree show off a skill they never knew they had. (high positive effect) - Sweetfoot was 16 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "9",
@@ -19,14 +21,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 15,
-        "dislike": 8,
-        "admiration": 19,
-        "comfortable": 14,
-        "jealousy": 11,
-        "trust": 3,
+        "platonic_like": 23,
+        "dislike": 0,
+        "admiration": 22,
+        "comfortable": 25,
+        "jealousy": 3,
+        "trust": 8,
         "log": [
-            "Sweetpaw is complaining that Leoparddapple never does anything helpful. (high negative effect) - Sweetpaw was 10 moon(s) old"
+            "Sweetpaw is complaining that Leoparddapple never does anything helpful. (high negative effect) - Sweetpaw was 10 moon(s) old",
+            "Sweetfoot shared a embarrassing story about Leoparddapple they were asked not to share... (low negative effect) - Sweetfoot was 18 moon(s) old",
+            "Sweetfoot is sharing tongues with Leoparddapple. (high positive effect) - Sweetfoot was 20 moon(s) old"
         ]
     },
     {
@@ -65,10 +69,10 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 16,
+        "platonic_like": 24,
         "dislike": 0,
         "admiration": 14,
-        "comfortable": 19,
+        "comfortable": 27,
         "jealousy": 0,
         "trust": 12,
         "log": []
@@ -85,7 +89,9 @@
         "comfortable": 2,
         "jealousy": 0,
         "trust": 6,
-        "log": []
+        "log": [
+            "Sweetfoot doesn't notice Logstar twitching their whiskers at them. (neutral effect) - Sweetfoot was 17 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "9",
@@ -110,12 +116,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 8,
-        "dislike": 0,
+        "dislike": 2,
         "admiration": 2,
-        "comfortable": 6,
-        "jealousy": 0,
+        "comfortable": 0,
+        "jealousy": 3,
         "trust": 9,
-        "log": []
+        "log": [
+            "Sweetfoot wishes they could get their pelt to shine like Bluffraven's. (low negative effect) - Sweetfoot was 21 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "9",
@@ -168,12 +176,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 11,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Sweetfoot had a fight with Ganderkit. (high negative effect) - Sweetfoot was 14 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "9",
@@ -224,12 +234,15 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 15,
-        "dislike": 0,
+        "dislike": 9,
         "admiration": 5,
         "comfortable": 10,
-        "jealousy": 0,
+        "jealousy": 21,
         "trust": 10,
-        "log": []
+        "log": [
+            "Sweetfoot is complaining that Jumblekit never does anything helpful. (high negative effect) - Sweetfoot was 15 moon(s) old",
+            "Sweetfoot realized that they were too harsh in their judgment of Jumblekit. (medium positive effect) - Sweetfoot was 19 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "9",
@@ -257,6 +270,62 @@
         "comfortable": 10,
         "jealousy": 0,
         "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "9",
+        "cat_to_id": "15",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "9",
+        "cat_to_id": "31",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "9",
+        "cat_to_id": "32",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "9",
+        "cat_to_id": "33",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
         "log": []
     }
 ]

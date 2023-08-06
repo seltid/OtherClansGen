@@ -1,13 +1,13 @@
 {
     "dandelion": 2,
     "elder_leaves": 2,
-    "daisy": 1,
     "blackberry": 1,
-    "horsetail": 2,
+    "horsetail": 4,
     "thyme": 2,
-    "tansy": 4,
-    "mallow": 2,
-    "ragwort": 1,
-    "plantain": 1,
-    "cobwebs": 1
+    "tansy": 5,
+    "mallow": 3,
+    "plantain": 2,
+    "rosemary": 1,
+    "juniper": 1,
+    "ragwort": 1
 }

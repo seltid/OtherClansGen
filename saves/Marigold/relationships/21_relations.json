@@ -6,13 +6,16 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 12,
+        "dislike": 42,
         "admiration": 0,
         "comfortable": 0,
-        "jealousy": 0,
+        "jealousy": 8,
         "trust": 0,
         "log": [
-            "Downystripe had a spat with Shardspeck over a piece of prey on the fresh-kill pile. (medium negative effect) - Downystripe was 14 moon(s) old"
+            "Downystripe had a spat with Shardspeck over a piece of prey on the fresh-kill pile. (medium negative effect) - Downystripe was 14 moon(s) old",
+            "OC7stripe had a fight with OC3speck. (high negative effect) - OC7stripe was 17 moon(s) old",
+            "OC7stripe had OC3speck bump into them, and they didn't even apologize! (low negative effect) - OC7stripe was 22 moon(s) old",
+            "OC7stripe wishes they could get their pelt to shine like OC3speck's. (low negative effect) - OC7stripe was 24 moon(s) old"
         ]
     },
     {
@@ -40,8 +43,10 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 17,
+        "log": [
+            "OC7stripe is faced with a tough decision and wonders what OC6glide would do. (medium positive effect) - OC7stripe was 18 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "21",
@@ -54,7 +59,7 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 0,
+        "trust": 8,
         "log": []
     },
     {
@@ -63,13 +68,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 29,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 21,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 16,
+        "log": [
+            "OC7stripe appreciates how OC5lotus always seems to ask how they're doing. (high positive effect) - OC7stripe was 20 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "21",
@@ -77,14 +84,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 9,
-        "dislike": 0,
+        "platonic_like": 23,
+        "dislike": 3,
         "admiration": 0,
-        "comfortable": 12,
-        "jealousy": 0,
-        "trust": 9,
+        "comfortable": 20,
+        "jealousy": 6,
+        "trust": 15,
         "log": [
-            "Downystripe chats with Twilightspeckle about their day. (medium positive effect) - Downystripe was 16 moon(s) old"
+            "Downystripe chats with Twilightspeckle about their day. (medium positive effect) - Downystripe was 16 moon(s) old",
+            "OC7stripe thinks the prey OC8speckle is biting into on the other side of camp looks delicious. (medium negative effect) - OC7stripe was 21 moon(s) old",
+            "OC7stripe quickly apologizes after bumping into OC8speckle. They have a small laugh about it. (low positive effect) - OC7stripe was 23 moon(s) old"
         ]
     },
     {
@@ -93,7 +102,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 13,
         "dislike": 10,
         "admiration": 0,
         "comfortable": 0,
@@ -101,7 +110,8 @@
         "trust": 0,
         "log": [
             "Downystripe is checking on Currentstar. (neutral effect) - Downystripe was 13 moon(s) old",
-            "Downystripe wishes they could get their pelt to shine like Currentstar's. (low negative effect) - Downystripe was 15 moon(s) old"
+            "Downystripe wishes they could get their pelt to shine like Currentstar's. (low negative effect) - Downystripe was 15 moon(s) old",
+            "OC7stripe lifts their chin up while passing by OC1star. (neutral effect) - OC7stripe was 19 moon(s) old"
         ]
     },
     {
