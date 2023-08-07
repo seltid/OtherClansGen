@@ -440,6 +440,7 @@ class EventsScreen(Screens):
                 self.clan_rel_enable(self)
                 self.oc1_button.disable()
                 self.update_display_events_lists()
+                self.update_events_display()
             elif event.ui_element == self.oc2_button:
                 self.clan_rel_enable(self)
                 self.oc2_button.disable()
@@ -843,6 +844,8 @@ class EventsScreen(Screens):
 
             self.relation_events = show_correct_rel_events(rc_name)
         except AttributeError:
+            self.relation_events = [x for x in game.cur_events_list if "relation" in x.types]
+        except KeyError:
             self.relation_events = [x for x in game.cur_events_list if "relation" in x.types]
 
         self.other_clans_events = [x for x in game.cur_events_list if "other_clans" in x.types]
