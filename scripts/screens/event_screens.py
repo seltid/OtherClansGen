@@ -59,7 +59,6 @@ class EventsScreen(Screens):
         self.oc4_button = None
         self.playerclan_button = None
 
-
         # Stores the involved cat button that currently has its cat profile buttons open
         self.open_involved_cat_button = None
 
@@ -453,8 +452,6 @@ class EventsScreen(Screens):
             elif event.ui_element == self.playerclan_button:
                 self.clan_rel_enable(self)
                 self.playerclan_button.disable()
-            
-            
 
     def screen_switches(self):
         # On first open, update display events list
@@ -681,6 +678,7 @@ class EventsScreen(Screens):
         self.health_events_button.enable()
         self.other_clans_events_button.enable()
         self.misc_events_button.enable()
+        self.clan_rel_enable(self)
 
         # disable the current button
         current_list.disable()
@@ -832,6 +830,7 @@ class EventsScreen(Screens):
         self.other_clans_events = [x for x in game.cur_events_list if "other_clans" in x.types]
         self.misc_events = [x for x in game.cur_events_list if "misc" in x.types]
 
+
     def make_events_container(self):
         """ In its own function so that there is only one place the box size is set"""
         self.event_container = pygame_gui.elements.UIScrollingContainer(scale(pygame.Rect((432, 552), (1028, 700)))
@@ -872,3 +871,13 @@ class EventsScreen(Screens):
         self.oc3_button.disable()
         self.oc4_button.disable()
         self.playerclan_button.disable()
+
+    @staticmethod
+    def assess_the_cats(self):
+        cat_objects = []
+        relevant_clans = []
+        for _ in self:
+            cat_objects.append(Cat.fetch_cat(self))
+        for cat_ob in cat_objects:
+            relevant_clans.append(cat_ob.clan)
+        return relevant_clans
