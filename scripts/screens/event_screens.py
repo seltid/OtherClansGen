@@ -11,7 +11,6 @@ from ..game_structure import image_cache
 from scripts.event_class import Single_Event
 from scripts.game_structure.windows import GameOver
 
-
 class EventsScreen(Screens):
     event_display_type = "all events"
     all_events = ""
@@ -440,6 +439,7 @@ class EventsScreen(Screens):
             if event.ui_element == self.oc1_button:
                 self.clan_rel_enable(self)
                 self.oc1_button.disable()
+                self.update_display_events_lists()
             elif event.ui_element == self.oc2_button:
                 self.clan_rel_enable(self)
                 self.oc2_button.disable()
@@ -452,6 +452,7 @@ class EventsScreen(Screens):
             elif event.ui_element == self.playerclan_button:
                 self.clan_rel_enable(self)
                 self.playerclan_button.disable()
+
 
     def screen_switches(self):
         # On first open, update display events list
@@ -826,7 +827,24 @@ class EventsScreen(Screens):
         self.all_events = [x for x in game.cur_events_list if "interaction" not in x.types]
         self.ceremony_events = [x for x in game.cur_events_list if "ceremony" in x.types]
         self.birth_death_events = [x for x in game.cur_events_list if "birth_death" in x.types]
-        self.relation_events = [x for x in game.cur_events_list if "relation" in x.types]
+
+        try:
+            clan_filter_buttons = [self.oc1_button, self.oc2_button, self.oc3_button, self.oc4_button, self.playerclan_button]
+            active_clan_filter = next((x for x in clan_filter_buttons if not x.is_enabled), None)
+            button_name_dict = {
+                self.oc1_button: game.otherclan1.name,
+                self.oc2_button: "oc2",
+                self.oc3_button: "oc3",
+                self.oc4_button: "oc4",
+                self.playerclan_button: game.clan.name
+            }
+
+            rc_name = button_name_dict[active_clan_filter]
+
+            self.relation_events = show_correct_rel_events(rc_name)
+        except AttributeError:
+            self.relation_events = [x for x in game.cur_events_list if "relation" in x.types]
+
         self.other_clans_events = [x for x in game.cur_events_list if "other_clans" in x.types]
         self.misc_events = [x for x in game.cur_events_list if "misc" in x.types]
 
@@ -872,12 +890,39 @@ class EventsScreen(Screens):
         self.oc4_button.disable()
         self.playerclan_button.disable()
 
-    @staticmethod
-    def assess_the_cats(self):
+
+def show_correct_rel_events(self):
+    clans_have_been_determined = []
+    filtered_rel_events = {}  # Dict where {Event: [Rel Clans]}
+    relation_events = [x for x in game.cur_events_list if "relation" in x.types]
+    for event_entry in relation_events:
+        print(event_entry.cats_involved)
+
+        relevant_clan = []
         cat_objects = []
-        relevant_clans = []
-        for _ in self:
-            cat_objects.append(Cat.fetch_cat(self))
+
+        for cat_ID in event_entry.cats_involved:
+            cat_objects.append(Cat.fetch_cat(cat_ID))
+
         for cat_ob in cat_objects:
-            relevant_clans.append(cat_ob.clan)
-        return relevant_clans
+            if cat_ob.clan in self:
+                relevant_clan.append(cat_ob.clan)
+        if relevant_clan:
+            filtered_rel_events.update({event_entry: relevant_clan})
+        # For each relationship event,
+        # Determine if it's related to the_important_clan (the clan we're currently viewing)
+        # If it is, show it
+        # If not, don't show it
+    print(filtered_rel_events)
+    return filtered_rel_events.keys()
+
+
+'''
+        if self == game.clan.name and game.clan.name in rele_clans_listed:  # If we're looking for PC and the rel clan is rele_clans_listed
+            filtered_rel_events.update({relation_events[i]: rele_clans_listed})
+        elif self == game.otherclan1.name and game.otherclan1.name in rele_clans_listed:
+            filtered_rel_events.update({relation_events[i]: rele_clans_listed})
+        else:
+            pass
+            
+            '''
