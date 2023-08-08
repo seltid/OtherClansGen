@@ -85,6 +85,7 @@ class EventsScreen(Screens):
             if event.ui_element == self.timeskip_button:
                 self.scroll_height = {}
                 events_class.one_moon()
+                self.clan_rel_hide(self)
                 if get_living_clan_cat_count(Cat) == 0:
                     GameOver('events screen')
 
@@ -221,6 +222,7 @@ class EventsScreen(Screens):
                 self.display_events = self.relation_events
                 self.update_events_display()
                 EventsScreen.clan_rel_show(self)
+                self.playerclan_button.disable()
             elif event.ui_element == self.health_events_button:
                 if self.event_container.vert_scroll_bar:
                     self.scroll_height[self.event_display_type] = self.event_container.vert_scroll_bar.scroll_position / self.event_container.vert_scroll_bar.scrollable_height
@@ -315,25 +317,6 @@ class EventsScreen(Screens):
                     self.event_display_type = "relationship events"
                     # Update Display
                     self.update_list_buttons(self.relationship_events_button, self.relation_alert)
-                    try:
-                        clan_filter_buttons = [self.oc1_button, self.oc2_button, self.oc3_button, self.oc4_button,
-                                               self.playerclan_button]
-                        active_clan_filter = next((x for x in clan_filter_buttons if not x.is_enabled), None)
-                        button_name_dict = {
-                            self.oc1_button: game.otherclan1.name,
-                            self.oc2_button: "oc2",
-                            self.oc3_button: "oc3",
-                            self.oc4_button: "oc4",
-                            self.playerclan_button: game.clan.name
-                        }
-
-                        rc_name = button_name_dict[active_clan_filter]
-
-                        self.relation_events = show_correct_rel_events(rc_name)
-                    except AttributeError:
-                        self.relation_events = [x for x in game.cur_events_list if "relation" in x.types]
-                    except KeyError:
-                        self.relation_events = [x for x in game.cur_events_list if "relation" in x.types]
                     self.display_events = self.relation_events
                     self.update_events_display()
                 elif self.event_display_type == 'relationship events':
@@ -440,27 +423,8 @@ class EventsScreen(Screens):
                 elif self.event_display_type == "birth death events":
                     self.display_events = self.birth_death_events
                 elif self.event_display_type == "relationship events":  # If on the relationship events screen
-                    try:
-                        clan_filter_buttons = [self.oc1_button, self.oc2_button, self.oc3_button, self.oc4_button,
-                                               self.playerclan_button]
-                        active_clan_filter = next((x for x in clan_filter_buttons if not x.is_enabled), None)
-                        button_name_dict = {
-                            self.oc1_button: game.otherclan1.name,
-                            self.oc2_button: "oc2",
-                            self.oc3_button: "oc3",
-                            self.oc4_button: "oc4",
-                            self.playerclan_button: game.clan.name
-                        }
-
-                        rc_name = button_name_dict[active_clan_filter]
-
-                        self.relation_events = show_correct_rel_events(rc_name)
-                    except AttributeError:
-                        self.relation_events = [x for x in game.cur_events_list if "relation" in x.types]
-                    except KeyError:
-                        self.relation_events = [x for x in game.cur_events_list if "relation" in x.types]
-
                     self.display_events = self.relation_events          # Display relationship events
+                    self.playerclan_button.disable()
                 elif self.event_display_type == "health events":
                     self.display_events = self.health_events
                 elif self.event_display_type == "other clans events":
@@ -475,9 +439,11 @@ class EventsScreen(Screens):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.oc1_button:
                 self.clan_rel_toggle(self, self.oc1_button)
-                show_correct_rel_events(game.otherclan1.name)
-                self.update_events_display()
+                filtered = show_correct_rel_events(game.otherclan1.name)
+                self.relation_events = [x for x in filtered]
+                self.display_events = self.relation_events
                 self.update_display_events_lists()
+                self.update_events_display()
             elif event.ui_element == self.oc2_button:
                 self.clan_rel_toggle(self, self.oc2_button)
             elif event.ui_element == self.oc3_button:
@@ -486,9 +452,11 @@ class EventsScreen(Screens):
                 self.clan_rel_toggle(self, self.oc4_button)
             elif event.ui_element == self.playerclan_button:
                 self.clan_rel_toggle(self, self.playerclan_button)
-                show_correct_rel_events(game.otherclan1.name)
-                self.update_events_display()
+                filtered = show_correct_rel_events(game.clan.name)
+                self.relation_events = [x for x in filtered]
+                self.display_events = self.relation_events
                 self.update_display_events_lists()
+                self.update_events_display()
 
 
 
@@ -589,6 +557,7 @@ class EventsScreen(Screens):
             self.birth_death_events_button.disable()
         elif self.event_display_type == "relationship events":
             self.relationship_events_button.disable()
+            self.playerclan_button.disable()
         elif self.event_display_type == "health events":
             self.health_events_button.disable()
         elif self.event_display_type == "other clans events":
@@ -698,27 +667,7 @@ class EventsScreen(Screens):
             self.oc4_button.kill()
             del self.oc4_button
 
-        try:
-            clan_filter_buttons = [self.oc1_button, self.oc2_button, self.oc3_button, self.oc4_button,
-                                   self.playerclan_button]
-            active_clan_filter = next((x for x in clan_filter_buttons if not x.is_enabled), None)
-            button_name_dict = {
-                self.oc1_button: game.otherclan1.name,
-                self.oc2_button: "oc2",
-                self.oc3_button: "oc3",
-                self.oc4_button: "oc4",
-                self.playerclan_button: game.clan.name
-            }
-
-            rc_name = button_name_dict[active_clan_filter]
-
-            self.relation_events = show_correct_rel_events(rc_name)
-            self.event_container.kill()
-            self.make_events_container()
-        except AttributeError:
-            self.relation_events = [x for x in game.cur_events_list if "relation" in x.types]
-        except KeyError:
-            self.relation_events = [x for x in game.cur_events_list if "relation" in x.types]
+        self.relation_events = [x for x in game.cur_events_list if "relation" in x.types]
         self.display_events = self.relation_events
 
         # self.hide_menu_buttons()
@@ -903,22 +852,23 @@ class EventsScreen(Screens):
 
             rc_name = button_name_dict[active_clan_filter]
 
-            self.relation_events = show_correct_rel_events(rc_name)
-            self.event_container.kill()
-            self.make_events_container()
-        except AttributeError:
-            self.relation_events = show_correct_rel_events(game.clan.name)
+            self.relation_events = [x for x in show_correct_rel_events(rc_name)]
+        except AttributeError:  # On first load
+            self.relation_events = [x for x in show_correct_rel_events(game.clan.name)]
         except KeyError:
-            print("KeyError")
+            pass
 
         self.other_clans_events = [x for x in game.cur_events_list if "other_clans" in x.types]
         self.misc_events = [x for x in game.cur_events_list if "misc" in x.types]
-
 
     def make_events_container(self):
         """ In its own function so that there is only one place the box size is set"""
         self.event_container = pygame_gui.elements.UIScrollingContainer(scale(pygame.Rect((432, 552), (1028, 700)))
                                                                         , manager=MANAGER)
+
+    def rebuild_events(self):
+        pass
+
 
     @staticmethod
     def clan_rel_hide(self):
@@ -933,9 +883,13 @@ class EventsScreen(Screens):
     def clan_rel_show(self):
         self.clan_filter.show()
         self.oc1_button.show()
-        self.oc2_button.show()
-        self.oc3_button.show()
-        self.oc4_button.show()
+        if len(game.clan.all_clans) >= 2:
+            self.oc2_button.show()
+        if len(game.clan.all_clans) >= 3:
+            self.oc3_button.show()
+        if len(game.clan.all_clans) >= 4:
+            self.oc4_button.show()
+
         self.playerclan_button.show()
         
     @staticmethod
@@ -969,9 +923,8 @@ def show_correct_rel_events(self):
     clans_have_been_determined = []
     filtered_rel_events = {}  # Dict where {Event: [Rel Clans]}
     relation_events = [x for x in game.cur_events_list if "relation" in x.types]
+    output = []
     for event_entry in relation_events:
-        print(event_entry.cats_involved)
-
         relevant_clan = []
         cat_objects = []
 
@@ -987,10 +940,10 @@ def show_correct_rel_events(self):
         # Determine if it's related to the_important_clan (the clan we're currently viewing)
         # If it is, show it
         # If not, don't show it
-    print(filtered_rel_events)
     for Event in filtered_rel_events.keys():
         Event.rel_clan = filtered_rel_events[Event]
-    return filtered_rel_events.keys()
+        output.append(Event)
+    return output
 
 
 '''
