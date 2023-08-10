@@ -1,0 +1,184 @@
+[
+    {
+        "cat_from_id": "42",
+        "cat_to_id": "36",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 34,
+        "dislike": 6,
+        "admiration": 1,
+        "comfortable": 23,
+        "jealousy": 0,
+        "trust": 16,
+        "log": [
+            "Chanterelleecho gives Fuzzfern bitter herbs on purpose. (medium negative effect) - Chanterelleecho was 32 moon(s) old",
+            "Chanterelleecho finds a bit of fluff that smells like Fuzzfern and adds it to their nest. (low positive effect) - Chanterelleecho was 36 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "42",
+        "cat_to_id": "37",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 19,
+        "dislike": 0,
+        "admiration": 4,
+        "comfortable": 18,
+        "jealousy": 0,
+        "trust": 14,
+        "log": []
+    },
+    {
+        "cat_from_id": "42",
+        "cat_to_id": "38",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 32,
+        "admiration": 14,
+        "comfortable": 20,
+        "jealousy": 4,
+        "trust": 11,
+        "log": [
+            "Chanterelleecho is complaining that Brownstream never does anything helpful. (high negative effect) - Chanterelleecho was 21 moon(s) old",
+            "Chanterelleecho had a spat with Brownstream over a piece of prey on the fresh-kill pile. (medium negative effect) - Chanterelleecho was 22 moon(s) old",
+            "Chanterelleecho worries that Brownstream will never feel the same way they do. (medium negative effect) - Chanterelleecho was 30 moon(s) old",
+            "Chanterelleecho swaps favorite prey with Brownstream. (medium positive effect) - Chanterelleecho was 31 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "42",
+        "cat_to_id": "39",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 16,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 7,
+        "trust": 0,
+        "log": [
+            "Chanterelleecho turns to Marshstar in a time of need. (medium positive effect) - Chanterelleecho was 25 moon(s) old",
+            "Chanterelleecho heard an ugly rumor about Marshstar. (high negative effect) - Chanterelleecho was 28 moon(s) old",
+            "Chanterelleecho goes to tell a secret to Marshstar only for Marshstar to tell someone else's secret to them. (high negative effect) - Chanterelleecho was 34 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "42",
+        "cat_to_id": "41",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 46,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 8,
+        "log": [
+            "Chanterelleecho helps Sproutpaw pick burrs out of their fur. (medium positive effect) - Chanterelleecho was 23 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "42",
+        "cat_to_id": "43",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 4,
+        "dislike": 0,
+        "admiration": 26,
+        "comfortable": 3,
+        "jealousy": 0,
+        "trust": 12,
+        "log": [
+            "Chanterelleecho saw Bluepaw show off a skill they never knew they had. (high positive effect) - Chanterelleecho was 19 moon(s) old",
+            "Chanterelleecho worries that Blueswarm will never feel the same way they do. (medium negative effect) - Chanterelleecho was 35 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "42",
+        "cat_to_id": "44",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 17,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 6,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "42",
+        "cat_to_id": "46",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 32,
+        "dislike": 3,
+        "admiration": 5,
+        "comfortable": 23,
+        "jealousy": 0,
+        "trust": 16,
+        "log": [
+            "Chanterelleecho thinks Skiptwist is very helpful! (low positive effect) - Chanterelleecho was 20 moon(s) old",
+            "Chanterelleecho had a disagreement with Skiptwist about something or other. (low negative effect) - Chanterelleecho was 24 moon(s) old",
+            "Chanterelleecho quickly apologizes after bumping into Skiptwist. They have a small laugh about it. (low positive effect) - Chanterelleecho was 33 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "42",
+        "cat_to_id": "47",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 16,
+        "comfortable": 11,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Chanterelleecho appreciates Swamppaw telling them that they had a feather stuck to their face. (low positive effect) - Chanterelleecho was 26 moon(s) old",
+            "Chanterelleecho is sparring with Swamppaw. (medium positive effect) - Chanterelleecho was 27 moon(s) old",
+            "Chanterelleecho has drawn the ire of Swamppaw by deliberately taking the last of their favorite nesting materials for themself. (medium negative effect) - Chanterelleecho was 29 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "42",
+        "cat_to_id": "48",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "42",
+        "cat_to_id": "1",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 30,
+        "dislike": 0,
+        "admiration": 10,
+        "comfortable": 20,
+        "jealousy": 0,
+        "trust": 20,
+        "log": [
+            "Chanterelleecho offers Pheasantpuddle some tips for building a new nest.",
+            "Chanterelleecho offers Pheasantpuddle some tips for building a new nest."
+        ]
+    }
+]

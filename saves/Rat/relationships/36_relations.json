@@ -1,0 +1,188 @@
+[
+    {
+        "cat_from_id": "36",
+        "cat_to_id": "37",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 29,
+        "dislike": 0,
+        "admiration": 32,
+        "comfortable": 8,
+        "jealousy": 0,
+        "trust": 30,
+        "log": [
+            "Fuzzfern is wowed by how bravely Mothwhisper fought the other day. (high positive effect) - Fuzzfern was 15 moon(s) old",
+            "Fuzzfern thinks about how Mothwhisper is always reliable. (medium positive effect) - Fuzzfern was 24 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "36",
+        "cat_to_id": "38",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 11,
+        "dislike": 0,
+        "admiration": 14,
+        "comfortable": 25,
+        "jealousy": 0,
+        "trust": 8,
+        "log": [
+            "Fuzzfern thinks Brownstream was nice to them today. (low positive effect) - Fuzzfern was 23 moon(s) old",
+            "Fuzzfern challenged Brownstream to spar with them. (neutral effect) - Fuzzfern was 28 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "36",
+        "cat_to_id": "39",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 12,
+        "admiration": 19,
+        "comfortable": 13,
+        "jealousy": 16,
+        "trust": 9,
+        "log": [
+            "Fuzzfern is complaining that Marshstar never does anything helpful. (high negative effect) - Fuzzfern was 26 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "36",
+        "cat_to_id": "41",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 36,
+        "dislike": 0,
+        "admiration": 27,
+        "comfortable": 7,
+        "jealousy": 0,
+        "trust": 7,
+        "log": [
+            "Fuzzfern mews congratulations to Sproutpaw for a job well done. (low positive effect) - Fuzzfern was 20 moon(s) old",
+            "Fuzzfern surprises Sproutpelt with something nice. (medium positive effect) - Fuzzfern was 25 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "36",
+        "cat_to_id": "42",
+        "mates": false,
+        "family": false,
+        "romantic_love": 4,
+        "platonic_like": 46,
+        "dislike": 8,
+        "admiration": 11,
+        "comfortable": 29,
+        "jealousy": 0,
+        "trust": 4,
+        "log": [
+            "Fuzzfern purrs for a long time at one of Chanterelleecho's lame jokes. (positive effect)",
+            "Fuzzfern had a disagreement with Chanterelleecho over kits. (negative effect)",
+            "Fuzzfern chats with Chanterelleecho while grabbing something to eat. (medium positive effect) - Fuzzfern was 22 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "36",
+        "cat_to_id": "43",
+        "mates": false,
+        "family": false,
+        "romantic_love": 13,
+        "platonic_like": 22,
+        "dislike": 0,
+        "admiration": 17,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 1,
+        "log": [
+            "Fuzzfern finds the way Blueswarm acts increasingly uncomfortable. (medium negative effect) - Fuzzfern was 14 moon(s) old",
+            "Fuzzfern apologized to Blueswarm for something or other. (low positive effect) - Fuzzfern was 18 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "36",
+        "cat_to_id": "44",
+        "mates": false,
+        "family": false,
+        "romantic_love": 24,
+        "platonic_like": 42,
+        "dislike": 0,
+        "admiration": 16,
+        "comfortable": 32,
+        "jealousy": 0,
+        "trust": 6,
+        "log": [
+            "Fuzzfern asks Boragepoppy how they're doing. (low positive effect) - Fuzzfern was 19 moon(s) old",
+            "Fuzzfern had a spat with Boragepoppy over a piece of prey on the fresh-kill pile. (medium negative effect) - Fuzzfern was 21 moon(s) old",
+            "Fuzzfern sneaks out at night to sleep in Boragepoppy's nest. (positive effect)"
+        ]
+    },
+    {
+        "cat_from_id": "36",
+        "cat_to_id": "46",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 39,
+        "dislike": 21,
+        "admiration": 10,
+        "comfortable": 33,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Fuzzfern thinks Skiptwist is very helpful! (low positive effect) - Fuzzfern was 12 moon(s) old",
+            "Fuzzfern wants to spend more time with Skiptwist! (high positive effect) - Fuzzfern was 13 moon(s) old",
+            "Fuzzfern is really surprised that Skiptwist's life isn't as easy as they thought it was. (high positive effect) - Fuzzfern was 17 moon(s) old",
+            "Fuzzfern had a fight with Skiptwist. (high negative effect) - Fuzzfern was 27 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "36",
+        "cat_to_id": "47",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 18,
+        "dislike": 0,
+        "admiration": 13,
+        "comfortable": 23,
+        "jealousy": 0,
+        "trust": 21,
+        "log": [
+            "Fuzzfern is looking out for Swamppaw's well-being. (medium positive effect) - Fuzzfern was 16 moon(s) old",
+            "Fuzzfern has a mock battle with Swampstripe. (medium positive effect) - Fuzzfern was 29 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "36",
+        "cat_to_id": "48",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "36",
+        "cat_to_id": "1",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": [
+            "Fuzzfern is welcoming Pheasantpuddle."
+        ]
+    }
+]

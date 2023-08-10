@@ -1,0 +1,198 @@
+[
+    {
+        "cat_from_id": "39",
+        "cat_to_id": "36",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 5,
+        "dislike": 0,
+        "admiration": 10,
+        "comfortable": 13,
+        "jealousy": 0,
+        "trust": 6,
+        "log": [
+            "Marshstar is surprised by Fuzzfern being thoughtful. (low positive effect) - Marshstar was 108 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "39",
+        "cat_to_id": "37",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 25,
+        "dislike": 0,
+        "admiration": 9,
+        "comfortable": 7,
+        "jealousy": 11,
+        "trust": 6,
+        "log": [
+            "Marshstar is complaining that Mothwhisper never does anything helpful. (high negative effect) - Marshstar was 100 moon(s) old",
+            "Marshstar realized that they were too harsh in their judgment of Mothwhisper. (medium positive effect) - Marshstar was 103 moon(s) old",
+            "Marshstar said something that rubbed Mothwhisper the wrong way. (low negative effect) - Marshstar was 106 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "39",
+        "cat_to_id": "38",
+        "mates": false,
+        "family": false,
+        "romantic_love": 37,
+        "platonic_like": 67,
+        "dislike": 0,
+        "admiration": 32,
+        "comfortable": 68,
+        "jealousy": 21,
+        "trust": 50,
+        "log": [
+            "Marshstar decorates Brownstream's nest with flowers to surprise them! (positive effect)",
+            "Marshstar appreciates Brownstream telling them that they had a feather stuck to their face. (low positive effect) - Marshstar was 104 moon(s) old",
+            "Marshstar is complaining that Brownstream never does anything helpful. (high negative effect) - Marshstar was 112 moon(s) old",
+            "Marshstar is talking with Brownstream. (low positive effect) - Marshstar was 113 moon(s) old",
+            "Marshstar saw Brownstream show off a skill they never knew they had. (high positive effect) - Marshstar was 114 moon(s) old",
+            "Marshstar comes up with a plan to sneak out of camp with Brownstream. (medium positive effect) - Marshstar was 117 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "39",
+        "cat_to_id": "41",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 45,
+        "dislike": 8,
+        "admiration": 13,
+        "comfortable": 44,
+        "jealousy": 0,
+        "trust": 12,
+        "log": [
+            "Marshstar is having a wonderful time discussing recent Clan news with Sproutpaw. (high positive effect) - Marshstar was 110 moon(s) old",
+            "Marshstar is sharing tongues with Sproutpelt. (high positive effect) - Marshstar was 115 moon(s) old",
+            "Marshstar had Sproutpelt bump into them, and they didn't even apologize! (low negative effect) - Marshstar was 117 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "39",
+        "cat_to_id": "42",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 39,
+        "dislike": 0,
+        "admiration": 18,
+        "comfortable": 23,
+        "jealousy": 0,
+        "trust": 3,
+        "log": [
+            "Marshstar shared a embarrassing story about Chanterelleecho they were asked not to share... (low negative effect) - Marshstar was 106 moon(s) old",
+            "Marshstar saw Chanterelleecho being considerate. (low positive effect) - Marshstar was 107 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "39",
+        "cat_to_id": "43",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 38,
+        "dislike": 0,
+        "admiration": 20,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 10,
+        "log": [
+            "Marshstar is surprised by Bluepaw being thoughtful. (low positive effect) - Marshstar was 101 moon(s) old",
+            "Marshstar is having a wonderful time discussing recent Clan news with Bluepaw. (high positive effect) - Marshstar was 101 moon(s) old",
+            "Marshstar wants to spend more time with Blueswarm! (high positive effect) - Marshstar was 105 moon(s) old",
+            "Marshstar is bossing Blueswarm around. (high negative effect) - Marshstar was 108 moon(s) old",
+            "Marshstar is surprised to hear Blueswarm express an ideal they can agree with. (high positive effect) - Marshstar was 115 moon(s) old",
+            "Marshstar said something that rubbed Blueswarm the wrong way. (low negative effect) - Marshstar was 116 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "39",
+        "cat_to_id": "44",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 59,
+        "dislike": 0,
+        "admiration": 15,
+        "comfortable": 45,
+        "jealousy": 0,
+        "trust": 2,
+        "log": [
+            "Marshstar is having a wonderful time discussing recent Clan news with Boragepaw. (high positive effect) - Marshstar was 105 moon(s) old",
+            "Marshstar surprises Boragepoppy with something nice. (medium positive effect) - Marshstar was 109 moon(s) old",
+            "Marshstar is having a wonderful time discussing recent Clan news with Boragepoppy. (high positive effect) - Marshstar was 114 moon(s) old",
+            "Marshstar tells a joke that only Boragepoppy can understand. (high positive effect) - Marshstar was 116 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "39",
+        "cat_to_id": "46",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 46,
+        "dislike": 0,
+        "admiration": 9,
+        "comfortable": 2,
+        "jealousy": 0,
+        "trust": 14,
+        "log": [
+            "Skiptwist noticed Marshstar flirting with someone else. (negative effect)"
+        ]
+    },
+    {
+        "cat_from_id": "39",
+        "cat_to_id": "47",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 43,
+        "admiration": 0,
+        "comfortable": 6,
+        "jealousy": 0,
+        "trust": 8,
+        "log": [
+            "Marshstar is complaining that Swampkit never does anything helpful. (high negative effect) - Marshstar was 102 moon(s) old",
+            "Marshstar thinks Swampkit is very helpful! (low positive effect) - Marshstar was 102 moon(s) old",
+            "Marshstar divides Swamppaw into extra patrols. (medium negative effect) - Marshstar was 111 moon(s) old",
+            "Marshstar sees that Swampstripe's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect) - Marshstar was 112 moon(s) old",
+            "Marshstar thinks Swampstripe was nice to them today. (low positive effect) - Marshstar was 113 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "39",
+        "cat_to_id": "48",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "39",
+        "cat_to_id": "1",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": [
+            "Marshstar sees Pheasantpuddle arrive in the Clan and offers them to show them around."
+        ]
+    }
+]

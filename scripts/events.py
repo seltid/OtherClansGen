@@ -1071,7 +1071,13 @@ class Events:
                     if cat.status == 'deputy':
                         game.clan.deputy = None
                     self.ceremony(cat, 'elder')
-                    cat.history.add_retirement(cat, "moons of service")
+                    print("ERROR")
+                    print(str(cat.name) + str(cat.ID))
+                    try:
+                        cat.history.add_retirement(cat, "moons of service")
+                    except AttributeError:
+                        cat.history = History()
+                        cat.history.add_retirement(cat, "moons of service")
 
             # apprentice a kitten to either med or warrior
             if cat.moons == cat_class.age_moons["adolescent"][0]:

@@ -1,0 +1,196 @@
+[
+    {
+        "cat_from_id": "53",
+        "cat_to_id": "49",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 29,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 17,
+        "log": [
+            "Kitepaw admires how brave Rushpaw is. (medium positive effect) - Kitepaw was 9 moon(s) old",
+            "Kitetail has a mock battle with Rushpaw. (medium positive effect) - Kitetail was 14 moon(s) old",
+            "Kitetail feels like they can count on Rushwood to give them the best treatment possible. (medium positive effect) - Kitetail was 20 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "53",
+        "cat_to_id": "50",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 6,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Kitepaw wishes they could get their pelt to shine like Sleetpaw's. (low negative effect) - Kitepaw was 10 moon(s) old",
+            "Kitetail sees that Sleetflash's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect) - Kitetail was 17 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "53",
+        "cat_to_id": "51",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 16,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 12,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Kitetail had a disagreement with Nectarfire while on patrol earlier. (medium negative effect) - Kitetail was 22 moon(s) old",
+            "Kitetail wants to spend more time with Nectarfire! (high positive effect) - Kitetail was 24 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "53",
+        "cat_to_id": "52",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 16,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 12,
+        "jealousy": 8,
+        "trust": 0,
+        "log": [
+            "Kitetail wishes they could get their pelt to shine like Hollowlilac's. (low negative effect) - Kitetail was 18 moon(s) old",
+            "Kitetail wants to spend more time with Hollowlilac! (high positive effect) - Kitetail was 23 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "53",
+        "cat_to_id": "54",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "53",
+        "cat_to_id": "55",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 8,
+        "admiration": 16,
+        "comfortable": 0,
+        "jealousy": 11,
+        "trust": 0,
+        "log": [
+            "Kitepaw is complaining that Seedshade never does anything helpful. (high negative effect) - Kitepaw was 13 moon(s) old",
+            "Kitetail had a difficult conversation with Seedshade and they now have a deeper understanding of each other. (high positive effect) - Kitetail was 15 moon(s) old",
+            "Kitetail challenged Seedshade to spar with them. (neutral effect) - Kitetail was 21 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "53",
+        "cat_to_id": "56",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "53",
+        "cat_to_id": "57",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 21,
+        "dislike": 0,
+        "admiration": 13,
+        "comfortable": 29,
+        "jealousy": 0,
+        "trust": 13,
+        "log": [
+            "Kitepaw thinks Prancedapple tells the best stories. (high positive effect) - Kitepaw was 7 moon(s) old",
+            "Kitepaw is really surprised that Prancedapple's life isn't as easy as they thought it was. (high positive effect) - Kitepaw was 8 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "53",
+        "cat_to_id": "58",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 16,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Kitetail thinks Iceclove is being annoying. (high negative effect) - Kitetail was 16 moon(s) old",
+            "Kitetail bristles after being scolded by Iceclove. (high negative effect) - Kitetail was 19 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "53",
+        "cat_to_id": "59",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "53",
+        "cat_to_id": "60",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 12,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 9,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Kitepaw is giving Lupineash a task. (neutral effect) - Kitepaw was 11 moon(s) old",
+            "Kitepaw is sharing prey with Lupineash. (medium positive effect) - Kitepaw was 12 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "53",
+        "cat_to_id": "1",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    }
+]

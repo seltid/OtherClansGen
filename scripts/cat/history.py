@@ -163,12 +163,28 @@ class History:
             return
         History.check_load(cat)
 
-        cat.history.beginning = {
-            "clan_born": clan_born,
-            "birth_season": game.clan.current_season if clan_born else None,
-            "age": cat.moons,
-            "moon": game.clan.age
-        }
+        if str(cat.clan) not in str(game.clan.name.removesuffix("Clan")):
+            if cat.backstory in (BACKSTORIES["backstory_categories"]["clanborn_backstories"] or BACKSTORIES["backstory_categories"]["clan_founder_backstories"]):
+                are_they_clan_born = True
+            else:
+                are_they_clan_born = False
+            join_age = random.randint(0,cat.moons)
+            print("join_age: " + str(join_age))
+            join_moon = game.clan.age - join_age
+            print("join_moon: " + str(join_moon))
+            cat.history.beginning = {
+                "clan_born": are_they_clan_born,
+                "birth_season": game.clan.current_season if clan_born else None,
+                "age": 0 if clan_born else join_age,
+                "moon": join_moon if join_moon >= 1 else "BEFORE"
+            }
+        else:
+            cat.history.beginning = {
+                "clan_born": clan_born,
+                "birth_season": game.clan.current_season if clan_born else None,
+                "age": cat.moons,
+                "moon": game.clan.age
+            }
 
     @staticmethod
     def add_mentor_facet_influence_strings(cat):
@@ -653,4 +669,5 @@ class History:
         }
 
 
-
+with open(f"resources/dicts/backstories.json", 'r') as read_file:
+    BACKSTORIES = ujson.loads(read_file.read())

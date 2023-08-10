@@ -1,0 +1,19 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": "Leaf-fall",
+        "age": 0,
+        "moon": 14
+    },
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {},
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

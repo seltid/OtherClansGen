@@ -1,0 +1,350 @@
+[
+    {
+        "text": "Fuzzfern has a mock battle with Swampstripe. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "47",
+            "36"
+        ]
+    },
+    {
+        "text": "Brownstream acknowledges Blueswarm with a twitch of their whiskers. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "43",
+            "38"
+        ]
+    },
+    {
+        "text": "Brownstream has met Pheasantpuddle of SpeckleClan.",
+        "types": [
+            "misc"
+        ],
+        "cats_involved": [
+            "38",
+            "1"
+        ]
+    },
+    {
+        "text": "Brownstream offers Pheasantpuddle some tips for building a new nest.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "38"
+        ]
+    },
+    {
+        "text": "Boragepoppy offers Pheasantpuddle some tips for building a new nest.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "44"
+        ]
+    },
+    {
+        "text": "Fuzzfern is welcoming Pheasantpuddle.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "36"
+        ]
+    },
+    {
+        "text": "Blueswarm offers Pheasantpuddle some feathers as a welcome gift, that they can use to decorate their new nest.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "43"
+        ]
+    },
+    {
+        "text": "Chanterelleecho offers Pheasantpuddle some tips for building a new nest.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "42"
+        ]
+    },
+    {
+        "text": "Marshstar sees Pheasantpuddle arrive in the Clan and offers them to show them around.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "39"
+        ]
+    },
+    {
+        "text": "Boragepoppy offers Pheasantpuddle some tips for building a new nest.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "44"
+        ]
+    },
+    {
+        "text": "Blueswarm asks Pheasantpuddle if they could use some help getting introduced to the other Clan members.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "43"
+        ]
+    },
+    {
+        "text": "Chanterelleecho offers Pheasantpuddle some tips for building a new nest.",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "42"
+        ]
+    },
+    {
+        "text": "Marshstar comes up with a plan to sneak out of camp with Brownstream. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "38",
+            "39"
+        ]
+    },
+    {
+        "text": "Marshstar had Sproutpelt bump into them, and they didn't even apologize! (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "41",
+            "39"
+        ]
+    },
+    {
+        "text": "Sproutpelt mews congratulations to Fuzzfern for a job well done. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "36",
+            "41"
+        ]
+    },
+    {
+        "text": "Chanterelleecho finds a bit of fluff that smells like Fuzzfern and adds it to their nest. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "36",
+            "42"
+        ]
+    },
+    {
+        "text": "Chanterelleecho has gotten a running nose.",
+        "types": [
+            "health"
+        ],
+        "cats_involved": [
+            "42"
+        ]
+    },
+    {
+        "text": "Blueswarm asks Sproutpelt how they're doing. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "41",
+            "43"
+        ]
+    },
+    {
+        "text": "Boragepoppy thinks of Marshstar as their best friend. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "39",
+            "44"
+        ]
+    },
+    {
+        "text": "Skiptwist surprises Swampstripe with something nice. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "47",
+            "46"
+        ]
+    },
+    {
+        "text": "Skiptwist, Chanterelleecho, and Sproutpelt took a sunbath and had a little small talk. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "46",
+            "42",
+            "41"
+        ]
+    },
+    {
+        "text": "Swampstripe is free of fleas at last.",
+        "types": [
+            "health"
+        ],
+        "cats_involved": [
+            "47"
+        ]
+    },
+    {
+        "text": "Swampstripe challenged Skiptwist to spar with them. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "46",
+            "47"
+        ]
+    },
+    {
+        "text": "Sleetflash asks Rushwood to speak up while chatting together. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "50",
+            "49"
+        ]
+    },
+    {
+        "text": "Rushwood asks Sleetflash to speak up while chatting together. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "49",
+            "50"
+        ]
+    },
+    {
+        "text": "Nectarfire thinks Jumpnut was nice to them today. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "54",
+            "51"
+        ]
+    },
+    {
+        "text": "Hollowlilac promises to always look out for Iceclove. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "58",
+            "52"
+        ]
+    },
+    {
+        "text": "Kitetail wants to spend more time with Nectarfire! (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "51",
+            "53"
+        ]
+    },
+    {
+        "text": "Jumpnut bestows wisdom onto Iceclove. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "58",
+            "54"
+        ]
+    },
+    {
+        "text": "Conepatch thinks Sleetflash isn't very considerate of others. (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "50",
+            "56"
+        ]
+    },
+    {
+        "text": "Iceclove is surprised by Rushwood being thoughtful. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "49",
+            "58"
+        ]
+    },
+    {
+        "text": "Whimsystar settles near Nectarfire to eat their fresh-kill. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "51",
+            "59"
+        ]
+    }
+]

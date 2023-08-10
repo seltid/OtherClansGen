@@ -1,0 +1,32 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {
+            "36": {
+                "aggression": 1,
+                "strings": [
+                    "be ready for a fight"
+                ]
+            }
+        },
+        "skill": {
+            "36": {
+                "SENSE": 4,
+                "strings": [
+                    "noticing small details"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "dedication",
+        "graduation_age": 14,
+        "moon": 13
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

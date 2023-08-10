@@ -1,0 +1,25 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {
+            "38": {
+                "aggression": -2,
+                "strings": [
+                    "use words over teeth and claws"
+                ]
+            }
+        },
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "strength",
+        "graduation_age": 11,
+        "moon": 2
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

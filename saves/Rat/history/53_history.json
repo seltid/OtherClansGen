@@ -1,0 +1,32 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": "Newleaf",
+        "age": 0,
+        "moon": "BEFORE"
+    },
+    "mentor_influence": {
+        "trait": {
+            "55": {
+                "aggression": -2,
+                "stability": 1,
+                "strings": [
+                    "try to avoid violence",
+                    "be resilient"
+                ]
+            }
+        },
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "passion",
+        "graduation_age": 13,
+        "moon": 8
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

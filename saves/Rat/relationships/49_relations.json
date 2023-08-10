@@ -1,0 +1,195 @@
+[
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "50",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 12,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Rushwood has a mock battle with Sleetflash. (medium positive effect) - Rushwood was 20 moon(s) old",
+            "Sleetflash asks Rushwood to speak up while chatting together. (neutral effect) - Rushwood was 25 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "51",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 0,
+        "admiration": 8,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Rushpaw mews congratulations to Nectarfire for a job well done. (low positive effect) - Rushpaw was 17 moon(s) old",
+            "Rushwood turned to Nectarfire in a time of need, only for Nectarfire to abandon them. (high negative effect) - Rushwood was 23 moon(s) old",
+            "Rushwood thinks Nectarfire is very helpful! (low positive effect) - Rushwood was 24 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "52",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 3,
+        "dislike": 13,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 13,
+        "log": [
+            "Rushpaw has a disagreement with Hollowpaw over who is the better hunter. (high negative effect) - Rushpaw was 12 moon(s) old",
+            "Rushpaw appreciates Hollowpaw telling them that they had a feather stuck to their face. (low positive effect) - Rushpaw was 14 moon(s) old",
+            "Rushwood swaps favorite prey with Hollowlilac. (medium positive effect) - Rushwood was 19 moon(s) old",
+            "Rushwood had a disagreement with Hollowlilac about something or other. (low negative effect) - Rushwood was 21 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "53",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 13,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "54",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 8,
+        "trust": 0,
+        "log": [
+            "Rushpaw is really surprised that Jumpnut's life isn't as easy as they thought it was. (high positive effect) - Rushpaw was 8 moon(s) old",
+            "Rushpaw apologized to Jumpnut for something or other. (low positive effect) - Rushpaw was 10 moon(s) old",
+            "Rushpaw wishes they could get their pelt to shine like Jumpnut's. (low negative effect) - Rushpaw was 11 moon(s) old",
+            "Rushpaw apologized to Jumpnut for something or other. (low positive effect) - Rushpaw was 16 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "55",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Rushpaw is sharpening their claws near Seedshade. (neutral effect) - Rushpaw was 15 moon(s) old",
+            "Rushwood thinks Seedshade is very helpful! (low positive effect) - Rushwood was 18 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "56",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 13,
+        "dislike": 0,
+        "admiration": 17,
+        "comfortable": 13,
+        "jealousy": 0,
+        "trust": 13,
+        "log": [
+            "Rushpaw watched Conepaw show kindness and compassion towards their patients. (medium positive effect) - Rushpaw was 13 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "57",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "58",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 26,
+        "dislike": 0,
+        "admiration": 13,
+        "comfortable": 47,
+        "jealousy": 0,
+        "trust": 26,
+        "log": [
+            "Rushpaw appreciates how Iceclove always seems to ask how they're doing. (high positive effect) - Rushpaw was 9 moon(s) old",
+            "Rushwood has been spending time with Iceclove lately. (low positive effect) - Rushwood was 22 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "59",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 8,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "60",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "1",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    }
+]

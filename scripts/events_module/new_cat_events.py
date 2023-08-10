@@ -37,7 +37,7 @@ class NewCatEvents:
             other_clan = game.clan.all_clans[0]
             other_clan_name = f'{other_clan.name}Clan'
 
-        
+
         # Determine
         if self.has_outside_cat():
             if random.randint(1, 3) == 1:
@@ -73,7 +73,7 @@ class NewCatEvents:
 
                 return [outside_cat]
 
-        
+
         # ---------------------------------------------------------------------------- #
         #                                cat creation                                  #
         # ---------------------------------------------------------------------------- #
@@ -107,20 +107,31 @@ class NewCatEvents:
         elif "new_med" in new_cat_event.tags:
             status = "medicine cat"
 
+        if "outside_creation" in new_cat_event.tags:
+            created_cats = create_oc_existing_cat(Cat,
+                                          Relationship,
+                                          new_cat_event.new_name,
+                                          new_cat_event.loner,
+                                          new_cat_event.kittypet,
+                                          new_cat_event.kit,
+                                          new_cat_event.litter,
+                                          new_cat_event.other_clan,
+                                          new_cat_event.backstory,
+                                          status
+                                          )
+        else:
+            created_cats = create_new_cat(Cat,
+                                          Relationship,
+                                          new_cat_event.new_name,
+                                          new_cat_event.loner,
+                                          new_cat_event.kittypet,
+                                          new_cat_event.kit,
+                                          new_cat_event.litter,
+                                          new_cat_event.other_clan,
+                                          new_cat_event.backstory,
+                                          status
+                                          )
 
-        
-        created_cats = create_new_cat(Cat,
-                                      Relationship,
-                                      new_cat_event.new_name,
-                                      new_cat_event.loner,
-                                      new_cat_event.kittypet,
-                                      new_cat_event.kit,
-                                      new_cat_event.litter,
-                                      new_cat_event.other_clan,
-                                      new_cat_event.backstory,
-                                      status
-                                      )
-        
         blood_parent = None
         if new_cat_event.litter:
             # If we have a litter joining, assign them a blood parent for
@@ -133,12 +144,12 @@ class NewCatEvents:
                                           age=random.randint(15,120))[0]
             blood_parent.outside = True
             game.clan.add_to_unknown(blood_parent)
-            
-            
+
+
         for new_cat in created_cats:
-            
+
             involved_cats.append(new_cat.ID)
-            
+
             # Set the blood parent, if one was created.
             # Also set adoptive parents if needed. 
             new_cat.parent1 = blood_parent.ID if blood_parent else None
@@ -149,15 +160,15 @@ class NewCatEvents:
                         if mate_id not in new_cat.adoptive_parents:
                             new_cat.adoptive_parents.extend(cat.mate)
 
-            
-            # All parents have been added now, we now create the inheritance. 
+
+            # All parents have been added now, we now create the inheritance.
             new_cat.create_inheritance_new_cat()
 
             if "m_c" in new_cat_event.tags:
                 # print('moon event new cat rel gain')
                 cat.create_one_relationship(new_cat)
                 new_cat.create_one_relationship(cat)
-                
+
                 new_to_clan_cat = game.config["new_cat"]["rel_buff"]["new_to_clan_cat"]
                 clan_cat_to_new = game.config["new_cat"]["rel_buff"]["clan_cat_to_new"]
                 change_relationship_values(
@@ -185,7 +196,14 @@ class NewCatEvents:
 
             new_cat.backstory = random.choice(new_cat_event.backstory)
 
-            new_cat.clan = game.clan.name
+            if "outside_creation" in new_cat_event.tags:
+                new_cat.clan = game.otherclan1.name.removesuffix("Clan")
+                new_cat.outside = True
+                new_cat.otherclan1 = True
+            else:
+                new_cat.clan = game.clan.name
+
+
 
         if "adoption" in new_cat_event.tags:
             if new_cat_event.litter:
@@ -194,10 +212,10 @@ class NewCatEvents:
                     siblings = new_cat.get_siblings()
                     for sibling in siblings:
                         sibling = Cat.fetch_cat(sibling)
-                        
+
                         sibling.create_one_relationship(new_cat)
                         new_cat.create_one_relationship(sibling)
-                        
+
                         cat1_to_cat2 = game.config["new_cat"]["sib_buff"]["cat1_to_cat2"]
                         cat2_to_cat1 = game.config["new_cat"]["sib_buff"]["cat2_to_cat1"]
                         change_relationship_values(
