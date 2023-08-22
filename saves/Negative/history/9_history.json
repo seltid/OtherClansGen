@@ -1,0 +1,59 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 49,
+        "birth_moon": 49,
+        "join_season": "Newleaf"
+    },
+    "mentor_influence": {
+        "trait": {
+            "30": {
+                "stability": 1,
+                "sociability": -2,
+                "strings": [
+                    "be consistent",
+                    "be cold towards others"
+                ]
+            }
+        },
+        "skill": {
+            "30": {
+                "HUNTER": 7,
+                "strings": [
+                    "hunting"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "valiance",
+        "graduation_age": 16,
+        "moon": 65
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {
+        "broken bone": {
+            "death_text": "m_c died from their wounds after an eagle grabbed them.",
+            "scar_text": "m_c was scarred when an eagle grabbed them.",
+            "other_cat": null
+        }
+    },
+    "died_by": [
+        {
+            "involved": null,
+            "text": "Flutterhiss died of an infected wound.",
+            "moon": 88
+        }
+    ],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred by a hawk while rescuing Driftstar.",
+            "moon": 61
+        }
+    ],
+    "murder": {}
+}

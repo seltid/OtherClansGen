@@ -1,0 +1,56 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {
+            "27": {
+                "lawfulness": 1,
+                "aggression": 1,
+                "strings": [
+                    "heed their inner compass",
+                    "be ready for a fight"
+                ]
+            }
+        },
+        "skill": {
+            "27": {
+                "CLEVER": 3,
+                "strings": [
+                    "solving problems"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "friendliness",
+        "graduation_age": 13,
+        "moon": 6
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {
+        "honor": "moons of service",
+        "text": "",
+        "moon": 120,
+        "age": 127
+    },
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": "32",
+            "text": "m_c was found dead near the DashClan border.",
+            "moon": 149
+        }
+    ],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred from an injury (torn pelt).",
+            "moon": 24
+        },
+        {
+            "involved": null,
+            "text": "m_c was scarred by a fox.",
+            "moon": 33
+        }
+    ],
+    "murder": {}
+}

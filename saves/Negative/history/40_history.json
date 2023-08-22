@@ -1,0 +1,41 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": [
+            "Newleaf"
+        ],
+        "age": 0,
+        "join_moon": -1,
+        "birth_moon": -1,
+        "join_season": "PLACEHOLDER"
+    },
+    "mentor_influence": {
+        "trait": {
+            "38": {
+                "aggression": 3,
+                "strings": [
+                    "use teeth and claws over words"
+                ]
+            }
+        },
+        "skill": {
+            "38": {
+                "HEALER": 5,
+                "strings": [
+                    "healing"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "caution",
+        "graduation_age": 17,
+        "moon": 17
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

@@ -1,0 +1,41 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 147,
+        "birth_moon": 147,
+        "join_season": "Greenleaf"
+    },
+    "mentor_influence": {
+        "trait": {
+            "13": {
+                "stability": -1,
+                "sociability": 1,
+                "strings": [
+                    "behave erratically",
+                    "step out of their comfort zone"
+                ]
+            }
+        },
+        "skill": {
+            "13": {
+                "CAMP": 4,
+                "strings": [
+                    "caring for camp"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "adaptability",
+        "graduation_age": 14,
+        "moon": 161
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

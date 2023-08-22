@@ -1,0 +1,62 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 86,
+        "birth_moon": 86,
+        "join_season": "Newleaf"
+    },
+    "mentor_influence": {
+        "trait": {
+            "29": {
+                "sociability": 2,
+                "lawfulness": -1,
+                "strings": [
+                    "interact with others",
+                    "make their own rules"
+                ]
+            }
+        },
+        "skill": {
+            "29": {
+                "SPEAKER": 4,
+                "strings": [
+                    "arguing"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "courage",
+        "graduation_age": 13,
+        "moon": 99
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred by a Twoleg trap.",
+            "moon": 127
+        },
+        {
+            "involved": null,
+            "text": "Waspshade challenged Blotchstar, was punished by Lightdapple, and got a scar as memory of their actions.",
+            "moon": 137
+        },
+        {
+            "involved": null,
+            "text": "Waspshade challenged Blotchstar, was punished by Lightdapple, and got a scar as memory of their actions.",
+            "moon": 137
+        },
+        {
+            "involved": null,
+            "text": "m_c was scarred by a dog.",
+            "moon": 171
+        }
+    ],
+    "murder": {}
+}

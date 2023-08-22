@@ -1,0 +1,42 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {
+            "25": {
+                "sociability": -2,
+                "strings": [
+                    "bicker with others"
+                ]
+            }
+        },
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "realism",
+        "graduation_age": 16,
+        "moon": 11
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {
+        "honor": "moons of service",
+        "text": "",
+        "moon": 110,
+        "age": 115
+    },
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": "21",
+            "text": "m_c died of old age.",
+            "moon": 156
+        }
+    ],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred by a big dog while rescuing Bouncelily.",
+            "moon": 40
+        }
+    ],
+    "murder": {}
+}

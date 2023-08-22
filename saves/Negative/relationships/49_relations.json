@@ -1,0 +1,107 @@
+[
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "35",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 6,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 3,
+        "log": [
+            "Tuftfang thinks Anisemoon isn't very considerate of others. (low negative effect) - Tuftfang was 101 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "15",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 4,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 10,
+        "log": [
+            "Tuftfang is complaining that Sparkpelt never does anything helpful. (high negative effect) - Tuftfang was 108 moon(s) old",
+            "Tuftfang turned to Sparkpelt in a time of need, only for Sparkpelt to abandon them. (high negative effect) - Tuftfang was 110 moon(s) old",
+            "Tuftfang is feeling lost and asks Sparkpelt for advice on what to do. (medium positive effect) - Tuftfang was 113 moon(s) old",
+            "Tuftfang appreciates Sparkpelt telling them that they had a feather stuck to their face. (low positive effect) - Tuftfang was 115 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "44",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 40,
+        "dislike": 0,
+        "admiration": 16,
+        "comfortable": 26,
+        "jealousy": 0,
+        "trust": 12,
+        "log": [
+            "Tuftfang hopes they are assigned to patrol with Conkerstar tomorrow. (medium positive effect) - Tuftfang was 103 moon(s) old",
+            "Tuftfang saw Conkerstar miss an easy catch today. (medium negative effect) - Tuftfang was 104 moon(s) old",
+            "Tuftfang had a difficult conversation with Conkerstar and they now have a deeper understanding of each other. (high positive effect) - Tuftfang was 107 moon(s) old",
+            "Tuftfang realized that they were too harsh in their judgment of Conkerstar. (medium positive effect) - Tuftfang was 109 moon(s) old",
+            "Tuftfang covered for Conkerstar on something minor. (medium positive effect) - Tuftfang was 111 moon(s) old",
+            "Tuftfang notices how Conkerstar is being helpful around camp. (medium positive effect) - Tuftfang was 112 moon(s) old",
+            "Tuftfang hopes they are assigned to patrol with Conkerstar tomorrow. (medium positive effect) - Tuftfang was 114 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "45",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 26,
+        "dislike": 16,
+        "admiration": 0,
+        "comfortable": 23,
+        "jealousy": 10,
+        "trust": 0,
+        "log": [
+            "Tuftfang is talking with Seamusshade. (low positive effect) - Tuftfang was 102 moon(s) old",
+            "Tuftfang sees Seamusshade lazing about in the sunshine and is resentful at how little they're expected to contribute. (high negative effect) - Tuftfang was 105 moon(s) old",
+            "Tuftfang sees that Seamusshade's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect) - Tuftfang was 106 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "50",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 16,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Tuftfang saw Rowanfeather show off a skill they never knew they had. (high positive effect) - Tuftfang was 116 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "49",
+        "cat_to_id": "51",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    }
+]

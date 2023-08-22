@@ -1,0 +1,256 @@
+[
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "7",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 7,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 24,
+        "jealousy": 0,
+        "trust": 32,
+        "log": [
+            "Meadowpaw gives Darkstar bitter herbs on purpose. (medium negative effect) - Meadowpaw was 6 moon(s) old",
+            "Meadowpaw thinks Darkstar isn't very considerate of others. (low negative effect) - Meadowpaw was 8 moon(s) old",
+            "Meadowpaw thinks they can tell Darkstar something important. (high positive effect) - Meadowpaw was 9 moon(s) old",
+            "Meadowrunner had a spat with Darkstar over a piece of prey on the fresh-kill pile. (medium negative effect) - Meadowrunner was 32 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "32",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": true,
+        "romantic_love": 0,
+        "platonic_like": 58,
+        "dislike": 16,
+        "admiration": 16,
+        "comfortable": 31,
+        "jealousy": 0,
+        "trust": 34,
+        "log": [
+            "Meadowkit saw Grassfreckle being rude. (low negative effect) - Meadowkit was 2 moon(s) old",
+            "Meadowpaw quickly apologizes after bumping into Grassfreckle. They have a small laugh about it. (low positive effect) - Meadowpaw was 14 moon(s) old",
+            "Meadowpaw appreciates Grassfreckle telling them that they had a feather stuck to their face. (low positive effect) - Meadowpaw was 15 moon(s) old",
+            "Meadowpaw just told Grassfreckle a hilarious joke. (medium positive effect) - Meadowpaw was 18 moon(s) old",
+            "Meadowpaw had a fight with Grassfreckle. (high negative effect) - Meadowpaw was 23 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 26,
+        "dislike": 76,
+        "admiration": 6,
+        "comfortable": 42,
+        "jealousy": 38,
+        "trust": 49,
+        "log": [
+            "Meadowkit wants to spend more time with Specklefang! (high positive effect) - Meadowkit was 1 moon(s) old",
+            "Meadowpaw nods politely as Specklefang passes by. (neutral effect) - Meadowpaw was 13 moon(s) old",
+            "Meadowpaw had a disagreement with Specklefang about something or other. (low negative effect) - Meadowpaw was 19 moon(s) old",
+            "Meadowpaw had a fight with Specklefang. (high negative effect) - Meadowpaw was 24 moon(s) old",
+            "Meadowrunner sees Specklefang lazing about in the sunshine and is resentful at how little they're expected to contribute. (high negative effect) - Meadowrunner was 33 moon(s) old",
+            "Meadowrunner tried to bring Specklefang's behaviour up to them, but it turned into a fight that someone else had to break up. (medium negative effect) - Meadowrunner was 35 moon(s) old",
+            "Meadowrunner thinks the prey Specklefang is biting into on the other side of camp looks delicious. (medium negative effect) - Meadowrunner was 41 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "13",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 19,
+        "dislike": 11,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Meadowpaw thinks Dustslash has been acting strangely. (low negative effect) - Meadowpaw was 11 moon(s) old",
+            "Meadowrunner thinks Dustslash is being annoying. (high negative effect) - Meadowrunner was 42 moon(s) old",
+            "Meadowrunner thinks Dustslash is very helpful! (low positive effect) - Meadowrunner was 44 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "14",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 13,
+        "jealousy": 0,
+        "trust": 17,
+        "log": [
+            "Meadowkit comes up with a plan to sneak out of camp with Lightdapple. (medium positive effect) - Meadowkit was 4 moon(s) old",
+            "Meadowpaw swaps favorite prey with Lightdapple. (medium positive effect) - Meadowpaw was 10 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "20",
+        "mates": false,
+        "family": true,
+        "romantic_love": 0,
+        "platonic_like": 79,
+        "dislike": 0,
+        "admiration": 34,
+        "comfortable": 69,
+        "jealousy": 0,
+        "trust": 59,
+        "log": [
+            "Meadowrunner wants to spend more time with Waspshade! (high positive effect) - Meadowrunner was 28 moon(s) old",
+            "Meadowrunner finds a bit of fluff that smells like Waspshade and adds it to their nest. (low positive effect) - Meadowrunner was 40 moon(s) old",
+            "Meadowrunner saved a piece of fresh-kill that they know is Waspshade's favorite. (high positive effect) - Meadowrunner was 43 moon(s) old",
+            "Meadowrunner saw Waspshade the other day, but didn't get a chance to meow hello. (neutral effect) - Meadowrunner was 46 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "21",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "28",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 64,
+        "dislike": 8,
+        "admiration": 8,
+        "comfortable": 40,
+        "jealousy": 0,
+        "trust": 8,
+        "log": [
+            "Meadowpaw is having a wonderful time discussing recent Clan news with Posytail. (high positive effect) - Meadowpaw was 17 moon(s) old",
+            "Meadowpaw is having a wonderful time discussing recent Clan news with Posytail. (high positive effect) - Meadowpaw was 26 moon(s) old",
+            "Meadowrunner is surprised by Posytail being thoughtful. (low positive effect) - Meadowrunner was 27 moon(s) old",
+            "Meadowrunner is really surprised that Posytail's life isn't as easy as they thought it was. (high positive effect) - Meadowrunner was 30 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "31",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 68,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 17,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Meadowpaw covered for Snakefleck on something minor. (medium positive effect) - Meadowpaw was 7 moon(s) old",
+            "Meadowpaw is really surprised that Snakefleck's life isn't as easy as they thought it was. (high positive effect) - Meadowpaw was 20 moon(s) old",
+            "Meadowrunner and Snakefleck had to fix something around camp and argued about how to fix it. It ended up being fixed by some other cat in the end. (medium negative effect) - Meadowrunner was 31 moon(s) old",
+            "Meadowrunner realized that they were too harsh in their judgment of Snakefleck. (medium positive effect) - Meadowrunner was 36 moon(s) old",
+            "Meadowrunner and Snakefleck joke around about how bad the other Clans smell. (high positive effect) - Meadowrunner was 37 moon(s) old",
+            "Meadowrunner wants to explore the whole territory with Snakefleck! (medium positive effect) - Meadowrunner was 39 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "46",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 16,
+        "dislike": 0,
+        "admiration": 21,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Meadowkit thinks Swamppaw is very helpful! (low positive effect) - Meadowkit was 3 moon(s) old",
+            "Meadowkit is stuttering while speaking to Swamppaw. (neutral effect) - Meadowkit was 5 moon(s) old",
+            "Meadowpaw had a difficult conversation with Swampheart and they now have a deeper understanding of each other. (high positive effect) - Meadowpaw was 21 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "47",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 80,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 73,
+        "jealousy": 0,
+        "trust": 64,
+        "log": [
+            "Meadowpaw bickered about something trivial with Pythonpaw. (neutral effect) - Meadowpaw was 12 moon(s) old",
+            "Meadowpaw appreciates Pythonhope telling them that they had a feather stuck to their face. (low positive effect) - Meadowpaw was 16 moon(s) old",
+            "Meadowpaw is telling a story to Pythonhope. (medium positive effect) - Meadowpaw was 22 moon(s) old",
+            "Meadowpaw helps Pythonhope pick burrs out of their fur. (medium positive effect) - Meadowpaw was 25 moon(s) old",
+            "Meadowrunner tells Pythonhope to count on them in a difficult situation. (high positive effect) - Meadowrunner was 29 moon(s) old",
+            "Meadowrunner had Pythonhope bump into them, and they didn't even apologize! (low negative effect) - Meadowrunner was 34 moon(s) old",
+            "Meadowrunner is telling a story to Pythonstar. (medium positive effect) - Meadowrunner was 38 moon(s) old",
+            "Meadowrunner challenged Pythonstar to spar with them. (neutral effect) - Meadowrunner was 45 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "50",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": [
+            "Meadowrunner introduces themself as NegativeClan's medicine cat and asks Rowanfeather to warn them at any sign of sickness."
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "51",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    }
+]

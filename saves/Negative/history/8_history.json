@@ -1,0 +1,57 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 23,
+        "birth_moon": 23,
+        "join_season": "Leaf-bare"
+    },
+    "mentor_influence": {
+        "trait": {
+            "2": {
+                "stability": -2,
+                "strings": [
+                    "have trouble adapting"
+                ]
+            }
+        },
+        "skill": {
+            "2": {
+                "SPEAKER": 4,
+                "strings": [
+                    "arguing"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "equanimity",
+        "graduation_age": 14,
+        "moon": 37
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {
+        "claw-wound": {
+            "death_text": "m_c died from their wounds after fighting an eagle.",
+            "scar_text": "m_c was scarred by an eagle.",
+            "other_cat": null
+        }
+    },
+    "died_by": [
+        {
+            "involved": null,
+            "text": "Lakejumble died of a festering wound.",
+            "moon": 122
+        }
+    ],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred by a dog.",
+            "moon": 64
+        }
+    ],
+    "murder": {}
+}

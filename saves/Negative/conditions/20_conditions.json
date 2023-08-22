@@ -1,0 +1,40 @@
+{
+    "permanent conditions": {
+        "weak leg": {
+            "severity": "minor",
+            "born_with": false,
+            "moons_until": 0,
+            "moon_start": 127,
+            "mortality": 0,
+            "illness_infectiousness": [],
+            "risks": [
+                {
+                    "name": "sore",
+                    "chance": 20
+                },
+                {
+                    "name": "joint pain",
+                    "chance": 40
+                }
+            ],
+            "complication": null,
+            "event_triggered": false
+        },
+        "one bad eye": {
+            "severity": "major",
+            "born_with": false,
+            "moons_until": 0,
+            "moon_start": 171,
+            "mortality": 0,
+            "illness_infectiousness": [],
+            "risks": [
+                {
+                    "name": "failing eyesight",
+                    "chance": 80
+                }
+            ],
+            "complication": null,
+            "event_triggered": false
+        }
+    }
+}

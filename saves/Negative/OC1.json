@@ -1,0 +1,22 @@
+{
+    "clanname": "DashClan",
+    "clanage": 853,
+    "biome": null,
+    "clan_cats": [
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "49"
+    ],
+    "leader": "44",
+    "leader_lives": 9,
+    "leader_predecessors": null,
+    "deputy": "49",
+    "med_cat": null
+}

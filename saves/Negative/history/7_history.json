@@ -1,0 +1,70 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 23,
+        "birth_moon": 23,
+        "join_season": "Leaf-bare"
+    },
+    "mentor_influence": {
+        "trait": {
+            "30": {
+                "aggression": -2,
+                "sociability": -2,
+                "strings": [
+                    "use words over teeth and claws",
+                    "bicker with others"
+                ]
+            }
+        },
+        "skill": {
+            "30": {
+                "FIGHTER": 5,
+                "strings": [
+                    "fighting"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "determination",
+        "graduation_age": 13,
+        "moon": 36
+    },
+    "lead_ceremony": "Darkflow leaves to speak with StarClan. They close their eyes and are immediately surrounded by their loved ones, friends, and Clanmates who have passed on. Stars shine throughout their pelts, and their eyes are warm as they greet the new leader.<br><br>A new cat approaches. Lakejumble steps forward to give Darkflow a life for determination. Darkflow grits their teeth as the life rushes into them.<br><br>Stonelion dips their head in greeting. Energy surges through Darkflow's pelt as they receive a life for endurance. They reassure Darkflow that they are almost done.<br><br>Fielddapple dips their head in greeting. Energy surges through Darkflow's pelt as they receive a life for courage. They reassure Darkflow that they are almost done.<br><br>Flintdaisy walks up to Darkflow, offering a life for certainty. They smile, and state that the Clan will do well under Darkflow's leadership.<br><br>Littlestripe steps forward to give Darkflow a life for farsightedness. Darkflow grits their teeth as the life rushes into them.<br><br>Vinerose strides forward, an energy in their steps that wasn't present in their last moments. They give a life for persistence.<br><br>Bouncelily approaches, a warm smile on their face. They offer a life for wisdom, whispering to take care of the Clan the best they can.<br><br>Flutterhiss walks up to Darkflow, offering a life for sympathy. They smile, and state that the Clan will do well under Darkflow's leadership.<br><br>Finally, Driftstar steps forward. There is pride in their gaze as they stare into Darkflow's eyes. They give a life for tireless energy.<br><br>Driftstar hails Darkflow by their new name, Darkstar, telling them that their old life is no more. They are granted guardianship of NegativeClan, and are told to use their new power wisely. The group of starry cats yowls Darkstar's name in support. Darkstar wakes up feeling a new strength within their body and know that they are now ready to lead the Clan.",
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": "48",
+            "text": "fell into the river",
+            "moon": 176
+        },
+        {
+            "involved": "13",
+            "text": "became a bit too curious",
+            "moon": 189
+        },
+        {
+            "involved": "47",
+            "text": "succumbed to old age",
+            "moon": 190
+        },
+        {
+            "involved": "48",
+            "text": "died of old age",
+            "moon": 191
+        }
+    ],
+    "scar_events": [],
+    "murder": {
+        "is_murderer": [
+            {
+                "victim": "21",
+                "revealed": true,
+                "moon": 160
+            }
+        ]
+    }
+}

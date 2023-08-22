@@ -1149,16 +1149,22 @@ class ProfileScreen(Screens):
 
         beginning = History.get_beginning(self.the_cat)
         if beginning:
-            if beginning['moon'] == "BEFORE":
-                text += "Their Clan welcomed {PRONOUN/m_c/object} at the age of " + str(beginning['age']) + \
-                        " on a moon long ago, before " + str(game.clan.name) + "Clan had even come to be."
+            if beginning['birth_moon'] > 0:
+                text += " Their Clan welcomed {PRONOUN/m_c/object} at the age of " + str(beginning['age']) + \
+                        " on Moon " + str(beginning['join_moon']) +  "."
+            elif beginning['birth_moon'] <= 0 and beginning['age'] == 0:
+                text += " {PRONOUN/m_c/subject/CAP} were born on a moon long ago, before " + str(game.clan.name) + \
+                        "Clan had even come to be."
+            elif beginning['birth_moon'] <= 0 and beginning['age'] != 0:
+                text += " {PRONOUN/m_c/subject/CAP} were born on a moon long ago, before " + str(game.clan.name) + \
+                        "Clan had even come to be. " + str(self.the_cat.name) + "joined the Clan at the age of " + str(beginning['age']) + " Moons."
             else:
                 if beginning['clan_born']:
                     text += " {PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} born on Moon " + str(
-                        beginning['moon']) + " during " + str(beginning['birth_season']) + "."
+                        beginning['birth_moon']) + " during " + str(beginning['birth_season']) + "."
                 else:
                     text += " {PRONOUN/m_c/subject/CAP} joined the Clan on Moon " + str(
-                        beginning['moon']) + " at the age of " + str(beginning['age']) + " Moons."
+                        beginning['join_moon']) + " at the age of " + str(beginning['age']) + " Moons."
 
         text = process_text(text, cat_dict)
         return text

@@ -1,0 +1,32 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 94,
+        "birth_moon": 94,
+        "join_season": "Leaf-bare"
+    },
+    "mentor_influence": {
+        "trait": {
+            "20": {
+                "aggression": -2,
+                "strings": [
+                    "try to avoid violence"
+                ]
+            }
+        },
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "guardedness",
+        "graduation_age": 14,
+        "moon": 108
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

@@ -1,0 +1,25 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {},
+    "lead_ceremony": null,
+    "elder_ceremony": {
+        "honor": "moons of service",
+        "text": "",
+        "moon": 10,
+        "age": 123
+    },
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": "8",
+            "text": "m_c died of old age.",
+            "moon": 49
+        }
+    ],
+    "scar_events": [],
+    "murder": {}
+}

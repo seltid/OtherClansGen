@@ -1,0 +1,26 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {},
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": "31",
+            "text": "m_c was found dead near the DashClan border.",
+            "moon": 114
+        }
+    ],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred by a dog.",
+            "moon": 35
+        }
+    ],
+    "murder": {}
+}

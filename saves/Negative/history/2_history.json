@@ -1,0 +1,45 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 16,
+        "birth_moon": 16,
+        "join_season": "Greenleaf"
+    },
+    "mentor_influence": {
+        "trait": {
+            "26": {
+                "sociability": -1,
+                "strings": [
+                    "bicker with others"
+                ]
+            }
+        },
+        "skill": {
+            "26": {
+                "LORE": 2,
+                "strings": [
+                    "remembering lore"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "wit",
+        "graduation_age": 11,
+        "moon": 27
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": "13",
+            "text": "m_c froze to death after falling through ice.",
+            "moon": 59
+        }
+    ],
+    "scar_events": [],
+    "murder": {}
+}

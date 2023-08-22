@@ -1,0 +1,33 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {
+            "24": {
+                "sociability": -2,
+                "aggression": 2,
+                "strings": [
+                    "be cold towards others",
+                    "defend their beliefs"
+                ]
+            }
+        },
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "energy",
+        "graduation_age": 12,
+        "moon": 4
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": null,
+            "text": "m_c died from their wounds after being hurt by r_c for disobeying them.",
+            "moon": 44
+        }
+    ],
+    "scar_events": [],
+    "murder": {}
+}

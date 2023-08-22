@@ -1,0 +1,43 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": [
+            "Newleaf"
+        ],
+        "age": 0,
+        "join_moon": -10,
+        "birth_moon": -10,
+        "join_season": "PLACEHOLDER"
+    },
+    "mentor_influence": {
+        "trait": {
+            "37": {
+                "stability": 2,
+                "aggression": 1,
+                "strings": [
+                    "have a positive outlook",
+                    "use teeth and claws over words"
+                ]
+            }
+        },
+        "skill": {
+            "37": {
+                "CAMP": 3,
+                "strings": [
+                    "caring for camp"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "composure",
+        "graduation_age": 16,
+        "moon": 7
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

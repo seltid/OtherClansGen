@@ -1,0 +1,51 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 94,
+        "birth_moon": 94,
+        "join_season": "Leaf-bare"
+    },
+    "mentor_influence": {
+        "trait": {
+            "26": {
+                "aggression": 2,
+                "sociability": -2,
+                "strings": [
+                    "use teeth and claws over words",
+                    "be cold towards others"
+                ]
+            }
+        },
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "determination",
+        "graduation_age": 14,
+        "moon": 108
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": null,
+            "text": "Posytail died of an infected wound.",
+            "moon": 195
+        }
+    ],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred by a dog.",
+            "moon": 122
+        },
+        {
+            "involved": null,
+            "text": "m_c was scarred when an eagle grabbed them.",
+            "moon": 148
+        }
+    ],
+    "murder": {}
+}

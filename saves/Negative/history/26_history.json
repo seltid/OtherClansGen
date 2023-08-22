@@ -1,0 +1,52 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {
+            "30": {
+                "aggression": -1,
+                "strings": [
+                    "use words over teeth and claws"
+                ]
+            }
+        },
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "fortitude",
+        "graduation_age": 12,
+        "moon": 3
+    },
+    "lead_ceremony": "Blotchkestrel leaves to speak with StarClan. They close their eyes and awaken under a vast, inky black sky. They turn around to see a wary group of cats approaching, stars dotting their fur.<br><br>Asterfern steps forward to give Blotchkestrel a life for strength. Blotchkestrel grits their teeth as the life rushes into them.<br><br>Vinerose pads forward with a wary expression. They give a life for empathy.<br><br>Stonelion strides forward, an energy in their steps that wasn't present in their last moments. They give a life for humility.<br><br>Flutterhiss approaches. Pain surges through Blotchkestrel's pelt as they receive a life for clear judgement. Flutterhiss watches dispassionately.<br><br>Mottleholly walks up to Blotchkestrel, offering a life for certainty. They smile, and state that the Clan will do well under Blotchkestrel's leadership.<br><br>A new cat approaches. Flintdaisy steps forward to give Blotchkestrel a life for courage. Blotchkestrel yowls in pain as the life rushes into them.<br><br>Littlestripe dips their head in greeting. Energy surges through Blotchkestrel's pelt as they receive a life for confidence. They reassure Blotchkestrel that they are almost done.<br><br>A young cat emerges from the starry ranks to give a life. They hesitate, before an older cat nudges them forward, whispering something in their ear. Fleckpaw stretches up to give a life for humor.<br><br>Finally, Driftstar steps forward. There is pride in their gaze as they stare into Blotchkestrel's eyes. They give a life for tireless energy.<br><br>Driftstar hails Blotchkestrel by their new name, Blotchstar, telling them that their old life is no more. They are granted guardianship of NegativeClan, and are told to use their new power wisely. The group of starry cats yowls Blotchstar's name in support. Blotchstar wakes up feeling a new strength within their body and know that they are now ready to lead the Clan.",
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": null,
+            "text": "m_c died from an injury or illness (broken bone).",
+            "moon": 124
+        },
+        {
+            "involved": "7",
+            "text": "fell into a sinkhole",
+            "moon": 148
+        }
+    ],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred by a Twoleg trap.",
+            "moon": 58
+        },
+        {
+            "involved": null,
+            "text": "m_c was scarred by a big dog while rescuing Dustslash.",
+            "moon": 110
+        },
+        {
+            "involved": null,
+            "text": "Blotchstar got a scar after Waspshade challenged them.",
+            "moon": 137
+        }
+    ],
+    "murder": {}
+}

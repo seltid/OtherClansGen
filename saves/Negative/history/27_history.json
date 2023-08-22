@@ -1,0 +1,31 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {},
+    "lead_ceremony": null,
+    "elder_ceremony": {
+        "honor": "moons of service",
+        "text": "",
+        "moon": 33,
+        "age": 126
+    },
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": "13",
+            "text": "m_c went missing, and was found dead.",
+            "moon": 64
+        }
+    ],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred by a Twoleg trap.",
+            "moon": 12
+        }
+    ],
+    "murder": {}
+}

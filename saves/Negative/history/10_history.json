@@ -1,0 +1,43 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 49,
+        "birth_moon": 49,
+        "join_season": "Newleaf"
+    },
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "dignity",
+        "graduation_age": 14,
+        "moon": 63
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {
+        "snake bite": {
+            "death_text": "m_c died after they were bit by a snake.",
+            "scar_text": "m_c was scarred by a snake bite.",
+            "other_cat": null
+        }
+    },
+    "died_by": [
+        {
+            "involved": null,
+            "text": "Grassfreckle died of whitecough.",
+            "moon": 178
+        }
+    ],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred when an eagle grabbed them.",
+            "moon": 86
+        }
+    ],
+    "murder": {}
+}

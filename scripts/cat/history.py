@@ -1,4 +1,5 @@
 import random
+import itertools
 
 import ujson
 
@@ -163,27 +164,88 @@ class History:
             return
         History.check_load(cat)
 
+        if cat.backstory in (
+                BACKSTORIES["backstory_categories"]["clanborn_backstories"] or BACKSTORIES["backstory_categories"][
+            "clan_founder_backstories"]):
+            are_they_clan_born = True
+        else:
+            are_they_clan_born = False
+
+        join_age = 0 if are_they_clan_born else random.randint(0,cat.moons)
+
+        if are_they_clan_born:
+            join_moon = game.clan.age - cat.moons
+            birth_moon = join_moon
+        else:
+            moons_in_clan = cat.moons - join_age
+            join_moon = game.clan.age - cat.moons + join_age
+            birth_moon = game.clan.age - cat.moons
+
+        # SEASON DETERMINATION
+        seasons = ['Newleaf', 'Newleaf', 'Newleaf', 'Greenleaf', 'Greenleaf', 'Greenleaf',
+                   'Leaf-fall', 'Leaf-fall', 'Leaf-fall', 'Leaf-bare', 'Leaf-bare', 'Leaf-bare', ]
+
+        if game.clan.starting_season == 'Newleaf':
+            pass
+        elif game.clan.starting_season == 'Greenleaf':
+            for x in range(3):
+                seasons.remove('Newleaf')
+
+            for x in range(3):
+                seasons.append('Newleaf')
+        elif game.clan.starting_season == 'Leaf-fall':
+            for x in range(3):
+                seasons.remove('Newleaf')
+                seasons.remove('Greenleaf')
+
+            for x in range(3):
+                seasons.append('Newleaf')
+
+            for x in range(3):
+                seasons.append('Greenleaf')
+        else:
+            for x in range(3):
+                seasons.remove('Newleaf')
+                seasons.remove('Greenleaf')
+                seasons.remove('Leaf-fall')
+
+            for x in range(3):
+                seasons.append('Newleaf')
+
+            for x in range(3):
+                seasons.append('Greenleaf')
+
+            for x in range(3):
+                seasons.append('Leaf-fall')
+
+        real_time = []
+
+        for i in range(0, abs(birth_moon)):
+            real_time.append(seasons[i:i + 1])
+        while "" in real_time:
+            real_time.remove("")
+        try:
+            birth_season = real_time[-1]
+        except IndexError:
+            birth_season = [game.clan.starting_season]
+
         if str(cat.clan) not in str(game.clan.name.removesuffix("Clan")):
-            if cat.backstory in (BACKSTORIES["backstory_categories"]["clanborn_backstories"] or BACKSTORIES["backstory_categories"]["clan_founder_backstories"]):
-                are_they_clan_born = True
-            else:
-                are_they_clan_born = False
-            join_age = random.randint(0,cat.moons)
-            print("join_age: " + str(join_age))
-            join_moon = game.clan.age - join_age
-            print("join_moon: " + str(join_moon))
             cat.history.beginning = {
                 "clan_born": are_they_clan_born,
-                "birth_season": game.clan.current_season if clan_born else None,
-                "age": 0 if clan_born else join_age,
-                "moon": join_moon if join_moon >= 1 else "BEFORE"
+                "birth_season": birth_season,  # This will be incorrect if the moon they were born is before the game started
+                "age": join_age,
+                "join_moon": join_moon,
+                "birth_moon": birth_moon,
+                "join_season": "PLACEHOLDER"
             }
         else:
             cat.history.beginning = {
                 "clan_born": clan_born,
-                "birth_season": game.clan.current_season if clan_born else None,
+                "birth_season": birth_season,
                 "age": cat.moons,
-                "moon": game.clan.age
+                "join_moon": game.clan.age,
+                "birth_moon": birth_moon,
+                "join_season": game.clan.current_season
             }
 
     @staticmethod

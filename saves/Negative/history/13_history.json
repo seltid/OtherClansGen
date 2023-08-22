@@ -1,0 +1,37 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 50,
+        "birth_moon": 50,
+        "join_season": "Newleaf"
+    },
+    "mentor_influence": {
+        "trait": {
+            "32": {
+                "aggression": -3,
+                "strings": [
+                    "avoid a fight"
+                ]
+            }
+        },
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "spirit",
+        "graduation_age": 14,
+        "moon": 64
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {
+        "honor": "moons of service",
+        "text": "",
+        "moon": 166,
+        "age": 116
+    },
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

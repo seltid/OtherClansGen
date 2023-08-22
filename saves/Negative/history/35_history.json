@@ -1,0 +1,46 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": [
+            "Newleaf"
+        ],
+        "age": 0,
+        "join_moon": -13,
+        "birth_moon": -13,
+        "join_season": "PLACEHOLDER"
+    },
+    "mentor_influence": {
+        "trait": {
+            "42": {
+                "sociability": -2,
+                "strings": [
+                    "be cold towards others"
+                ]
+            }
+        },
+        "skill": {
+            "42": {
+                "SENSE": 4,
+                "strings": [
+                    "noticing small details"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "understanding",
+        "graduation_age": 13,
+        "moon": 1
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {
+        "honor": "moons of service",
+        "text": "",
+        "moon": 115,
+        "age": 127
+    },
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

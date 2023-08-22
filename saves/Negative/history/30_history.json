@@ -1,0 +1,41 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {},
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": "20",
+            "text": "fought a rogue",
+            "moon": 101
+        },
+        {
+            "involved": "28",
+            "text": "were grabbed by an eagle",
+            "moon": 102
+        },
+        {
+            "involved": "7",
+            "text": "were bit by a venomous snake",
+            "moon": 104
+        },
+        {
+            "involved": "8",
+            "text": "died of old age",
+            "moon": 105
+        }
+    ],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred by a big dog.",
+            "moon": 52
+        }
+    ],
+    "murder": {}
+}

@@ -1,0 +1,38 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {
+            "25": {
+                "lawfulness": -2,
+                "strings": [
+                    "break rules that don't suit them"
+                ]
+            }
+        },
+        "skill": {
+            "25": {
+                "LORE": 1,
+                "strings": [
+                    "remembering lore"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "intrigue",
+        "graduation_age": 16,
+        "moon": 10
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": "26",
+            "text": "m_c fell into a hidden burrow.",
+            "moon": 25
+        }
+    ],
+    "scar_events": [],
+    "murder": {}
+}

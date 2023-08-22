@@ -1,0 +1,44 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 47,
+        "birth_moon": 47,
+        "join_season": "PLACEHOLDER"
+    },
+    "mentor_influence": {
+        "trait": {
+            "42": {
+                "lawfulness": 1,
+                "strings": [
+                    "follow rules"
+                ]
+            }
+        },
+        "skill": {
+            "42": {
+                "SPEAKER": 4,
+                "strings": [
+                    "arguing"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "honesty",
+        "graduation_age": 13,
+        "moon": 61
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {
+        "honor": "moons of service",
+        "text": "",
+        "moon": 168,
+        "age": 120
+    },
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

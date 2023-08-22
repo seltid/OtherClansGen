@@ -1,0 +1,41 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 86,
+        "birth_moon": 86,
+        "join_season": "Newleaf"
+    },
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "level-headedness",
+        "graduation_age": 15,
+        "moon": 101
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": "7",
+            "text": "m_c was secretly murdered by r_c, who made the death look accidental.",
+            "moon": 160
+        }
+    ],
+    "scar_events": [],
+    "murder": {
+        "is_victim": [
+            {
+                "murderer": "7",
+                "revealed": true,
+                "text": "m_c was secretly murdered by r_c, who made the death look accidental.",
+                "unrevealed_text": null,
+                "moon": 160
+            }
+        ]
+    }
+}

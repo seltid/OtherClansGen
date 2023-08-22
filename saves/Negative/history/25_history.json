@@ -1,0 +1,20 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {},
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": null,
+            "text": "Flintdaisy died of whitecough.",
+            "moon": 24
+        }
+    ],
+    "scar_events": [],
+    "murder": {}
+}

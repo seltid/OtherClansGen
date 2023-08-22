@@ -1,0 +1,44 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 50,
+        "birth_moon": 50,
+        "join_season": "Newleaf"
+    },
+    "mentor_influence": {
+        "trait": {
+            "26": {
+                "aggression": 2,
+                "strings": [
+                    "resort to violence"
+                ]
+            }
+        },
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "generosity",
+        "graduation_age": 13,
+        "moon": 63
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": null,
+            "text": "Lightdapple died of greencough.",
+            "moon": 181
+        }
+    ],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "Got a scar while punishing Waspshade, in the name of Blotchstar",
+            "moon": 137
+        }
+    ],
+    "murder": {}
+}

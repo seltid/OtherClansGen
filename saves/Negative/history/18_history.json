@@ -1,0 +1,45 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": 77,
+        "birth_moon": 77,
+        "join_season": "Greenleaf"
+    },
+    "mentor_influence": {
+        "trait": {
+            "8": {
+                "sociability": -3,
+                "strings": [
+                    "bicker with others"
+                ]
+            }
+        },
+        "skill": {
+            "8": {
+                "KIT": 6,
+                "strings": [
+                    "caring for kittens"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "gallantry",
+        "graduation_age": 13,
+        "moon": 90
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [
+        {
+            "involved": null,
+            "text": "Fielddapple died of heat stroke.",
+            "moon": 114
+        }
+    ],
+    "scar_events": [],
+    "murder": {}
+}
