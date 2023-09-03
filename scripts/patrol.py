@@ -16,7 +16,8 @@ from scripts.utility import (
     change_relationship_values, create_new_cat,
     create_outside_cat,
     get_personality_compatibility,
-    check_relationship_value
+    check_relationship_value,
+    create_oc_existing_cat
 )
 from scripts.game_structure.game_essentials import game
 from itertools import combinations
@@ -2409,6 +2410,7 @@ class Patrol():
             "1_DEP": "deputy",
             "1_MEDCAT": "medicine cat",
             "1_WARRIOR": "warrior",
+            "1_KIT": "kitten",
             # "1_MEDAPP": "medicine cat apprentice",
         }
 
@@ -2417,11 +2419,14 @@ class Patrol():
             "2_WARRIOR": "warrior",
             "2_MENTOR": "SPECIAL",
             "2_DEP": "deputy",
-            "2_MENTORW": "warrior",
+            "2_MENTORW": "SPECIAL",
+            "2_KIT": "kitten",
         }
 
         dict_cat3 = {
             "3_WARRIOR": "warrior",
+            "3_LEADER": "leader",
+            "3_ANY": "any",
         }
 
         # Determine who needs to be in the patrol
@@ -2442,10 +2447,10 @@ class Patrol():
         cat_1_filter = None
         fitting_1_cats = []
 
-        cat_2_filter = []
+        cat_2_filter = None
         fitting_2_cats = []
 
-        cat_3_filter = []
+        cat_3_filter = None
         fitting_3_cats = []
 
         for each_filter in dict_cat1.keys():
@@ -2453,10 +2458,10 @@ class Patrol():
                 cat_1_filter = each_filter
         for each_filter in dict_cat2.keys():
             if each_filter in self.outcome_text:
-                cat_2_filter.append(each_filter)
+                cat_2_filter = each_filter
         for each_filter in dict_cat3.keys():
             if each_filter in self.outcome_text:
-                cat_3_filter.append(each_filter)
+                cat_3_filter = each_filter
 
 
 
@@ -2488,7 +2493,17 @@ class Patrol():
                         else:
                             if cat.status == dict_cat1[cat_1_filter]:
                                 fitting_1_cats.append(cat)
-
+                        # 2 ---------------------------------------------
+                    if not cat_2_filter:
+                        if cat.status in ["apprentice", "medicine cat apprentice", "warrior", "medicine cat", "deputy",
+                                          "leader"]:
+                            fitting_2_cats.append(cat)
+                    else:
+                        if cat_2_filter in ["2_MENTORW", "2_MENTOR"]:
+                            pass
+                        else:
+                            if cat.status == dict_cat2[cat_2_filter]:
+                                fitting_2_cats.append(cat)
 
         print(cat_1_filter)
 
@@ -2504,26 +2519,26 @@ class Patrol():
             if "CH_SAVIOR" in self.outcome_text:
                 difference = int(10)
             elif "CH_BIGPOS" in self.outcome_text:
-                difference = int(2)
+                difference = int(5)
             elif "CH_POS" in self.outcome_text:
-                difference = int(1)
+                difference = int(3)
             elif "CH_NEUT" in self.outcome_text:
                 difference = 0
             elif "CH_NEG" in self.outcome_text:
-                difference = int(-1)
+                difference = int(-3)
         if difference is None:
             if self.success and not self.antagonize:
-                difference = int(1)
+                difference = int(2)
             elif self.success and self.antagonize:
-                difference = int(-3)
+                difference = int(-7)
             elif not self.success and self.antagonize:
-                difference = int(-1)
+                difference = int(-5)
             elif not self.success and not self.antagonize:
                 difference = 0
 
         if fitting_1_cats:
             cat_1 = choice(fitting_1_cats)
-            print(cat_1)
+            print(f"Cat 1: {cat_1}")
             for patrol_cat in self.patrol_cats:
                 if patrol_cat.ID in cat_1.relationships:
                     print("They know each other")
@@ -2535,21 +2550,36 @@ class Patrol():
                     patrol_cat.create_one_relationship(cat_1)
                     # Update the relationship values
                     if difference > 0:
-                        change_relationship_values([cat_1], [patrol_cat], 0, difference, 0, 0, difference, 0, 0)
-                        change_relationship_values([patrol_cat], [cat_1], 0, difference, 0, 0, difference, 0, 0)
+                        change_relationship_values([cat_1.ID], [patrol_cat], 0, difference, 0, 0, difference, 0, 0)
+                        change_relationship_values([patrol_cat.ID], [cat_1], 0, difference, 0, 0, difference, 0, 0)
                     elif difference < 0:
-                        change_relationship_values([cat_1], [patrol_cat], 0, 0, difference, 0, difference, 0,
+                        change_relationship_values([cat_1.ID], [patrol_cat], 0, 0, difference, 0, difference, 0,
                                                    difference)
-                        change_relationship_values([patrol_cat], [cat_1], 0, 0, difference, 0, difference, 0,
+                        change_relationship_values([patrol_cat.ID], [cat_1], 0, 0, difference, 0, difference, 0,
                                                    difference)
                     else:
-                        change_relationship_values([cat_1], [patrol_cat], 0, 0, 0, 0, 0, 0, 0)
-                        change_relationship_values([patrol_cat], [cat_1], 0, 0, 0, 0, 0, 0, 0)
-                print("did it")
-                # Relationships are being initiated but not filled in
-        else:
-            print("NOFITTINGCATS")
+                        change_relationship_values([cat_1.ID], [patrol_cat], 0, 0, 0, 0, 0, 0, 0)
+                        change_relationship_values([patrol_cat.ID], [cat_1], 0, 0, 0, 0, 0, 0, 0)
+        elif not fitting_1_cats and int(lower_limit) > 0:
+            cat_1 = create_oc_existing_cat(Cat,
+                                           new_name=False,
+                                           loner=False,
+                                           kittypet=False,
+                                           kit=False,
+                                           litter=False,
+                                           other_clan=True,
+                                           otherclan1=True,
+                                           backstory=None,
+                                           status=None,
+                                           age=None,
+                                           gender=None,
+                                           thought='Is recounting their recent interaction with c_n to a Clanmate',
+                                           alive=True,
+                                           outside=True)
 
+        if fitting_2_cats:
+            cat_2 = choice(fitting_2_cats)
+            print(f"Cat 2: {cat_2}")
 
         # Create the relationships between patrol cats and OC cats
         # 1
@@ -2558,7 +2588,7 @@ class Patrol():
         # Print debug text
         self.results_text.append(f"PLACEHOLDER TEXT HERE INVOLVING {num_of_cats} CAT(S) FROM {other_clan}")
         self.results_text.append(f"Change: {difference}")
-        self.results_text.append(f"{fitting_1_cats}")
+        self.results_text.append(f"Fitting cats: {fitting_1_cats}")
 
 # ---------------------------------------------------------------------------- #
 #                               PATROL CLASS END                               #
