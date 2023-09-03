@@ -37,7 +37,8 @@
             "Sparkpelt is sparring with Anisemoon. (medium positive effect) - Sparkpelt was 137 moon(s) old",
             "Sparkpelt thinks Anisemoon is very helpful! (low positive effect) - Sparkpelt was 141 moon(s) old",
             "Sparkpelt thinks the prey Anisemoon is biting into on the other side of camp looks delicious. (medium negative effect) - Sparkpelt was 143 moon(s) old",
-            "Sparkpelt is really surprised that Anisemoon's life isn't as easy as they thought it was. (high positive effect) - Sparkpelt was 151 moon(s) old"
+            "Sparkpelt is really surprised that Anisemoon's life isn't as easy as they thought it was. (high positive effect) - Sparkpelt was 151 moon(s) old",
+            "Anisemoon seems to be oblivious to Sparkpelt glaring at them from across camp. (neutral effect) - Sparkpelt was 159 moon(s) old"
         ]
     },
     {
@@ -454,7 +455,7 @@
         "romantic_love": 0,
         "platonic_like": 100,
         "dislike": 0,
-        "admiration": 10,
+        "admiration": 23,
         "comfortable": 75,
         "jealousy": 0,
         "trust": 39,
@@ -486,7 +487,7 @@
         "admiration": 0,
         "comfortable": 18,
         "jealousy": 7,
-        "trust": 6,
+        "trust": 9,
         "log": [
             "Sparkpelt is telling jokes about Seamusshade. (high negative effect) - Sparkpelt was 100 moon(s) old",
             "Sparkpelt notices how Seamusshade is being helpful around camp. (medium positive effect) - Sparkpelt was 101 moon(s) old",
@@ -502,7 +503,9 @@
             "Sparkpelt bestows wisdom onto Seamusshade. (low positive effect) - Sparkpelt was 139 moon(s) old",
             "Sparkpelt appreciates Seamusshade telling them that they had a feather stuck to their face. (low positive effect) - Sparkpelt was 144 moon(s) old",
             "Sparkpelt is pestering Seamusshade for a story. (medium positive effect) - Sparkpelt was 148 moon(s) old",
-            "Sparkpelt caught Seamusshade in a lie. (medium negative effect) - Sparkpelt was 150 moon(s) old"
+            "Sparkpelt caught Seamusshade in a lie. (medium negative effect) - Sparkpelt was 150 moon(s) old",
+            "Sparkpelt bestows wisdom onto Seamusshade. (low positive effect) - Sparkpelt was 154 moon(s) old",
+            "Sparkpelt doesn't notice Seamusshade twitching their whiskers at them. (neutral effect) - Sparkpelt was 157 moon(s) old"
         ]
     },
     {
@@ -522,7 +525,8 @@
             "Sparkpelt saw Tuftfang the other day and did get a chance to meow hello! (medium positive effect) - Sparkpelt was 140 moon(s) old",
             "Sparkpelt and Tuftfang have an argument about who should get a pretty feather, and end up destroying it in their fight. (medium negative effect) - Sparkpelt was 142 moon(s) old",
             "Sparkpelt saw Tuftfang being rude. (low negative effect) - Sparkpelt was 145 moon(s) old",
-            "Sparkpelt swaps favorite prey with Tuftfang. (medium positive effect) - Sparkpelt was 153 moon(s) old"
+            "Sparkpelt swaps favorite prey with Tuftfang. (medium positive effect) - Sparkpelt was 153 moon(s) old",
+            "Sparkpelt swaps favorite prey with Tuftfang. (medium positive effect) - Sparkpelt was 158 moon(s) old"
         ]
     },
     {
@@ -536,12 +540,31 @@
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 21,
+        "log": [
+            "Sparkpelt knows that the advice Rowanfeather gave them will be helpful. (high positive effect) - Sparkpelt was 155 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "15",
         "cat_to_id": "51",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 3,
+        "dislike": 9,
+        "admiration": 0,
+        "comfortable": 2,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Sparkpelt thinks Duskpaw is being annoying. (high negative effect) - Sparkpelt was 156 moon(s) old",
+            "Sparkpelt thinks Duskpaw was nice to them today. (low positive effect) - Sparkpelt was 160 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "15",
+        "cat_to_id": "52",
         "mates": false,
         "family": false,
         "romantic_love": 0,

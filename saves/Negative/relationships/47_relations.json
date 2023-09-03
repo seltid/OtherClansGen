@@ -116,12 +116,12 @@
         "mates": false,
         "family": true,
         "romantic_love": 0,
-        "platonic_like": 44,
-        "dislike": 8,
+        "platonic_like": 59,
+        "dislike": 3,
         "admiration": 24,
-        "comfortable": 21,
+        "comfortable": 26,
         "jealousy": 11,
-        "trust": 13,
+        "trust": 16,
         "log": [
             "Pythonpaw is having a wonderful time discussing recent Clan news with Waspshade. (high positive effect) - Pythonpaw was 8 moon(s) old",
             "Pythonhope is sharpening their claws near Waspshade. (neutral effect) - Pythonhope was 16 moon(s) old",
@@ -129,7 +129,8 @@
             "Pythonhope mews congratulations to Waspshade for a job well done. (low positive effect) - Pythonhope was 30 moon(s) old",
             "Pythonstar had a difficult conversation with Waspshade and they now have a deeper understanding of each other. (high positive effect) - Pythonstar was 38 moon(s) old",
             "Pythonstar appreciates how Waspshade always seems to ask how they're doing. (high positive effect) - Pythonstar was 44 moon(s) old",
-            "Pythonstar is complaining that Waspshade never does anything helpful. (high negative effect) - Pythonstar was 46 moon(s) old"
+            "Pythonstar is complaining that Waspshade never does anything helpful. (high negative effect) - Pythonstar was 46 moon(s) old",
+            "Pythonstar wants to explore the whole territory with Waspshade! (medium positive effect) - Pythonstar was 51 moon(s) old"
         ]
     },
     {
@@ -170,18 +171,20 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 11,
+        "platonic_like": 27,
         "dislike": 0,
         "admiration": 20,
         "comfortable": 0,
         "jealousy": 0,
-        "trust": 6,
+        "trust": 13,
         "log": [
             "Pythonhope sees that Snakefleck's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect) - Pythonhope was 25 moon(s) old",
             "Pythonhope saw Snakefleck miss an easy catch today. (medium negative effect) - Pythonhope was 27 moon(s) old",
             "Pythonhope has a mock battle with Snakefleck. (medium positive effect) - Pythonhope was 33 moon(s) old",
             "Pythonstar admires how brave Snakefleck is. (medium positive effect) - Pythonstar was 37 moon(s) old",
-            "Pythonstar appreciates Snakefleck telling them that they had a feather stuck to their face. (low positive effect) - Pythonstar was 40 moon(s) old"
+            "Pythonstar appreciates Snakefleck telling them that they had a feather stuck to their face. (low positive effect) - Pythonstar was 40 moon(s) old",
+            "Pythonstar comes up with a plan to sneak out of camp with Snakefleck. (medium positive effect) - Pythonstar was 47 moon(s) old",
+            "Pythonstar sees that Snakefleck's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect) - Pythonstar was 48 moon(s) old"
         ]
     },
     {
@@ -190,8 +193,8 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 26,
-        "dislike": 0,
+        "platonic_like": 30,
+        "dislike": 16,
         "admiration": 17,
         "comfortable": 10,
         "jealousy": 0,
@@ -202,7 +205,8 @@
             "Pythonhope doesn't notice Swampheart twitching their whiskers at them. (neutral effect) - Pythonhope was 17 moon(s) old",
             "Pythonstar has noticed Swampheart isn't doing a lot of work lately. (medium negative effect) - Pythonstar was 41 moon(s) old",
             "Pythonstar sees that Swampheart's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect) - Pythonstar was 42 moon(s) old",
-            "Pythonstar has a mock battle with Swampheart. (medium positive effect) - Pythonstar was 45 moon(s) old"
+            "Pythonstar has a mock battle with Swampheart. (medium positive effect) - Pythonstar was 45 moon(s) old",
+            "Pythonstar is scolding Swampheart. (high negative effect) - Pythonstar was 49 moon(s) old"
         ]
     },
     {
@@ -213,14 +217,15 @@
         "romantic_love": 0,
         "platonic_like": 93,
         "dislike": 0,
-        "admiration": 0,
-        "comfortable": 40,
+        "admiration": 5,
+        "comfortable": 45,
         "jealousy": 0,
-        "trust": 37,
+        "trust": 42,
         "log": [
             "Pythonhope wants to explore the whole territory with Meadowpaw! (medium positive effect) - Pythonhope was 21 moon(s) old",
             "Pythonhope quickly apologizes after bumping into Meadowrunner. They have a small laugh about it. (low positive effect) - Pythonhope was 32 moon(s) old",
-            "Pythonstar thinks Meadowrunner is very helpful! (low positive effect) - Pythonstar was 39 moon(s) old"
+            "Pythonstar thinks Meadowrunner is very helpful! (low positive effect) - Pythonstar was 39 moon(s) old",
+            "Pythonstar nods politely as Meadowrunner passes by. (neutral effect) - Pythonstar was 50 moon(s) old"
         ]
     },
     {
@@ -255,5 +260,126 @@
         "log": [
             "Pythonstar offers Duskkit some feathers as a welcome gift, that they can use to decorate their new nest."
         ]
+    },
+    {
+        "cat_from_id": "47",
+        "cat_to_id": "53",
+        "mates": false,
+        "family": false,
+        "romantic_love": 21,
+        "platonic_like": 39,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 26,
+        "jealousy": 0,
+        "trust": 10,
+        "log": [
+            "Pythonstar laughs at bad jokes from Howllight. (positive effect)"
+        ]
+    },
+    {
+        "cat_from_id": "47",
+        "cat_to_id": "54",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 49,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 27,
+        "jealousy": 0,
+        "trust": 32,
+        "log": [
+            "Pythonstar spends most of the afternoon describing the territory to Perchkit. (medium positive effect) - Pythonstar was 52 moon(s) old",
+            "Pythonstar finds a bit of fluff that smells like Perchkit and adds it to their nest. (low positive effect) - Pythonstar was 52 moon(s) old",
+            "Pythonstar is letting Perchkit share their troubles with them, hoping they'll feel better afterwards. (high positive effect) - Pythonstar was 53 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "47",
+        "cat_to_id": "55",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "47",
+        "cat_to_id": "56",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "47",
+        "cat_to_id": "57",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 31,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 22,
+        "jealousy": 0,
+        "trust": 10,
+        "log": [
+            "Pythonstar wants to spend more time with Warmkit! (high positive effect) - Pythonstar was 51 moon(s) old",
+            "Pythonstar apologized to Warmkit for something or other. (low positive effect) - Pythonstar was 53 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "47",
+        "cat_to_id": "58",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "47",
+        "cat_to_id": "59",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "47",
+        "cat_to_id": "60",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
     }
 ]

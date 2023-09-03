@@ -1,0 +1,39 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": -13,
+        "birth_moon": -13,
+        "join_season": "PLACEHOLDER"
+    },
+    "mentor_influence": {
+        "trait": {
+            "76": {
+                "sociability": 2,
+                "strings": [
+                    "interact with others"
+                ]
+            }
+        },
+        "skill": {
+            "76": {
+                "LORE": 5,
+                "strings": [
+                    "remembering lore"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "dependability",
+        "graduation_age": 13,
+        "moon": 1
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

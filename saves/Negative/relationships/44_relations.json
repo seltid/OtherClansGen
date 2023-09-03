@@ -5,12 +5,12 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 53,
+        "platonic_like": 50,
         "dislike": 0,
-        "admiration": 34,
-        "comfortable": 23,
+        "admiration": 31,
+        "comfortable": 33,
         "jealousy": 0,
-        "trust": 13,
+        "trust": 10,
         "log": [
             "Conkerskitter thinks Anisemoon is very helpful! (low positive effect) - Conkerskitter was 32 moon(s) old",
             "Conkerskitter is talking with Anisemoon. (low positive effect) - Conkerskitter was 36 moon(s) old",
@@ -23,7 +23,8 @@
             "Conkerstar and Anisemoon joke around about how bad the other Clans smell. (high positive effect) - Conkerstar was 66 moon(s) old",
             "Conkerstar is surprised to hear Anisemoon express an ideal they can agree with. (high positive effect) - Conkerstar was 69 moon(s) old",
             "Conkerstar saw Anisemoon show off a skill they never knew they had. (high positive effect) - Conkerstar was 75 moon(s) old",
-            "Conkerstar thinks Anisemoon is very helpful! (low positive effect) - Conkerstar was 77 moon(s) old"
+            "Conkerstar thinks Anisemoon is very helpful! (low positive effect) - Conkerstar was 77 moon(s) old",
+            "Conkerstar is giving Anisemoon a task. (neutral effect) - Conkerstar was 83 moon(s) old"
         ]
     },
     {
@@ -82,7 +83,7 @@
         "romantic_love": 0,
         "platonic_like": 100,
         "dislike": 0,
-        "admiration": 54,
+        "admiration": 75,
         "comfortable": 100,
         "jealousy": 17,
         "trust": 59,
@@ -102,7 +103,8 @@
             "Conkerskitter wants to spend more time with Sparkpelt! (high positive effect) - Conkerskitter was 65 moon(s) old",
             "Conkerstar is talking with Sparkpelt. (low positive effect) - Conkerstar was 70 moon(s) old",
             "Conkerstar complains about something Sparkpelt did. (low negative effect) - Conkerstar was 72 moon(s) old",
-            "Conkerstar acknowledges Sparkpelt with a twitch of their whiskers. (neutral effect) - Conkerstar was 73 moon(s) old"
+            "Conkerstar acknowledges Sparkpelt with a twitch of their whiskers. (neutral effect) - Conkerstar was 73 moon(s) old",
+            "Conkerstar had a difficult conversation with Sparkpelt and they now have a deeper understanding of each other. (high positive effect) - Conkerstar was 86 moon(s) old"
         ]
     },
     {
@@ -281,7 +283,7 @@
         "romantic_love": 0,
         "platonic_like": 18,
         "dislike": 7,
-        "admiration": 3,
+        "admiration": 6,
         "comfortable": 19,
         "jealousy": 0,
         "trust": 0,
@@ -293,7 +295,8 @@
             "Conkerskitter bristles after being scolded by Seamusshade. (high negative effect) - Conkerskitter was 49 moon(s) old",
             "Conkerskitter tells Seamusshade that they're an amazing storyteller. (medium positive effect) - Conkerskitter was 59 moon(s) old",
             "Conkerstar thinks Seamusshade tells the best stories. (high positive effect) - Conkerstar was 71 moon(s) old",
-            "Conkerstar had a spat with Seamusshade over a piece of prey on the fresh-kill pile. (medium negative effect) - Conkerstar was 76 moon(s) old"
+            "Conkerstar had a spat with Seamusshade over a piece of prey on the fresh-kill pile. (medium negative effect) - Conkerstar was 76 moon(s) old",
+            "Conkerstar mews congratulations to Seamusshade for a job well done. (low positive effect) - Conkerstar was 85 moon(s) old"
         ]
     },
     {
@@ -314,7 +317,8 @@
             "Conkerstar is complaining that Tuftfang never does anything helpful. (high negative effect) - Conkerstar was 74 moon(s) old",
             "Conkerstar is having a wonderful time discussing recent Clan news with Tuftfang. (high positive effect) - Conkerstar was 78 moon(s) old",
             "Conkerstar thinks Tuftfang was nice to them today. (low positive effect) - Conkerstar was 79 moon(s) old",
-            "Conkerstar asks Tuftfang how they're doing. (low positive effect) - Conkerstar was 80 moon(s) old"
+            "Conkerstar asks Tuftfang how they're doing. (low positive effect) - Conkerstar was 80 moon(s) old",
+            "Conkerstar acknowledges Tuftfang with a twitch of their whiskers. (neutral effect) - Conkerstar was 87 moon(s) old"
         ]
     },
     {
@@ -339,12 +343,30 @@
         "romantic_love": 0,
         "platonic_like": 0,
         "dislike": 0,
+        "admiration": 3,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Conkerstar bristles after being scolded by Duskkit. (high negative effect) - Conkerstar was 81 moon(s) old",
+            "Conkerstar is surprised by Duskkit being thoughtful. (low positive effect) - Conkerstar was 82 moon(s) old",
+            "Conkerstar caught Duskpaw complaining about them behind their back. (high negative effect) - Conkerstar was 84 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "44",
+        "cat_to_id": "52",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 12,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
         "log": [
-            "Conkerstar bristles after being scolded by Duskkit. (high negative effect) - Conkerstar was 81 moon(s) old"
+            "Conkerstar had a spat with Veiltooth over a piece of prey on the fresh-kill pile. (medium negative effect) - Conkerstar was 88 moon(s) old"
         ]
     }
 ]

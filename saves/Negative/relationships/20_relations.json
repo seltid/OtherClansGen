@@ -209,7 +209,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 76,
+        "platonic_like": 84,
         "dislike": 0,
         "admiration": 24,
         "comfortable": 51,
@@ -335,7 +335,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 56,
+        "platonic_like": 64,
         "dislike": 0,
         "admiration": 46,
         "comfortable": 71,
@@ -388,12 +388,12 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 17,
-        "dislike": 52,
+        "platonic_like": 9,
+        "dislike": 50,
         "admiration": 13,
         "comfortable": 44,
-        "jealousy": 0,
-        "trust": 3,
+        "jealousy": 8,
+        "trust": 0,
         "log": [
             "Waspshade heard an ugly rumor about Swampkit. (high negative effect) - Waspshade was 61 moon(s) old",
             "Waspshade appreciates Swampkit telling them that they had a feather stuck to their face. (low positive effect) - Waspshade was 62 moon(s) old",
@@ -425,7 +425,10 @@
             "Waspshade and Swampheart joke around about how bad the other Clans smell. (high positive effect) - Waspshade was 104 moon(s) old",
             "Waspshade thinks Swampheart has been acting strangely. (low negative effect) - Waspshade was 105 moon(s) old",
             "Waspshade said they'd cover for Swampheart, but when it came time, they got Swampheart in trouble. (medium negative effect) - Waspshade was 106 moon(s) old",
-            "Waspshade doesn't think that Swampheart has been completely honest lately. (low negative effect) - Waspshade was 109 moon(s) old"
+            "Waspshade doesn't think that Swampheart has been completely honest lately. (low negative effect) - Waspshade was 109 moon(s) old",
+            "Waspshade tries to scare Swampheart. (high negative effect) - Waspshade was 115 moon(s) old",
+            "Waspshade thinks Swampheart isn't very considerate of others. (low negative effect) - Waspshade was 116 moon(s) old",
+            "Waspshade wishes they could get their pelt to shine like Swampheart's. (low negative effect) - Waspshade was 118 moon(s) old"
         ]
     },
     {
@@ -434,12 +437,12 @@
         "mates": false,
         "family": true,
         "romantic_love": 0,
-        "platonic_like": 72,
+        "platonic_like": 94,
         "dislike": 0,
-        "admiration": 35,
-        "comfortable": 47,
+        "admiration": 46,
+        "comfortable": 57,
         "jealousy": 0,
-        "trust": 19,
+        "trust": 30,
         "log": [
             "Waspshade wants to spend more time with Pythonpaw! (high positive effect) - Waspshade was 77 moon(s) old",
             "Pythonhope seems to be oblivious to Waspshade glaring at them from across camp. (neutral effect) - Waspshade was 82 moon(s) old",
@@ -459,7 +462,11 @@
             "Pythonstar is making sure Waspshade knows that they are loved. (medium positive effect) - Waspshade was 110 moon(s) old",
             "Waspshade is wowed by how bravely Pythonstar fought the other day. (high positive effect) - Waspshade was 112 moon(s) old",
             "Waspshade swaps favorite prey with Pythonstar. (medium positive effect) - Waspshade was 112 moon(s) old",
-            "Waspshade swaps favorite prey with Pythonstar. (medium positive effect) - Waspshade was 114 moon(s) old"
+            "Waspshade swaps favorite prey with Pythonstar. (medium positive effect) - Waspshade was 114 moon(s) old",
+            "Waspshade is letting Pythonstar share their troubles with them, hoping they'll feel better afterwards. (high positive effect) - Waspshade was 115 moon(s) old",
+            "Waspshade wants to explore the whole territory with Pythonstar! (medium positive effect) - Waspshade was 117 moon(s) old",
+            "Pythonstar is purring loudly to comfort Waspshade. (medium positive effect) - Waspshade was 117 moon(s) old",
+            "Waspshade saw Pythonstar show off a skill they never knew they had. (high positive effect) - Waspshade was 118 moon(s) old"
         ]
     },
     {
@@ -470,8 +477,8 @@
         "romantic_love": 0,
         "platonic_like": 100,
         "dislike": 0,
-        "admiration": 40,
-        "comfortable": 80,
+        "admiration": 45,
+        "comfortable": 85,
         "jealousy": 0,
         "trust": 100,
         "log": [
@@ -490,7 +497,9 @@
             "Waspshade tells Meadowrunner to count on them in a difficult situation. (high positive effect) - Waspshade was 111 moon(s) old",
             "Waspshade thinks about how lucky they are to have someone like Meadowrunner as a friend. (high positive effect) - Waspshade was 111 moon(s) old",
             "Waspshade wants to explore the whole territory with Meadowrunner! (medium positive effect) - Waspshade was 113 moon(s) old",
-            "Waspshade helps Meadowrunner work through something difficult that happened to them. (high positive effect) - Waspshade was 114 moon(s) old"
+            "Waspshade helps Meadowrunner work through something difficult that happened to them. (high positive effect) - Waspshade was 114 moon(s) old",
+            "Waspshade swaps favorite prey with Meadowrunner. (medium positive effect) - Waspshade was 116 moon(s) old",
+            "Waspshade is surprised by Meadowrunner being thoughtful. (low positive effect) - Waspshade was 119 moon(s) old"
         ]
     },
     {
@@ -510,6 +519,140 @@
     {
         "cat_from_id": "20",
         "cat_to_id": "51",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "20",
+        "cat_to_id": "52",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "20",
+        "cat_to_id": "53",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 13,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 17,
+        "jealousy": 0,
+        "trust": 30,
+        "log": [
+            "Waspshade apologized to Howllight for something or other. (low positive effect) - Waspshade was 119 moon(s) old",
+            "Waspshade comes up with a plan to sneak out of camp with Howllight. (medium positive effect) - Waspshade was 120 moon(s) old",
+            "Waspshade chats with Howllight about their day. (medium positive effect) - Waspshade was 120 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "20",
+        "cat_to_id": "54",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "20",
+        "cat_to_id": "55",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "20",
+        "cat_to_id": "56",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 8,
+        "log": []
+    },
+    {
+        "cat_from_id": "20",
+        "cat_to_id": "57",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 8,
+        "log": [
+            "Waspshade bestows wisdom onto Warmkit. (low positive effect) - Waspshade was 121 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "20",
+        "cat_to_id": "58",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 17,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 13,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Waspshade is sharing prey with Amberkit. (medium positive effect) - Waspshade was 121 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "20",
+        "cat_to_id": "59",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "20",
+        "cat_to_id": "60",
         "mates": false,
         "family": false,
         "romantic_love": 0,

@@ -1,0 +1,37 @@
+{
+    "clanname": "PatrolTest",
+    "clanage": 5,
+    "biome": "Plains",
+    "camp_bg": "camp1",
+    "gamemode": "expanded",
+    "instructor": "73",
+    "reputation": 100,
+    "mediated": [],
+    "starting_season": "Newleaf",
+    "temperament": "stoic",
+    "version_name": 2,
+    "version_commit": "7297cdc79298b468c20cd59bdefe44e57f9a9188",
+    "source_build": true,
+    "leader": "69",
+    "leader_lives": 9,
+    "leader_predecessors": 0,
+    "deputy": "68",
+    "deputy_predecessors": 0,
+    "med_cat": "67",
+    "med_cat_number": 1,
+    "med_cat_predecessors": 0,
+    "clan_cats": "69,68,67,73,61,62,63,65,66,71,72,74,75,76,77,78,79,80,81,82,1,2,3,4,5,6,7,8",
+    "faded_cats": "",
+    "patrolled_cats": [
+        "8",
+        "72"
+    ],
+    "other_clans_names": "Fog",
+    "other_clans_relations": "9",
+    "other_clan_temperament": "stoic",
+    "war": {
+        "at_war": false,
+        "enemy": null,
+        "duration": 0
+    }
+}

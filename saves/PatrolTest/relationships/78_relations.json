@@ -1,0 +1,124 @@
+[
+    {
+        "cat_from_id": "78",
+        "cat_to_id": "74",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 6,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Pumpkinheart is talking with Rustleback. (low positive effect) - Pumpkinheart was 15 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "78",
+        "cat_to_id": "75",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 13,
+        "log": [
+            "Pumpkinheart appreciates Whirlscar telling them that they had a feather stuck to their face. (low positive effect) - Pumpkinheart was 14 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "78",
+        "cat_to_id": "76",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 6,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 8,
+        "trust": 0,
+        "log": [
+            "Pumpkinheart wishes they could get their pelt to shine like Snakeburrow's. (low negative effect) - Pumpkinheart was 18 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "78",
+        "cat_to_id": "77",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "78",
+        "cat_to_id": "79",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 9,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 12,
+        "jealousy": 0,
+        "trust": 9,
+        "log": [
+            "Pumpkinheart is sharing the latest gossip they heard over the border with Fluttercall. (medium positive effect) - Pumpkinheart was 17 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "78",
+        "cat_to_id": "80",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 21,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 16,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Pumpkinheart wants to spend more time with Rustlerise! (high positive effect) - Pumpkinheart was 16 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "78",
+        "cat_to_id": "81",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "78",
+        "cat_to_id": "82",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    }
+]

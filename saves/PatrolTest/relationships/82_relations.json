@@ -1,0 +1,122 @@
+[
+    {
+        "cat_from_id": "82",
+        "cat_to_id": "74",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "82",
+        "cat_to_id": "75",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Fruitfur is really surprised that Whirlscar's life isn't as easy as they thought it was. (high positive effect) - Fruitfur was 44 moon(s) old",
+            "Fruitfur thinks Whirlscar isn't very considerate of others. (low negative effect) - Fruitfur was 48 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "82",
+        "cat_to_id": "76",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "82",
+        "cat_to_id": "77",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 2,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 3,
+        "trust": 0,
+        "log": [
+            "Fruitfur wishes they could get their pelt to shine like Jackdawkit's. (low negative effect) - Fruitfur was 46 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "82",
+        "cat_to_id": "78",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "82",
+        "cat_to_id": "79",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "82",
+        "cat_to_id": "80",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "82",
+        "cat_to_id": "81",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 12,
+        "admiration": 12,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Fruitfur had a spat with Barleystar over a piece of prey on the fresh-kill pile. (medium negative effect) - Fruitfur was 45 moon(s) old",
+            "Fruitfur admires how brave Barleystar is. (medium positive effect) - Fruitfur was 47 moon(s) old"
+        ]
+    }
+]

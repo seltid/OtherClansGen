@@ -6,11 +6,11 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 12,
-        "dislike": 9,
-        "admiration": 12,
+        "dislike": 0,
+        "admiration": 20,
         "comfortable": 0,
         "jealousy": 40,
-        "trust": 0,
+        "trust": 12,
         "log": [
             "Seamusshade saw Anisemoon the other day, but didn't get a chance to meow hello. (neutral effect) - Seamusshade was 107 moon(s) old",
             "Seamusshade surprises Anisemoon with something nice. (medium positive effect) - Seamusshade was 110 moon(s) old",
@@ -30,7 +30,9 @@
             "Seamusshade called Anisemoon the wrong name. (medium negative effect) - Seamusshade was 140 moon(s) old",
             "Seamusshade goes to tell a secret to Anisemoon only for Anisemoon to tell someone else's secret to them. (high negative effect) - Seamusshade was 145 moon(s) old",
             "Seamusshade thinks the prey Anisemoon is biting into on the other side of camp looks delicious. (medium negative effect) - Seamusshade was 146 moon(s) old",
-            "Seamusshade apologized to Anisemoon for something or other. (low positive effect) - Seamusshade was 152 moon(s) old"
+            "Seamusshade apologized to Anisemoon for something or other. (low positive effect) - Seamusshade was 152 moon(s) old",
+            "Seamusshade saw Anisemoon being considerate. (low positive effect) - Seamusshade was 161 moon(s) old",
+            "Seamusshade thinks about how Anisemoon is always reliable. (medium positive effect) - Seamusshade was 165 moon(s) old"
         ]
     },
     {
@@ -73,11 +75,11 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 10,
-        "dislike": 5,
-        "admiration": 14,
+        "dislike": 7,
+        "admiration": 17,
         "comfortable": 6,
-        "jealousy": 0,
-        "trust": 12,
+        "jealousy": 3,
+        "trust": 15,
         "log": [
             "Seamusshade had a disagreement with Sparkpelt about something or other. (low negative effect) - Seamusshade was 108 moon(s) old",
             "Seamusshade realized that they were too harsh in their judgment of Sparkpelt. (medium positive effect) - Seamusshade was 111 moon(s) old",
@@ -90,7 +92,8 @@
             "Seamusshade notices how Sparkpelt is being helpful around camp. (medium positive effect) - Seamusshade was 147 moon(s) old",
             "Seamusshade saw Sparkpelt show off a skill they never knew they had. (high positive effect) - Seamusshade was 153 moon(s) old",
             "Seamusshade thinks the prey Sparkpelt is biting into on the other side of camp looks delicious. (medium negative effect) - Seamusshade was 154 moon(s) old",
-            "Seamusshade thinks Sparkpelt is very helpful! (low positive effect) - Seamusshade was 155 moon(s) old"
+            "Seamusshade thinks Sparkpelt is very helpful! (low positive effect) - Seamusshade was 155 moon(s) old",
+            "Seamusshade wishes they could get their pelt to shine like Sparkpelt's. (low negative effect) - Seamusshade was 163 moon(s) old"
         ]
     },
     {
@@ -101,7 +104,7 @@
         "romantic_love": 0,
         "platonic_like": 38,
         "dislike": 3,
-        "admiration": 0,
+        "admiration": 3,
         "comfortable": 11,
         "jealousy": 0,
         "trust": 0,
@@ -122,7 +125,10 @@
             "Seamusshade appreciates how Conkerstar always seems to ask how they're doing. (high positive effect) - Seamusshade was 150 moon(s) old",
             "Seamusshade finds the way Conkerstar acts increasingly uncomfortable. (medium negative effect) - Seamusshade was 151 moon(s) old",
             "Seamusshade thinks Conkerstar is very helpful! (low positive effect) - Seamusshade was 157 moon(s) old",
-            "Seamusshade said they'd cover for Conkerstar, but when it came time, they got Conkerstar in trouble. (medium negative effect) - Seamusshade was 158 moon(s) old"
+            "Seamusshade said they'd cover for Conkerstar, but when it came time, they got Conkerstar in trouble. (medium negative effect) - Seamusshade was 158 moon(s) old",
+            "Seamusshade is stuttering while speaking to Conkerstar. (neutral effect) - Seamusshade was 160 moon(s) old",
+            "Seamusshade sees that Conkerstar's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect) - Seamusshade was 162 moon(s) old",
+            "Conkerstar asks Seamusshade to speak up while chatting together. (neutral effect) - Seamusshade was 166 moon(s) old"
         ]
     },
     {
@@ -302,7 +308,7 @@
         "platonic_like": 42,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 31,
+        "comfortable": 28,
         "jealousy": 0,
         "trust": 37,
         "log": [
@@ -328,6 +334,22 @@
     {
         "cat_from_id": "45",
         "cat_to_id": "51",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 13,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Seamusshade sees that Duskpaw's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect) - Seamusshade was 164 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "45",
+        "cat_to_id": "52",
         "mates": false,
         "family": false,
         "romantic_love": 0,

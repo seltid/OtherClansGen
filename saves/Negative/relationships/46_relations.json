@@ -83,7 +83,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 40,
+        "platonic_like": 48,
         "dislike": 0,
         "admiration": 0,
         "comfortable": 25,
@@ -104,10 +104,10 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 59,
-        "dislike": 3,
+        "dislike": 12,
         "admiration": 13,
         "comfortable": 32,
-        "jealousy": 0,
+        "jealousy": 12,
         "trust": 27,
         "log": [
             "Swamppaw thinks Dustslash is being annoying. (high negative effect) - Swamppaw was 10 moon(s) old",
@@ -115,7 +115,8 @@
             "Swampheart quickly apologizes after bumping into Dustslash. They have a small laugh about it. (low positive effect) - Swampheart was 24 moon(s) old",
             "Swampheart is surprised by Dustslash being thoughtful. (low positive effect) - Swampheart was 25 moon(s) old",
             "Swampheart apologized to Dustslash for something or other. (low positive effect) - Swampheart was 47 moon(s) old",
-            "Swampheart appreciates Dustslash telling them that they had a feather stuck to their face. (low positive effect) - Swampheart was 49 moon(s) old"
+            "Swampheart appreciates Dustslash telling them that they had a feather stuck to their face. (low positive effect) - Swampheart was 49 moon(s) old",
+            "Swampheart thinks the prey Dustslash is biting into on the other side of camp looks delicious. (medium negative effect) - Swampheart was 57 moon(s) old"
         ]
     },
     {
@@ -145,18 +146,20 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 13,
-        "dislike": 61,
+        "dislike": 62,
         "admiration": 35,
         "comfortable": 16,
-        "jealousy": 0,
-        "trust": 13,
+        "jealousy": 12,
+        "trust": 5,
         "log": [
             "Swampheart admires how brave Waspshade is. (medium positive effect) - Swampheart was 19 moon(s) old",
             "Swampheart doesn't notice Waspshade leaving camp. (neutral effect) - Swampheart was 23 moon(s) old",
             "Swampheart thinks Waspshade has been acting strangely. (low negative effect) - Swampheart was 29 moon(s) old",
             "Swampheart had a difficult conversation with Waspshade and they now have a deeper understanding of each other. (high positive effect) - Swampheart was 35 moon(s) old",
             "Swampheart bickered about something trivial with Waspshade. (neutral effect) - Swampheart was 38 moon(s) old",
-            "Swampheart prays that they aren't on patrol with Waspshade tomorrow. (medium negative effect) - Swampheart was 39 moon(s) old"
+            "Swampheart prays that they aren't on patrol with Waspshade tomorrow. (medium negative effect) - Swampheart was 39 moon(s) old",
+            "Swampheart apologized to Waspshade for something or other. (low positive effect) - Swampheart was 55 moon(s) old",
+            "Swampheart thinks the prey Waspshade is biting into on the other side of camp looks delicious. (medium negative effect) - Swampheart was 56 moon(s) old"
         ]
     },
     {
@@ -200,7 +203,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 16,
+        "platonic_like": 24,
         "dislike": 0,
         "admiration": 0,
         "comfortable": 32,
@@ -210,7 +213,8 @@
             "Snakefleck asks Swampkit to speak up while chatting together. (neutral effect) - Swampkit was 1 moon(s) old",
             "Swampheart thinks Snakefleck has been acting strangely. (low negative effect) - Swampheart was 14 moon(s) old",
             "Swampheart covered for Snakefleck on something minor. (medium positive effect) - Swampheart was 26 moon(s) old",
-            "Snakefleck seems to be oblivious to Swampheart glaring at them from across camp. (neutral effect) - Swampheart was 36 moon(s) old"
+            "Snakefleck seems to be oblivious to Swampheart glaring at them from across camp. (neutral effect) - Swampheart was 36 moon(s) old",
+            "Swampheart doesn't notice Snakefleck twitching their whiskers at them. (neutral effect) - Swampheart was 58 moon(s) old"
         ]
     },
     {
@@ -219,12 +223,12 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 43,
+        "platonic_like": 51,
         "dislike": 0,
-        "admiration": 13,
-        "comfortable": 47,
+        "admiration": 5,
+        "comfortable": 39,
         "jealousy": 0,
-        "trust": 26,
+        "trust": 18,
         "log": [
             "Swamppaw covered for Pythonkit on something minor. (medium positive effect) - Swamppaw was 12 moon(s) old",
             "Swampheart thanks Pythonhope for covering for they during a patrol earlier. (medium positive effect) - Swampheart was 22 moon(s) old",
@@ -243,10 +247,10 @@
         "romantic_love": 0,
         "platonic_like": 60,
         "dislike": 0,
-        "admiration": 34,
-        "comfortable": 39,
-        "jealousy": 7,
-        "trust": 10,
+        "admiration": 39,
+        "comfortable": 44,
+        "jealousy": 0,
+        "trust": 15,
         "log": [
             "Swamppaw called Meadowkit the wrong name. (medium negative effect) - Swamppaw was 8 moon(s) old",
             "Swampheart lifts their chin up while passing by Meadowpaw. (neutral effect) - Swampheart was 16 moon(s) old",
@@ -256,7 +260,8 @@
             "Swampheart reminds Meadowrunner to grab something from the fresh-kill pile if they haven't already. (medium positive effect) - Swampheart was 40 moon(s) old",
             "Swampheart is wowed by how bravely Meadowrunner fought the other day. (high positive effect) - Swampheart was 44 moon(s) old",
             "Swampheart is sharpening their claws near Meadowrunner. (neutral effect) - Swampheart was 45 moon(s) old",
-            "Swampheart finds a bit of fluff that smells like Meadowrunner and adds it to their nest. (low positive effect) - Swampheart was 51 moon(s) old"
+            "Swampheart finds a bit of fluff that smells like Meadowrunner and adds it to their nest. (low positive effect) - Swampheart was 51 moon(s) old",
+            "Swampheart surprises Meadowrunner with something nice. (medium positive effect) - Swampheart was 54 moon(s) old"
         ]
     },
     {
@@ -281,6 +286,128 @@
         "romantic_love": 0,
         "platonic_like": 0,
         "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "46",
+        "cat_to_id": "53",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "46",
+        "cat_to_id": "54",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Swampheart is surprised to hear Perchkit express an ideal they can agree with. (high positive effect) - Swampheart was 58 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "46",
+        "cat_to_id": "55",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 17,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 13,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Swampheart is sharing prey with Brightkit. (medium positive effect) - Swampheart was 59 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "46",
+        "cat_to_id": "56",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 7,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Swampheart growls at Breezekit to get out from under their paws. (medium negative effect) - Swampheart was 59 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "46",
+        "cat_to_id": "57",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "46",
+        "cat_to_id": "58",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Swampheart covered for Amberkit on something minor. (medium positive effect) - Swampheart was 60 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "46",
+        "cat_to_id": "60",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Swampheart and Nutgale heckled another Clan at the gathering together. (high positive effect) - Swampheart was 60 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "46",
+        "cat_to_id": "59",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 8,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,

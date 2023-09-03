@@ -1,0 +1,23 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [
+            "Greenleaf"
+        ],
+        "age": 1,
+        "join_moon": -3,
+        "birth_moon": -4,
+        "join_season": "PLACEHOLDER"
+    },
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {},
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

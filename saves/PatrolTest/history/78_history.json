@@ -1,0 +1,41 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": -13,
+        "birth_moon": -13,
+        "join_season": "PLACEHOLDER"
+    },
+    "mentor_influence": {
+        "trait": {
+            "82": {
+                "sociability": -2,
+                "stability": 1,
+                "strings": [
+                    "be cold towards others",
+                    "think things through"
+                ]
+            }
+        },
+        "skill": {
+            "82": {
+                "CAMP": 6,
+                "strings": [
+                    "caring for camp"
+                ]
+            }
+        }
+    },
+    "app_ceremony": {
+        "honor": "strength",
+        "graduation_age": 13,
+        "moon": 1
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

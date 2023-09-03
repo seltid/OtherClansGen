@@ -20,6 +20,12 @@
     "elder_ceremony": {},
     "possible_history": {},
     "died_by": [],
-    "scar_events": [],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred by a snake bite.",
+            "moon": 206
+        }
+    ],
     "murder": {}
 }

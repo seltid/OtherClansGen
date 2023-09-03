@@ -5,13 +5,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 11,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 8,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Duskpaw is having a wonderful time discussing recent Clan news with Anisemoon. (high positive effect) - Duskpaw was 10 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "51",
@@ -19,13 +21,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 11,
         "dislike": 0,
-        "admiration": 0,
-        "comfortable": 0,
+        "admiration": 14,
+        "comfortable": 11,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 3,
+        "log": [
+            "Duskpaw thinks Sparkpelt tells the best stories. (high positive effect) - Duskpaw was 7 moon(s) old",
+            "Duskpaw saw Sparkpelt show off a skill they never knew they had. (high positive effect) - Duskpaw was 8 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "51",
@@ -35,11 +40,14 @@
         "romantic_love": 0,
         "platonic_like": 0,
         "dislike": 0,
-        "admiration": 0,
+        "admiration": 3,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Duskkit mews congratulations to Conkerstar for a job well done. (low positive effect) - Duskkit was 5 moon(s) old",
+            "Duskpaw said they'd cover for Conkerstar, but when it came time, they got Conkerstar in trouble. (medium negative effect) - Duskpaw was 6 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "51",
@@ -47,13 +55,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 17,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 13,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Duskpaw tells Seamusshade that they're an amazing storyteller. (medium positive effect) - Duskpaw was 9 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "51",
@@ -61,13 +71,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 24,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 12,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Duskpaw is having a wonderful time discussing recent Clan news with Tuftfang. (high positive effect) - Duskpaw was 11 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "51",
@@ -170,6 +182,20 @@
     {
         "cat_from_id": "51",
         "cat_to_id": "48",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "51",
+        "cat_to_id": "52",
         "mates": false,
         "family": false,
         "romantic_love": 0,

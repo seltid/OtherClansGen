@@ -182,10 +182,10 @@
         "romantic_love": 0,
         "platonic_like": 100,
         "dislike": 0,
-        "admiration": 52,
+        "admiration": 68,
         "comfortable": 100,
         "jealousy": 2,
-        "trust": 55,
+        "trust": 47,
         "log": [
             "Snakefleck thinks Dustslash has a strange sense of humor. (medium negative effect) - Snakefleck was 17 moon(s) old",
             "Snakefleck greets Dustslash as they're exiting the warriors' den. (medium positive effect) - Snakefleck was 27 moon(s) old",
@@ -197,7 +197,9 @@
             "Snakefleck thinks Dustslash is very helpful! (low positive effect) - Snakefleck was 92 moon(s) old",
             "Snakefleck shares a joke about a neighboring Clan with Dustslash. (low positive effect) - Snakefleck was 94 moon(s) old",
             "Snakefleck is pestering Dustslash for a story. (medium positive effect) - Snakefleck was 101 moon(s) old",
-            "Snakefleck and Dustslash joke around about how bad the other Clans smell. (high positive effect) - Snakefleck was 104 moon(s) old"
+            "Snakefleck and Dustslash joke around about how bad the other Clans smell. (high positive effect) - Snakefleck was 104 moon(s) old",
+            "Snakefleck saw Dustslash being considerate. (low positive effect) - Snakefleck was 109 moon(s) old",
+            "Snakefleck nods politely as Dustslash passes by. (neutral effect) - Snakefleck was 113 moon(s) old"
         ]
     },
     {
@@ -241,7 +243,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 78,
+        "platonic_like": 86,
         "dislike": 0,
         "admiration": 38,
         "comfortable": 68,
@@ -343,10 +345,10 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 44,
+        "platonic_like": 68,
         "dislike": 0,
         "admiration": 16,
-        "comfortable": 92,
+        "comfortable": 100,
         "jealousy": 0,
         "trust": 71,
         "log": [
@@ -374,7 +376,9 @@
             "Snakefleck shared a embarrassing story about Swampheart they were asked not to share... (low negative effect) - Snakefleck was 99 moon(s) old",
             "Snakefleck saw Swampheart show off a skill they never knew they had. (high positive effect) - Snakefleck was 100 moon(s) old",
             "Snakefleck appreciates how Swampheart always seems to ask how they're doing. (high positive effect) - Snakefleck was 101 moon(s) old",
-            "Swampheart is building up Snakefleck's confidence. (medium positive effect) - Snakefleck was 102 moon(s) old"
+            "Swampheart is building up Snakefleck's confidence. (medium positive effect) - Snakefleck was 102 moon(s) old",
+            "Snakefleck thinks about how lucky they are to have someone like Swampheart as a friend. (high positive effect) - Snakefleck was 107 moon(s) old",
+            "Snakefleck challenged Swampheart to spar with them. (neutral effect) - Snakefleck was 113 moon(s) old"
         ]
     },
     {
@@ -383,12 +387,12 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 14,
+        "platonic_like": 30,
         "dislike": 0,
         "admiration": 36,
         "comfortable": 12,
         "jealousy": 0,
-        "trust": 19,
+        "trust": 22,
         "log": [
             "Snakefleck promises to always look out for Pythonkit. (high positive effect) - Snakefleck was 60 moon(s) old",
             "Snakefleck wishes they could get their pelt to shine like Pythonkit's. (low negative effect) - Snakefleck was 63 moon(s) old",
@@ -406,7 +410,8 @@
             "Snakefleck and Pythonstar joke around about how bad the other Clans smell. (high positive effect) - Snakefleck was 104 moon(s) old",
             "Snakefleck said something that rubbed Pythonstar the wrong way. (low negative effect) - Snakefleck was 105 moon(s) old",
             "Snakefleck finds a bit of fluff that smells like Pythonstar and adds it to their nest. (low positive effect) - Snakefleck was 105 moon(s) old",
-            "Snakefleck is sparring with Pythonstar. (medium positive effect) - Snakefleck was 106 moon(s) old"
+            "Snakefleck is sparring with Pythonstar. (medium positive effect) - Snakefleck was 106 moon(s) old",
+            "Snakefleck challenged Pythonstar to spar with them. (neutral effect) - Snakefleck was 112 moon(s) old"
         ]
     },
     {
@@ -415,12 +420,12 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 93,
+        "platonic_like": 100,
         "dislike": 0,
-        "admiration": 16,
-        "comfortable": 57,
+        "admiration": 33,
+        "comfortable": 68,
         "jealousy": 0,
-        "trust": 8,
+        "trust": 29,
         "log": [
             "Snakefleck basks in the sun with Meadowkit. (medium positive effect) - Snakefleck was 63 moon(s) old",
             "Snakefleck is having a wonderful time discussing recent Clan news with Meadowkit. (high positive effect) - Snakefleck was 65 moon(s) old",
@@ -439,7 +444,13 @@
             "Snakefleck appreciates Meadowrunner telling them that they had a feather stuck to their face. (low positive effect) - Snakefleck was 102 moon(s) old",
             "Snakefleck is surprised by Meadowrunner being thoughtful. (low positive effect) - Snakefleck was 103 moon(s) old",
             "Snakefleck is talking with Meadowrunner. (low positive effect) - Snakefleck was 103 moon(s) old",
-            "Snakefleck is talking with Meadowrunner. (low positive effect) - Snakefleck was 106 moon(s) old"
+            "Snakefleck is talking with Meadowrunner. (low positive effect) - Snakefleck was 106 moon(s) old",
+            "Snakefleck thinks Meadowrunner was nice to them today. (low positive effect) - Snakefleck was 107 moon(s) old",
+            "Snakefleck appreciates Meadowrunner telling them that they had a feather stuck to their face. (low positive effect) - Snakefleck was 108 moon(s) old",
+            "Snakefleck wishes they could get their pelt to shine like Meadowrunner's. (low negative effect) - Snakefleck was 108 moon(s) old",
+            "Snakefleck appreciates Meadowrunner telling them that they had a feather stuck to their face. (low positive effect) - Snakefleck was 109 moon(s) old",
+            "Snakefleck has a mock battle with Meadowrunner. (medium positive effect) - Snakefleck was 110 moon(s) old",
+            "Snakefleck thinks Meadowrunner is very helpful! (low positive effect) - Snakefleck was 110 moon(s) old"
         ]
     },
     {
@@ -471,5 +482,122 @@
         "log": [
             "Snakefleck is welcoming Duskkit."
         ]
+    },
+    {
+        "cat_from_id": "31",
+        "cat_to_id": "57",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 13,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Snakefleck mews congratulations to Warmkit for a job well done. (low positive effect) - Snakefleck was 111 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "31",
+        "cat_to_id": "53",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "31",
+        "cat_to_id": "54",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "31",
+        "cat_to_id": "55",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "31",
+        "cat_to_id": "56",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Snakefleck doesn't think that Breezekit has been completely honest lately. (low negative effect) - Snakefleck was 111 moon(s) old",
+            "Snakefleck had a difficult conversation with Breezekit, and they both ended up resentful of each other. (high negative effect) - Snakefleck was 112 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "31",
+        "cat_to_id": "58",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "31",
+        "cat_to_id": "59",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "31",
+        "cat_to_id": "60",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
     }
 ]

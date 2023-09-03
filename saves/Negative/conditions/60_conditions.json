@@ -1,0 +1,31 @@
+{
+    "injuries": {
+        "head damage": {
+            "severity": "major",
+            "mortality": 40,
+            "duration": 5,
+            "moon_start": 206,
+            "illness_infectiousness": [],
+            "risks": [
+                {
+                    "name": "headache",
+                    "chance": 20
+                },
+                {
+                    "name": "severe headache",
+                    "chance": 20
+                }
+            ],
+            "complication": null,
+            "cause_permanent": [
+                "failing eyesight",
+                "one bad eye",
+                "blind",
+                "loss of balance",
+                "partial hearing loss",
+                "persistent headaches"
+            ],
+            "event_triggered": false
+        }
+    }
+}

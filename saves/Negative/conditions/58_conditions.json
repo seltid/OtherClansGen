@@ -1,0 +1,48 @@
+{
+    "illnesses": {
+        "stomachache": {
+            "severity": "minor",
+            "mortality": 0,
+            "infectiousness": 0,
+            "duration": 2,
+            "moon_start": 207,
+            "risks": [
+                {
+                    "name": "diarrhea",
+                    "chance": 8
+                }
+            ],
+            "event_triggered": false
+        }
+    },
+    "permanent conditions": {
+        "paralyzed": {
+            "severity": "severe",
+            "born_with": true,
+            "moons_until": -2,
+            "moon_start": 204,
+            "mortality": 0,
+            "illness_infectiousness": [],
+            "risks": [
+                {
+                    "name": "an infected wound",
+                    "chance": 60
+                },
+                {
+                    "name": "torn pelt",
+                    "chance": 30
+                },
+                {
+                    "name": "sore",
+                    "chance": 20
+                },
+                {
+                    "name": "joint pain",
+                    "chance": 20
+                }
+            ],
+            "complication": null,
+            "event_triggered": false
+        }
+    }
+}

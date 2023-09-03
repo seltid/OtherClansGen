@@ -1570,6 +1570,18 @@ def adjust_patrol_text(text, patrol):
 
     text = text.replace('c_n', str(game.clan.name) + 'Clan')
 
+    replace_dict["UPPERLIMIT_0"] = ''
+    replace_dict["UPPERLIMIT_1"] = ''
+    replace_dict["UPPERLIMIT_2"] = ''
+    replace_dict["UPPERLIMIT_3"] = ''
+    replace_dict["UPPERLIMIT_4"] = ''
+    replace_dict["UPPERLIMIT_5"] = ''
+    replace_dict["UPPERLIMIT_6"] = ''
+
+    for entry in ("UPPERLIMIT_0", "UPPERLIMIT_1", "UPPERLIMIT_2", "UPPERLIMIT_3", "UPPERLIMIT_4", "UPPERLIMIT_5", "UPPERLIMIT_6", 
+                  "LOWERLIMIT_0", "LOWERLIMIT_1", "LOWERLIMIT_2", "LOWERLIMIT_3", "LOWERLIMIT_4", "LOWERLIMIT_5", "LOWERLIMIT_6"):
+        text = text.replace(entry, '')
+
     # Prey lists for forest random prey patrols
     fst_tinyprey_singlular = ['shrew', 'robin', 'vole', 'dormouse', 'blackbird',
                               'wood mouse', 'lizard', 'tiny grass snake', 'finch', 'sparrow',

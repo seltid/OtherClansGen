@@ -1,0 +1,106 @@
+[
+    {
+        "cat_from_id": "52",
+        "cat_to_id": "35",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "52",
+        "cat_to_id": "15",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "52",
+        "cat_to_id": "44",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 8,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "52",
+        "cat_to_id": "45",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Veiltooth stands tall when Seamusshade walks by. (neutral effect) - Veiltooth was 117 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "52",
+        "cat_to_id": "49",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 17,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 13,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Veiltooth waves to Tuftfang with their tail as their patrols cross paths on the territory. (medium positive effect) - Veiltooth was 116 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "52",
+        "cat_to_id": "51",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 6,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Veiltooth thinks Duskpaw was nice to them today. (low positive effect) - Veiltooth was 115 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "52",
+        "cat_to_id": "20",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 10,
+        "comfortable": 15,
+        "jealousy": 0,
+        "trust": 15,
+        "log": []
+    }
+]

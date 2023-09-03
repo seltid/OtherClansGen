@@ -34,7 +34,13 @@
     },
     "lead_ceremony": null,
     "elder_ceremony": {},
-    "possible_history": {},
+    "possible_history": {
+        "mangled tail": {
+            "death_text": "This cat was killed after an unfortunate meeting with a wolverine.",
+            "scar_text": "m_c was scarred from an injury or illness (mangled tail).",
+            "other_cat": null
+        }
+    },
     "died_by": [],
     "scar_events": [],
     "murder": {}

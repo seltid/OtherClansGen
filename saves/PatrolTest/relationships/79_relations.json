@@ -1,0 +1,123 @@
+[
+    {
+        "cat_from_id": "79",
+        "cat_to_id": "74",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Fluttercall was noticeably distracted while Rustleback was trying to tell a story. (high negative effect) - Fluttercall was 37 moon(s) old",
+            "Fluttercall stands tall when Rustleback walks by. (neutral effect) - Fluttercall was 38 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "79",
+        "cat_to_id": "75",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "79",
+        "cat_to_id": "76",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Fluttercall is sharpening their claws near Snakeburrow. (neutral effect) - Fluttercall was 36 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "79",
+        "cat_to_id": "77",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "79",
+        "cat_to_id": "78",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "79",
+        "cat_to_id": "80",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "79",
+        "cat_to_id": "81",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 0,
+        "admiration": 8,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Fluttercall mews congratulations to Barleystar for a job well done. (low positive effect) - Fluttercall was 35 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "79",
+        "cat_to_id": "82",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Fluttercall had a difficult conversation with Fruitfur, and they both ended up resentful of each other. (high negative effect) - Fluttercall was 39 moon(s) old"
+        ]
+    }
+]

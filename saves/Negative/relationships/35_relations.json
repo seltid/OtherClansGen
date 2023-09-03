@@ -342,11 +342,11 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 74,
-        "dislike": 0,
+        "dislike": 21,
         "admiration": 17,
-        "comfortable": 69,
+        "comfortable": 90,
         "jealousy": 0,
-        "trust": 44,
+        "trust": 60,
         "log": [
             "Conkerskitter bats a bit of fluff in front of Anisemoon and gets they to play a game. (medium positive effect) - Anisemoon was 172 moon(s) old",
             "Anisemoon and Conkerskitter have an argument about who should get a pretty feather, and end up destroying it in their fight. (medium negative effect) - Anisemoon was 174 moon(s) old",
@@ -360,7 +360,11 @@
             "Anisemoon helps Conkerstar pick burrs out of their fur. (medium positive effect) - Anisemoon was 200 moon(s) old",
             "Anisemoon reminds Conkerstar to grab something from the fresh-kill pile if they haven't already. (medium positive effect) - Anisemoon was 203 moon(s) old",
             "Anisemoon doesn't think that Conkerstar has been completely honest lately. (low negative effect) - Anisemoon was 207 moon(s) old",
-            "Anisemoon promises to always look out for Conkerstar. (high positive effect) - Anisemoon was 212 moon(s) old"
+            "Anisemoon promises to always look out for Conkerstar. (high positive effect) - Anisemoon was 212 moon(s) old",
+            "Anisemoon realized that they were too harsh in their judgment of Conkerstar. (medium positive effect) - Anisemoon was 214 moon(s) old",
+            "Anisemoon thinks Conkerstar is very helpful! (low positive effect) - Anisemoon was 216 moon(s) old",
+            "Anisemoon offers to groom a hard-to-reach place for Conkerstar, who thanks them earnestly. (high positive effect) - Anisemoon was 219 moon(s) old",
+            "Anisemoon is scolding Conkerstar. (high negative effect) - Anisemoon was 220 moon(s) old"
         ]
     },
     {
@@ -372,7 +376,7 @@
         "platonic_like": 28,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 12,
+        "comfortable": 0,
         "jealousy": 0,
         "trust": 4,
         "log": [
@@ -386,7 +390,8 @@
             "Anisemoon thinks Seamusshade is very helpful! (low positive effect) - Anisemoon was 192 moon(s) old",
             "Anisemoon was noticeably distracted while Seamusshade was trying to tell a story. (high negative effect) - Anisemoon was 195 moon(s) old",
             "Anisemoon apologized to Seamusshade for something or other. (low positive effect) - Anisemoon was 201 moon(s) old",
-            "Anisemoon is giving Seamusshade a task. (neutral effect) - Anisemoon was 211 moon(s) old"
+            "Anisemoon is giving Seamusshade a task. (neutral effect) - Anisemoon was 211 moon(s) old",
+            "Anisemoon called Seamusshade the wrong name. (medium negative effect) - Anisemoon was 215 moon(s) old"
         ]
     },
     {
@@ -427,6 +432,23 @@
     {
         "cat_from_id": "35",
         "cat_to_id": "51",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 3,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Anisemoon is sharpening their claws near Duskpaw. (neutral effect) - Anisemoon was 217 moon(s) old",
+            "Anisemoon is really surprised that Duskpaw's life isn't as easy as they thought it was. (high positive effect) - Anisemoon was 218 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "35",
+        "cat_to_id": "52",
         "mates": false,
         "family": false,
         "romantic_love": 0,

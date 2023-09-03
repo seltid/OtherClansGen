@@ -1,0 +1,20 @@
+{
+    "beginning": {},
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {},
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {
+        "broken bone": {
+            "death_text": "m_c died from their wounds after an eagle grabbed them.",
+            "scar_text": "m_c was scarred when an eagle grabbed them.",
+            "other_cat": null
+        }
+    },
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

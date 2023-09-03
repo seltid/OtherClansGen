@@ -1,0 +1,137 @@
+[
+    {
+        "cat_from_id": "77",
+        "cat_to_id": "74",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 13,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Jackdawpaw saw Rustleback being considerate. (low positive effect) - Jackdawpaw was 6 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "77",
+        "cat_to_id": "75",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "77",
+        "cat_to_id": "76",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Jackdawkit realized that they were too harsh in their judgment of Snakeburrow. (medium positive effect) - Jackdawkit was 5 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "77",
+        "cat_to_id": "78",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "77",
+        "cat_to_id": "79",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "77",
+        "cat_to_id": "80",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 13,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Jackdawkit thinks Rustlerise was nice to them today. (low positive effect) - Jackdawkit was 3 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "77",
+        "cat_to_id": "81",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "77",
+        "cat_to_id": "82",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 8,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 11,
+        "trust": 0,
+        "log": [
+            "Jackdawkit is complaining that Fruitfur never does anything helpful. (high negative effect) - Jackdawkit was 2 moon(s) old",
+            "Jackdawkit turned to Fruitfur in a time of need, only for Fruitfur to abandon them. (high negative effect) - Jackdawkit was 4 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "77",
+        "cat_to_id": "72",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    }
+]

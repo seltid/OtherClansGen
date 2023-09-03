@@ -1,18 +1,13 @@
 {
-    "12": {
-        "max_score": 3.0,
-        "current_score": 3.0,
-        "percentage": 100.0
-    },
     "13": {
         "max_score": 3.0,
-        "current_score": 3.0,
-        "percentage": 100.0
+        "current_score": 0,
+        "percentage": 0.0
     },
     "20": {
-        "max_score": 4.5,
-        "current_score": 3.0,
-        "percentage": 66.66666666666666
+        "max_score": 3.0,
+        "current_score": 0,
+        "percentage": 0.0
     },
     "31": {
         "max_score": 4.5,
@@ -31,7 +26,47 @@
     },
     "48": {
         "max_score": 4.5,
-        "current_score": 2,
-        "percentage": 44.44444444444444
+        "current_score": 0,
+        "percentage": 0.0
+    },
+    "53": {
+        "max_score": 9,
+        "current_score": 0,
+        "percentage": 0.0
+    },
+    "54": {
+        "max_score": 1.0,
+        "current_score": 1.0,
+        "percentage": 100.0
+    },
+    "55": {
+        "max_score": 1.0,
+        "current_score": 1.0,
+        "percentage": 100.0
+    },
+    "56": {
+        "max_score": 1.0,
+        "current_score": 1.0,
+        "percentage": 100.0
+    },
+    "57": {
+        "max_score": 1.0,
+        "current_score": 1.0,
+        "percentage": 100.0
+    },
+    "58": {
+        "max_score": 1.0,
+        "current_score": 1.0,
+        "percentage": 100.0
+    },
+    "59": {
+        "max_score": 9,
+        "current_score": 6,
+        "percentage": 66.66666666666666
+    },
+    "60": {
+        "max_score": 9,
+        "current_score": 5,
+        "percentage": 55.55555555555556
     }
 }

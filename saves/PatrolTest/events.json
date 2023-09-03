@@ -1,0 +1,370 @@
+[
+    {
+        "text": "Squirrelfog surprises Flutterpaw with something nice. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "65",
+            "61"
+        ]
+    },
+    {
+        "text": "Squirrelfog wants to spend more time with Twigdapple! (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "72",
+            "61"
+        ]
+    },
+    {
+        "text": "Woodtail is really surprised that Twigdapple's life isn't as easy as they thought it was. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "72",
+            "62"
+        ]
+    },
+    {
+        "text": "Umberpaw has healed from their mangled leg.",
+        "types": [
+            "health"
+        ],
+        "cats_involved": [
+            "63"
+        ]
+    },
+    {
+        "text": "Umberpaw saw Cowpaw the other day, but didn't get a chance to meow hello. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "7",
+            "63"
+        ]
+    },
+    {
+        "text": "Flutterpaw covered for Greenseed on something minor. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "5",
+            "65"
+        ]
+    },
+    {
+        "text": "Splinterlilac appreciates Birdpaw telling them that they had a feather stuck to their face. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "3",
+            "66"
+        ]
+    },
+    {
+        "text": "Splinterlilac saw Birdpaw being considerate. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "3",
+            "66"
+        ]
+    },
+    {
+        "text": "Cragshade sees Splinterlilac lazing about in the sunshine and is resentful at how little they're expected to contribute. (high negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "66",
+            "67"
+        ]
+    },
+    {
+        "text": "Berrybeetle wishes they could get their pelt to shine like Tarantulapaw's. (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "6",
+            "68"
+        ]
+    },
+    {
+        "text": "Berrybeetle thinks the prey Tarantulapaw is biting into on the other side of camp looks delicious. (medium negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "6",
+            "68"
+        ]
+    },
+    {
+        "text": "Halfstar appreciates Clayshadow telling them that they had a feather stuck to their face. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "69"
+        ]
+    },
+    {
+        "text": "PatrolTestClan welcomes Rabbitwater as a new warrior, honoring their dedication.",
+        "types": [
+            "ceremony"
+        ],
+        "cats_involved": [
+            "71"
+        ]
+    },
+    {
+        "text": "Rabbitwater promises to teach Flutterpaw a new technique later. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "65",
+            "71"
+        ]
+    },
+    {
+        "text": "Rabbitwater has gotten fleas.",
+        "types": [
+            "health"
+        ],
+        "cats_involved": [
+            "71"
+        ]
+    },
+    {
+        "text": "Twigdapple is stuttering while speaking to Cowpaw. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "7",
+            "72"
+        ]
+    },
+    {
+        "text": "Twigdapple had Cowpaw bump into them, and they didn't even apologize! (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "7",
+            "72"
+        ]
+    },
+    {
+        "text": "Rustleback goes to Rustlerise to ask for their wisdom. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "80",
+            "74"
+        ]
+    },
+    {
+        "text": "Whirlscar is wowed by how bravely Snakeburrow fought the other day. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "76",
+            "75"
+        ]
+    },
+    {
+        "text": "Snakeburrow wishes they could get their pelt to shine like Whirlscar's. (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "75",
+            "76"
+        ]
+    },
+    {
+        "text": "Jackdawpaw saw Rustleback being considerate. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "74",
+            "77"
+        ]
+    },
+    {
+        "text": "Pumpkinheart wishes they could get their pelt to shine like Snakeburrow's. (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "76",
+            "78"
+        ]
+    },
+    {
+        "text": "Fluttercall had a difficult conversation with Fruitfur, and they both ended up resentful of each other. (high negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "82",
+            "79"
+        ]
+    },
+    {
+        "text": "Rustlerise thinks the prey Rustleback is biting into on the other side of camp looks delicious. (medium negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "74",
+            "80"
+        ]
+    },
+    {
+        "text": "Barleystar doesn't notice Whirlscar twitching their whiskers at them. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "75",
+            "81"
+        ]
+    },
+    {
+        "text": "Fruitfur thinks Whirlscar isn't very considerate of others. (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "75",
+            "82"
+        ]
+    },
+    {
+        "text": "Clayshadow is sharpening their claws near Flutterpaw. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "65",
+            "1"
+        ]
+    },
+    {
+        "text": "Berrypaw appreciates Berrybeetle telling them that they had a feather stuck to their face. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "68",
+            "2"
+        ]
+    },
+    {
+        "text": "Birdpaw is surprised by Splinterlilac being thoughtful. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "66",
+            "3"
+        ]
+    },
+    {
+        "text": "Sprucepaw asks Clayshadow how they're doing. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "4"
+        ]
+    },
+    {
+        "text": "Greenseed thinks they can tell Sprucepaw something important. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "4",
+            "5"
+        ]
+    },
+    {
+        "text": "Tarantulapaw thinks Splinterlilac is very helpful! (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "66",
+            "6"
+        ]
+    },
+    {
+        "text": "Cowpaw thinks Umberpaw is being annoying. (high negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "63",
+            "7"
+        ]
+    },
+    {
+        "text": "Booker thinks they can tell Sprucepaw something important. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "4",
+            "8"
+        ]
+    }
+]

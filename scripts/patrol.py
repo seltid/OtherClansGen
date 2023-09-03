@@ -2,6 +2,7 @@
 # -*- coding: ascii -*-
 import random
 from random import choice, randint, choices
+from re import sub
 
 import ujson
 import pygame
@@ -56,6 +57,7 @@ class Patrol():
         self.patrol_cats = []
         self.patrol_apprentices = []
         self.other_clan = None
+        self.patrol_oc_cats = []
         self.intro_text = ""
 
         self.patrol_skills = []
@@ -950,6 +952,7 @@ class Patrol():
         print("patrol tags: ", self.patrol_event.tags)
 
         antagonize = antagonize
+        self.antagonize = antagonize
         success_text = self.patrol_event.success_text
         fail_text = self.patrol_event.fail_text
 
@@ -1141,7 +1144,10 @@ class Patrol():
         if not antagonize and game.clan.game_mode != "classic":
             self.handle_prey(outcome)
 
-        print('Patrol Succeeded?', self.success, ', Outcome Index:', outcome)
+        if "other_clan" in self.patrol_event.tags:
+            self.decide_oc_cats()
+
+        print('Patrol Succeeded?', self.success, ', Outcome Index:', outcome, ', Antagonized? ', self.antagonize)
 
     def results(self):
         text = "<br>".join(self.results_text)
@@ -1203,6 +1209,7 @@ class Patrol():
         outside = False
         otherclan1 = False
         clan = game.clan.name
+
 
         # figure out what type of cat they are and set default backstories.json - this can be overwritten if need be
         loner = False
@@ -2348,6 +2355,210 @@ class Patrol():
             trust
         )
 
+    def decide_oc_cats(self):
+        if "other_clan" in self.patrol_event.tags:
+            other_clan = self.other_clan
+
+        lower_limit = 0
+        upper_limit = 0
+        lower_limits = ("LOWERLIMIT_0", "LOWERLIMIT_1", "LOWERLIMIT_2", "LOWERLIMIT_3", "LOWERLIMIT_4", "LOWERLIMIT_5", "LOWERLIMIT_6")
+        upper_limits = ("UPPERLIMIT_0", "UPPERLIMIT_1", "UPPERLIMIT_2", "UPPERLIMIT_3", "UPPERLIMIT_4", "UPPERLIMIT_5", "UPPERLIMIT_6")
+
+        # Determine number of cats
+        for search_lower_limit in lower_limits:
+            if search_lower_limit in self.patrol_event.tags:
+                lower_limit = sub('[^0-9]','', search_lower_limit)
+        for search_upper_limit in upper_limits:
+            if search_upper_limit in self.patrol_event.tags:
+                upper_limit = sub('[^0-9]','', search_upper_limit)
+        for entry in upper_limits:
+            if entry in self.outcome_text:
+                upper_limit = sub('[^0-9]','', entry)
+        for entry in lower_limits:
+            if entry in self.outcome_text:
+                lower_limit = sub('[^0-9]','', entry)
+
+        # These things will be in self.outcome_text
+        guide_dict = {
+            # Personality boosts/reductions
+            "AGG_BOOST": "Increase chance that involved cat will be an aggressive or violent personality type",
+            "LOYAL_BOOST": "Increase chance that involved cat will be a loyal personality type",
+            "VIOL_BOOST": "Increase chance that involved cat will be a violent personality type",
+
+            # Rank-based
+            "3_WARRIOR": "",
+
+            # Determine what the changes need to be
+            "CH_SAVIOR": "",
+            "CH_BIGPOS": "",
+            "CH_POS": "",
+            "CH_NEUT": "",
+            "CH_NEG": "",
+
+            # Special relationship changes
+            "RC_TO_1_RESPECT_UP": "One-way respect gain, RC->1st OC cat",
+
+            # Misc
+            "GOSSIP": "Choose a few random cats for the entire patrol to gain relationship with",
+        }
+
+        dict_cat1 = {
+            "1_APP": "apprentice",
+            "1_DEPAPP": "apprentice",
+            "1_LEADAPP": "apprentice",
+            "1_DEP": "deputy",
+            "1_MEDCAT": "medicine cat",
+            "1_WARRIOR": "warrior",
+            # "1_MEDAPP": "medicine cat apprentice",
+        }
+
+        dict_cat2 = {
+            "2_LEADER": "leader",
+            "2_WARRIOR": "warrior",
+            "2_MENTOR": "SPECIAL",
+            "2_DEP": "deputy",
+            "2_MENTORW": "warrior",
+        }
+
+        dict_cat3 = {
+            "3_WARRIOR": "warrior",
+        }
+
+        # Determine who needs to be in the patrol
+
+        # Choose an amount of cats for the patrol
+        if lower_limit != upper_limit:
+            num_of_cats = randint(int(lower_limit), int(upper_limit))
+        else:
+            num_of_cats = int(lower_limit)
+        generated_cats = []
+        for cat in range(num_of_cats):
+            generated_cats.append('')
+
+        # Select fitting cats for each position
+        # 1
+        # Get all cats fitting criteria
+
+        cat_1_filter = None
+        fitting_1_cats = []
+
+        cat_2_filter = []
+        fitting_2_cats = []
+
+        cat_3_filter = []
+        fitting_3_cats = []
+
+        for each_filter in dict_cat1.keys():
+            if each_filter in self.outcome_text:
+                cat_1_filter = each_filter
+        for each_filter in dict_cat2.keys():
+            if each_filter in self.outcome_text:
+                cat_2_filter.append(each_filter)
+        for each_filter in dict_cat3.keys():
+            if each_filter in self.outcome_text:
+                cat_3_filter.append(each_filter)
+
+
+
+        # For every otherclan cat
+        for cat in Cat.otherclan1_cats.values():
+            if cat.dead:
+                pass
+            else:
+                # Take care of no-cat interactions
+                if int(lower_limit) != 0:
+                    # If the filter is just "any OC cat that would be out and about"
+                    if not cat_1_filter:
+                        if cat.status in ["apprentice", "medicine cat apprentice", "warrior", "medicine cat", "deputy", "leader"]:
+                            fitting_1_cats.append(cat)
+                    else:
+                        # Now get some general stuff
+                        if cat.status in ["apprentice", "mediator apprentice", "medicine cat apprentice"]:
+                            cat_mentor = Cat.fetch_cat(cat.mentor)
+                        if cat.apprentice:
+                            cat_apps = []
+                            for app in cat.apprentice:
+                                cat_apps.append(Cat.fetch_cat(app))
+                        # 1 ---------------------------------------------
+                        if cat_1_filter in ["1_DEPAPP", "1_LEADAPP"] and cat.status == "apprentice":
+                            if cat_1_filter in "1_DEPAPP" and cat_mentor.status == "deputy":
+                                fitting_1_cats.append(cat)
+                            elif cat_1_filter in "1_LEADAPP" and cat_mentor.status == "leader":
+                                fitting_1_cats.append(cat)
+                        else:
+                            if cat.status == dict_cat1[cat_1_filter]:
+                                fitting_1_cats.append(cat)
+
+
+        print(cat_1_filter)
+
+        # Calculate the type and amount of change
+        difference = None
+        if "otherclan_nochangefail" in self.patrol_event.tags and not self.success:
+            difference = 0
+        elif "otherclan_nochangesuccess" in self.patrol_event.tags and self.success and not self.antagonize:
+            difference = 0
+        elif "otherclan_antag_nochangefail" in self.patrol_event.tags and self.antagonize and not self.success:
+            difference = 0
+        else:
+            if "CH_SAVIOR" in self.outcome_text:
+                difference = int(10)
+            elif "CH_BIGPOS" in self.outcome_text:
+                difference = int(2)
+            elif "CH_POS" in self.outcome_text:
+                difference = int(1)
+            elif "CH_NEUT" in self.outcome_text:
+                difference = 0
+            elif "CH_NEG" in self.outcome_text:
+                difference = int(-1)
+        if difference is None:
+            if self.success and not self.antagonize:
+                difference = int(1)
+            elif self.success and self.antagonize:
+                difference = int(-3)
+            elif not self.success and self.antagonize:
+                difference = int(-1)
+            elif not self.success and not self.antagonize:
+                difference = 0
+
+        if fitting_1_cats:
+            cat_1 = choice(fitting_1_cats)
+            print(cat_1)
+            for patrol_cat in self.patrol_cats:
+                if patrol_cat.ID in cat_1.relationships:
+                    print("They know each other")
+                    # Update the relationship values
+                else:
+                    print("They don't know each other")
+                    # Create the relationship
+                    cat_1.create_one_relationship(patrol_cat)
+                    patrol_cat.create_one_relationship(cat_1)
+                    # Update the relationship values
+                    if difference > 0:
+                        change_relationship_values([cat_1], [patrol_cat], 0, difference, 0, 0, difference, 0, 0)
+                        change_relationship_values([patrol_cat], [cat_1], 0, difference, 0, 0, difference, 0, 0)
+                    elif difference < 0:
+                        change_relationship_values([cat_1], [patrol_cat], 0, 0, difference, 0, difference, 0,
+                                                   difference)
+                        change_relationship_values([patrol_cat], [cat_1], 0, 0, difference, 0, difference, 0,
+                                                   difference)
+                    else:
+                        change_relationship_values([cat_1], [patrol_cat], 0, 0, 0, 0, 0, 0, 0)
+                        change_relationship_values([patrol_cat], [cat_1], 0, 0, 0, 0, 0, 0, 0)
+                print("did it")
+                # Relationships are being initiated but not filled in
+        else:
+            print("NOFITTINGCATS")
+
+
+        # Create the relationships between patrol cats and OC cats
+        # 1
+
+
+        # Print debug text
+        self.results_text.append(f"PLACEHOLDER TEXT HERE INVOLVING {num_of_cats} CAT(S) FROM {other_clan}")
+        self.results_text.append(f"Change: {difference}")
+        self.results_text.append(f"{fitting_1_cats}")
 
 # ---------------------------------------------------------------------------- #
 #                               PATROL CLASS END                               #

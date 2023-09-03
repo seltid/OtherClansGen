@@ -1,0 +1,33 @@
+{
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [],
+        "age": 84,
+        "join_moon": -7,
+        "birth_moon": -91,
+        "join_season": "PLACEHOLDER"
+    },
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {},
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {
+        "bite-wound": {
+            "death_text": "This cat was killed in a fight with a small dog, but {PRONOUN\/Booker\/subject} took the dog out with {PRONOUN\/Booker\/object}.",
+            "scar_text": "m_c was scarred from an injury or illness (bite-wound).",
+            "other_cat": null
+        }
+    },
+    "died_by": [],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "m_c was scarred from an injury (broken jaw).",
+            "moon": 4
+        }
+    ],
+    "murder": {}
+}

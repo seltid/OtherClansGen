@@ -27,6 +27,17 @@
     "elder_ceremony": {},
     "possible_history": {},
     "died_by": [],
-    "scar_events": [],
+    "scar_events": [
+        {
+            "involved": null,
+            "text": "Snakefleck got injured patrolling on the border.",
+            "moon": 203
+        },
+        {
+            "involved": null,
+            "text": "m_c was scarred from an injury or illness (bite-wound).",
+            "moon": 206
+        }
+    ],
     "murder": {}
 }

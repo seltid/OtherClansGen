@@ -1,19 +1,19 @@
 {
-    "permanent conditions": {
-        "lasting grief": {
+    "injuries": {
+        "small cut": {
             "severity": "minor",
-            "born_with": false,
-            "moons_until": 0,
-            "moon_start": 180,
             "mortality": 0,
+            "duration": 1,
+            "moon_start": 207,
             "illness_infectiousness": [],
             "risks": [
                 {
-                    "name": "grief stricken",
-                    "chance": 50
+                    "name": "an infected wound",
+                    "chance": 40
                 }
             ],
             "complication": null,
+            "cause_permanent": [],
             "event_triggered": false
         }
     }

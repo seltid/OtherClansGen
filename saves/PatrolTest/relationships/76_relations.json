@@ -1,0 +1,123 @@
+[
+    {
+        "cat_from_id": "76",
+        "cat_to_id": "74",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 8,
+        "log": []
+    },
+    {
+        "cat_from_id": "76",
+        "cat_to_id": "75",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 2,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 3,
+        "trust": 0,
+        "log": [
+            "Snakeburrow wishes they could get their pelt to shine like Whirlscar's. (low negative effect) - Snakeburrow was 39 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "76",
+        "cat_to_id": "77",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 9,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 12,
+        "trust": 0,
+        "log": [
+            "Snakeburrow thinks the prey Jackdawkit is biting into on the other side of camp looks delicious. (medium negative effect) - Snakeburrow was 35 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "76",
+        "cat_to_id": "78",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "76",
+        "cat_to_id": "79",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Snakeburrow apologized to Fluttercall for something or other. (low positive effect) - Snakeburrow was 36 moon(s) old",
+            "Fluttercall asks Snakeburrow to speak up while chatting together. (neutral effect) - Snakeburrow was 37 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "76",
+        "cat_to_id": "80",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 8,
+        "dislike": 0,
+        "admiration": 12,
+        "comfortable": 8,
+        "jealousy": 0,
+        "trust": 8,
+        "log": [
+            "Snakeburrow caught a glimpse of Rustlerise caring for a wounded warrior with confidence and grace. (medium positive effect) - Snakeburrow was 38 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "76",
+        "cat_to_id": "81",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "76",
+        "cat_to_id": "82",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    }
+]

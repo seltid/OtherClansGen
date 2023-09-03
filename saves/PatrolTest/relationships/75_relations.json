@@ -1,0 +1,122 @@
+[
+    {
+        "cat_from_id": "75",
+        "cat_to_id": "74",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "75",
+        "cat_to_id": "76",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 11,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Whirlscar has drawn the ire of Snakeburrow by deliberately taking the last of their favorite nesting materials for themself. (medium negative effect) - Whirlscar was 126 moon(s) old",
+            "Whirlscar is wowed by how bravely Snakeburrow fought the other day. (high positive effect) - Whirlscar was 127 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "75",
+        "cat_to_id": "77",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "75",
+        "cat_to_id": "78",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "75",
+        "cat_to_id": "79",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "75",
+        "cat_to_id": "80",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 13,
+        "jealousy": 0,
+        "trust": 17,
+        "log": [
+            "Whirlscar feels like they can count on Rustlerise to give them the best treatment possible. (medium positive effect) - Whirlscar was 123 moon(s) old",
+            "Whirlscar realized that they were too harsh in their judgment of Rustlerise. (medium positive effect) - Whirlscar was 124 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "75",
+        "cat_to_id": "81",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Whirlscar saw Barleystar being rude. (low negative effect) - Whirlscar was 125 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "75",
+        "cat_to_id": "82",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    }
+]

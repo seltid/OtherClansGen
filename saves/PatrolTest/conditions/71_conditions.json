@@ -1,0 +1,18 @@
+{
+    "illnesses": {
+        "fleas": {
+            "severity": "minor",
+            "mortality": 0,
+            "infectiousness": 15,
+            "duration": 2,
+            "moon_start": 5,
+            "risks": [
+                {
+                    "name": "torn pelt",
+                    "chance": 20
+                }
+            ],
+            "event_triggered": false
+        }
+    }
+}

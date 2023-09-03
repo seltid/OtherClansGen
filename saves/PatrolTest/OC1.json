@@ -1,0 +1,21 @@
+{
+    "clanname": "FogClan",
+    "clanage": 658,
+    "biome": null,
+    "clan_cats": [
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82"
+    ],
+    "leader": "81",
+    "leader_lives": 5,
+    "leader_predecessors": null,
+    "deputy": "82",
+    "med_cat": null
+}

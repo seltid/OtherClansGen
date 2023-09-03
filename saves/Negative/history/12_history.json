@@ -33,7 +33,13 @@
         "age": 136
     },
     "possible_history": {},
-    "died_by": [],
+    "died_by": [
+        {
+            "involved": null,
+            "text": "Specklefang died of greencough.",
+            "moon": 202
+        }
+    ],
     "scar_events": [],
     "murder": {}
 }

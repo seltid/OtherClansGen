@@ -81,15 +81,17 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 19,
-        "dislike": 11,
+        "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 11,
         "jealousy": 0,
-        "trust": 0,
+        "trust": 8,
         "log": [
             "Meadowpaw thinks Dustslash has been acting strangely. (low negative effect) - Meadowpaw was 11 moon(s) old",
             "Meadowrunner thinks Dustslash is being annoying. (high negative effect) - Meadowrunner was 42 moon(s) old",
-            "Meadowrunner thinks Dustslash is very helpful! (low positive effect) - Meadowrunner was 44 moon(s) old"
+            "Meadowrunner thinks Dustslash is very helpful! (low positive effect) - Meadowrunner was 44 moon(s) old",
+            "Meadowrunner appreciates how Dustslash always seems to ask how they're doing. (high positive effect) - Meadowrunner was 47 moon(s) old",
+            "Meadowrunner thinks Dustslash isn't very considerate of others. (low negative effect) - Meadowrunner was 49 moon(s) old"
         ]
     },
     {
@@ -167,19 +169,20 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 68,
+        "platonic_like": 80,
         "dislike": 0,
-        "admiration": 0,
-        "comfortable": 17,
+        "admiration": 8,
+        "comfortable": 33,
         "jealousy": 0,
-        "trust": 0,
+        "trust": 12,
         "log": [
             "Meadowpaw covered for Snakefleck on something minor. (medium positive effect) - Meadowpaw was 7 moon(s) old",
             "Meadowpaw is really surprised that Snakefleck's life isn't as easy as they thought it was. (high positive effect) - Meadowpaw was 20 moon(s) old",
             "Meadowrunner and Snakefleck had to fix something around camp and argued about how to fix it. It ended up being fixed by some other cat in the end. (medium negative effect) - Meadowrunner was 31 moon(s) old",
             "Meadowrunner realized that they were too harsh in their judgment of Snakefleck. (medium positive effect) - Meadowrunner was 36 moon(s) old",
             "Meadowrunner and Snakefleck joke around about how bad the other Clans smell. (high positive effect) - Meadowrunner was 37 moon(s) old",
-            "Meadowrunner wants to explore the whole territory with Snakefleck! (medium positive effect) - Meadowrunner was 39 moon(s) old"
+            "Meadowrunner wants to explore the whole territory with Snakefleck! (medium positive effect) - Meadowrunner was 39 moon(s) old",
+            "Meadowrunner appreciates how Snakefleck always seems to ask how they're doing. (high positive effect) - Meadowrunner was 50 moon(s) old"
         ]
     },
     {
@@ -206,12 +209,12 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 80,
+        "platonic_like": 100,
         "dislike": 0,
-        "admiration": 0,
-        "comfortable": 73,
+        "admiration": 20,
+        "comfortable": 93,
         "jealousy": 0,
-        "trust": 64,
+        "trust": 100,
         "log": [
             "Meadowpaw bickered about something trivial with Pythonpaw. (neutral effect) - Meadowpaw was 12 moon(s) old",
             "Meadowpaw appreciates Pythonhope telling them that they had a feather stuck to their face. (low positive effect) - Meadowpaw was 16 moon(s) old",
@@ -220,7 +223,8 @@
             "Meadowrunner tells Pythonhope to count on them in a difficult situation. (high positive effect) - Meadowrunner was 29 moon(s) old",
             "Meadowrunner had Pythonhope bump into them, and they didn't even apologize! (low negative effect) - Meadowrunner was 34 moon(s) old",
             "Meadowrunner is telling a story to Pythonstar. (medium positive effect) - Meadowrunner was 38 moon(s) old",
-            "Meadowrunner challenged Pythonstar to spar with them. (neutral effect) - Meadowrunner was 45 moon(s) old"
+            "Meadowrunner challenged Pythonstar to spar with them. (neutral effect) - Meadowrunner was 45 moon(s) old",
+            "Meadowrunner thinks about how Pythonstar is always reliable. (medium positive effect) - Meadowrunner was 48 moon(s) old"
         ]
     },
     {
@@ -242,6 +246,128 @@
     {
         "cat_from_id": "48",
         "cat_to_id": "51",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "54",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 27,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 13,
+        "trust": 0,
+        "log": [
+            "Meadowrunner wishes they could get their pelt to shine like Perchkit's. (low negative effect) - Meadowrunner was 51 moon(s) old",
+            "Meadowrunner growls at Perchkit to get out from under their paws. (medium negative effect) - Meadowrunner was 53 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "53",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "55",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Meadowrunner bristles after being scolded by Brightkit. (high negative effect) - Meadowrunner was 53 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "56",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 24,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 25,
+        "jealousy": 0,
+        "trust": 12,
+        "log": [
+            "Meadowrunner reminds Breezekit to grab something from the fresh-kill pile if they haven't already. (medium positive effect) - Meadowrunner was 51 moon(s) old",
+            "Meadowrunner offers to groom a hard-to-reach place for Breezekit, who thanks them earnestly. (high positive effect) - Meadowrunner was 52 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "57",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "58",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Amberkit asks Meadowrunner to speak up while chatting together. (neutral effect) - Meadowrunner was 52 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "59",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "48",
+        "cat_to_id": "60",
         "mates": false,
         "family": false,
         "romantic_love": 0,

@@ -1,232 +1,351 @@
 [
     {
-        "text": "Anisemoon is giving Rowanfeather a task. (neutral effect)",
+        "text": "NegativeClan does not have enough healthy medicine cats! Cats will be sick\/hurt for longer and have a higher chance of dying. ",
+        "types": [
+            "health"
+        ],
+        "cats_involved": []
+    },
+    {
+        "text": "Anisemoon is scolding Conkerstar. (high negative effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "50",
+            "44",
             "35"
         ]
     },
     {
-        "text": "Specklefang thinks the prey Dustslash is biting into on the other side of camp looks delicious. (medium negative effect)",
+        "text": "Dustslash wishes they could get their pelt to shine like Nutgale's. (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "60",
+            "13"
+        ]
+    },
+    {
+        "text": "Dustslash wishes they could get their pelt to shine like Brightkit's. (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "55",
+            "13"
+        ]
+    },
+    {
+        "text": "Sparkpelt thinks Duskpaw was nice to them today. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "51",
+            "15"
+        ]
+    },
+    {
+        "text": "Waspshade is no longer sore.",
+        "types": [
+            "health"
+        ],
+        "cats_involved": [
+            "20"
+        ]
+    },
+    {
+        "text": "Waspshade is sharing prey with Amberkit. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "58",
+            "20"
+        ]
+    },
+    {
+        "text": "Waspshade bestows wisdom onto Warmkit. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "57",
+            "20"
+        ]
+    },
+    {
+        "text": "Snakefleck nods politely as Dustslash passes by. (neutral effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
             "13",
-            "12"
-        ]
-    },
-    {
-        "text": "Specklefang thinks Snakefleck was nice to them today. (low positive effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "31",
-            "12"
-        ]
-    },
-    {
-        "text": "Dustslash saw Specklefang being considerate. (low positive effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "12",
-            "13"
-        ]
-    },
-    {
-        "text": "Dustslash saved a piece of fresh-kill that they know is Pythonstar's favorite. (high positive effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "47",
-            "13"
-        ]
-    },
-    {
-        "text": "Sparkpelt swaps favorite prey with Tuftfang. (medium positive effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "49",
-            "15"
-        ]
-    },
-    {
-        "text": "Waspshade swaps favorite prey with Pythonstar. (medium positive effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "47",
-            "20"
-        ]
-    },
-    {
-        "text": "Waspshade helps Meadowrunner work through something difficult that happened to them. (high positive effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "48",
-            "20"
-        ]
-    },
-    {
-        "text": "Snakefleck is talking with Meadowrunner. (low positive effect)",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "48",
             "31"
         ]
     },
     {
-        "text": "Snakefleck is sparring with Pythonstar. (medium positive effect)",
+        "text": "Snakefleck challenged Swampheart to spar with them. (neutral effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "47",
+            "46",
             "31"
         ]
     },
     {
-        "text": "Snakefleck has met Duskkit of DashClan.",
+        "text": "Snakefleck was helping reinforce the camp walls when they got a thorn stuck in their paw.",
         "types": [
-            "misc"
+            "health"
         ],
         "cats_involved": [
-            "31",
-            "51"
-        ]
-    },
-    {
-        "text": "Pythonstar offers Duskkit some feathers as a welcome gift, that they can use to decorate their new nest.",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "51",
-            "47"
-        ]
-    },
-    {
-        "text": "Dustslash sees Duskkit arrive in the Clan and offers them to show them around.",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "51",
-            "13"
-        ]
-    },
-    {
-        "text": "Snakefleck is welcoming Duskkit.",
-        "types": [
-            "relation",
-            "interaction"
-        ],
-        "cats_involved": [
-            "51",
             "31"
         ]
     },
     {
-        "text": "Conkerstar bristles after being scolded by Duskkit. (high negative effect)",
+        "text": "Conkerstar had a spat with Veiltooth over a piece of prey on the fresh-kill pile. (medium negative effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "51",
+            "52",
             "44"
         ]
     },
     {
-        "text": "Seamusshade is talking with Tuftfang. (low positive effect)",
+        "text": "Conkerstar asks Seamusshade to speak up while chatting together. (neutral effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "49",
+            "44",
             "45"
         ]
     },
     {
-        "text": "Swampheart is checking on Pythonstar. (neutral effect)",
+        "text": "Swampheart and Nutgale heckled another Clan at the gathering together. (high positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "47",
+            "60",
             "46"
         ]
     },
     {
-        "text": "Pythonstar is complaining that Waspshade never does anything helpful. (high negative effect)",
+        "text": "Swampheart covered for Amberkit on something minor. (medium positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "20",
+            "58",
+            "46"
+        ]
+    },
+    {
+        "text": "Pythonstar is letting Perchkit share their troubles with them, hoping they'll feel better afterwards. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "54",
             "47"
         ]
     },
     {
-        "text": "Meadowrunner saw Waspshade the other day, but didn't get a chance to meow hello. (neutral effect)",
+        "text": "Pythonstar apologized to Warmkit for something or other. (low positive effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "20",
+            "57",
+            "47"
+        ]
+    },
+    {
+        "text": "Meadowrunner bristles after being scolded by Brightkit. (high negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "55",
             "48"
         ]
     },
     {
-        "text": "Tuftfang saw Rowanfeather show off a skill they never knew they had. (high positive effect)",
+        "text": "Meadowrunner growls at Perchkit to get out from under their paws. (medium negative effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
-            "50",
-            "49"
+            "54",
+            "48"
         ]
     },
     {
-        "text": "Rowanfeather thinks the prey Sparkpelt is biting into on the other side of camp looks delicious. (medium negative effect)",
+        "text": "Tuftfang doesn't think that Sparkpelt has been completely honest lately. (low negative effect)",
         "types": [
             "relation",
             "interaction"
         ],
         "cats_involved": [
             "15",
-            "50"
+            "49"
+        ]
+    },
+    {
+        "text": "Duskpaw is having a wonderful time discussing recent Clan news with Tuftfang. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "49",
+            "51"
+        ]
+    },
+    {
+        "text": "Veiltooth stands tall when Seamusshade walks by. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "45",
+            "52"
+        ]
+    },
+    {
+        "text": "Howllight has recovered from birthing their litter.",
+        "types": [
+            "health"
+        ],
+        "cats_involved": [
+            "53"
+        ]
+    },
+    {
+        "text": "Howllight saved a piece of fresh-kill that they know is Amberkit's favorite. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "58",
+            "53"
+        ]
+    },
+    {
+        "text": "Perchkit covered for Brightkit on something minor. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "55",
+            "54"
+        ]
+    },
+    {
+        "text": "Perchkit has gotten fleas.",
+        "types": [
+            "health"
+        ],
+        "cats_involved": [
+            "54"
+        ]
+    },
+    {
+        "text": "Brightkit confesses something minor to Amberkit. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "58",
+            "55"
+        ]
+    },
+    {
+        "text": "Breezekit mews congratulations to Brightkit for a job well done. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "55",
+            "56"
+        ]
+    },
+    {
+        "text": "Warmkit and Breezekit joke around about how bad the other Clans smell. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "56",
+            "57"
+        ]
+    },
+    {
+        "text": "Amberkit is complaining that Pythonstar never does anything helpful. (high negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "47",
+            "58"
+        ]
+    },
+    {
+        "text": "Amberkit has gotten a stomachache.",
+        "types": [
+            "health"
+        ],
+        "cats_involved": [
+            "58"
+        ]
+    },
+    {
+        "text": "Amorwing had a disagreement with Swampheart about something or other. (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "46",
+            "59"
+        ]
+    },
+    {
+        "text": "Nutgale saw Waspshade the other day and did get a chance to meow hello! (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "20",
+            "60"
         ]
     }
 ]

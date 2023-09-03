@@ -1,0 +1,26 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": [],
+        "age": 0,
+        "join_moon": -122,
+        "birth_moon": -122,
+        "join_season": "PLACEHOLDER"
+    },
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {},
+    "lead_ceremony": null,
+    "elder_ceremony": {
+        "honor": "moons of service",
+        "text": "",
+        "moon": 4,
+        "age": 125
+    },
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

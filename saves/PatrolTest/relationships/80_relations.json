@@ -1,0 +1,123 @@
+[
+    {
+        "cat_from_id": "80",
+        "cat_to_id": "74",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 17,
+        "dislike": 13,
+        "admiration": 0,
+        "comfortable": 13,
+        "jealousy": 17,
+        "trust": 13,
+        "log": [
+            "Rustlerise saw Rustleback the other day and did get a chance to meow hello! (medium positive effect) - Rustlerise was 57 moon(s) old",
+            "Rustlerise thinks the prey Rustleback is biting into on the other side of camp looks delicious. (medium negative effect) - Rustlerise was 60 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "80",
+        "cat_to_id": "75",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 13,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 17,
+        "jealousy": 0,
+        "trust": 13,
+        "log": [
+            "Rustlerise basks in the sun with Whirlscar. (medium positive effect) - Rustlerise was 58 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "80",
+        "cat_to_id": "76",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Rustlerise challenged Snakeburrow to spar with them. (neutral effect) - Rustlerise was 59 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "80",
+        "cat_to_id": "77",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "80",
+        "cat_to_id": "78",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Rustlerise and Pumpkinheart have an argument about who should get a pretty feather, and end up destroying it in their fight. (medium negative effect) - Rustlerise was 56 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "80",
+        "cat_to_id": "79",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "80",
+        "cat_to_id": "81",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "80",
+        "cat_to_id": "82",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    }
+]
