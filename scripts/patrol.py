@@ -2368,16 +2368,16 @@ class Patrol():
         # Determine number of cats
         for search_lower_limit in lower_limits:
             if search_lower_limit in self.patrol_event.tags:
-                lower_limit = sub('[^0-9]','', search_lower_limit)
+                lower_limit = int(sub('[^0-9]','', search_lower_limit))
         for search_upper_limit in upper_limits:
             if search_upper_limit in self.patrol_event.tags:
-                upper_limit = sub('[^0-9]','', search_upper_limit)
+                upper_limit = int(sub('[^0-9]','', search_upper_limit))
         for entry in upper_limits:
             if entry in self.outcome_text:
-                upper_limit = sub('[^0-9]','', entry)
+                upper_limit = int(sub('[^0-9]','', entry))
         for entry in lower_limits:
             if entry in self.outcome_text:
-                lower_limit = sub('[^0-9]','', entry)
+                lower_limit = int(sub('[^0-9]','', entry))
 
         # These things will be in self.outcome_text
         guide_dict = {
@@ -2494,12 +2494,15 @@ class Patrol():
                             if cat.status == dict_cat1[cat_1_filter]:
                                 fitting_1_cats.append(cat)
                         # 2 ---------------------------------------------
-                    if not cat_2_filter:
+                    if not cat_2_filter and lower_limit >= 2:
                         if cat.status in ["apprentice", "medicine cat apprentice", "warrior", "medicine cat", "deputy",
                                           "leader"]:
                             fitting_2_cats.append(cat)
+                    elif not cat_2_filter and lower_limit < 2:
+                        pass
                     else:
                         if cat_2_filter in ["2_MENTORW", "2_MENTOR"]:
+                            # These will need to be chosen after
                             pass
                         else:
                             if cat.status == dict_cat2[cat_2_filter]:
@@ -2517,11 +2520,11 @@ class Patrol():
             difference = 0
         else:
             if "CH_SAVIOR" in self.outcome_text:
-                difference = int(10)
+                difference = int(20)
             elif "CH_BIGPOS" in self.outcome_text:
-                difference = int(5)
+                difference = int(10)
             elif "CH_POS" in self.outcome_text:
-                difference = int(3)
+                difference = int(5)
             elif "CH_NEUT" in self.outcome_text:
                 difference = 0
             elif "CH_NEG" in self.outcome_text:
