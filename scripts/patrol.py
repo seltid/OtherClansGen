@@ -2546,6 +2546,7 @@ class Patrol():
 
 
         # CALCULATE DIFFERENCE --------------------------------------------------------
+        # So we can differentiate easily between positive and negative interactions, positive are even and negative are odd
         difference = None
         if "otherclan_nochangefail" in self.patrol_event.tags and not self.success:
             difference = 0
@@ -2601,14 +2602,9 @@ class Patrol():
                     change_relationship_values([patrol_cat.ID], [cat_1], 0, 0, 0, 0, 0, 0, 0)
 
 
-        # Create the relationships between patrol cats and OC cats
-        # 1
-
-
         # Print debug text
         self.results_text.append(f"PLACEHOLDER TEXT HERE INVOLVING {num_of_cats} CAT(S) FROM {other_clan}")
         self.results_text.append(f"Change: {difference}")
-        self.results_text.append(f"Fitting cats: {fitting_1_cats}")
 
 # ---------------------------------------------------------------------------- #
 #                               PATROL CLASS END                               #
