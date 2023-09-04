@@ -42,7 +42,8 @@
         "jealousy": 0,
         "trust": 14,
         "log": [
-            "Squirrelfog surprises Flutterpaw with something nice. (medium positive effect) - Squirrelfog was 108 moon(s) old"
+            "Squirrelfog surprises Flutterpaw with something nice. (medium positive effect) - Squirrelfog was 108 moon(s) old",
+            "Squirrelfog apologized to Flutterpaw for something or other. (low positive effect) - Squirrelfog was 109 moon(s) old"
         ]
     },
     {
@@ -57,7 +58,9 @@
         "comfortable": 14,
         "jealousy": 0,
         "trust": 9,
-        "log": []
+        "log": [
+            "Squirrelfog is sharpening their claws near Splinterlilac. (neutral effect) - Squirrelfog was 110 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "61",
@@ -218,11 +221,13 @@
         "romantic_love": 0,
         "platonic_like": 0,
         "dislike": 0,
-        "admiration": 0,
+        "admiration": 13,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Squirrelfog saw Sprucepaw being considerate. (low positive effect) - Squirrelfog was 109 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "61",
@@ -258,6 +263,78 @@
     {
         "cat_from_id": "61",
         "cat_to_id": "8",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "61",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "61",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 6,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 8,
+        "jealousy": 0,
+        "trust": 6,
+        "log": [
+            "Squirrelfog has been spending time with Floodkit lately. (low positive effect) - Squirrelfog was 110 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "61",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "61",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "61",
+        "cat_to_id": "13",
         "mates": false,
         "family": false,
         "romantic_love": 0,

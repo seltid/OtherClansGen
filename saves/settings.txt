@@ -4,7 +4,7 @@ game_mode:expanded
 text size:0
 fullscreen:False
 show dead relation:True
-show empty relation:False
+show empty relation:True
 favourite sub tab:None
 random relation:True
 affair:False

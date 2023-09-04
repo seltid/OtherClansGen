@@ -1,5 +1,14 @@
 {
-    "beginning": {},
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [
+            "Newleaf"
+        ],
+        "age": 1,
+        "join_moon": 3,
+        "birth_moon": 2,
+        "join_season": "PLACEHOLDER"
+    },
     "mentor_influence": {
         "trait": {},
         "skill": {}

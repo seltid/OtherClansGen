@@ -37,13 +37,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 23,
+        "platonic_like": 44,
         "dislike": 0,
         "admiration": 4,
-        "comfortable": 0,
+        "comfortable": 16,
         "jealousy": 0,
         "trust": 7,
-        "log": []
+        "log": [
+            "Splinterlilac wants to spend more time with Umberpaw! (high positive effect) - Splinterlilac was 156 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "66",
@@ -82,12 +84,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 21,
+        "dislike": 38,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 5,
         "trust": 0,
-        "log": []
+        "log": [
+            "Splinterlilac had a spat with Berrybeetle over a piece of prey on the fresh-kill pile. (medium negative effect) - Splinterlilac was 156 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "66",
@@ -160,7 +164,7 @@
         "platonic_like": 0,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 8,
         "jealousy": 0,
         "trust": 0,
         "log": []
@@ -238,7 +242,9 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Splinterlilac caught Tarantulapaw in a lie. (medium negative effect) - Splinterlilac was 155 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "66",
@@ -257,6 +263,78 @@
     {
         "cat_from_id": "66",
         "cat_to_id": "8",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "66",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "66",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "66",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "66",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Splinterlilac caught Harekit complaining about them behind their back. (high negative effect) - Splinterlilac was 155 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "66",
+        "cat_to_id": "13",
         "mates": false,
         "family": false,
         "romantic_love": 0,

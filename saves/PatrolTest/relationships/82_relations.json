@@ -22,7 +22,7 @@
         "platonic_like": 0,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 3,
         "jealousy": 0,
         "trust": 0,
         "log": [
@@ -57,7 +57,8 @@
         "jealousy": 3,
         "trust": 0,
         "log": [
-            "Fruitfur wishes they could get their pelt to shine like Jackdawkit's. (low negative effect) - Fruitfur was 46 moon(s) old"
+            "Fruitfur wishes they could get their pelt to shine like Jackdawkit's. (low negative effect) - Fruitfur was 46 moon(s) old",
+            "Fruitfur overheard a joke from Jackdawpaw they didn't get. (low negative effect) - Fruitfur was 50 moon(s) old"
         ]
     },
     {
@@ -116,7 +117,36 @@
         "trust": 0,
         "log": [
             "Fruitfur had a spat with Barleystar over a piece of prey on the fresh-kill pile. (medium negative effect) - Fruitfur was 45 moon(s) old",
-            "Fruitfur admires how brave Barleystar is. (medium positive effect) - Fruitfur was 47 moon(s) old"
+            "Fruitfur admires how brave Barleystar is. (medium positive effect) - Fruitfur was 47 moon(s) old",
+            "Fruitfur is stuttering while speaking to Barleystar. (neutral effect) - Fruitfur was 49 moon(s) old"
         ]
+    },
+    {
+        "cat_from_id": "82",
+        "cat_to_id": "65",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 5,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 5,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "82",
+        "cat_to_id": "69",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
     }
 ]

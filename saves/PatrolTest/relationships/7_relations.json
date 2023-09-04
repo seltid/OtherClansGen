@@ -78,7 +78,7 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 8,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
@@ -211,13 +211,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 7,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 5,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Cowpaw was playing with Birdpaw and learned a fun new battle move from them! (medium positive effect) - Cowpaw was 8 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "7",
@@ -236,6 +238,78 @@
     {
         "cat_from_id": "7",
         "cat_to_id": "8",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "7",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "7",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 16,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Cowpaw had a difficult conversation with Floodkit and they now have a deeper understanding of each other. (high positive effect) - Cowpaw was 9 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "7",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "7",
+        "cat_to_id": "13",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "7",
+        "cat_to_id": "12",
         "mates": false,
         "family": false,
         "romantic_love": 0,

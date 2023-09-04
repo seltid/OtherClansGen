@@ -170,7 +170,8 @@
         "jealousy": 0,
         "trust": 0,
         "log": [
-            "Flutterkit doesn't notice Clayshadow twitching their whiskers at them. (neutral effect) - Flutterkit was 5 moon(s) old"
+            "Flutterkit doesn't notice Clayshadow twitching their whiskers at them. (neutral effect) - Flutterkit was 5 moon(s) old",
+            "Flutterpaw is really surprised that Clayshadow's life isn't as easy as they thought it was. (high positive effect) - Flutterpaw was 10 moon(s) old"
         ]
     },
     {
@@ -194,7 +195,7 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 3,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
@@ -245,11 +246,97 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Flutterpaw has a disagreement with Cowpaw over who is the better hunter. (high negative effect) - Flutterpaw was 9 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "65",
         "cat_to_id": "8",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "65",
+        "cat_to_id": "82",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 5,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 5,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "65",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "65",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "65",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "65",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "65",
+        "cat_to_id": "13",
         "mates": false,
         "family": false,
         "romantic_love": 0,

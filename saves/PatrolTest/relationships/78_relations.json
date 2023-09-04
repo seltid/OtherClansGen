@@ -21,14 +21,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 10,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 13,
         "jealousy": 0,
-        "trust": 13,
+        "trust": 23,
         "log": [
-            "Pumpkinheart appreciates Whirlscar telling them that they had a feather stuck to their face. (low positive effect) - Pumpkinheart was 14 moon(s) old"
+            "Pumpkinheart appreciates Whirlscar telling them that they had a feather stuck to their face. (low positive effect) - Pumpkinheart was 14 moon(s) old",
+            "Pumpkinheart has been spending time with Whirlscar lately. (low positive effect) - Pumpkinheart was 19 moon(s) old",
+            "Pumpkinheart lifts their chin up while passing by Whirlscar. (neutral effect) - Pumpkinheart was 20 moon(s) old"
         ]
     },
     {

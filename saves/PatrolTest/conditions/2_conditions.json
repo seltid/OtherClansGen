@@ -1,0 +1,20 @@
+{
+    "injuries": {
+        "small cut": {
+            "severity": "minor",
+            "mortality": 0,
+            "duration": 1,
+            "moon_start": 7,
+            "illness_infectiousness": [],
+            "risks": [
+                {
+                    "name": "an infected wound",
+                    "chance": 40
+                }
+            ],
+            "complication": null,
+            "cause_permanent": [],
+            "event_triggered": false
+        }
+    }
+}

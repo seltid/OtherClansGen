@@ -1,15 +1,15 @@
 {
     "illnesses": {
-        "whitecough": {
-            "severity": "major",
-            "mortality": 70,
+        "greencough": {
+            "severity": "severe",
+            "mortality": 20,
             "infectiousness": 30,
             "duration": 2,
-            "moon_start": 7,
+            "moon_start": 6,
             "risks": [
                 {
-                    "name": "greencough",
-                    "chance": 18
+                    "name": "yellowcough",
+                    "chance": 60
                 }
             ],
             "event_triggered": false

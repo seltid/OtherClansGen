@@ -1,21 +1,24 @@
 [
     {
-        "cat_from_id": "3",
-        "cat_to_id": "1",
+        "cat_from_id": "10",
+        "cat_to_id": "9",
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 40,
+        "platonic_like": 53,
         "dislike": 0,
         "admiration": 30,
-        "comfortable": 40,
+        "comfortable": 57,
         "jealousy": 0,
-        "trust": 50,
-        "log": []
+        "trust": 63,
+        "log": [
+            "Floodkit helps Big Manfreckle pick burrs out of their fur. (medium positive effect) - Floodkit was 4 moon(s) old",
+            "Floodkit challenged Big Manfreckle to spar with them. (neutral effect) - Floodkit was 5 moon(s) old"
+        ]
     },
     {
-        "cat_from_id": "3",
-        "cat_to_id": "2",
+        "cat_from_id": "10",
+        "cat_to_id": "11",
         "mates": false,
         "family": false,
         "romantic_love": 0,
@@ -25,13 +28,11 @@
         "comfortable": 40,
         "jealousy": 0,
         "trust": 30,
-        "log": [
-            "Birdpaw realized that they were too harsh in their judgment of Berrypaw. (medium positive effect) - Birdpaw was 8 moon(s) old"
-        ]
+        "log": []
     },
     {
-        "cat_from_id": "3",
-        "cat_to_id": "4",
+        "cat_from_id": "10",
+        "cat_to_id": "12",
         "mates": false,
         "family": false,
         "romantic_love": 0,
@@ -40,14 +41,12 @@
         "admiration": 10,
         "comfortable": 40,
         "jealousy": 0,
-        "trust": 38,
-        "log": [
-            "Birdpaw appreciates Sprucekit telling them that they had a feather stuck to their face. (low positive effect) - Birdpaw was 6 moon(s) old"
-        ]
+        "trust": 30,
+        "log": []
     },
     {
-        "cat_from_id": "3",
-        "cat_to_id": "72",
+        "cat_from_id": "10",
+        "cat_to_id": "62",
         "mates": false,
         "family": false,
         "romantic_love": 0,
@@ -60,24 +59,22 @@
         "log": []
     },
     {
-        "cat_from_id": "3",
+        "cat_from_id": "10",
         "cat_to_id": "61",
         "mates": false,
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 3,
+        "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 8,
         "jealousy": 0,
         "trust": 0,
-        "log": [
-            "Birdkit had a disagreement with Squirrelfog about something or other. (low negative effect) - Birdkit was 5 moon(s) old"
-        ]
+        "log": []
     },
     {
-        "cat_from_id": "3",
-        "cat_to_id": "62",
+        "cat_from_id": "10",
+        "cat_to_id": "6",
         "mates": false,
         "family": false,
         "romantic_love": 0,
@@ -90,13 +87,13 @@
         "log": []
     },
     {
-        "cat_from_id": "3",
+        "cat_from_id": "10",
         "cat_to_id": "63",
         "mates": false,
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 8,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
@@ -104,7 +101,21 @@
         "log": []
     },
     {
-        "cat_from_id": "3",
+        "cat_from_id": "10",
+        "cat_to_id": "68",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 8,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "10",
         "cat_to_id": "65",
         "mates": false,
         "family": false,
@@ -115,12 +126,10 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": [
-            "Birdpaw tells Flutterpaw's mentor that they've been sneaking out of camp without permission. (high negative effect) - Birdpaw was 11 moon(s) old"
-        ]
+        "log": []
     },
     {
-        "cat_from_id": "3",
+        "cat_from_id": "10",
         "cat_to_id": "66",
         "mates": false,
         "family": false,
@@ -131,27 +140,11 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": [
-            "Birdpaw is surprised by Splinterlilac being thoughtful. (low positive effect) - Birdpaw was 9 moon(s) old"
-        ]
-    },
-    {
-        "cat_from_id": "3",
-        "cat_to_id": "67",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 8,
-        "dislike": 13,
-        "admiration": 0,
-        "comfortable": 0,
-        "jealousy": 0,
-        "trust": 0,
         "log": []
     },
     {
-        "cat_from_id": "3",
-        "cat_to_id": "68",
+        "cat_from_id": "10",
+        "cat_to_id": "67",
         "mates": false,
         "family": false,
         "romantic_love": 0,
@@ -164,7 +157,7 @@
         "log": []
     },
     {
-        "cat_from_id": "3",
+        "cat_from_id": "10",
         "cat_to_id": "69",
         "mates": false,
         "family": false,
@@ -175,12 +168,10 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": [
-            "Birdpaw is surprised by Halfstar being thoughtful. (low positive effect) - Birdpaw was 7 moon(s) old"
-        ]
+        "log": []
     },
     {
-        "cat_from_id": "3",
+        "cat_from_id": "10",
         "cat_to_id": "71",
         "mates": false,
         "family": false,
@@ -194,7 +185,77 @@
         "log": []
     },
     {
-        "cat_from_id": "3",
+        "cat_from_id": "10",
+        "cat_to_id": "72",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "10",
+        "cat_to_id": "1",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "10",
+        "cat_to_id": "2",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "10",
+        "cat_to_id": "3",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "10",
+        "cat_to_id": "4",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "10",
         "cat_to_id": "5",
         "mates": false,
         "family": false,
@@ -208,35 +269,21 @@
         "log": []
     },
     {
-        "cat_from_id": "3",
-        "cat_to_id": "6",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 8,
-        "dislike": 0,
-        "admiration": 0,
-        "comfortable": 0,
-        "jealousy": 0,
-        "trust": 0,
-        "log": []
-    },
-    {
-        "cat_from_id": "3",
+        "cat_from_id": "10",
         "cat_to_id": "7",
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 3,
+        "platonic_like": 0,
         "dislike": 0,
-        "admiration": 0,
+        "admiration": 8,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
         "log": []
     },
     {
-        "cat_from_id": "3",
+        "cat_from_id": "10",
         "cat_to_id": "8",
         "mates": false,
         "family": false,
@@ -250,66 +297,8 @@
         "log": []
     },
     {
-        "cat_from_id": "3",
+        "cat_from_id": "10",
         "cat_to_id": "13",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 12,
-        "dislike": 0,
-        "admiration": 0,
-        "comfortable": 9,
-        "jealousy": 0,
-        "trust": 0,
-        "log": [
-            "Birdpaw wants to sneak along the border with Coniferkit. (medium positive effect) - Birdpaw was 10 moon(s) old"
-        ]
-    },
-    {
-        "cat_from_id": "3",
-        "cat_to_id": "9",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 0,
-        "dislike": 0,
-        "admiration": 0,
-        "comfortable": 0,
-        "jealousy": 0,
-        "trust": 0,
-        "log": []
-    },
-    {
-        "cat_from_id": "3",
-        "cat_to_id": "10",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 0,
-        "dislike": 0,
-        "admiration": 0,
-        "comfortable": 0,
-        "jealousy": 0,
-        "trust": 0,
-        "log": []
-    },
-    {
-        "cat_from_id": "3",
-        "cat_to_id": "11",
-        "mates": false,
-        "family": false,
-        "romantic_love": 0,
-        "platonic_like": 0,
-        "dislike": 0,
-        "admiration": 0,
-        "comfortable": 0,
-        "jealousy": 0,
-        "trust": 0,
-        "log": []
-    },
-    {
-        "cat_from_id": "3",
-        "cat_to_id": "12",
         "mates": false,
         "family": false,
         "romantic_love": 0,

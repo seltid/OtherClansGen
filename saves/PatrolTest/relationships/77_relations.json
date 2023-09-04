@@ -35,14 +35,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 8,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 6,
         "jealousy": 0,
         "trust": 0,
         "log": [
-            "Jackdawkit realized that they were too harsh in their judgment of Snakeburrow. (medium positive effect) - Jackdawkit was 5 moon(s) old"
+            "Jackdawkit realized that they were too harsh in their judgment of Snakeburrow. (medium positive effect) - Jackdawkit was 5 moon(s) old",
+            "Jackdawpaw thinks Snakeburrow was nice to them today. (low positive effect) - Jackdawpaw was 8 moon(s) old"
         ]
     },
     {
@@ -71,7 +72,9 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Jackdawpaw always thought Fluttercall had it all figured out, so they're surprised when Fluttercall asks for help. (medium positive effect) - Jackdawpaw was 7 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "77",

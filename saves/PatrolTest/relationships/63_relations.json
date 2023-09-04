@@ -77,13 +77,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 27,
+        "platonic_like": 43,
         "dislike": 0,
         "admiration": 15,
-        "comfortable": 16,
+        "comfortable": 45,
         "jealousy": 0,
-        "trust": 11,
-        "log": []
+        "trust": 27,
+        "log": [
+            "Umberpaw appreciates how Berrybeetle always seems to ask how they're doing. (high positive effect) - Umberpaw was 12 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "63",
@@ -104,11 +106,11 @@
         "cat_to_id": "71",
         "mates": false,
         "family": false,
-        "romantic_love": 0,
-        "platonic_like": 24,
+        "romantic_love": 8,
+        "platonic_like": 32,
         "dislike": 0,
         "admiration": 11,
-        "comfortable": 23,
+        "comfortable": 31,
         "jealousy": 0,
         "trust": 14,
         "log": []
@@ -119,13 +121,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 11,
-        "dislike": 0,
+        "platonic_like": 3,
+        "dislike": 11,
         "admiration": 1,
         "comfortable": 17,
         "jealousy": 0,
         "trust": 15,
-        "log": []
+        "log": [
+            "Umberpaw had a fight with Twigdapple. (high negative effect) - Umberpaw was 13 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "63",
@@ -259,5 +263,75 @@
             "Umberpaw is complaining that Cowkit never does anything helpful. (high negative effect) - Umberpaw was 8 moon(s) old",
             "Umberpaw saw Cowpaw the other day, but didn't get a chance to meow hello. (neutral effect) - Umberpaw was 11 moon(s) old"
         ]
+    },
+    {
+        "cat_from_id": "63",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 8,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "63",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "63",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 8,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "63",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "63",
+        "cat_to_id": "13",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
     }
 ]

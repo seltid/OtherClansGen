@@ -94,14 +94,16 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 8,
+        "platonic_like": 22,
         "dislike": 0,
         "admiration": 8,
-        "comfortable": 0,
+        "comfortable": 8,
         "jealousy": 0,
-        "trust": 0,
+        "trust": 6,
         "log": [
-            "Fluttercall mews congratulations to Barleystar for a job well done. (low positive effect) - Fluttercall was 35 moon(s) old"
+            "Fluttercall mews congratulations to Barleystar for a job well done. (low positive effect) - Fluttercall was 35 moon(s) old",
+            "Fluttercall said something that rubbed Barleystar the wrong way. (low negative effect) - Fluttercall was 40 moon(s) old",
+            "Fluttercall quickly apologizes after bumping into Barleystar. They have a small laugh about it. (low positive effect) - Fluttercall was 41 moon(s) old"
         ]
     },
     {

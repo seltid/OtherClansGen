@@ -49,13 +49,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 8,
+        "platonic_like": 24,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 12,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Rustleback wants to spend more time with Pumpkinheart! (high positive effect) - Rustleback was 20 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "74",
@@ -86,7 +88,8 @@
         "log": [
             "Rustleback always thought Rustlerise had it all figured out, so they're surprised when Rustlerise asks for help. (medium positive effect) - Rustleback was 14 moon(s) old",
             "Rustleback appreciates Rustlerise telling them that they had a feather stuck to their face. (low positive effect) - Rustleback was 17 moon(s) old",
-            "Rustleback goes to Rustlerise to ask for their wisdom. (medium positive effect) - Rustleback was 18 moon(s) old"
+            "Rustleback goes to Rustlerise to ask for their wisdom. (medium positive effect) - Rustleback was 18 moon(s) old",
+            "Rustleback is surprised by Rustlerise being thoughtful. (low positive effect) - Rustleback was 19 moon(s) old"
         ]
     },
     {

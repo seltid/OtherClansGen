@@ -92,14 +92,16 @@
         "cat_to_id": "68",
         "mates": false,
         "family": false,
-        "romantic_love": 0,
-        "platonic_like": 0,
+        "romantic_love": 13,
+        "platonic_like": 10,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 10,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Booker is prancing around in front of Berrybeetle. (low positive effect) - Booker was 97 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "8",
@@ -113,7 +115,9 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Booker and Halfstar have an argument about who should get a pretty feather, and end up destroying it in their fight. (medium negative effect) - Booker was 98 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "8",
@@ -235,6 +239,76 @@
     {
         "cat_from_id": "8",
         "cat_to_id": "7",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "8",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "8",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "8",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "8",
+        "cat_to_id": "13",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "8",
+        "cat_to_id": "12",
         "mates": false,
         "family": false,
         "romantic_love": 0,

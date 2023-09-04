@@ -1,5 +1,12 @@
 {
-    "beginning": {},
+    "beginning": {
+        "clan_born": false,
+        "birth_season": [],
+        "age": 14,
+        "join_moon": -21,
+        "birth_moon": -35,
+        "join_season": "PLACEHOLDER"
+    },
     "mentor_influence": {
         "trait": {},
         "skill": {}

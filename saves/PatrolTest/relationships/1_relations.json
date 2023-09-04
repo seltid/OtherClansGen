@@ -48,16 +48,17 @@
         "cat_to_id": "72",
         "mates": false,
         "family": false,
-        "romantic_love": 21,
-        "platonic_like": 31,
+        "romantic_love": 42,
+        "platonic_like": 47,
         "dislike": 0,
         "admiration": 10,
-        "comfortable": 31,
+        "comfortable": 47,
         "jealousy": 0,
         "trust": 28,
         "log": [
             "Clayshadow appreciates Twigdapple telling them that they had a feather stuck to their face. (low positive effect) - Clayshadow was 24 moon(s) old",
-            "Clayshadow ensnares Twigdapple with a charming smile. (positive effect)"
+            "Clayshadow ensnares Twigdapple with a charming smile. (positive effect)",
+            "Clayshadow wants to confess their love to Twigdapple. (positive effect)"
         ]
     },
     {
@@ -124,13 +125,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 9,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 12,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 9,
+        "log": [
+            "Clayshadow settles near Splinterlilac to eat their fresh-kill. (medium positive effect) - Clayshadow was 29 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "1",
@@ -139,12 +142,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 6,
         "admiration": 0,
         "comfortable": 0,
-        "jealousy": 0,
+        "jealousy": 8,
         "trust": 0,
-        "log": []
+        "log": [
+            "Clayshadow wishes they could get their pelt to shine like Cragshade's. (low negative effect) - Clayshadow was 30 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "1",
@@ -237,6 +242,76 @@
     {
         "cat_from_id": "1",
         "cat_to_id": "8",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "1",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "1",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "1",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "1",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "1",
+        "cat_to_id": "13",
         "mates": false,
         "family": false,
         "romantic_love": 0,

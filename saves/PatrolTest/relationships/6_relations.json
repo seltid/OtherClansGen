@@ -11,7 +11,9 @@
         "comfortable": 40,
         "jealousy": 0,
         "trust": 50,
-        "log": []
+        "log": [
+            "Tarantulapaw is really surprised that Greenseed's life isn't as easy as they thought it was. (high positive effect) - Tarantulapaw was 9 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "6",
@@ -100,7 +102,8 @@
         "jealousy": 0,
         "trust": 0,
         "log": [
-            "Tarantulapaw thinks Splinterlilac is very helpful! (low positive effect) - Tarantulapaw was 7 moon(s) old"
+            "Tarantulapaw thinks Splinterlilac is very helpful! (low positive effect) - Tarantulapaw was 7 moon(s) old",
+            "Tarantulapaw nods politely as Splinterlilac passes by. (neutral effect) - Tarantulapaw was 8 moon(s) old"
         ]
     },
     {
@@ -109,7 +112,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 16,
+        "platonic_like": 24,
         "dislike": 0,
         "admiration": 0,
         "comfortable": 12,
@@ -211,7 +214,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 8,
         "dislike": 0,
         "admiration": 0,
         "comfortable": 0,
@@ -236,6 +239,76 @@
     {
         "cat_from_id": "6",
         "cat_to_id": "8",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "6",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "6",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "6",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "6",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "6",
+        "cat_to_id": "13",
         "mates": false,
         "family": false,
         "romantic_love": 0,

@@ -37,12 +37,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 29,
-        "dislike": 0,
+        "dislike": 3,
         "admiration": 12,
         "comfortable": 23,
         "jealousy": 0,
         "trust": 13,
-        "log": []
+        "log": [
+            "Twigdapple thinks Umberpaw is very helpful! (low positive effect) - Twigdapple was 57 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "72",
@@ -102,7 +104,9 @@
         "comfortable": 1,
         "jealousy": 0,
         "trust": 4,
-        "log": []
+        "log": [
+            "Twigdapple thinks their dreams might not come true with Berrybeetle. (negative effect)"
+        ]
     },
     {
         "cat_from_id": "72",
@@ -159,7 +163,8 @@
         "jealousy": 0,
         "trust": 10,
         "log": [
-            "Clayshadow ensnares Twigdapple with a charming smile. (positive effect)"
+            "Clayshadow ensnares Twigdapple with a charming smile. (positive effect)",
+            "Clayshadow wants to confess their love to Twigdapple. (positive effect)"
         ]
     },
     {
@@ -182,14 +187,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 15,
-        "dislike": 12,
+        "platonic_like": 24,
+        "dislike": 3,
         "admiration": 5,
-        "comfortable": 10,
-        "jealousy": 16,
-        "trust": 10,
+        "comfortable": 22,
+        "jealousy": 7,
+        "trust": 19,
         "log": [
-            "Twigdapple is complaining that Birdpaw never does anything helpful. (high negative effect) - Twigdapple was 55 moon(s) old"
+            "Twigdapple is complaining that Birdpaw never does anything helpful. (high negative effect) - Twigdapple was 55 moon(s) old",
+            "Twigdapple helps Birdpaw pick burrs out of their fur. (medium positive effect) - Twigdapple was 58 moon(s) old"
         ]
     },
     {
@@ -240,16 +246,17 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
-        "dislike": 11,
+        "platonic_like": 8,
+        "dislike": 3,
         "admiration": 0,
-        "comfortable": 0,
-        "jealousy": 11,
-        "trust": 0,
+        "comfortable": 11,
+        "jealousy": 3,
+        "trust": 8,
         "log": [
             "Twigdapple is complaining that Cowkit never does anything helpful. (high negative effect) - Twigdapple was 52 moon(s) old",
             "Twigdapple is stuttering while speaking to Cowpaw. (neutral effect) - Twigdapple was 56 moon(s) old",
-            "Twigdapple had Cowpaw bump into them, and they didn't even apologize! (low negative effect) - Twigdapple was 56 moon(s) old"
+            "Twigdapple had Cowpaw bump into them, and they didn't even apologize! (low negative effect) - Twigdapple was 56 moon(s) old",
+            "Twigdapple appreciates how Cowpaw always seems to ask how they're doing. (high positive effect) - Twigdapple was 57 moon(s) old"
         ]
     },
     {
@@ -269,6 +276,78 @@
     {
         "cat_from_id": "72",
         "cat_to_id": "77",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "72",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "72",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "72",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 12,
+        "log": [
+            "Twigdapple is giving advice to Poppykit. (medium positive effect) - Twigdapple was 58 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "72",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "72",
+        "cat_to_id": "13",
         "mates": false,
         "family": false,
         "romantic_love": 0,

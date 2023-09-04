@@ -29,7 +29,8 @@
         "trust": 0,
         "log": [
             "Barleystar called Whirlscar the wrong name. (medium negative effect) - Barleystar was 54 moon(s) old",
-            "Barleystar doesn't notice Whirlscar twitching their whiskers at them. (neutral effect) - Barleystar was 57 moon(s) old"
+            "Barleystar doesn't notice Whirlscar twitching their whiskers at them. (neutral effect) - Barleystar was 57 moon(s) old",
+            "Barleystar doesn't notice Whirlscar twitching their whiskers at them. (neutral effect) - Barleystar was 59 moon(s) old"
         ]
     },
     {
@@ -80,14 +81,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 12,
+        "platonic_like": 24,
         "dislike": 0,
         "admiration": 8,
-        "comfortable": 9,
+        "comfortable": 18,
         "jealousy": 0,
         "trust": 0,
         "log": [
-            "Barleystar chats with Fluttercall while grabbing something to eat. (medium positive effect) - Barleystar was 55 moon(s) old"
+            "Barleystar chats with Fluttercall while grabbing something to eat. (medium positive effect) - Barleystar was 55 moon(s) old",
+            "Barleystar is telling a story to Fluttercall. (medium positive effect) - Barleystar was 58 moon(s) old"
         ]
     },
     {

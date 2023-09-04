@@ -50,13 +50,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 17,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 26,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Whirlscar reminds Pumpkinheart to grab something from the fresh-kill pile if they haven't already. (medium positive effect) - Whirlscar was 129 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "75",
@@ -111,12 +113,14 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 2,
         "dislike": 0,
         "admiration": 0,
-        "comfortable": 0,
+        "comfortable": 3,
         "jealousy": 0,
-        "trust": 0,
-        "log": []
+        "trust": 2,
+        "log": [
+            "Whirlscar has been spending time with Fruitfur lately. (low positive effect) - Whirlscar was 128 moon(s) old"
+        ]
     }
 ]

@@ -80,10 +80,12 @@
         "platonic_like": 2,
         "dislike": 0,
         "admiration": 20,
-        "comfortable": 18,
+        "comfortable": 6,
         "jealousy": 0,
         "trust": 4,
-        "log": []
+        "log": [
+            "Woodtail called Berrybeetle the wrong name. (medium negative effect) - Woodtail was 22 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "62",
@@ -259,5 +261,77 @@
         "jealousy": 0,
         "trust": 0,
         "log": []
+    },
+    {
+        "cat_from_id": "62",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "62",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "62",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "62",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "62",
+        "cat_to_id": "13",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 16,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Woodtail had a difficult conversation with Coniferkit and they now have a deeper understanding of each other. (high positive effect) - Woodtail was 23 moon(s) old"
+        ]
     }
 ]

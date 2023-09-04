@@ -34,14 +34,16 @@
         "cat_to_id": "63",
         "mates": false,
         "family": false,
-        "romantic_love": 0,
-        "platonic_like": 17,
+        "romantic_love": 16,
+        "platonic_like": 29,
         "dislike": 0,
         "admiration": 12,
-        "comfortable": 11,
+        "comfortable": 23,
         "jealousy": 0,
         "trust": 13,
-        "log": []
+        "log": [
+            "Rabbitwater rolls around in some herbs after hearing Umberpaw likes their smell. (positive effect)"
+        ]
     },
     {
         "cat_from_id": "71",
@@ -244,12 +246,85 @@
         "jealousy": 0,
         "trust": 0,
         "log": [
-            "Rabbitpaw mews congratulations to Cowkit for a job well done. (low positive effect) - Rabbitpaw was 9 moon(s) old"
+            "Rabbitpaw mews congratulations to Cowkit for a job well done. (low positive effect) - Rabbitpaw was 9 moon(s) old",
+            "Rabbitwater goes to tell a secret to Cowpaw only for Cowpaw to tell someone else's secret to them. (high negative effect) - Rabbitwater was 14 moon(s) old"
         ]
     },
     {
         "cat_from_id": "71",
         "cat_to_id": "8",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "71",
+        "cat_to_id": "13",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 17,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 13,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Rabbitwater reminds Coniferkit to grab something from the fresh-kill pile if they haven't already. (medium positive effect) - Rabbitwater was 13 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "71",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "71",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "71",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "71",
+        "cat_to_id": "12",
         "mates": false,
         "family": false,
         "romantic_love": 0,

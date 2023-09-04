@@ -103,7 +103,9 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Greenseed is surprised by Splinterlilac being thoughtful. (low positive effect) - Greenseed was 92 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "5",
@@ -139,7 +141,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 8,
         "dislike": 0,
         "admiration": 16,
         "comfortable": 0,
@@ -226,18 +228,91 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 9,
         "admiration": 0,
         "comfortable": 0,
-        "jealousy": 0,
+        "jealousy": 12,
         "trust": 16,
         "log": [
-            "Greenseed thinks they can tell Sprucepaw something important. (high positive effect) - Greenseed was 90 moon(s) old"
+            "Greenseed thinks they can tell Sprucepaw something important. (high positive effect) - Greenseed was 90 moon(s) old",
+            "Greenseed thinks the prey Sprucepaw is biting into on the other side of camp looks delicious. (medium negative effect) - Greenseed was 91 moon(s) old"
         ]
     },
     {
         "cat_from_id": "5",
         "cat_to_id": "8",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "5",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 16,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 12,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Greenseed is having a wonderful time discussing recent Clan news with Poppykit. (high positive effect) - Greenseed was 91 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "5",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "5",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "5",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "5",
+        "cat_to_id": "13",
         "mates": false,
         "family": false,
         "romantic_love": 0,

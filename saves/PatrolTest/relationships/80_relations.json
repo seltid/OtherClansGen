@@ -45,7 +45,8 @@
         "jealousy": 0,
         "trust": 0,
         "log": [
-            "Rustlerise challenged Snakeburrow to spar with them. (neutral effect) - Rustlerise was 59 moon(s) old"
+            "Rustlerise challenged Snakeburrow to spar with them. (neutral effect) - Rustlerise was 59 moon(s) old",
+            "Rustlerise apologized to Snakeburrow for something or other. (low positive effect) - Rustlerise was 61 moon(s) old"
         ]
     },
     {
@@ -85,12 +86,14 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 0,
-        "dislike": 0,
+        "dislike": 16,
         "admiration": 0,
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Rustlerise thinks Fluttercall is being annoying. (high negative effect) - Rustlerise was 62 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "80",

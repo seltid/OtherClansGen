@@ -25,10 +25,11 @@
         "dislike": 26,
         "admiration": 0,
         "comfortable": 0,
-        "jealousy": 16,
+        "jealousy": 3,
         "trust": 0,
         "log": [
-            "Halfstar thinks the prey Woodtail is biting into on the other side of camp looks delicious. (medium negative effect) - Halfstar was 112 moon(s) old"
+            "Halfstar thinks the prey Woodtail is biting into on the other side of camp looks delicious. (medium negative effect) - Halfstar was 112 moon(s) old",
+            "Halfstar thinks Woodtail is very helpful! (low positive effect) - Halfstar was 117 moon(s) old"
         ]
     },
     {
@@ -125,12 +126,15 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 9,
-        "dislike": 0,
+        "dislike": 6,
         "admiration": 9,
         "comfortable": 9,
-        "jealousy": 0,
+        "jealousy": 8,
         "trust": 12,
-        "log": []
+        "log": [
+            "Halfstar wishes they could get their pelt to shine like Twigdapple's. (low negative effect) - Halfstar was 116 moon(s) old",
+            "Halfstar is giving Twigdapple a task. (neutral effect) - Halfstar was 117 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "69",
@@ -229,13 +233,15 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 12,
         "dislike": 0,
         "admiration": 8,
-        "comfortable": 0,
+        "comfortable": 9,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Halfstar chats with Greenseed while grabbing something to eat. (medium positive effect) - Halfstar was 116 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "69",
@@ -254,6 +260,90 @@
     {
         "cat_from_id": "69",
         "cat_to_id": "8",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "69",
+        "cat_to_id": "13",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "69",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "69",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "69",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "69",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "69",
+        "cat_to_id": "82",
         "mates": false,
         "family": false,
         "romantic_love": 0,

@@ -24,7 +24,7 @@
         "platonic_like": 30,
         "dislike": 0,
         "admiration": 8,
-        "comfortable": 14,
+        "comfortable": 6,
         "jealousy": 0,
         "trust": 2,
         "log": []
@@ -64,7 +64,7 @@
         "family": false,
         "romantic_love": 0,
         "platonic_like": 28,
-        "dislike": 0,
+        "dislike": 13,
         "admiration": 12,
         "comfortable": 24,
         "jealousy": 0,
@@ -130,7 +130,9 @@
         "comfortable": 16,
         "jealousy": 0,
         "trust": 11,
-        "log": []
+        "log": [
+            "Twigdapple thinks their dreams might not come true with Berrybeetle. (negative effect)"
+        ]
     },
     {
         "cat_from_id": "68",
@@ -242,6 +244,22 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
+        "platonic_like": 11,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 8,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Berrybeetle wants to spend more time with Cowpaw! (high positive effect) - Berrybeetle was 87 moon(s) old"
+        ]
+    },
+    {
+        "cat_from_id": "68",
+        "cat_to_id": "8",
+        "mates": false,
+        "family": false,
+        "romantic_love": 13,
         "platonic_like": 0,
         "dislike": 0,
         "admiration": 0,
@@ -252,7 +270,35 @@
     },
     {
         "cat_from_id": "68",
-        "cat_to_id": "8",
+        "cat_to_id": "13",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 15,
+        "dislike": 0,
+        "admiration": 5,
+        "comfortable": 10,
+        "jealousy": 0,
+        "trust": 10,
+        "log": []
+    },
+    {
+        "cat_from_id": "68",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 8,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "68",
+        "cat_to_id": "9",
         "mates": false,
         "family": false,
         "romantic_love": 0,
@@ -263,5 +309,35 @@
         "jealousy": 0,
         "trust": 0,
         "log": []
+    },
+    {
+        "cat_from_id": "68",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "68",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 7,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 5,
+        "jealousy": 0,
+        "trust": 0,
+        "log": [
+            "Berrybeetle is telling a story to Harekit. (medium positive effect) - Berrybeetle was 88 moon(s) old"
+        ]
     }
 ]

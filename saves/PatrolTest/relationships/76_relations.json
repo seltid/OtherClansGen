@@ -87,9 +87,10 @@
         "admiration": 12,
         "comfortable": 8,
         "jealousy": 0,
-        "trust": 8,
+        "trust": 16,
         "log": [
-            "Snakeburrow caught a glimpse of Rustlerise caring for a wounded warrior with confidence and grace. (medium positive effect) - Snakeburrow was 38 moon(s) old"
+            "Snakeburrow caught a glimpse of Rustlerise caring for a wounded warrior with confidence and grace. (medium positive effect) - Snakeburrow was 38 moon(s) old",
+            "Snakeburrow appreciates Rustlerise telling them that they had a feather stuck to their face. (low positive effect) - Snakeburrow was 41 moon(s) old"
         ]
     },
     {
@@ -104,7 +105,9 @@
         "comfortable": 0,
         "jealousy": 0,
         "trust": 0,
-        "log": []
+        "log": [
+            "Snakeburrow and Barleystar have an argument about who should get a pretty feather, and end up destroying it in their fight. (medium negative effect) - Snakeburrow was 40 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "76",

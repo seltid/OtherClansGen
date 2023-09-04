@@ -83,7 +83,9 @@
         "comfortable": 22,
         "jealousy": 0,
         "trust": 14,
-        "log": []
+        "log": [
+            "Cragshade and Berrybeetle heckled another Clan at the gathering together. (high positive effect) - Cragshade was 31 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "67",
@@ -118,14 +120,16 @@
         "cat_to_id": "72",
         "mates": false,
         "family": false,
-        "romantic_love": 0,
-        "platonic_like": 35,
+        "romantic_love": 13,
+        "platonic_like": 45,
         "dislike": 0,
         "admiration": 7,
-        "comfortable": 5,
+        "comfortable": 15,
         "jealousy": 0,
         "trust": 4,
-        "log": []
+        "log": [
+            "Cragshade just noticed how beautiful Twigdapple's eyes are. (low positive effect) - Cragshade was 32 moon(s) old"
+        ]
     },
     {
         "cat_from_id": "67",
@@ -191,7 +195,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 0,
+        "platonic_like": 8,
         "dislike": 17,
         "admiration": 0,
         "comfortable": 0,
@@ -221,7 +225,7 @@
         "mates": false,
         "family": false,
         "romantic_love": 0,
-        "platonic_like": 8,
+        "platonic_like": 16,
         "dislike": 0,
         "admiration": 0,
         "comfortable": 0,
@@ -260,5 +264,75 @@
         "log": [
             "Cragshade thinks Booker was nice to them today. (low positive effect) - Cragshade was 29 moon(s) old"
         ]
+    },
+    {
+        "cat_from_id": "67",
+        "cat_to_id": "9",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "67",
+        "cat_to_id": "10",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "67",
+        "cat_to_id": "11",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "67",
+        "cat_to_id": "12",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
+    },
+    {
+        "cat_from_id": "67",
+        "cat_to_id": "13",
+        "mates": false,
+        "family": false,
+        "romantic_love": 0,
+        "platonic_like": 0,
+        "dislike": 0,
+        "admiration": 0,
+        "comfortable": 0,
+        "jealousy": 0,
+        "trust": 0,
+        "log": []
     }
 ]
