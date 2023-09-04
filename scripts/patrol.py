@@ -2540,6 +2540,7 @@ class Patrol():
             cat_1 = choice(fitting_1_cats)
             print(f"Cat 1: {cat_1}")
             for patrol_cat in self.patrol_cats:
+                patrol_cat = Cat.fetch_cat(patrol_cat)
                 if patrol_cat.ID in cat_1.relationships:
                     print("They know each other")
                     # Update the relationship values
@@ -2560,22 +2561,7 @@ class Patrol():
                     else:
                         change_relationship_values([cat_1.ID], [patrol_cat], 0, 0, 0, 0, 0, 0, 0)
                         change_relationship_values([patrol_cat.ID], [cat_1], 0, 0, 0, 0, 0, 0, 0)
-        elif not fitting_1_cats and int(lower_limit) > 0:
-            cat_1 = create_oc_existing_cat(Cat,
-                                           new_name=False,
-                                           loner=False,
-                                           kittypet=False,
-                                           kit=False,
-                                           litter=False,
-                                           other_clan=True,
-                                           otherclan1=True,
-                                           backstory=None,
-                                           status=None,
-                                           age=None,
-                                           gender=None,
-                                           thought='Is recounting their recent interaction with c_n to a Clanmate',
-                                           alive=True,
-                                           outside=True)
+
 
         if fitting_2_cats:
             cat_2 = choice(fitting_2_cats)
