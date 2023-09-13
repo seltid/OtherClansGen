@@ -1159,7 +1159,7 @@ class ProfileScreen(Screens):
                         "Clan had even come to be."
             elif beginning['birth_moon'] <= 0 and beginning['age'] != 0:
                 text += " {PRONOUN/m_c/subject/CAP} were born on a moon long ago, before " + str(game.clan.name) + \
-                        "Clan had even come to be. " + str(self.the_cat.name) + "joined the Clan at the age of " + str(beginning['age']) + " Moons."
+                        "Clan had even come to be. " + str(self.the_cat.name) + " joined the Clan at the age of " + str(beginning['age']) + " Moons."
             else:
                 if beginning['clan_born']:
                     text += " {PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} born on Moon " + str(

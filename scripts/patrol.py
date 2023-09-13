@@ -2386,16 +2386,6 @@ class Patrol():
             "LOYAL_BOOST": "Increase chance that involved cat will be a loyal personality type",
             "VIOL_BOOST": "Increase chance that involved cat will be a violent personality type",
 
-            # Rank-based
-            "3_WARRIOR": "",
-
-            # Determine what the changes need to be
-            "CH_SAVIOR": "",
-            "CH_BIGPOS": "",
-            "CH_POS": "",
-            "CH_NEUT": "",
-            "CH_NEG": "",
-
             # Special relationship changes
             "RC_TO_1_RESPECT_UP": "One-way respect gain, RC->1st OC cat",
 
@@ -2441,9 +2431,7 @@ class Patrol():
         for cat in range(num_of_cats):
             generated_cats.append('')
 
-        # Select fitting cats for each position
-        # 1
-        # Get all cats fitting criteria
+        # Identify filters
 
         cat_1_filter = None
         fitting_1_cats = []
@@ -2464,7 +2452,22 @@ class Patrol():
             if each_filter in self.outcome_text:
                 cat_3_filter = each_filter
 
+        status_age_dict = {
+            "kitten": (1, 6),
 
+            "apprentice": (6, 13),
+            "medicine cat apprentice": (6, 24),
+            "mediator apprentice": (6, 24),
+
+            "warrior": (12, 131),
+            "medicine cat": (12, 151),
+            "mediator": (12, 143),
+
+            "deputy": (24, 121),
+            "leader": (24, 181),
+
+            "elder": (115, 301),
+        }
 
         # (1) GET FITTING CATS --------------------------------------------------------
         for cat in Cat.otherclan1_cats.values():
@@ -2479,39 +2482,85 @@ class Patrol():
                             fitting_1_cats.append(cat)
                     else:
                         # Now get some general stuff
-                        if cat.status in ["apprentice", "mediator apprentice", "medicine cat apprentice"]:
+                        if cat.status in ["apprentice", "mediator apprentice", "medicine cat apprentice"] and cat.mentor:
                             cat_mentor = Cat.fetch_cat(cat.mentor)
                         if cat.apprentice:
                             cat_apps = []
                             for app in cat.apprentice:
                                 cat_apps.append(Cat.fetch_cat(app))
                         # 1 ---------------------------------------------
-                        if cat_1_filter in ["1_DEPAPP", "1_LEADAPP"] and cat.status == "apprentice":
+                        if cat_1_filter in ["1_DEPAPP", "1_LEADAPP"] and cat.status == "apprentice" and cat.mentor:
                             if cat_1_filter in "1_DEPAPP" and cat_mentor.status == "deputy":
                                 fitting_1_cats.append(cat)
                             elif cat_1_filter in "1_LEADAPP" and cat_mentor.status == "leader":
                                 fitting_1_cats.append(cat)
                         elif cat_2_filter:
-                            if cat_2_filter in "2_MENTORW":
-                                if cat_mentor.status in "warrior":
-                                    fitting_1_cats.append(cat)
-                                    fitting_2_cats.append(cat_mentor)
-                            elif cat_2_filter in "2_MENTOR":
-                                if cat_mentor:
-                                    fitting_1_cats.append(cat)
-                                    fitting_2_cats.append(cat_mentor)
+                            if cat.apprentice:
+                                if cat_2_filter in "2_MENTORW":
+                                    if cat_mentor.status in "warrior":
+                                        fitting_1_cats.append(cat)
+                                        fitting_2_cats.append(cat_mentor)
+                                elif cat_2_filter in "2_MENTOR":
+                                    if cat_mentor:
+                                        fitting_1_cats.append(cat)
+                                        fitting_2_cats.append(cat_mentor)
                         else:
                             if cat.status == dict_cat1[cat_1_filter]:
                                 fitting_1_cats.append(cat)
         print(cat_1_filter)
 
-        # CHOOSE CAT_1
+        # CHOOSE OR GENERATE CAT_1
         if fitting_1_cats:
             cat_1 = choice(fitting_1_cats)
             print(f"Cat 1: {cat_1}")
         elif not fitting_1_cats and lower_limit > 0:
-            # Generate cat_1 here
-            pass
+            # Determine status
+            if cat_1_filter:
+                new_cat_1_status = dict_cat1[cat_1_filter]
+            else:
+                num = randint(1, 50)
+                if num == 1:
+                    new_cat_1_status = "medicine cat apprentice"
+                elif num == 2:
+                    new_cat_1_status = "medicine cat"
+                elif 2 < num < 10:
+                    new_cat_1_status = "deputy"
+                elif 10 < num < 15:
+                    new_cat_1_status = "leader"
+                elif 15 < num < 31:
+                    new_cat_1_status = "apprentice"
+                else:
+                    new_cat_1_status = "warrior"
+                pass
+
+            new_cat_1_age = status_age_dict[new_cat_1_status]
+            new_cat_1_gender = choice(["female", "male"])
+            # ^ I believe trans and nb chances happen when the cat is generated as part of cat.genderalign
+            if new_cat_1_status in "kitten":
+                new_cat_1_kit = True
+            else:
+                new_cat_1_kit = False
+
+            possible_backstories = []
+
+            cat_1 = create_oc_existing_cat(Cat,
+                                   new_name=False,
+                                   loner=False,
+                                   kittypet=False,
+                                   kit=new_cat_1_kit,
+                                   litter=False,
+                                   other_clan=True,
+                                   otherclan1=True,
+                                   backstory=BACKSTORIES["backstory_categories"]["clanborn_backstories"],
+                                   status=new_cat_1_status,
+                                   age=choice(new_cat_1_age),
+                                   gender=new_cat_1_gender,
+                                   thought='CREATED FOR CAT1',
+                                   alive=True,
+                                   outside=True
+                                   )
+
+            print(f"Cat 1: {cat_1}")
         else:
             pass
 
