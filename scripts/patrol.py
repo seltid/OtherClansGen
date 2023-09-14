@@ -2408,9 +2408,8 @@ class Patrol():
         dict_cat2 = {
             "2_LEADER": "leader",
             "2_WARRIOR": "warrior",
-            "2_MENTOR": "SPECIAL",
             "2_DEP": "deputy",
-            "2_MENTORW": "SPECIAL",
+            "2_MENTORW": "warrior",
             "2_KIT": "kitten",
         }
 
@@ -2469,7 +2468,7 @@ class Patrol():
             "elder": (115, 301),
         }
 
-        # (1) GET FITTING CATS --------------------------------------------------------
+        # (1) GET FITTING CATS ---------------------------------------------------------
         for cat in Cat.otherclan1_cats.values():
             if cat.dead:
                 pass
@@ -2509,7 +2508,7 @@ class Patrol():
                                 fitting_1_cats.append(cat)
         print(cat_1_filter)
 
-        # CHOOSE OR GENERATE CAT_1
+        # CHOOSE OR GENERATE CAT_1 -----------------------------------------------------
         if fitting_1_cats:
             cat_1 = choice(fitting_1_cats)
             print(f"Cat 1: {cat_1}")
@@ -2531,7 +2530,6 @@ class Patrol():
                     new_cat_1_status = "apprentice"
                 else:
                     new_cat_1_status = "warrior"
-                pass
 
             new_cat_1_age = status_age_dict[new_cat_1_status]
             new_cat_1_gender = choice(["female", "male"])
@@ -2543,7 +2541,7 @@ class Patrol():
 
             possible_backstories = []
 
-            cat_1 = create_oc_existing_cat(Cat,
+            new_cat = create_oc_existing_cat(Cat,
                                    new_name=False,
                                    loner=False,
                                    kittypet=False,
@@ -2559,10 +2557,9 @@ class Patrol():
                                    alive=True,
                                    outside=True
                                    )
+            cat_1 = new_cat[0]
 
-            print(f"Cat 1: {cat_1}")
-        else:
-            pass
+            print(f"Cat 1: Generated new cat! {cat_1}")
 
         # (2) GET FITTING CATS ---------------------------------------------------------
         for cat in Cat.otherclan1_cats.values():
@@ -2583,15 +2580,57 @@ class Patrol():
                         if cat.status == dict_cat2[cat_2_filter]:
                             fitting_2_cats.append(cat)
 
-        # CHOOSE CAT_2
+        # CHOOSE OR GENERATE CAT_2 -----------------------------------------------------
         if fitting_2_cats:
             cat_2 = choice(fitting_2_cats)
             print(f"Cat 2: {cat_2}")
         elif not fitting_2_cats and lower_limit > 1:
-            # Generate cat_2 here
-            pass
-        else:
-            pass
+            # Determine status
+            if cat_2_filter:
+                new_cat_2_status = dict_cat2[cat_2_filter]
+            else:
+                num = randint(1, 50)
+                if num == 1:
+                    new_cat_2_status = "medicine cat apprentice"
+                elif num == 2:
+                    new_cat_2_status = "medicine cat"
+                elif 2 < num < 10:
+                    new_cat_2_status = "deputy"
+                elif 10 < num < 15:
+                    new_cat_2_status = "leader"
+                elif 15 < num < 31:
+                    new_cat_2_status = "apprentice"
+                else:
+                    new_cat_2_status = "warrior"
+            new_cat_2_age = status_age_dict[new_cat_2_status]
+            new_cat_2_gender = choice(["female", "male"])
+            # ^ I believe trans and nb chances happen when the cat is generated as part of cat.genderalign
+            if new_cat_2_status in "kitten":
+                new_cat_2_kit = True
+            else:
+                new_cat_2_kit = False
+
+            new_cat = create_oc_existing_cat(Cat,
+                                             new_name=False,
+                                             loner=False,
+                                             kittypet=False,
+                                             kit=new_cat_2_kit,
+                                             litter=False,
+                                             other_clan=True,
+                                             otherclan1=True,
+                                             backstory=BACKSTORIES["backstory_categories"]["clanborn_backstories"],
+                                             status=new_cat_2_status,
+                                             age=choice(new_cat_2_age),
+                                             gender=new_cat_2_gender,
+                                             thought='CREATED FOR CAT2',
+                                             alive=True,
+                                             outside=True
+                                             )
+            cat_2 = new_cat[0]
+
+            print(f"Cat 2: Generated new cat! {cat_2}")
+
+        # Make mentor-app relations involving generated cats here
 
 
         # CALCULATE DIFFERENCE --------------------------------------------------------
@@ -2627,7 +2666,7 @@ class Patrol():
         # RELATIONSHIPS ----------------------------------------------------------------
 
         # Create/update relationships with cat_1
-        if fitting_1_cats:
+        try:
             for patrol_cat in self.patrol_cats:
                 patrol_cat = Cat.fetch_cat(patrol_cat)
                 if patrol_cat.ID in cat_1.relationships:
@@ -2649,7 +2688,8 @@ class Patrol():
                 else:
                     change_relationship_values([cat_1.ID], [patrol_cat], 0, 0, 0, 0, 0, 0, 0)
                     change_relationship_values([patrol_cat.ID], [cat_1], 0, 0, 0, 0, 0, 0, 0)
-
+        except UnboundLocalError:
+            pass
 
         # Print debug text
         self.results_text.append(f"PLACEHOLDER TEXT HERE INVOLVING {num_of_cats} CAT(S) FROM {other_clan}")

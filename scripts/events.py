@@ -1071,7 +1071,7 @@ class Events:
                     if cat.status == 'deputy':
                         game.clan.deputy = None
                     self.ceremony(cat, 'elder')
-                    print("ERROR")
+                    print("ERROR retiring")
                     print(str(cat.name) + str(cat.ID))
                     try:
                         cat.history.add_retirement(cat, "moons of service")
