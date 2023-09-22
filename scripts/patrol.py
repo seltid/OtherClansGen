@@ -2509,6 +2509,17 @@ class Patrol():
         print(cat_1_filter)
 
         # CHOOSE OR GENERATE CAT_1 -----------------------------------------------------
+        # Small chance for the first cat to be a new cat
+        random_for_cat_1 = randint(1,(len(fitting_1_cats)+10))
+        if fitting_1_cats and random_for_cat_1 == 1:
+            if cat_1_filter:
+                if cat_1_filter in ["1_DEP","1_LEADER"]:
+                    print("No cat gacha for you")
+                    pass
+                else:
+                    fitting_1_cats = []
+                    print("Cat gacha triggered!")
+
         if fitting_1_cats:
             cat_1 = choice(fitting_1_cats)
             print(f"Cat 1: {cat_1}")
@@ -2538,8 +2549,6 @@ class Patrol():
                 new_cat_1_kit = True
             else:
                 new_cat_1_kit = False
-
-            possible_backstories = []
 
             new_cat = create_oc_existing_cat(Cat,
                                    new_name=False,
@@ -2581,6 +2590,14 @@ class Patrol():
                             fitting_2_cats.append(cat)
 
         # CHOOSE OR GENERATE CAT_2 -----------------------------------------------------
+        try:
+            print("!!!!!!!!!!")
+            fitting_2_cats.remove(cat_1)
+        except UnboundLocalError:
+            pass
+        except ValueError:
+            pass
+
         if fitting_2_cats:
             cat_2 = choice(fitting_2_cats)
             print(f"Cat 2: {cat_2}")
@@ -2631,7 +2648,11 @@ class Patrol():
             print(f"Cat 2: Generated new cat! {cat_2}")
 
         # Make mentor-app relations involving generated cats here
-
+        if cat_1_filter and cat_2_filter:
+            if cat_1_filter in "1_APP" and cat_2_filter in "2_MENTORW":
+                cat_1.mentor = cat_2.ID
+                if cat_1 not in cat_2.apprentice:
+                    cat_2.apprentice.append(cat_1.ID)
 
         # CALCULATE DIFFERENCE --------------------------------------------------------
         # So we can differentiate easily between positive and negative interactions, positive are even and negative are odd
@@ -2681,13 +2702,35 @@ class Patrol():
                     change_relationship_values([cat_1.ID], [patrol_cat], 0, difference, 0, 0, difference, 0, 0)
                     change_relationship_values([patrol_cat.ID], [cat_1], 0, difference, 0, 0, difference, 0, 0)
                 elif (difference % 2) != 0:
-                    change_relationship_values([cat_1.ID], [patrol_cat], 0, 0, difference, 0, difference, 0,
-                                               difference)
-                    change_relationship_values([patrol_cat.ID], [cat_1], 0, 0, difference, 0, difference, 0,
-                                               difference)
+                    change_relationship_values([cat_1.ID], [patrol_cat], 0, 0, difference, 0, 0, 0, 0)
+                    change_relationship_values([patrol_cat.ID], [cat_1], 0, 0, difference, 0, 0, 0, 0)
                 else:
                     change_relationship_values([cat_1.ID], [patrol_cat], 0, 0, 0, 0, 0, 0, 0)
                     change_relationship_values([patrol_cat.ID], [cat_1], 0, 0, 0, 0, 0, 0, 0)
+        except UnboundLocalError:
+            pass
+
+        # Create/update relationships with cat_2
+        try:
+            for patrol_cat in self.patrol_cats:
+                patrol_cat = Cat.fetch_cat(patrol_cat)
+                if patrol_cat.ID in cat_2.relationships:
+                    print("They know each other")
+                else:
+                    print("They don't know each other")
+                    # Create the relationship
+                    cat_2.create_one_relationship(patrol_cat)
+                    patrol_cat.create_one_relationship(cat_2)
+                # Update the relationship values
+                if (difference % 2) == 0:
+                    change_relationship_values([cat_2.ID], [patrol_cat], 0, difference, 0, 0, difference, 0, 0)
+                    change_relationship_values([patrol_cat.ID], [cat_2], 0, difference, 0, 0, difference, 0, 0)
+                elif (difference % 2) != 0:
+                    change_relationship_values([cat_2.ID], [patrol_cat], 0, 0, difference, 0, 0, 0, 0)
+                    change_relationship_values([patrol_cat.ID], [cat_2], 0, 0, difference, 0, 0, 0, 0)
+                else:
+                    change_relationship_values([cat_2.ID], [patrol_cat], 0, 0, 0, 0, 0, 0, 0)
+                    change_relationship_values([patrol_cat.ID], [cat_2], 0, 0, 0, 0, 0, 0, 0)
         except UnboundLocalError:
             pass
 
