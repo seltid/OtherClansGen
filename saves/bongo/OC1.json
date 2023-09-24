@@ -1,0 +1,23 @@
+{
+    "clanname": "WeedClan",
+    "clanage": 700,
+    "biome": null,
+    "clan_cats": [
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62"
+    ],
+    "leader": "61",
+    "leader_lives": 8,
+    "leader_predecessors": null,
+    "deputy": "62",
+    "med_cat": null
+}

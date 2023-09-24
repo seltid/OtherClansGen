@@ -508,8 +508,7 @@ class ProfileScreen(Screens):
 
         self.profile_elements["debug_box"] = pygame_gui.elements.UITextBox(
             ('Otherclan?: ' + str(self.the_cat.otherclan1) + '\n' +
-             'Cat ID: ' + str(self.the_cat.ID) + '\n' +
-             'for cat in Cat.outside_cats' + str(Cat.otherclan1_cats)),
+             'Cat ID: ' + str(self.the_cat.ID) + '\n' ),
             scale(pygame.Rect((150, 200), (350, 300))), object_id=get_text_box_theme("#text_box_22_horizcenter"))
 
         # Set the cat backgrounds.

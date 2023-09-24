@@ -2591,8 +2591,8 @@ class Patrol():
 
         # CHOOSE OR GENERATE CAT_2 -----------------------------------------------------
         try:
-            print("!!!!!!!!!!")
             fitting_2_cats.remove(cat_1)
+            print("Prevented cat_1 and cat_2 being the same cat")
         except UnboundLocalError:
             pass
         except ValueError:

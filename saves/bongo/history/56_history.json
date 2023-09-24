@@ -1,0 +1,27 @@
+{
+    "beginning": {
+        "clan_born": true,
+        "birth_season": [
+            "Leaf-bare"
+        ],
+        "age": 0,
+        "join_moon": -12,
+        "birth_moon": -12,
+        "join_season": "PLACEHOLDER"
+    },
+    "mentor_influence": {
+        "trait": {},
+        "skill": {}
+    },
+    "app_ceremony": {
+        "honor": "prudence",
+        "graduation_age": 12,
+        "moon": 1
+    },
+    "lead_ceremony": null,
+    "elder_ceremony": {},
+    "possible_history": {},
+    "died_by": [],
+    "scar_events": [],
+    "murder": {}
+}

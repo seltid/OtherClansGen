@@ -1,0 +1,337 @@
+[
+    {
+        "text": "Yewstem is having a wonderful time discussing recent Clan news with Rushtail. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "44",
+            "39"
+        ]
+    },
+    {
+        "text": "Yewstem is letting Pouncepaw share their troubles with them, hoping they'll feel better afterwards. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "50",
+            "39"
+        ]
+    },
+    {
+        "text": "Bristlekit is surprised to hear Pouncepaw express an ideal they can agree with. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "50",
+            "40"
+        ]
+    },
+    {
+        "text": "Bristlekit caught an insect while sneaking outside of the camp and wears proudly its wings as a trophy of their journey.",
+        "types": [
+            "misc"
+        ],
+        "cats_involved": [
+            "40"
+        ]
+    },
+    {
+        "text": "Bristlekit woke up with a splitting headache, and couldn't get out of their nest. They spent the entire day curled up in the nursery, trying to avoid light and noise so that the throbbing pain could subside.",
+        "types": [
+            "health"
+        ],
+        "cats_involved": [
+            "40"
+        ]
+    },
+    {
+        "text": "Dryheather saw Marshal the other day and did get a chance to meow hello! (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "1",
+            "41"
+        ]
+    },
+    {
+        "text": "Dryheather thinks Pouncepaw is being annoying. (high negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "50",
+            "41"
+        ]
+    },
+    {
+        "text": "Daisyfrost wishes they could get their pelt to shine like Gullpaw's. (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "45",
+            "43"
+        ]
+    },
+    {
+        "text": "Rushtail turned to Frogmane in a time of need, only for Frogmane to abandon them. (high negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "3",
+            "44"
+        ]
+    },
+    {
+        "text": "Rushtail mews congratulations to Pouncepaw for a job well done. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "50",
+            "44"
+        ]
+    },
+    {
+        "text": "Gullpaw appreciates Pouncepaw telling them that they had a feather stuck to their face. (low positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "50",
+            "45"
+        ]
+    },
+    {
+        "text": "Thistlestar had a difficult conversation with Frogmane and they now have a deeper understanding of each other. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "3",
+            "46"
+        ]
+    },
+    {
+        "text": "Fluffpaw offers to help Pouncepaw clean out the elder's bedding. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "50",
+            "47"
+        ]
+    },
+    {
+        "text": "Bumblenight saves a piece of prey for Rushtail because they know it's their favorite. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "44",
+            "49"
+        ]
+    },
+    {
+        "text": "Bumblenight and Pouncepaw heckled another Clan at the gathering together. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "50",
+            "49"
+        ]
+    },
+    {
+        "text": "Pouncepaw doesn't notice Bristlekit twitching their whiskers at them. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "40",
+            "50"
+        ]
+    },
+    {
+        "text": "Halfwatcher covered for Wildfreeze on something minor. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "58",
+            "52"
+        ]
+    },
+    {
+        "text": "Sagestreak is looking out for Mottlepaw's well-being. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "55",
+            "53"
+        ]
+    },
+    {
+        "text": "Branchpaw realized that they were too harsh in their judgment of Wildfreeze. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "58",
+            "54"
+        ]
+    },
+    {
+        "text": "Mottlepaw is really surprised that Jumblepaw's life isn't as easy as they thought it was. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "57",
+            "55"
+        ]
+    },
+    {
+        "text": "Leopardcurrent is jealous that Branchpaw went on patrol without them. (medium negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "54",
+            "56"
+        ]
+    },
+    {
+        "text": "Jumblepaw has a mock battle with Sagestreak. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "53",
+            "57"
+        ]
+    },
+    {
+        "text": "Wildfreeze is having a wonderful time discussing recent Clan news with Floodpaw. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "59",
+            "58"
+        ]
+    },
+    {
+        "text": "Floodpaw thinks Branchpaw isn't very considerate of others. (low negative effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "54",
+            "59"
+        ]
+    },
+    {
+        "text": "Groverose offers to groom a hard-to-reach place for Wildfreeze, who thanks them earnestly. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "58",
+            "60"
+        ]
+    },
+    {
+        "text": "Silverstar sees that Floodpaw's piece of prey looks tastier and asks if they'd like to swap. They agree happily, saying they like that one better. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "59",
+            "61"
+        ]
+    },
+    {
+        "text": "Something in the air at the Gathering feels strange.",
+        "types": [
+            "birth_death"
+        ],
+        "cats_involved": [
+            "61"
+        ]
+    },
+    {
+        "text": "Wetripple nods politely as Wildfreeze passes by. (neutral effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "58",
+            "62"
+        ]
+    },
+    {
+        "text": "Marshal tells Yewstem to count on them in a difficult situation. (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "39",
+            "1"
+        ]
+    },
+    {
+        "text": "Flickerstreak wants to spend more time with Frogmane! (high positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "3",
+            "2"
+        ]
+    },
+    {
+        "text": "Frogmane is sparring with Bumblenight. (medium positive effect)",
+        "types": [
+            "relation",
+            "interaction"
+        ],
+        "cats_involved": [
+            "49",
+            "3"
+        ]
+    }
+]

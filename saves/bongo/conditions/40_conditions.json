@@ -1,0 +1,15 @@
+{
+    "injuries": {
+        "severe headache": {
+            "severity": "major",
+            "mortality": 0,
+            "duration": 1,
+            "moon_start": 1,
+            "illness_infectiousness": [],
+            "risks": [],
+            "complication": null,
+            "cause_permanent": [],
+            "event_triggered": false
+        }
+    }
+}
