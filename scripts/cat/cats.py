@@ -1349,8 +1349,13 @@ class Cat():
         if not self.relationships or len(self.relationships) < 1:
             return
 
-        cats_to_choose = [iter_cat for iter_cat in Cat.all_cats.values() if iter_cat.ID != self.ID and \
-                          not iter_cat.outside and not iter_cat.exiled and not iter_cat.dead]
+        cats_to_choose = []
+        for iter_cat in Cat.all_cats.values():
+            if iter_cat.ID != self.ID and iter_cat.clan == self.clan and not iter_cat.exiled and not iter_cat.dead:
+                cats_to_choose.append(iter_cat)
+            elif iter_cat.ID != self.ID and iter_cat.ID in self.relationships and not iter_cat.exiled and not iter_cat.dead:
+                cats_to_choose.append(iter_cat)
+
         # if there are not cats to interact, stop
         if len(cats_to_choose) < 1:
             return
@@ -1377,8 +1382,12 @@ class Cat():
         if not self.relationships or len(self.relationships) < 1:
             return
 
-        cats_to_choose = [iter_cat for iter_cat in Cat.all_cats.values() if iter_cat.ID != self.ID and
-                          iter_cat.clan == self.clan and not iter_cat.exiled and not iter_cat.dead]
+        cats_to_choose = []
+        for iter_cat in Cat.all_cats.values():
+            if iter_cat.ID != self.ID and iter_cat.clan == self.clan and not iter_cat.exiled and not iter_cat.dead:
+                cats_to_choose.append(iter_cat)
+            elif iter_cat.ID != self.ID and iter_cat.ID in self.relationships and not iter_cat.exiled and not iter_cat.dead:
+                cats_to_choose.append(iter_cat)
 
         # if there are not cats to interact, stop
         if len(cats_to_choose) < 1:
@@ -2113,8 +2122,8 @@ class Cat():
         if self.is_related(other_cat, game.settings["first cousin mates"]):
             return False
 
-        # check exiled, outside, and dead cats
-        if (self.dead != other_cat.dead) or self.outside or other_cat.outside:
+        # check ~exiled~, ~outside~, and dead cats
+        if self.dead != other_cat.dead:
             return False
 
         # check for age

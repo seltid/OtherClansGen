@@ -137,7 +137,7 @@ def get_free_possible_mates(cat, Relationship):
     """Returns a list of available cats, which are possible mates for the given cat."""
     cats = []
     for inter_cat in cat.all_cats.values():
-        if inter_cat.dead or inter_cat.outside or inter_cat.exiled:
+        if inter_cat.dead or inter_cat.exiled:
             continue
         if inter_cat.ID == cat.ID:
             continue

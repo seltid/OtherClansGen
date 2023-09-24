@@ -2369,6 +2369,11 @@ class RelationshipScreen(Screens):
                 chosen_name,
                 object_id="#text_box_34_horizcenter")
 
+            self.inspect_cat_elements["clan"] = pygame_gui.elements.ui_label.UILabel(
+                scale(pygame.Rect((250, 205), (300, 250))),
+                (str(self.inspect_cat.clan) + "Clan"),
+                object_id="#text_box_26_horizcenter_vertcenter_spacing_95")
+
             # Cat Image
             self.inspect_cat_elements["image"] = pygame_gui.elements.UIImage(scale(pygame.Rect((150, 290), (300, 300))),
                                                                              pygame.transform.scale(
@@ -2580,6 +2585,17 @@ class RelationshipScreen(Screens):
                                                                                      scale(pygame.Rect(
                                                                                          (pos_x, pos_y - 48),
                                                                                          (204, 60))),
+                                                                                     object_id="#text_box_26_horizcenter")
+
+        try:
+            initial = str(the_relationship.cat_to.clan[0]).capitalize()
+        except TypeError:
+            initial = str(401)
+
+        self.relation_list_elements["mini_clan" + str(i)] = pygame_gui.elements.UITextBox(initial,
+                                                                                     scale(pygame.Rect(
+                                                                                         (pos_x, pos_y + 42),
+                                                                                         (355, 400))),
                                                                                      object_id="#text_box_26_horizcenter")
 
         # Gender alignment

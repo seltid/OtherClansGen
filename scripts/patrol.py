@@ -2673,7 +2673,7 @@ class Patrol():
             elif "CH_NEUT" in self.outcome_text:
                 difference = 0
             elif "CH_NEG" in self.outcome_text:
-                difference = int(3)
+                difference = int(13)
         if difference is None:
             if self.success and not self.antagonize:
                 difference = int(4)
@@ -2697,16 +2697,26 @@ class Patrol():
                     # Create the relationship
                     cat_1.create_one_relationship(patrol_cat)
                     patrol_cat.create_one_relationship(cat_1)
+                # Small chance for love at first sight
+                love = 0
+                if patrol_cat.is_potential_mate(cat_1) and cat_1.is_potential_mate(patrol_cat):
+                    love_atfs = randint(1, 100)
+                    if 98 <= love_atfs <= 100:
+                        love = 20
+                        self.results_text.append(f"FLOOSHED EMOJI")
+                    elif 90 <= love_atfs < 98:
+                        love = randint(5, 10)
+                        self.results_text.append(f"smol flooshed")
                 # Update the relationship values
                 if (difference % 2) == 0:
-                    change_relationship_values([cat_1.ID], [patrol_cat], 0, difference, 0, 0, difference, 0, 0)
-                    change_relationship_values([patrol_cat.ID], [cat_1], 0, difference, 0, 0, difference, 0, 0)
+                    change_relationship_values([cat_1.ID], [patrol_cat], love, difference, 0, 0, difference, 0, 0)
+                    change_relationship_values([patrol_cat.ID], [cat_1], love, difference, 0, 0, difference, 0, 0)
                 elif (difference % 2) != 0:
-                    change_relationship_values([cat_1.ID], [patrol_cat], 0, 0, difference, 0, 0, 0, 0)
-                    change_relationship_values([patrol_cat.ID], [cat_1], 0, 0, difference, 0, 0, 0, 0)
+                    change_relationship_values([cat_1.ID], [patrol_cat], love, 0, difference, 0, 0, 0, 0)
+                    change_relationship_values([patrol_cat.ID], [cat_1], love, 0, difference, 0, 0, 0, 0)
                 else:
-                    change_relationship_values([cat_1.ID], [patrol_cat], 0, 0, 0, 0, 0, 0, 0)
-                    change_relationship_values([patrol_cat.ID], [cat_1], 0, 0, 0, 0, 0, 0, 0)
+                    change_relationship_values([cat_1.ID], [patrol_cat], love, 0, 0, 0, 0, 0, 0)
+                    change_relationship_values([patrol_cat.ID], [cat_1], love, 0, 0, 0, 0, 0, 0)
         except UnboundLocalError:
             pass
 
@@ -2721,16 +2731,24 @@ class Patrol():
                     # Create the relationship
                     cat_2.create_one_relationship(patrol_cat)
                     patrol_cat.create_one_relationship(cat_2)
+                # Small chance for love at first sight
+                love = 0
+                if patrol_cat.is_potential_mate(cat_1) and cat_1.is_potential_mate(patrol_cat):
+                    love_atfs = randint(1, 100)
+                    if 98 <= love_atfs <= 100:
+                        love = 20
+                    elif 90 <= love_atfs < 98:
+                        love = randint(5, 10)
                 # Update the relationship values
                 if (difference % 2) == 0:
-                    change_relationship_values([cat_2.ID], [patrol_cat], 0, difference, 0, 0, difference, 0, 0)
-                    change_relationship_values([patrol_cat.ID], [cat_2], 0, difference, 0, 0, difference, 0, 0)
+                    change_relationship_values([cat_2.ID], [patrol_cat], love, difference, 0, 0, difference, 0, 0)
+                    change_relationship_values([patrol_cat.ID], [cat_2], love, difference, 0, 0, difference, 0, 0)
                 elif (difference % 2) != 0:
-                    change_relationship_values([cat_2.ID], [patrol_cat], 0, 0, difference, 0, 0, 0, 0)
-                    change_relationship_values([patrol_cat.ID], [cat_2], 0, 0, difference, 0, 0, 0, 0)
+                    change_relationship_values([cat_2.ID], [patrol_cat], love, 0, difference, 0, 0, 0, 0)
+                    change_relationship_values([patrol_cat.ID], [cat_2], love, 0, difference, 0, 0, 0, 0)
                 else:
-                    change_relationship_values([cat_2.ID], [patrol_cat], 0, 0, 0, 0, 0, 0, 0)
-                    change_relationship_values([patrol_cat.ID], [cat_2], 0, 0, 0, 0, 0, 0, 0)
+                    change_relationship_values([cat_2.ID], [patrol_cat], love, 0, 0, 0, 0, 0, 0)
+                    change_relationship_values([patrol_cat.ID], [cat_2], love, 0, 0, 0, 0, 0, 0)
         except UnboundLocalError:
             pass
 
